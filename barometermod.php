@@ -218,7 +218,7 @@ else if ($weather["temp_units"]=='F' && $weather["dewpoint"]>68 ){echo '
   </div>';}
 
 //low dewpoint
-else if ($weather["temp_units"]=='C' && $weather["dewpoint"]<2 ){echo '
+else if ($weather["temp_units"]=='C' && $weather["dewpoint"]<=1 ){echo '
     <div class="weather34alert" id="weather34message">
       <div class="weather34alert-icon">
         '.$coldalert.'
@@ -230,7 +230,7 @@ else if ($weather["temp_units"]=='C' && $weather["dewpoint"]<2 ){echo '
     </div>';}
 
   //F
-else if ($weather["temp_units"]=='F' && $weather["dewpoint"]<35 ){echo '
+else if ($weather["temp_units"]=='F' && $weather["dewpoint"]<=33.8 ){echo '
   <div class="weather34alert" id="weather34message">
     <div class="weather34alert-icon">
       '.$coldalert.'
