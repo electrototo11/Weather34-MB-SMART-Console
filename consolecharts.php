@@ -97,14 +97,11 @@
        $dayfile=date('Y')."/".date('jMY');$forecastime=filemtime('weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M",$forecastime);?>     
       </green></chartpage>
 
-
-
-
-      <a class="desktoplink" href="../index.php" alt="weather34 &copy; 2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>">
-      <div class="weather34-toggled">        
-       <div class="tog red">&copy;<?php echo date('Y')?></div> 
+      <a class="desktoplink" href="#" alt="weather34 designed" title="weather34 designed">
+      <div class="weather34-toggled">
+        <div class="circleblob"></div> 
+       <div class="tog red">&copy;weather34</div></div>
        <div class="logofooter"><img src="Wxsoft34-appsmall.png" width="25px" alt="weather34 &copy;2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>"></div></div>
-       </div> </a>   
-
-</body>
-</html>
+       </div> </a>
+     
+ </body></html>
