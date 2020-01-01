@@ -1,10 +1,10 @@
 <?php 
   ####################################################################################################
-	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											                           #
+	#	PART OF THE WEATHER34 DESIGNED TEMPLATES FOR METEOBRIDGE OWNERS				                           #
 	# https://weather34.com/homeweatherstation/index.html 											                       # 
 	# 	                                                                                               #
-	# 	Release: December 2019	            				  	                                               #
-	# 	  Console Version                                                                              #
+	# 	Release: January 2020               				  	                                               #
+	# 	Standalone Console Version                                                                     #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 include_once('livedata.php');include_once('updater2.php');
@@ -114,7 +114,7 @@ include_once('livedata.php');include_once('updater2.php');
        </div></a>
 
 
-      <a class="desktoplink" href="../index.php" alt="Desktop Version" title="Desktop Version">
+      <a class="desktoplink" href="#" alt="Desktop Version" title="Desktop Version">
       <div class="weather34-toggled">
         <div class="circleblob"></div> 
        <div class="tog red">Desktop</div>
