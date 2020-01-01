@@ -1,5 +1,6 @@
 # Weather34 MB-SMART Console
 # A stand alone version of the alternative console layout for OEM screens/Tablets/Devices
+# Requires Meteobridge NANOSD or Meteobridge Pro
  
  
  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1577897446/mb-smart-console_r5cim6.png" width="550px">
