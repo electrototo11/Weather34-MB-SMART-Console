@@ -1,0 +1,24 @@
+<?php
+$unit = "metric";
+$metric = true;
+$windunit = "km/h";
+$distanceunit = "km";
+$tempunit = "C";
+$rainunit  = "mm";
+$rainrate = "/h";
+$pressureunit  = "hPa";
+$livedataFormat = "meteobridge-api";
+$livedata   = "mbridge/MBrealtimeupload.txt";
+$dateFormat   = "d-m-Y";
+$password    = "";
+$uvsensor    = "uvindexmod.php";
+$chartoption    = "todaysolarmodule.php";
+$chartoption2    = "todayindoormodule.php";
+$defaultlanguage   = "en";
+$stationName   = "Demo Home Weather Station";
+$theme   = "dark";
+$TZ = "Europe/London";
+$lon = 0.3;
+$lat = 50.8;
+$UTC = "0";
+$clockformat    = "12";
