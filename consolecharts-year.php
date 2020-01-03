@@ -63,21 +63,26 @@
          <div class="tog red">Dark</div>
          </div>';}?></a>
 
-<a href="consolecharts.php" alt="Today Charts" title="Today Charts">
+      <a href="consolecharts.php" alt="Today Charts" title="Today Charts">
         <div class="weather34-togglechartdate">
         <div class="circleblob"></div> 
        <div class="tog red"><?php echo $lang['Today'];?></div>
+       </div></a>   
+       
+       <a href="consolecharts-month.php" alt="<?php echo date('F');?> Charts" title="<?php echo date('F');?> Charts">
+        <div class="weather34-togglechartdate">
+        <div class="circleblob"></div> 
+       <div class="tog red"><?php echo strftime("%B",time()); ?></div>
        </div></a>
 
-       
 
-
-       <a href="consolecharts-2019.php" alt="<?php echo $themonth;?> Charts" title="<?php echo $themonth;?> Charts">
-        <div class="weather34-toggleyellow">
+       <?php if ($display2019=='yes'){echo '
+        <a href="consolecharts-2019.php">
+        <div class="weather34-toggleorange">
         <div class="circleblob"></div> 
        <div class="tog red">2019</div>
-       </div></a>
-
+       </div></a>';}
+       ?>
        <chartpage><?php echo $lang['Updated'] ?> <green><?php 
        $dayfile=date('Y');$forecastime=filemtime('weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M %p",$forecastime);?>     
       </green></chartpage>
