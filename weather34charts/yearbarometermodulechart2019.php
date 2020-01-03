@@ -13,15 +13,20 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 	
-	
 	include('preload.php');include('../console-settings.php');
-	$weatherfile = date('Y');
 	$conv = 1;
-	if ($windunit == 'mph') {$conv= '2.23694';}
-	else if ($windunit == 'm/s') {$conv= '1';}
-	else if ($windunit == 'km/h'){$conv= '3.6';}
-	
-	
+	if ($pressureunit  == "hPa"){$conv= '1';}
+	else if ($pressureunit == 'inHg') {$conv= '0.02953';}	
+	$int = 1;
+	if ($pressureunit == 'hPa') {$int= 10;}
+	else if ($pressureunit == 'inHg') {$int= 0.25;}
+	else if ($pressureunit == 'mb') {$int= 10;}
+	$ymax = 1;
+	if ($pressureunit == 'hPa') {$ymax= '1045';}
+	else if ($pressureunit == 'inHg') {$ymax= '31.6';}		
+	$limit = '0';
+	if ($pressureunit == 'inHg') {$limit= '20';}
+	else if ($pressureunit  == "hPa") {$limit= '930';}
 	
 	
     echo '
@@ -35,13 +40,13 @@
 	';	
 	?>
     <br>
-    <script type="text/javascript">
+	<script type="text/javascript">
         $(document).ready(function () {
 		var dataPoints1 = [];
 		var dataPoints2 = [];
 		$.ajax({
 			type: "GET",
-			url: "<?php echo date('Y')?>.csv",
+			url: "2019.csv",
 			dataType: "text",
 			cache:false,
 			success: function(data) {processData1(data),processData2(data);}
@@ -53,8 +58,8 @@
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
-				if ( rowData[1] >-100)	
-				dataPoints1.push({label:rowData[0],y:parseFloat(rowData[7]<?php echo "*". $conv ?>)});
+				if ( rowData[9] >-100)		
+					dataPoints1.push({label:rowData[0],y:parseFloat(rowData[9]<?php echo "*".$conv ?>)});
 					
 					
 			}
@@ -67,13 +72,15 @@
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
-				if ( rowData[1] >-100)		
-				dataPoints2.push({label: rowData[0],y:parseFloat(rowData[7]<?php echo "*". $conv ?>)});				
+				if ( rowData[10] >-100)
+				dataPoints2.push({label: rowData[0],y:parseFloat(rowData[10]<?php echo "*".$conv ?>)});
+					
 				
 			}
 			drawChart(dataPoints1,dataPoints2 );
 		}
 	}
+
 
 	
 	function drawChart( dataPoints1) {
@@ -105,8 +112,8 @@
 			gridDashType: "dot",	
 			titleFontFamily: "arial",	
 			labelFontFamily: "arial",	
-			minimum:-1,		
-			interval:30	,
+			minimum:-1,	
+			interval:50	,
 			intervalType:"day",
 			xValueType: "dateTime",	
 			crosshair: {
@@ -123,7 +130,7 @@
 			
 		axisY:{
 		margin: 0,
-		interval: 5,			
+		interval:<?php echo $int?>,			
 		lineThickness: 1,		
 		gridThickness: 1,	
 		gridDashType: "dot",	
@@ -158,20 +165,30 @@
 		
  data: [
 		{
-			type: "column",
+			//Barometer
+			type: "spline",
+			color:"#d85026",
+			markerSize:0,
+			showInLegend:false,
+			legendMarkerType: "circle",
+			lineThickness: 1,
+			markerType: "none",
+			name:"Hi Barometer",
+			dataPoints: dataPoints1,
+			yValueFormatString:"##.## <?php echo $pressureunit ;?>",
+		},
+		{
+			// not used
+			type: "spline",			
 			color:"#00A4B4",
 			markerSize:0,
 			showInLegend:false,
 			legendMarkerType: "circle",
 			lineThickness: 0,
-			markerType: "circle",
-			name:"Avg Wind Speed <?php echo $windunit;?>",
-			dataPoints: dataPoints1,
-			yValueFormatString:"##.#",
-		},
-		{
-			// not used
-			
+			markerType: "none",
+			name:"Lo Barometer",
+			dataPoints: dataPoints2,
+			yValueFormatString:"##.## <?php echo $pressureunit ;?>",
 		}
 
 		]

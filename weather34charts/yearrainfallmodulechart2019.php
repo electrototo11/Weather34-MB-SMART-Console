@@ -13,15 +13,31 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 	
-	
 	include('preload.php');include('../console-settings.php');
-	$weatherfile = date('Y');
+	$weatherfile = date('F');
+	$file_live=file_get_contents("../mbridge/MBrealtimeupload.txt");
+	$meteobridgeapi=explode(" ",$file_live);
+	$weather["rain_today"] = $meteobridgeapi[9];
+
 	$conv = 1;
-	if ($windunit == 'mph') {$conv= '2.23694';}
-	else if ($windunit == 'm/s') {$conv= '1';}
-	else if ($windunit == 'km/h'){$conv= '3.6';}
-	
-	
+	if ($rainunit == "in") {$conv= 0.0393701;}	
+	else if ($rainunit == "mm"){$conv= 1;}
+	$interval = 1;
+	if ($rainunit == "in") {$interval= 0.5;}	
+	else if ($rainunit == "mm"){$interval= 5;}
+
+//interval Y
+$raininterval= $weather["rain_today"];
+if ($raininterval>=40 ){$raininterval='10';}
+else if ($raininterval>=20 ){$raininterval='5';}
+else if ($raininterval>=10 ){$raininterval='2';}
+else if ($raininterval>=5 ){$raininterval='1';}
+else if ($raininterval>=0.1 ){$raininterval='.5';}
+else if ($raininterval==0 ){$raininterval='1';}
+//Inches
+if ($raininterval>=1 && $rainunit == 'in'){$raininterval='2';}
+else if ($raininterval>=0.5 && $rainunit == 'in'){$raininterval='2.5';}
+else if ($raininterval>=0 && $rainunit == 'in'){$raininterval='1';}
 	
 	
     echo '
@@ -41,7 +57,7 @@
 		var dataPoints2 = [];
 		$.ajax({
 			type: "GET",
-			url: "<?php echo date('Y')?>.csv",
+			url: "2019.csv",
 			dataType: "text",
 			cache:false,
 			success: function(data) {processData1(data),processData2(data);}
@@ -53,8 +69,8 @@
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
-				if ( rowData[1] >-100)	
-				dataPoints1.push({label:rowData[0],y:parseFloat(rowData[7]<?php echo "*". $conv ?>)});
+				if ( rowData[1] >-100)		
+				dataPoints1.push({label:rowData[0],y:parseFloat(rowData[5]<?php echo "*". $conv ?>)});
 					
 					
 			}
@@ -68,7 +84,8 @@
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[1] >-100)		
-				dataPoints2.push({label: rowData[0],y:parseFloat(rowData[7]<?php echo "*". $conv ?>)});				
+				dataPoints2.push({label: rowData[0],y:parseFloat(rowData[5]<?php echo "*". $conv ?>)});
+				
 				
 			}
 			drawChart(dataPoints1,dataPoints2 );
@@ -106,7 +123,7 @@
 			titleFontFamily: "arial",	
 			labelFontFamily: "arial",	
 			minimum:-1,		
-			interval:30	,
+			interval:50	,
 			intervalType:"day",
 			xValueType: "dateTime",	
 			crosshair: {
@@ -134,7 +151,7 @@
 		labelFontFamily: "Arial",
 		labelFontWeight: "bold",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(<?php if ($pressureunit=='inHg'){echo '1';} else echo '0';?>); 
+        return e.value .toFixed(<?php if ($rainunit == 'mm'){echo '0';} else echo '1';?>);  
          },		 
 		crosshair: {
 			enabled: true,
@@ -158,20 +175,17 @@
 		
  data: [
 		{
+			//Barometer
 			type: "column",
 			color:"#00A4B4",
 			markerSize:0,
 			showInLegend:false,
 			legendMarkerType: "circle",
-			lineThickness: 0,
-			markerType: "circle",
-			name:"Avg Wind Speed <?php echo $windunit;?>",
+			lineThickness: 2,
+			markerType: "none",
+			name:"Rainfall",
 			dataPoints: dataPoints1,
-			yValueFormatString:"##.#",
-		},
-		{
-			// not used
-			
+			yValueFormatString:"##.## <?php echo $rainunit ;?>",
 		}
 
 		]

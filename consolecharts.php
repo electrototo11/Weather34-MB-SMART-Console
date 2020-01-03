@@ -92,6 +92,12 @@
        <div class="tog red"><?php echo date('Y');?></div>
        </div></a>
 
+       <a href="consolecharts-2019.php" alt="<?php echo date('Y');?> Charts" title="<?php echo date('Y');?> Charts">
+        <div class="weather34-toggleorange">
+        <div class="circleblob"></div> 
+       <div class="tog red"><?php echo date('Y', strtotime('-1 year'));;?></div>
+       </div></a>
+
        
        <chartpage><?php echo $lang['Updated'] ?> <green><?php 
        $dayfile=date('Y')."/".date('jMY');$forecastime=filemtime('weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M",$forecastime);?>     

@@ -13,13 +13,12 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 	
-	
 	include('preload.php');include('../console-settings.php');
-	$weatherfile = date('Y');
+	
 	$conv = 1;
-	if ($windunit == 'mph') {$conv= '2.23694';}
-	else if ($windunit == 'm/s') {$conv= '1';}
-	else if ($windunit == 'km/h'){$conv= '3.6';}
+	if ($tempunit == 'F') {$conv= '(1.8) +32';}	
+	$interval = 1;
+	if ($tempunit == 'F') {$interval= '0.5';}
 	
 	
 	
@@ -41,7 +40,7 @@
 		var dataPoints2 = [];
 		$.ajax({
 			type: "GET",
-			url: "<?php echo date('Y')?>.csv",
+			url: "2019.csv",
 			dataType: "text",
 			cache:false,
 			success: function(data) {processData1(data),processData2(data);}
@@ -52,9 +51,9 @@
 		if(allLinesArray.length>0){
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].split(',');
-				if ( rowData[1] >-100)	
-				dataPoints1.push({label:rowData[0],y:parseFloat(rowData[7]<?php echo "*". $conv ?>)});
+				var rowData = allLinesArray[i].split(',');	
+				if ( rowData[1] >-100)					
+				dataPoints1.push({label:rowData[0],y:parseFloat(rowData[3]<?php echo "*". $conv ?>)});
 					
 					
 			}
@@ -66,10 +65,10 @@
 		if(allLinesArray.length>0){
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].split(',');
-				if ( rowData[1] >-100)		
-				dataPoints2.push({label: rowData[0],y:parseFloat(rowData[7]<?php echo "*". $conv ?>)});				
-				
+				var rowData = allLinesArray[i].split(',');	
+				if ( rowData[1] >-100)					
+				dataPoints2.push({label: rowData[0],y:parseFloat(rowData[4]<?php echo "*". $conv ?>)});
+							
 			}
 			drawChart(dataPoints1,dataPoints2 );
 		}
@@ -106,7 +105,7 @@
 			titleFontFamily: "arial",	
 			labelFontFamily: "arial",	
 			minimum:-1,		
-			interval:30	,
+			interval:50	,
 			intervalType:"day",
 			xValueType: "dateTime",	
 			crosshair: {
@@ -134,7 +133,7 @@
 		labelFontFamily: "Arial",
 		labelFontWeight: "bold",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(<?php if ($pressureunit=='inHg'){echo '1';} else echo '0';?>); 
+        return e.value .toFixed(0) + "°<?php echo $tempunit ;?>" ;  
          },		 
 		crosshair: {
 			enabled: true,
@@ -158,20 +157,29 @@
 		
  data: [
 		{
-			type: "column",
-			color:"#00A4B4",
+			type: "splineArea",
+			color:"#d85026",
 			markerSize:0,
 			showInLegend:false,
 			legendMarkerType: "circle",
 			lineThickness: 0,
-			markerType: "circle",
-			name:"Avg Wind Speed <?php echo $windunit;?>",
+			markerType: "none",
+			name:"Hi Dewpoint",
 			dataPoints: dataPoints1,
-			yValueFormatString:"##.#",
+			yValueFormatString:"##.## <?php echo $tempunit ;?>",
 		},
 		{
-			// not used
 			
+			type: "spline",			
+			color:"#00A4B4",
+			markerSize:0,
+			showInLegend:false,
+			legendMarkerType: "circle",
+			lineThickness: 1,
+			markerType: "none",
+			name:"Lo Dewpoint",
+			dataPoints: dataPoints2,
+			yValueFormatString:"##.## <?php echo $tempunit ;?>",
 		}
 
 		]

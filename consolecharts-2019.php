@@ -1,4 +1,4 @@
-<?php include_once('livedata.php');include_once('updater5.php');date_default_timezone_set($TZ);?>
+<?php include_once('livedata.php');include_once('updater6.php');date_default_timezone_set($TZ);?>
 <!DOCTYPE html><html><head>
 <title> <?php echo $stationName;?> Console Charts</title>
 <meta name="title" content="<?php echo $stationName;?> Console Charts">
@@ -72,10 +72,10 @@
        
 
 
-       <a href="consolecharts-2019.php" alt="<?php echo $themonth;?> Charts" title="<?php echo $themonth;?> Charts">
+       <a href="consolecharts-year.php" alt="<?php echo $themonth;?> Charts" title="<?php echo $themonth;?> Charts">
         <div class="weather34-toggleyellow">
         <div class="circleblob"></div> 
-       <div class="tog red">2019</div>
+       <div class="tog red"><?php echo strftime("%Y",time()); ?></div>
        </div></a>
 
        <chartpage><?php echo $lang['Updated'] ?> <green><?php 

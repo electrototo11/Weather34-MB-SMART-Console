@@ -15,7 +15,7 @@
 	
 	
 	include('preload.php');include('../console-settings.php');
-	$weatherfile = date('Y');
+	$weatherfile = date('F');
 	$conv = 1;
 	if ($windunit == 'mph') {$conv= '2.23694';}
 	else if ($windunit == 'm/s') {$conv= '1';}
@@ -41,7 +41,7 @@
 		var dataPoints2 = [];
 		$.ajax({
 			type: "GET",
-			url: "<?php echo date('Y')?>.csv",
+			url: "2019.csv",
 			dataType: "text",
 			cache:false,
 			success: function(data) {processData1(data),processData2(data);}
@@ -53,8 +53,8 @@
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
-				if ( rowData[1] >-100)	
-				dataPoints1.push({label:rowData[0],y:parseFloat(rowData[7]<?php echo "*". $conv ?>)});
+				if ( rowData[1] >-100)
+				dataPoints1.push({label:rowData[0],y:parseFloat(rowData[6]<?php echo "*". $conv ?>)});
 					
 					
 			}
@@ -68,7 +68,8 @@
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[1] >-100)		
-				dataPoints2.push({label: rowData[0],y:parseFloat(rowData[7]<?php echo "*". $conv ?>)});				
+				dataPoints2.push({label: rowData[0],y:parseFloat(rowData[7]<?php echo "*". $conv ?>)});
+			
 				
 			}
 			drawChart(dataPoints1,dataPoints2 );
@@ -106,7 +107,7 @@
 			titleFontFamily: "arial",	
 			labelFontFamily: "arial",	
 			minimum:-1,		
-			interval:30	,
+			interval:50	,
 			intervalType:"day",
 			xValueType: "dateTime",	
 			crosshair: {
@@ -159,13 +160,13 @@
  data: [
 		{
 			type: "column",
-			color:"#00A4B4",
+			color:"#d85026",
 			markerSize:0,
 			showInLegend:false,
 			legendMarkerType: "circle",
 			lineThickness: 0,
 			markerType: "circle",
-			name:"Avg Wind Speed <?php echo $windunit;?>",
+			name:"Max Wind Speed <?php echo $windunit;?>",
 			dataPoints: dataPoints1,
 			yValueFormatString:"##.#",
 		},

@@ -15,7 +15,7 @@
 	
 	
 	include('preload.php');include('../console-settings.php');
-	$weatherfile = date('Y');
+	$weatherfile = 2019;
 	$conv = 1;
 	if ($windunit == 'mph') {$conv= '2.23694';}
 	else if ($windunit == 'm/s') {$conv= '1';}
@@ -41,7 +41,7 @@
 		var dataPoints2 = [];
 		$.ajax({
 			type: "GET",
-			url: "<?php echo date('Y')?>.csv",
+			url: "2019.csv",
 			dataType: "text",
 			cache:false,
 			success: function(data) {processData1(data),processData2(data);}
@@ -106,7 +106,7 @@
 			titleFontFamily: "arial",	
 			labelFontFamily: "arial",	
 			minimum:-1,		
-			interval:30	,
+			interval:50	,
 			intervalType:"day",
 			xValueType: "dateTime",	
 			crosshair: {

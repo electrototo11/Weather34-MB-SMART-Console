@@ -38,25 +38,16 @@ echo "<div class=tempconverter1><div class=tempmodulehome0-5c><blue>". $weather[
 
 <div class=theraingap>
 <div class=thetrendboxblue>
-<?php if($meteobridgeapi[124]=='--'){?>
-<?php echo $lastMonth = date('F', strtotime("-1 month")) .$lastMonth; ?>
- <?php echo "&nbsp;<blue>".$weather["rainlastmonth"]."</blue>&nbsp;<smalltempunit2>".$weather["rain_units"]?></smalltempunit2>
-<?php ;}?>
-<?php if($meteobridgeapi[124]>0){  
-  echo $lang['Rainfall']."&nbsp;"  ;
-if ($seconds_ago >= 172800) {echo '<blue>'.intval($seconds_ago / 86400) . ' </blue>&nbsp;'.$lang['Days'].'</smalltempunit2></blue>
-    ';}
-else if ($seconds_ago >= 86400) {echo '<blue>'.intval($seconds_ago / 86400) . ' </blue>&nbsp;'.$lang['Day'].'</smalltempunit2></blue>
-    ';}
-else if ($seconds_ago >= 7200) {echo '<blue>'.intval($seconds_ago / 3600) . ' </blue>&nbsp;'.$lang['Hours'].'</smalltempunit2></blue>
-    ';}
-else if ($seconds_ago >= 3600) {echo '<blue>'.intval($seconds_ago / 3600) . ' </blue>&nbsp;'.$lang['Hour'].'</smalltempunit2></blue>
-    ';}
-else if ($seconds_ago > 60) {echo '<blue>'.intval($seconds_ago / 60) . ' </blue>&nbsp;'.$lang['Minutes'].'</smalltempunit2></blue>
-    ';}
-else if ($seconds_ago <= 60) {echo '<blue>'.intval($seconds_ago / 60) . ' </blue>&nbsp;'.$lang['Minute'].'</smalltempunit2></blue>
-    ';}
-echo $lang['Ago'];
-}
+<?php
+  if ($seconds_ago >= 86400) {    
+  echo $lang['Yesterday'].'&nbsp;<blue>'.$weather["rainydmax"]. '</blue>&nbsp;<smalltempunit2>'.$weather["rain_units"].'</smalltempunit2>';}
+  else if ($seconds_ago >= 7200) {   
+  echo $lang['Rainfall'].'&nbsp;<blue>'.intval($seconds_ago / 3600) .'</blue>&nbsp;'.$lang['Hours'];echo "&nbsp;".$lang['Ago'];}
+  else if ($seconds_ago >= 3600) {
+  echo $lang['Rainfall'].'&nbsp;<blue>'.intval($seconds_ago / 3600) .'</blue>&nbsp;'.$lang['Hour'];echo "&nbsp;".$lang['Ago'];}
+  else if ($seconds_ago > 60) {
+  echo $lang['Rainfall'].'&nbsp;<blue>'.intval($seconds_ago / 60) .'</blue>&nbsp;'.$lang['Minutes'];echo "&nbsp;".$lang['Ago'];}
+  else if ($seconds_ago <= 60) {
+  echo $lang['Rainfall'].'&nbsp;<blue>'.intval($seconds_ago / 3600) .'</blue>&nbsp;'.$lang['Minute'];echo "&nbsp;".$lang['Ago'];}
 ?>
 </div></div>
