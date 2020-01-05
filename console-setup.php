@@ -1,7 +1,20 @@
+<?php 
+    ####################################################################################################
+	#	PART OF THE WEATHER34 DESIGNED TEMPLATES FOR METEOBRIDGE OWNERS				                   #
+	# https://weather34.com/homeweatherstation/index.html 									           # 
+	# 	                                                                                               #
+	# 	Release: January 2020               				  	                                       #
+	# 	Standalone Console Version Setup Screen                                                        #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
+
+?>
+<!DOCTYPE html><html><head>
+<title>Weather34 Console Setup Screen    </title>
+<meta name="title" content="Weather34 Console Setup Screen">
 <?php
 include('console-settings.php');
 if (isset($_POST["Submit"])) {
-
 $string = '<?php
 $unit = "' . $_POST["unit"] . '";
 $metric = ' . $_POST["metric"] . ';
@@ -59,7 +72,7 @@ $clockformat    = "' . $_POST["clockformat"] . '";
                             <input name="passwd" type="password" class="input-button" /> <input type="submit" name="submit_pwd" value="Login " class="modal-button" />
                 </form>
                 </center>
-                <?php echo "2015-"; ?><?php echo date('Y'); ?> &copy;</a> WEATHER34 Console</span></span></span>
+                <?php echo "2015-"; ?><?php echo date('Y'); ?> &copy;</a> WEATHER34 Stand Alone Console</span></span></span>
                 <br><br>
             <?php
             }
@@ -71,11 +84,11 @@ $clockformat    = "' . $_POST["clockformat"] . '";
                 if (isset($_POST['submit_pwd'])) {
                     $pass = isset($_POST['passwd']) ? $_POST['passwd'] : '';
                     if ($pass != $Password) {
-                        showForm("Alternative Weather34 Console Setup");
+                        showForm("Stand Alone Weather34 Console Setup");
                         exit();
                     }
                 } else {
-                    showForm("Alternative Weather34 Console Setup");
+                    showForm("Stand Alone Weather34 Console Setup");
                     exit();
                 }
                 ?>
@@ -88,7 +101,7 @@ $clockformat    = "' . $_POST["clockformat"] . '";
 
                 <br>
 
-                Welcome you have logged into the <br>WEATHER<oblue>34</oblue> <br>Alternative Console setup screen
+                Welcome you have logged into the <br>WEATHER<oblue>34</oblue> <br>Stand Alone Console setup screen
                 </span>
             </div>
     </div>

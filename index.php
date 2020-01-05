@@ -15,27 +15,17 @@ include_once('livedata.php');include_once('updater2.php');
 <meta name="description" content="Providing current weather conditions for <?php echo $stationName?>">
 <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=yes">
 <meta name="mobile-web-app-capable" content="yes">
-<link rel="mask-icon" href="safari-pinned-tab.svg" color="#01a4b4">
-<meta name="apple-mobile-web-app-title" content="Weather34 Console">
-<meta name="application-name" content="Weather34 Console">
-<link rel="apple-touch-icon" sizes="57x57" href="appicons/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="appicons/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="appicons/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="appicons/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="appicons/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="appicons/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="appicons/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="appicons/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="appicons/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="appicons/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="appicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="appicons/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="appicons/favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="appicons/ms-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
-<meta name="msapplication-TileColor" content="#f8f8f8">
+<meta name="apple-mobile-web-app-title" content="Weather34">
+<meta name="application-name" content="Weather34">
 <link href="console-<?php echo $theme?>.css?version=<?php echo filemtime('console-'.$theme.'.css')?>" rel="stylesheet prefetch">
 <link rel="preload" href="fonts/clock3-webfont.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="fonts/verbatim-regular.woff" as="font" type="font/woff" crossorigin>
@@ -66,7 +56,6 @@ include_once('livedata.php');include_once('updater2.php');
  
     <div class="nav">
     <a href="console-setup.php" target="_blank" class="consolesetup" alt="Setup Screen" title="Setup Screen"> <?php echo $settingsicon ?></a>
-
     <a class="consoleunits" href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
       <?php
         if ($theme == 'dark') {echo '<div class="weather34-toggle">
@@ -84,15 +73,11 @@ include_once('livedata.php');include_once('updater2.php');
   if ($units != 'us') {echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
     <div class="weather34-togglegreen">
       <div class="circleblob"></div> 
-     <div class="tog red">&deg;F</div>
-     </div>
-    
-    </a> '; }
+     <div class="tog red">&deg;F</div></div></a>'; }
   if ($units != 'metric') {echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
     <div class="weather34-toggleblue">
     <div class="circleblob"></div> 
-   <div class="tog red">&deg;C</div>
-   </div></a>';}
+   <div class="tog red">&deg;C</div></div></a>';}
   if ($units!='uk') {
     echo '<a href="?units=uk" alt="UK Units" title="UK Units"> 
     <div class="weather34-toggleblue">
@@ -106,19 +91,16 @@ include_once('livedata.php');include_once('updater2.php');
    <div class="tog red">M/S</div></div></a>';
   }  
 ?>
-
 <a href="consolecharts.php" alt="Daily Charts" title="Daily Charts">
         <div class="weather34-toggleyellow">
         <div class="circleblob"></div> 
        <div class="tog red">Charts</div>
        </div></a>
 
-
       <a class="desktoplink" href="#" alt="weather34 designed" title="weather34 designed">
       <div class="weather34-toggled">
         <div class="circleblob"></div> 
        <div class="tog red">&copy;weather34</div></div>
        <div class="logofooter"><img src="Wxsoft34-appsmall.png" width="25px" alt="weather34 &copy;2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>"></div></div>
-       </div> </a>
-     
+       </div> </a>     
  </body></html>

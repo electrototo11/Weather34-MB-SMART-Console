@@ -49,8 +49,8 @@ $lang['Sunday']                  = 'Sunday';
 //months
 $lang['January']                 = 'Jan';
 $lang['Febuary']                 = 'Feb';
-$lang['March']                   = 'March';
-$lang['April']                   = 'April';
+$lang['March']                   = 'Mar';
+$lang['April']                   = 'Apr';
 $lang['May']                     = 'May';
 $lang['June']                    = 'June';
 $lang['July']                    = 'July';
@@ -426,14 +426,5 @@ $lang['*Regional'] = '*Regional';
 $lang['*Warning Nearby'] = '*Warning Nearby';
 $lang['Recent Earthquake'] = 'Recent Earthquake';
 $lang['Regional Recent Earthquakes'] = 'Regional Recent Earthquakes';
-
-//uv
-$lang['Low Caution']='Low Caution';
-$lang['Moderate Caution']='Moderate Caution';
-$lang['High Caution']='High Risk';
-$lang['Very High Caution']='Very High Risk';
-$lang['Extreme Caution']='Extreme Caution';
-
-$lang['Chart Data']='Chart Data';
 
 ?>
