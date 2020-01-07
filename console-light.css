@@ -2133,6 +2133,35 @@ valuebeaufort {
     -o-border-radius:3px;
 }
 
+.modulecaptionrainrate {
+    position: relative;
+    left:-125px;
+    border-radius:10px;
+    background: #f8f8f8;
+    font-family: Headingtext;
+    max-width:140px;  
+    height:12px;  
+    font-size: 10px;
+    padding: 2px;  
+    padding-left:4px;  
+    padding-bottom:0;
+    line-height: 1.2;
+    align-items: left;
+    justify-content: left;    
+    top: 2px;
+    color: #545454;
+    box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+    -webkit-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+    -moz-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+    -ms-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+    -o-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+}
+
 .online,
 .online2 {
     position: absolute;
