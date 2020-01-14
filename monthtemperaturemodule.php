@@ -1,6 +1,6 @@
   
  <?php include('livedata.php');include('common.php');
- $file_live=file_get_contents("../mbridge/MBrealtimeupload.txt");
+ $file_live=file_get_contents("mbridge/MBrealtimeupload.txt");
  $meteobridgeapi=explode(" ",$file_live);	
  $weather["tempydmin"]=$meteobridgeapi[84];    
  $weather["tempmmax"]=$meteobridgeapi[86];    
