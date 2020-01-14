@@ -46,10 +46,11 @@ $weather['wetbulb']=$wetbulbx;
 	else if ($weather['wetbulb']<15){$wetbulbcolor= '#e6a141';}
 	else if ($weather['wetbulb']<25){$wetbulbcolor= '#ec5732';}
 	else if ($weather['wetbulb']<50){$wetbulbcolor= '#d35f50';}
-	$conv = 1;
-	if ($tempunit == 'F') {$conv= '(1.8) +32';}	
-	$max = 40;
-	if ($tempunit == 'F') {$max= '120';}	
+    $conv = 1;
+	if ($tempunit == 'F') {$conv= '(1.8) +32';}
+	$max = 50;
+	if ($tempunit == 'F') {$max= '120';}
+	else $max= '40';
 	$interval = 5;
 	if ($tempunit == 'F') {$interval= '10';}
 	

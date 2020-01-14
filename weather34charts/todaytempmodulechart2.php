@@ -40,16 +40,12 @@
 	else if ($weather["temp_avgtoday"]<25){$tempcolor= '#ec5732';}
 	else if ($weather["temp_avgtoday"]<50){$tempcolor= '#d35f50';}
 
-
-
-
 	$conv = 1;
-	if ($tempunit == 'F') {$conv= '(1.8) +32';}	
-	$max = 40;
-	if ($tempunit == 'F') {$max= '120';}	
+	if ($tempunit == 'F') {$conv= '(1.8) +32';}
+	$max = 50;
+	if ($tempunit == 'F') {$max= '120';}
 	$interval = 5;
 	if ($tempunit == 'F') {$interval= '10';}
-	
 	
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
