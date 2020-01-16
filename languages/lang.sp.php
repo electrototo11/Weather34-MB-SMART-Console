@@ -427,4 +427,13 @@ $lang['*Regional'] = '*Regionales';
 $lang['*Warning Nearby'] = '*Warning Nearby';
 $lang['Recent Earthquake'] = 'Recent Terremotos';
 $lang['Regional Recent Earthquakes'] = 'Terremotos Regionales';
+
+//uv
+$lang['Low Caution']='Riesgo Bajo';
+$lang['Moderate Caution']='Riesgo Moderado';
+$lang['High Caution']='Alto Riesgo';
+$lang['Very High Caution']='Alto Riesgo';
+$lang['Extreme Caution']='Riesgo Extremo';
+
+$lang['Chart Data']='Datos del Gráfico';
 ?>

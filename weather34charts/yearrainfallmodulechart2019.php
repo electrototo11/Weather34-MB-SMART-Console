@@ -70,7 +70,7 @@ else if ($raininterval>=0 && $rainunit == 'in'){$raininterval='1';}
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[1] >-100)		
-				dataPoints1.push({label:rowData[0],y:parseFloat(rowData[5]<?php echo "*". $conv ?>)});
+				dataPoints1.push({label:rowData[0],y:parseFloat(rowData[5]*<?php echo $conv ?>)});
 					
 					
 			}
@@ -84,7 +84,7 @@ else if ($raininterval>=0 && $rainunit == 'in'){$raininterval='1';}
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[1] >-100)		
-				dataPoints2.push({label: rowData[0],y:parseFloat(rowData[5]<?php echo "*". $conv ?>)});
+				dataPoints2.push({label: rowData[0],y:parseFloat(rowData[5]*<?php echo $conv ?>)});
 				
 				
 			}

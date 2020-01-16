@@ -66,7 +66,7 @@
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[4]>-1)
-					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[4]<?php echo "*". $conv ?>)});
+					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[4]*<?php echo $conv ?>)});
 			}
 		}
 		requestTempCsv();}function requestTempCsv(){}
@@ -78,7 +78,7 @@
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[8]>-1)
-					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[10]<?php echo "*". $conv ?>)});
+					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[10]*<?php echo $conv ?>)});
 				
 			}
 			drawChart(dataPoints1 , dataPoints2 );

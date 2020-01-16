@@ -53,7 +53,7 @@
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');	
 				if ( rowData[1] >-100)					
-				dataPoints1.push({label:rowData[0],y:parseFloat(rowData[3]<?php echo "*". $conv ?>)});
+				dataPoints1.push({label:rowData[0],y:parseFloat(rowData[3]*<?php echo $conv ?>)});
 					
 					
 			}
@@ -67,7 +67,7 @@
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');	
 				if ( rowData[1] >-100)					
-				dataPoints2.push({label: rowData[0],y:parseFloat(rowData[4]<?php echo "*". $conv ?>)});
+				dataPoints2.push({label: rowData[0],y:parseFloat(rowData[4]*<?php echo $conv ?>)});
 							
 			}
 			drawChart(dataPoints1,dataPoints2 );

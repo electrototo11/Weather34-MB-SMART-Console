@@ -53,7 +53,7 @@
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[2] >-50)
-					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[12]<?php echo "*". $conv ?>)});
+					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[12]*<?php echo $conv ?>)});
 			}
 		}
 		requestTempCsv();}function requestTempCsv(){}

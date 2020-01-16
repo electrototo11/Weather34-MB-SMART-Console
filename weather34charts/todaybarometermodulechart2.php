@@ -62,7 +62,7 @@
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[3] >999)
-					dataPoints1.push({label:rowData[1],y:parseFloat(rowData[3] <?php echo "*". $conv ?>)});		}
+					dataPoints1.push({label:rowData[1],y:parseFloat(rowData[3] *<?php echo $conv ?>)});		}
 		}
 		requestTempCsv();}function requestTempCsv(){}
 
@@ -73,7 +73,7 @@
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[3] >999)
-					dataPoints2.push({label:rowData[1],y:parseFloat(rowData[3]<?php echo "*". $conv ?>)});
+					dataPoints2.push({label:rowData[1],y:parseFloat(rowData[3]*<?php echo $conv ?>)});
 				
 			}
 			drawChart(dataPoints1 );
