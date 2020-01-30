@@ -2631,7 +2631,7 @@ iconcolor2 {
     font-size: 9px;
     margin-top: 188px;
     z-index: 99999;
-    color: var(--silver);
+    color: var(--white);
     font-family: Headingtext
 }
 
