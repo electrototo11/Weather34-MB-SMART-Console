@@ -49,6 +49,8 @@
     <li><div id=rain></div></li>
     <li><div id=barometer></div></li>
     <li><div id=uvindex></div></li>
+
+
     <li3><div id=
     <?php 
     if ($chartoption=='todayuvindexmodule.php'){echo "indoor";}

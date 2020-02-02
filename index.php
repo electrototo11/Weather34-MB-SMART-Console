@@ -35,8 +35,14 @@ include_once('livedata.php');include_once('updater2.php');
 </head>
 <body>
 <!-- weather34 NANOSD console flex layout -->
+<!-- weather34 NANOSD console flex layout -->
 <div class="fade-in">
 <div class="container">
+<div class="nav-top">   
+<div class="weather34-indoor"><?php echo $timeicon?> <div id="weather34clock4"></div></div>
+<div class="desktoplink2"><?php echo $headerlocation?> <?php echo $stationName?>
+<div class="online"><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;else echo $wireless?></div>
+</div></div> 
   <ul class="grid-container">
     <li><div id=temperature></div></li>
     <li><div id=humidity></div></li>
@@ -54,8 +60,8 @@ include_once('livedata.php');include_once('updater2.php');
   </ul>
 
  
-    <div class="nav">
-    <a href="console-setup.php" target="_blank" class="consolesetup" alt="Setup Screen" title="Setup Screen"> <?php echo $settingsicon ?></a>
+  <div class="nav-bottom">
+    <a href="console-setup.php" target="_blank" class="console/consolesetup" alt="Setup Screen" title="Setup Screen"> <?php echo $settingsicon ?></a>
     <a class="consoleunits" href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
       <?php
         if ($theme == 'dark') {echo '<div class="weather34-toggle">
@@ -67,7 +73,6 @@ include_once('livedata.php');include_once('updater2.php');
           <div class="circleblob"></div> 
          <div class="tog red">Dark</div>
          </div>';}?></a>
-
 
 <?php
   if ($units != 'us') {echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
@@ -91,16 +96,31 @@ include_once('livedata.php');include_once('updater2.php');
    <div class="tog red">M/S</div></div></a>';
   }  
 ?>
+
 <a href="consolecharts.php" alt="Daily Charts" title="Daily Charts">
         <div class="weather34-toggleyellow">
         <div class="circleblob"></div> 
-       <div class="tog red">Charts</div>
+        <div class="tog red">Charts</div>
        </div></a>
 
-      <a class="desktoplink" href="#" alt="weather34 designed" title="weather34 designed">
+
+<a href="outlookwu.php" data-lity alt="5 day Forecast" title="5 day Forecast">
+        <div class="weather34-toggledf">
+        <div class="circleblob"></div> 
+        <div class="tog red">Forecast</div>
+       </div></a>
+
+  <a href="outlookwutext.php" data-lity alt="Summary Forecast" title="Summary Forecast">
+        <div class="weather34-toggledsummary">
+        <div class="circleblob"></div> 
+        <div class="tog red">Summary</div>
+       </div></a>
+
+
+       <a class="desktoplink" href="info.html" data-lity alt="weather34 info console " title="info console">
       <div class="weather34-toggled">
         <div class="circleblob"></div> 
        <div class="tog red">&copy;weather34</div></div>
-       <div class="logofooter"><img src="Wxsoft34-appsmall.png" width="25px" alt="weather34 &copy;2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>"></div></div>
-       </div> </a>     
+       <div class="logofooter"><img src="Wxsoft34-appsmall.png" width="25px"height="25px" alt="weather34 &copy;2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>"></div></div>
+       </a></div> 
  </body></html>

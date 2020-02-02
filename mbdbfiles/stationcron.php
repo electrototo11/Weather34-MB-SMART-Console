@@ -1,25 +1,5 @@
 <?php
-include('../settings.php');
-// extras added march 23rd 2016 //
-date_default_timezone_set($TZ);
-$date = date_create();
-$w34header= array(
-            "X-API-KEY:".$metarapikey."",);
-$ch = curl_init();
-$filename2 = '../jsondata/metar34.txt';
-$complete_save_loc2 = $filename2;
-$fp2 = fopen($complete_save_loc2, 'wb');
-curl_setopt($ch, CURLOPT_URL,"https://api.checkwx.com/metar/".$icao1."/decoded");
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_HTTPHEADER,$w34header);
-curl_setopt($ch, CURLOPT_FILE, $fp2);
-$result = curl_exec ($ch);
-curl_close ($ch);
-?>
-
-
-<?php
+include('../console-settings.php');
 // weather34 weather underground  curl based
 $url4c = 'https://api.weather.com/v3/wx/forecast/daily/5day?geocode='.$lat.','.$lon.'&language='.$wulanguage.'&format=json&units='.$wuapiunit.'&apiKey='.$wuapikey ;
 $ch4c = curl_init($url4c);
@@ -34,19 +14,6 @@ curl_close($ch4c);
 fclose($fp4c);?>
 
 
-<?php // weather34 earthquakes curl based
-$url1 = 'https://www.seismicportal.eu/fdsnws/event/1/query?limit=10&lat='.$lat.'&lon='.$lon.'&maxradius=10&format=json&minmag=2';
-$ch1 = curl_init($url1);
-$filename1 = '../jsondata/eqnotification.txt';
-$complete_save_loc1 = $filename1;
-$fp1 = fopen($complete_save_loc1, 'wb');
-curl_setopt($ch1, CURLOPT_FILE, $fp1);
-curl_setopt($ch1, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($ch1, CURLOPT_HEADER, 0);
-curl_exec($ch1);
-curl_close($ch1);
-fclose($fp1);
-?>
 <?php // weather34 purple air quality  curl based
 if($purpleairhardware=='yes'){
 $url4 = 'https://www.purpleair.com/json?show='.$purpleairID.'';
@@ -59,18 +26,4 @@ curl_setopt($ch4, CURLOPT_HEADER, 0);
 curl_exec($ch4);
 curl_close($ch4);
 fclose($fp4);}
-?>
-
-<?php // weather34 luftdaten air quality  curl based
-if($luftdatenhardware=='yes'){
-$url9 = 'https://api.luftdaten.info/v1/sensor/'.$luftdatenID.'/';
-$ch9 = curl_init($url9);
-$filename9 = '../jsondata/luftdaten.txt';
-$complete_save_loc9 = $filename9;
-$fp9 = fopen($complete_save_loc9, 'wb');
-curl_setopt($ch9, CURLOPT_FILE, $fp9);
-curl_setopt($ch9, CURLOPT_HEADER, 0);
-curl_exec($ch9);
-curl_close($ch9);
-fclose($fp9);}
 ?>

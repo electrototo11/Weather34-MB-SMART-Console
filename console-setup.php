@@ -29,6 +29,12 @@ $UTC = "' . $_POST["UTC"] . '";
 $clockformat    = "' . $_POST["clockformat"] . '";
 $hemisphere   = "' . $_POST["hemisphere"] . '";
 $consoleforecast    = "' . $_POST['consoleforecast'] . '";
+$wuapikey = "' . $_POST["wuapikey"] . '";
+$wuapiunit   = "' . $_POST["wuapiunit"] . '";
+$wulanguage    = "' . $_POST['wulanguage'] . '";
+$purpleairID = "' . $_POST["purpleair"] . '";
+$purpleairhardware   = "' . $_POST["purpleairhardware"] . '";
+
 ';
 
     $fp = FOPEN("console-settings.php", "w") or die("Unable to open console-settings.php file check file permissions !");
@@ -602,7 +608,7 @@ $consoleforecast    = "' . $_POST['consoleforecast'] . '";
                                                 <path d="M13 2 L13 6 11 7 8 4 4 8 7 11 6 13 2 13 2 19 6 19 7 21 4 24 8 28 11 25 13 26 13 30 19 30 19 26 21 25 24 28 28 24 25 21 26 19 30 19 30 13 26 13 25 11 28 8 24 4 21 7 19 6 19 2 Z" />
                                                 <circle cx="16" cy="16" r="4" />
                                             </svg>
-                                            Show console forecast or Indoor Module (Choose Indoor if using Meteobridge Pro)<br></div>
+                                            If you have Purple Air Quality select weather34-airquality.php if not select weather34-sunmod.php <br></div>
                                         
                                             <br>
                                             <label name="unit"></label>
@@ -613,15 +619,107 @@ $consoleforecast    = "' . $_POST['consoleforecast'] . '";
                                             </svg>
                                             <select id="consoleforecast" name="consoleforecast" class="choose">
                                                 <option><?php echo $consoleforecast; ?></option>
-                                                <option>weather34-indoormod.php</option>
-                                                <option>weather34-davisforecast.php</option>
+                                                <option>weather34-airquality.php</option>
+                                                <option>weather34-sunmod.php</option>
+                                               
                                             </select>
 
                                                 <br><br>
                                             <p>
 
-</div>
-<p>
+
+                                          
+
+<span style="color:#F75C46;"><svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M16 14 L16 23 M16 8 L16 10" />
+    <circle cx="16" cy="16" r="14" />
+    </svg> Weather Underground API Forecast Options</span>
+    <div class="stationvalue"> Weather Underground API KEY (New API Version Key Required)</div>
+    <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#F05E40" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M12 30 L24 16 12 2" /></svg>
+    <input name="wuapikey" type="text" id="wuapikey" value="<?php echo $wuapikey; ?>" class="chooseapi">
+    <br> <span style="color:#777;">enter your Weather Underground API KEY <strong>8BXWEATHER34KEY123456789</strong></span>
+    <br><span style="color:#777;"><a href="https://www.wunderground.com/member/api-keys" title="https://www.wunderground.com/member/api-keys" target="_blank">login into https://www.wunderground.com/member/api-keys</a> to generate your new personal key.. </span>
+    <p>
+    <div class="stationvalue"> *important set units for Weather Underground API </div>
+    <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#F05E40" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M12 30 L24 16 12 2" /></svg>
+    <label name="wuapiunit"></label>
+    <select id="wuapiunit" name="wuapiunit" value="<?php echo $wuapiunit; ?>" class="choose1">
+            <option><?php echo $wuapiunit; ?></option>
+            <option>e</option>
+            <option>m</option>
+            <option>s</option>
+            <option>h</option>
+    </select>
+
+        <br><span style="color:#777;"> e = <span style="color:#cd5245;">Imperial(Non Metric) </span>
+            <br><span style="color:#777;"> m = <span style="color:#cd5245;">Metric </span>
+                <br><span style="color:#777;"> s = <span style="color:#cd5245;">m/s wind speed + metric(Scandinavia) </span>
+                    <br><span style="color:#777;"> h = <span style="color:#cd5245;">mph wind speed + metric(UK) </span>
+
+                        <p>
+                            <div class="weathersectiontitle">
+                                Choose the Weather Underground Forecast Language ..</div>
+                            <br>
+
+                            <div class="stationvalue">WU Forecast Language</div>
+                            <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#F05E40" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                <path d="M12 30 L24 16 12 2" />
+                            </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                <path d="M30 12 L16 24 2 12" />
+                            </svg>
+
+                            <label name="wulanguage"></label>
+                            <select id="wulanguage" name="wulanguage" class="choose1">
+                                <option><?php echo $wulanguage; ?></option>
+
+                                <option>ca-ES</option>
+                                <option>de-DE</option>
+                                <option>da-DK</option>
+                                <option>de-DE</option>
+                                <option>el-GR</option>
+                                <option>en-GB</option>
+                                <option>en-US</option>
+                                <option>es-AR</option>
+                                <option>es-ES</option>
+                                <option>fi-FI</option>
+                                <option>fr-FR</option>
+                                <option>hu-HU</option>
+                                <option>it-IT</option>
+                                <option>nl-NL</option>
+                                <option>no-NO</option>
+                                <option>pl-PL</option>
+                                <option>sv-SE</option>
+                                <option>tr-TR</option>
+                            </select> <br>
+
+                            <div class="stationvalue"> English en-GB is the default
+                            </div>
+
+                            <div class="seperator"></div>
+
+<span style="color:#F75C46;"> PURPLE AIR QUALITY INDEX option <BR>
+    * <span style="color:#777;">IMPORTANT TO NOTE <span style="color:#F75C46;">FOR PURPLE AIR OWNERS ONLY </span> </span></span> <br>
+<div class="stationvalue"> Do you have Purple Air Quality Hardware (yes or no) </div>
+<svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M12 30 L24 16 12 2" />
+</svg>
+
+<input name="purpleairhardware" type="text" id="purpleairhardware" value="<?php echo $purpleairhardware; ?>" class="choose">
+<br> <span style="color:#777;">enter yes or no(lowercase)</span>
+<P>
+    <div class="stationvalue"> Purple Air ID</div>
+    <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+        <path d="M12 30 L24 16 12 2" />
+    </svg>
+    <input name="purpleair" type="text" id="purpleair" value="<?php echo $purpleairID; ?>" class="choose">
+    <br> <svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <path d="M16 14 L16 23 M16 8 L16 10" />
+        <circle cx="16" cy="16" r="14" />
+    </svg> <span style="color:#777;">enter your <strong>PurpleAir </strong> station id example <strong><span style="color:rgba(86, 95, 103, 1.000);"> 1200</strong></span>
+</span> 
+ <p></div>
 
 <br>
                                         <div class="weatheroptions">
@@ -662,9 +760,4 @@ $consoleforecast    = "' . $_POST['consoleforecast'] . '";
                                                                 <br><br><span style="font-size:12px;color:#777;">
                                                                     <center><?php echo "2015-"; ?><?php echo date('Y'); ?> &copy;WEATHER34 Davis Alternative Console</center>
                                                                 </span>
-                                                            </p>
-                                        </p>
-                </form>
-            </p>
-        </div>
-    </div>
+                                                            </p>     </form> </div>  </div>
