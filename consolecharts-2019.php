@@ -37,6 +37,11 @@
 <!-- weather34 NANOSD console flex layout -->
 <div class="fade-in">
 <div class="container">
+<div class="nav-top">   
+<div class="weather34-indoor"><?php echo $timeicon?> <div id="weather34clock4"></div></div>
+<div class="desktoplink2"><a href="../index.php" alt="desktop version" title="desktop version"><?php echo $desktop?></a>
+<div class="online"><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;else echo $wireless?></div>
+</div></div> 
   <ul class="grid-container">
     <li><div id=temperature></div></li>    
     <li><div id=dewpoint></div></li>
@@ -51,7 +56,7 @@
     <li2><div id=time-date></div></li2>  
   </ul>
     <div class="nav">
-    <a href="index.php" class="consolesetup"><?php echo $backhome?></a>
+    <a href="consoledavis.php" class="consolesetup"><?php echo $backhome?></a>
     <a class="consoleunits" href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
       <?php
         if ($theme == 'dark') {echo '<div class="weather34-toggle">
@@ -69,7 +74,12 @@
        <div class="tog red"><?php echo $lang['Today'];?></div>
        </div></a>
 
-       
+       <a href="consolecharts-month.php" alt="Month Charts" title="Month Charts">
+        <div class="weather34-togglechartdate">
+        <div class="circleblob"></div> 
+       <div class="tog red"><?php echo date('F');?></div>
+       </div></a>
+
 
 
        <a href="consolecharts-year.php" alt="<?php echo $themonth;?> Charts" title="<?php echo $themonth;?> Charts">
@@ -79,7 +89,7 @@
        </div></a>
 
        <chartpage><?php echo $lang['Updated'] ?> <green><?php 
-       $dayfile=date('Y');$forecastime=filemtime('weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M %p",$forecastime);?>     
+       $dayfile=date('Y');$forecastime=filemtime('../weather34charts/2019.csv');echo strftime("%A %d %B %Y %l:%M %p",$forecastime);?>     
       </green></chartpage>
 
       <a class="desktoplink" href="#" alt="weather34 designed" title="weather34 designed">
