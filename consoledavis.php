@@ -39,10 +39,21 @@ include_once('livedata.php');include_once('updater2.php');
 <div class="fade-in">
 <div class="container">
 <div class="nav-top">   
-<div class="weather34-indoor"><?php echo $timeicon?> <div id="weather34clock4"></div></div>
-<div class="desktoplink2"><a href="../index.php" alt="desktop version" title="desktop version"><?php echo $desktop?></a>
+
+<div class="weather34-indoor">
+
+<?php echo $timeicon?> <div id="weather34clock4"></div>
+<div class="desktoplinkicon"><a href="../index.php" alt="desktop version" title="desktop version"><?php echo $desktop?></a>
+
+</div>
+</div>
+
+
+<div class="desktoplink3"><?php echo $headerlocation?> <?php echo $stationName?></div>
 <div class="online"><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;else echo $wireless?></div>
-</div></div> 
+
+
+</div>
 <ul class="grid-container">
     <li><div id=temperature></div></li>
     <li><div id=humidity></div></li>
@@ -74,7 +85,7 @@ include_once('livedata.php');include_once('updater2.php');
          <div class="tog red">Dark</div>
          </div>';}?></a>
 
-<?php
+<?php 
   if ($units=='us') {     
      echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
     <div class="weather34-toggleblue">
@@ -131,6 +142,24 @@ include_once('livedata.php');include_once('updater2.php');
     <div class="circleblob"></div> 
    <div class="tog red">&deg;C UK</div></div></a>';       
   }  
+  else if ($units==''){   
+    echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
+    <div class="weather34-togglegreen">
+      <div class="circleblob"></div> 
+     <div class="tog red">&deg;F mph</div></div></a>';    
+    echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
+   <div class="weather34-toggleblue">
+   <div class="circleblob"></div> 
+  <div class="tog red">&deg;C km/h</div></div></a>';  
+   echo '<a href="?units=uk" alt="UK Units" title="UK Units"> 
+   <div class="weather34-toggleblue">
+   <div class="circleblob"></div> 
+  <div class="tog red">&deg;C UK</div></div></a>';  
+   echo '<a  href="?units=scandinavia" alt="m/s wind" title="m/s wind"> 
+   <div class="weather34-toggleyellow">
+   <div class="circleblob"></div> 
+  <div class="tog red">&deg;C ms</div></div></a>';
+  }
 ?>
 
 <a href="consolecharts.php" alt="Daily Charts" title="Daily Charts">
