@@ -74,6 +74,7 @@ include_once('livedata.php');include_once('updater2.php');
          </div>';}?></a>
 
 <?php
+
   if ($units=='us') {     
      echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
     <div class="weather34-toggleblue">
@@ -130,6 +131,26 @@ include_once('livedata.php');include_once('updater2.php');
     <div class="circleblob"></div> 
    <div class="tog red">&deg;C UK</div></div></a>';       
   }  
+  else if ($units==''){   
+    echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
+    <div class="weather34-togglegreen">
+      <div class="circleblob"></div> 
+     <div class="tog red">&deg;F mph</div></div></a>';    
+    echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
+   <div class="weather34-toggleblue">
+   <div class="circleblob"></div> 
+  <div class="tog red">&deg;C km/h</div></div></a>';  
+   echo '<a href="?units=uk" alt="UK Units" title="UK Units"> 
+   <div class="weather34-toggleblue">
+   <div class="circleblob"></div> 
+  <div class="tog red">&deg;C UK</div></div></a>';  
+   echo '<a  href="?units=scandinavia" alt="m/s wind" title="m/s wind"> 
+   <div class="weather34-toggleyellow">
+   <div class="circleblob"></div> 
+  <div class="tog red">&deg;C ms</div></div></a>';
+  }
+
+
 ?>
 
 <a href="consolecharts.php" alt="Daily Charts" title="Daily Charts">
