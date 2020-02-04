@@ -45,7 +45,7 @@ function map($value, $fromLow, $fromHigh, $toLow, $toHigh)
     // Re-zero back to the to range
     return $tmpValue + $toLow;
 }
-$json_string             = file_get_contents("jsondata/purpleair.txt");
+$json_string             = file_get_contents("../jsondata/purpleair.txt");
 $parsed_json             = json_decode($json_string);
 $aqiweather["aqi"]       = number_format(pm25_to_aqi(($parsed_json->{'results'}[0]->{'PM2_5Value'} + $parsed_json->{'results'}[1]->{'PM2_5Value'}) / 2), 1);
 $aqiweather["aqiozone"]  = 'N/A';
@@ -94,7 +94,7 @@ else if ($aqiweather["aqi"]>=250){echo "<darkred>".$aqiweather["aqi"]."</darkred
 else if ($aqiweather["aqi"]>=200){echo "<red>".$aqiweather["aqi"]."</red>";}
 else if ($aqiweather["aqi"]>=150){echo "<red>".$aqiweather["aqi"]."</red>";}
 else if ($aqiweather["aqi"]>=100){echo "<orange>".$aqiweather["aqi"]."</orange";}
-else if ($aqiweather["aqi"]>=50){echo "<yellow".$aqiweather["aqi"]."</yellow>";}
+else if ($aqiweather["aqi"]>=50){echo "<yellow>".$aqiweather["aqi"]."</yellow>";}
 else if ($aqiweather["aqi"]>=0){echo "<green>".$aqiweather["aqi"]."</green>";}
 echo '<br>';
 
