@@ -226,8 +226,6 @@ else if($wuskydayTempHigh>12.7){echo '<yellow>'.number_format($wuskydayTempHigh,
 else if( $wuskydayTempHigh>=7){echo '<green>'.number_format($wuskydayTempHigh,0).'°</green>';}}
 echo '<br>';
 
-
-
 //lightning wu
 echo '<div class=wuahead>';
 if ($wuskythunder>0 )  {echo 'Thunderstorms expected '.$wuskydayTime.'';}
