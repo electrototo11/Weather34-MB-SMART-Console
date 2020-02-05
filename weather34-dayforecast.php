@@ -203,6 +203,8 @@ echo '<div class="wudesc">'.$wuskydayTime.'s Forecast</div>
 if ($wuskydaynight=='D'){echo '<img src="wuicons/'.$wuskydayIcon.'.svg" width="60" height="50" alt="'.$wuskydesc.'" title="'.$wuskydesc.'"></img>';}
 if ($wuskydaynight=='N'){echo '<img src="wuicons/nt_'.$wuskydayIcon.'.svg" width="60" height="50" alt="'.$wuskydesc.'" title="'.$wuskydesc.'"></img>';}
 // icon description
+$wuskydesc	=str_replace('Wind', 'Windy Conditions', $wuskydesc);
+$wuskydesc	=str_replace('/', ' ', $wuskydesc);
 echo '</div>
 <div class="wuicondesc">'.$wuskydesc.'</div><br>
 
@@ -225,6 +227,8 @@ else if($wuskydayTempHigh>19){echo '<orange>'.number_format($wuskydayTempHigh,0)
 else if($wuskydayTempHigh>12.7){echo '<yellow>'.number_format($wuskydayTempHigh,0).'°</yellow>';}
 else if( $wuskydayTempHigh>=7){echo '<green>'.number_format($wuskydayTempHigh,0).'°</green>';}}
 echo '<br>';
+
+
 
 //lightning wu
 echo '<div class=wuahead>';
