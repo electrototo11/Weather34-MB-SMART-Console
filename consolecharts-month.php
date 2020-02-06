@@ -35,6 +35,7 @@
 </head>
 <body>
 <!-- weather34 NANOSD console flex layout -->
+<div class="weather34-tablet">
 <div class="fade-in">
 <div class="container">
 <div class="nav-top">   
@@ -58,7 +59,7 @@
     <li2><div id=time-date></div></li2>  
   </ul>
     <div class="nav">
-    <a href="consoledavis.php" alt="previous page" title="previous page"><?php echo $backhome?></a>
+    <a href="index.php" alt="previous page" title="previous page"><?php echo $backhome?></a>
     <a class="consoleunits" href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
       <?php
         if ($theme == 'dark') {echo '<div class="weather34-toggle">

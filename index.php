@@ -35,6 +35,7 @@ include_once('livedata.php');include_once('updater2.php');
 </head>
 <body>
 <!-- weather34 NANOSD console flex layout -->
+<div class="weather34-tablet">
 <div class="fade-in">
 <div class="container">
 <div class="nav-top">  

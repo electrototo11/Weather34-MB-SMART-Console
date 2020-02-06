@@ -12,7 +12,7 @@ include_once('settings.php');include('livedata.php');
 	####################################################################################################
 
 
-	//original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
+	//original weather34 script original svg/php by weather34 2015-2019 clearly marked as original by weather34//
 	
 //start the wu output
 $json='jsondata/wuforecast.txt';
@@ -407,7 +407,7 @@ else {
   <title>Weather34 Weather Underground Summary Forecast For <?php echo $stationlocation ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-@font-face{font-family:weathertext2;src:url(css/fonts/verbatim-regular.woff) format("woff"),url(fonts/verbatim-regular.woff2) format("woff2"),url(fonts/verbatim-regular.ttf) format("truetype")}
+@font-face{font-family:weathertext2;src:url(fonts/verbatim-regular.woff) format("woff"),url(fonts/verbatim-regular.woff2) format("woff2"),url(fonts/verbatim-regular.ttf) format("truetype")}
 html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-serif;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;}
 .grid { 
   display: grid;
@@ -468,8 +468,8 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 //summary
 	 echo '<div class=greydesc>'. $wuskydesc.'</div>';
 	 echo"<div class=iconpos> ";      		  			  
-	 if ($wuskydaynight=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon.'.svg" width="30" class="iconpos"></img></div>';}
-	 if ($wuskydaynight=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon.'.svg" width="30" class="iconpos"></img></div>';}	 
+	 if ($wuskydaynight=='D'){echo '<img src="wuicons/'.$wuskydayIcon.'.svg" width="30" class="iconpos"></img></div>';}
+	 if ($wuskydaynight=='N'){echo '<img src="wuicons/nt_'.$wuskydayIcon.'.svg" width="30" class="iconpos"></img></div>';}	 
 	 echo '<div class=summarydesc>'. $wusummary.'</div>';
 	 //thunder
 	 echo '<div class=alertdesc>';
@@ -486,8 +486,8 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 //summary
 	 echo '<div class=greydesc>'. $wuskydesc1.'</div>';
 	 echo"<div class=iconpos> ";      		  			  
-	 if ($wuskydaynight1=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon1.'.svg" width="30" class="iconpos"></img></div>';}
-	 if ($wuskydaynight1=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon1.'.svg" width="30" class="iconpos"></img></div>';}	 
+	 if ($wuskydaynight1=='D'){echo '<img src="wuicons/'.$wuskydayIcon1.'.svg" width="30" class="iconpos"></img></div>';}
+	 if ($wuskydaynight1=='N'){echo '<img src="wuicons/nt_'.$wuskydayIcon1.'.svg" width="30" class="iconpos"></img></div>';}	 
 	 echo '<div class=summarydesc>'. $wusummary1.'</div>';
 	 //thunder
 	 echo '<div class=alertdesc>';		
@@ -505,8 +505,8 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 //summary
 	 echo '<div class=greydesc>'. $wuskydesc2.'</div>';
 	 echo"<div class=iconpos> ";      		  			  
-	 if ($wuskydaynight2=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon2.'.svg" width="30" class="iconpos"></img></div>';}
-	 if ($wuskydaynight2=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon2.'.svg" width="30" class="iconpos"></img></div>';}	 
+	 if ($wuskydaynight2=='D'){echo '<img src="wuicons/'.$wuskydayIcon2.'.svg" width="30" class="iconpos"></img></div>';}
+	 if ($wuskydaynight2=='N'){echo '<img src="wuicons/nt_'.$wuskydayIcon2.'.svg" width="30" class="iconpos"></img></div>';}	 
 	 echo '<div class=summarydesc>'. $wusummary2.'</div>';
 	 //thunder	
 	 echo '<div class=alertdesc>';	
@@ -523,8 +523,8 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 //summary
 	 echo '<div class=greydesc>'. $wuskydesc3.'</div>';
 	 echo"<div class=iconpos> ";      		  			  
-	 if ($wuskydaynight3=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon3.'.svg" width="30" class="iconpos"></img></div>';}
-	 if ($wuskydaynight3=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon3.'.svg" width="30" class="iconpos"></img></div>';}	 
+	 if ($wuskydaynight3=='D'){echo '<img src="wuicons/'.$wuskydayIcon3.'.svg" width="30" class="iconpos"></img></div>';}
+	 if ($wuskydaynight3=='N'){echo '<img src="wuicons/nt_'.$wuskydayIcon3.'.svg" width="30" class="iconpos"></img></div>';}	 
 	 echo '<div class=summarydesc>'. $wusummary3.'</div>';
 	 //thunder
 	 echo '<div class=alertdesc>';		
@@ -542,8 +542,8 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 //summary
 	 echo '<div class=greydesc>'. $wuskydesc4.'</div>';
 	 echo"<div class=iconpos> ";      		  			  
-	 if ($wuskydaynight4=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon4.'.svg" width="30" class="iconpos"></img></div>';}
-	 if ($wuskydaynight4=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon4.'.svg" width="30" class="iconpos"></img></div>';}	 
+	 if ($wuskydaynight4=='D'){echo '<img src="wuicons/'.$wuskydayIcon4.'.svg" width="30" class="iconpos"></img></div>';}
+	 if ($wuskydaynight4=='N'){echo '<img src="wuicons/nt_'.$wuskydayIcon4.'.svg" width="30" class="iconpos"></img></div>';}	 
 	 echo '<div class=summarydesc>'. $wusummary4.'</div>';
 	//thunder
 	 echo '<div class=alertdesc>';		
@@ -560,8 +560,8 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 //summary
 	 echo '<div class=greydesc>'. $wuskydesc5.'</div>';
 	 echo"<div class=iconpos> ";      		  			  
-	 if ($wuskydaynight5=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon5.'.svg" width="30" class="iconpos"></img></div>';}
-	 if ($wuskydaynight5=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon5.'.svg" width="30" class="iconpos"></img></div>';}	 
+	 if ($wuskydaynight5=='D'){echo '<img src="wuicons/'.$wuskydayIcon5.'.svg" width="30" class="iconpos"></img></div>';}
+	 if ($wuskydaynight5=='N'){echo '<img src="wuicons/nt_'.$wuskydayIcon5.'.svg" width="30" class="iconpos"></img></div>';}	 
 	 echo '<div class=summarydesc>'. $wusummary5.'</div>';
 	 //thunder
 	 echo '<div class=alertdesc>';	
@@ -578,8 +578,8 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 //summary
 	 echo '<div class=greydesc>'. $wuskydesc6.'</div>';
 	 echo"<div class=iconpos> ";      		  			  
-	 if ($wuskydaynight6=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon6.'.svg" width="30" class="iconpos"></img></div>';}
-	 if ($wuskydaynight6=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon6.'.svg" width="30" class="iconpos"></img></div>';}	 
+	 if ($wuskydaynight6=='D'){echo '<img src="wuicons/'.$wuskydayIcon6.'.svg" width="30" class="iconpos"></img></div>';}
+	 if ($wuskydaynight6=='N'){echo '<img src="wuicons/nt_'.$wuskydayIcon6.'.svg" width="30" class="iconpos"></img></div>';}	 
 	 echo '<div class=summarydesc>'. $wusummary6.'</div>';
 	 //thunder	
 	 echo '<div class=alertdesc>';
@@ -596,8 +596,8 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 //summary
 	 echo '<div class=greydesc>'. $wuskydesc7.'</div>';
 	 echo"<div class=iconpos> ";      		  			  
-	 if ($wuskydaynight7=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon7.'.svg" width="30" class="iconpos"></img></div>';}
-	 if ($wuskydaynight7=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon7.'.svg" width="30" class="iconpos"></img></div>';}	 
+	 if ($wuskydaynight7=='D'){echo '<img src="wuicons/'.$wuskydayIcon7.'.svg" width="30" class="iconpos"></img></div>';}
+	 if ($wuskydaynight7=='N'){echo '<img src="wuicons/nt_'.$wuskydayIcon7.'.svg" width="30" class="iconpos"></img></div>';}	 
 	 echo '<div class=summarydesc>'. $wusummary7.'</div>';
 	 //thunder	
 	 echo '<div class=alertdesc>';
@@ -616,8 +616,8 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 //summary
 	 echo '<div class=greydesc>'. $wuskydesc8.'</div>';
 	 echo"<div class=iconpos> ";      		  			  
-	 if ($wuskydaynight8=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon8.'.svg" width="30" class="iconpos"></img></div>';}
-	 if ($wuskydaynight8=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon8.'.svg" width="30" class="iconpos"></img></div>';}	 
+	 if ($wuskydaynight8=='D'){echo '<img src="wuicons/'.$wuskydayIcon8.'.svg" width="30" class="iconpos"></img></div>';}
+	 if ($wuskydaynight8=='N'){echo '<img src="wuicons/nt_'.$wuskydayIcon8.'.svg" width="30" class="iconpos"></img></div>';}	 
 	 echo '<div class=summarydesc>'. $wusummary8.'</div>';
 	//thunder	
 	echo '<div class=alertdesc>';
@@ -637,8 +637,8 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 //summary
 	 echo '<div class=greydesc>'. $wuskydesc9.'</div>';
 	 echo"<div class=iconpos> ";      		  			  
-	 if ($wuskydaynight9=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon9.'.svg" width="30" class="iconpos"></img></div>';}
-	 if ($wuskydaynight9=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon9.'.svg" width="30" class="iconpos"></img></div>';}	 
+	 if ($wuskydaynight9=='D'){echo '<img src="wuicons/'.$wuskydayIcon9.'.svg" width="30" class="iconpos"></img></div>';}
+	 if ($wuskydaynight9=='N'){echo '<img src="wuicons/nt_'.$wuskydayIcon9.'.svg" width="30" class="iconpos"></img></div>';}	 
 	 echo '<div class=summarydesc>'. $wusummary9.'</div>';
 	//thunder
 	 echo '<div class=alertdesc>';	
@@ -654,8 +654,8 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 //summary
 	 echo '<div class=greydesc>'. $wuskydesc10.'</div>';
 	 echo"<div class=iconpos> ";      		  			  
-	 if ($wuskydaynight10=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon10.'.svg" width="30" class="iconpos"></img></div>';}
-	 if ($wuskydaynight10=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon10.'.svg" width="30" class="iconpos"></img></div>';}	 
+	 if ($wuskydaynight10=='D'){echo '<img src="wuicons/'.$wuskydayIcon10.'.svg" width="30" class="iconpos"></img></div>';}
+	 if ($wuskydaynight10=='N'){echo '<img src="wuicons/nt_'.$wuskydayIcon10.'.svg" width="30" class="iconpos"></img></div>';}	 
 	 echo '<div class=summarydesc>'. $wusummary10.'</div>';
 	 //thunder	
 	 echo '<div class=alertdesc>';
@@ -672,7 +672,7 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
   <!-- copyright needs to be kept please be ethical--->
   <article>
     <span style="font-size:8px;">
-  <?php echo $info?> CSS/SVG/PHP scripts were developed by <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:8px;">weather34.com</a>  for use in the weather34 template &copy; 2015-<?php echo date('Y');?></span> <br>
+  <?php echo $info?> SVG/PHP scripts were developed by <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:8px;">weather34.com</a>  for use in the weather34 template &copy; 2015-<?php echo date('Y');?></span> <br>
   <span style="font-size:8px;">
   <?php echo $info?> Data Forecast provided by <a href="https://www.wunderground.com/weather/api/" title="Weather Underground API" target="_blank">Weather Underground</a></span>
   <div class="mbsmartlogo"><img src="img/weather34-mbsmart-logo.svg" alt="weather34 mb-smart" title="weather34 mb-smart" width="30px"></div>
