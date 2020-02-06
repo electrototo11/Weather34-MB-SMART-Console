@@ -1,15 +1,14 @@
 <?php 
   ####################################################################################################
-	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											                           #
+	#	PART OF THE WEATHER34 DESIGNED TEMPLATES FOR METEOBRIDGE OWNERS				                           #
 	# https://weather34.com/homeweatherstation/index.html 											                       # 
 	# 	                                                                                               #
-	# 	Release: December 2019	            				  	                                               #
-	# 	  Console Version                                                                              #
+	# 	Release: January 2020               				  	                                               #
+	# 	Standalone Console Version                                                                     #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 include_once('livedata.php');include_once('updater2.php');
 ?>
-
 <!DOCTYPE html><html><head>
 <title><?php echo $stationName;?> </title>
 <meta name="title" content="<?php echo $stationName;?>">
@@ -21,7 +20,7 @@ include_once('livedata.php');include_once('updater2.php');
 <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 <link rel="manifest" href="favicon/site.webmanifest">
 <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="favicon.ico">
+<link rel="shortcut icon" href="favicon/favicon.ico">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-config" content="favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
@@ -36,25 +35,17 @@ include_once('livedata.php');include_once('updater2.php');
 </head>
 <body>
 <!-- weather34 NANOSD console flex layout -->
+<div class="weather34-tablet">
 <div class="fade-in">
 <div class="container">
-<div class="nav-top">   
-
+<div class="nav-top">  
 <div class="weather34-indoor">
-
 <?php echo $timeicon?> <div id="weather34clock4"></div>
 <div class="desktoplinkicon"><a href="../index.php" alt="desktop version" title="desktop version"><?php echo $desktop?></a>
-
-</div>
-</div>
-
-
+</div></div>
 <div class="desktoplink3"><?php echo $headerlocation?> <?php echo $stationName?></div>
-<div class="online"><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;else echo $wireless?></div>
-
-
-</div>
-<ul class="grid-container">
+<div class="online"><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;else echo $wireless?></div></div>
+  <ul class="grid-container">
     <li><div id=temperature></div></li>
     <li><div id=humidity></div></li>
     <li><div id=dewpoint></div></li>
@@ -85,7 +76,8 @@ include_once('livedata.php');include_once('updater2.php');
          <div class="tog red">Dark</div>
          </div>';}?></a>
 
-<?php 
+<?php
+
   if ($units=='us') {     
      echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
     <div class="weather34-toggleblue">
@@ -160,6 +152,8 @@ include_once('livedata.php');include_once('updater2.php');
    <div class="circleblob"></div> 
   <div class="tog red">&deg;C ms</div></div></a>';
   }
+
+
 ?>
 
 <a href="consolecharts.php" alt="Daily Charts" title="Daily Charts">
