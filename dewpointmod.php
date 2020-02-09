@@ -147,9 +147,19 @@ if ($weather["temp_units"]=='C' && $weather["dewymin"]>24) {
     
 
 ?>
-</smalltempunit2></div></div>
+</smalltempunit2></div></div></div>
 
-<div class="thetrendgap">
+<div class="heatcircleindoor"><div class="heatcircle-content"><?php echo $lang['Month'];?> <orange>Max</orange>-<blue>Min</blue></valuetextheading1>
+<?php //avg today
+echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["dewmmax"]."&deg;<smalltempunit2>".$weather["temp_units"]."</smalltempunit2>&nbsp;|&nbsp;";
+//non metric avg today
+echo $weather["dewmmin"]."&deg;<smalltempunit2>".$weather["temp_units"]."</smalltempunit2>";?>
+
+</div></div></div><div>
+
+
+
+<div class="thetrendgaptemp">
 <?php 
 //falling
 if($weather["dewpoint_trend"]<0){echo '<div class=thetrendboxblue>'.$lang['Falling'].'';echo '&nbsp;'.$fallingsymbolx.'&nbsp;<blue> '.number_format($weather["dewpoint_trend"],1).'</blue>&deg;';}

@@ -68,8 +68,16 @@ else if ($weather["humidity_ymin"]>=0){
 }
 ?>
 </smalltempunit2></div></div>
+</div>
 
-<div class="thetrendgap">
+<div class="heatcircleindoor"><div class="heatcircle-content"><?php echo $lang['Month'];?> <orange>Max</orange>-<blue>Min</blue></valuetextheading1>
+<?php //avg today
+echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["humidity_mmax"]."<smalltempunit2>%</smalltempunit2>&nbsp;|&nbsp;";
+//non metric avg today
+echo $weather["humidity_mmin"]."<smalltempunit2>%</smalltempunit2>";?>
+</div></div></div><div>
+
+<div class="thetrendgaptemp">
 <?php 
 //falling
 if($weather["humidity_trend"]<0){echo '<div class=thetrendboxblue>'.$lang['Falling'].'';echo '&nbsp;'.$fallingsymbolx.'&nbsp;<blue> '.number_format($weather["humidity_trend"],1).'</blue><smalltempunit2>%';}

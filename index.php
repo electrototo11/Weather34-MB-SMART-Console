@@ -41,8 +41,7 @@ include_once('livedata.php');include_once('updater2.php');
 <div class="nav-top">  
 <div class="weather34-indoor">
 <?php echo $timeicon?> <div id="weather34clock4"></div>
-<div class="desktoplinkicon"><a href="../index.php" alt="desktop version" title="desktop version"><?php echo $desktop?></a>
-</div></div>
+</div>
 <div class="desktoplink3"><?php echo $headerlocation?> <?php echo $stationName?></div>
 <div class="online"><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;else echo $wireless?></div></div>
   <ul class="grid-container">
@@ -128,6 +127,11 @@ include_once('livedata.php');include_once('updater2.php');
   <a href="outlookwutext.php" data-lity alt="Summary Forecast" title="Summary Forecast">
   <div class="weather34-sphere-red"></div>
   <bottom-bar-textfore>Summary</bottom-bar-textfore></a>
+
+  <div class="weather34-refreshicon">
+<a href="consoledavis.php" alt="refresh this dashboard " title="weather34 refresh this dashboard ">
+<?php echo $weather34refreshicon?></a></div>
+
 
   <a class="desktoplink" href="info.html" data-lity alt="weather34 info console " title="info console">      
        <div class="logofooter">

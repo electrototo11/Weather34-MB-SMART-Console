@@ -50,10 +50,14 @@ else if ($weather["solar"]>=0){
 <?php //lux
 echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["lux"]."<smalltempunit2>&nbsp;Lux";
 ?>
-</smalltempunit2></div></div>
+</smalltempunit2></div></div></div>
 
-
-<div class=thetrendgap>
+<div class="heatcircleindoor"><div class="heatcircle-content">&nbsp;&nbsp;&nbsp;<?php echo date('Y')?> <orange>Max</orange> UVI <blue><?php echo $weather["uvymaxtime"]?> </blue></valuetextheading1>
+<?php //uv max month
+echo "<div class=tempconverter1><div class=tempmodulehome15-20c>". $weather["uvymax"]."<smalltempunit2> &nbsp;UVI</smalltempunit2>";
+?>
+</div></div></div><div>
+<div class=thetrendgap style="margin-top:12px;">
 <?php 
 if ($weather["uv"]>=10) {echo "<div class=theuvpurple>".$uviclear.$lang['Extreme Caution'];}
 else if ($weather["uv"]>=8) {echo "<div class=theuvred>".$uviclear.$lang['Very High Caution'];}
