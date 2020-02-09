@@ -62,7 +62,7 @@ include_once('livedata.php');include_once('updater2.php');
 
   
   <div class="nav-bottom">
-  <a href="console/console-setup.php" target="_blank" alt="Setup Screen" title="Setup Screen"> <?php echo $settingsicon ?></a>
+  <a href="console-setup.php" target="_blank" alt="Setup Screen" title="Setup Screen"> <?php echo $settingsicon ?></a>
 
 <a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
   <?php
