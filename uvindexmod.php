@@ -53,8 +53,22 @@ echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["lux"]
 </smalltempunit2></div></div></div>
 
 <div class="heatcircleindoor"><div class="heatcircle-content">&nbsp;&nbsp;&nbsp;<?php echo date('Y')?> <orange>Max</orange> UVI <blue><?php echo $weather["uvymaxtime"]?> </blue></valuetextheading1>
-<?php //uv max month
-echo "<div class=tempconverter1><div class=tempmodulehome15-20c>". $weather["uvymax"]."<smalltempunit2> &nbsp;UVI</smalltempunit2>";
+<?php //uv max year
+if ($weather["uvymax"]>=10) {
+    echo "<div class=tempconverter1><div class=tempmodulehome-50-10c>". $weather["uvymax"]."<smalltempunit2> &nbsp;UVI</smalltempunit2>";
+}
+else if ($weather["uvymax"]>=8) {
+    echo "<div class=tempconverter1><div class=tempmodulehome30-35c>". $weather["uvymax"]."<smalltempunit2> &nbsp;UVI</smalltempunit2>";
+}
+else if ($weather["uvymax"]>=5) {
+    echo "<div class=tempconverter1><div class=tempmodulehome20-25c>". $weather["uvymax"]."<smalltempunit2> &nbsp;UVI</smalltempunit2>";
+}
+else if ($weather["uvymax"]>=3) {
+    echo "<div class=tempconverter1><div class=tempmodulehome10-15c>". $weather["uvymax"]."<smalltempunit2> &nbsp;UVI</smalltempunit2>";
+}
+else if ($weather["uvymax"]>=0) {
+    echo "<div class=tempconverter1><div class=tempmodulehome5-10c>". $weather["uvymax"]."<smalltempunit2> &nbsp;UVI</smalltempunit2>";
+}
 ?>
 </div></div></div><div>
 <div class=thetrendgap style="margin-top:12px;">
