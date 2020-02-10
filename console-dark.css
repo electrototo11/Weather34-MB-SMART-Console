@@ -409,7 +409,7 @@ li3 {
     line-height: 1;
     margin-top: -75px;
     position: absolute;
-    margin-left: 10px;
+    margin-left: 120px;
     font-family: headingtext;
     text-align: left
 }
@@ -422,7 +422,7 @@ li3 {
     line-height: 1;
     margin-top: -45px;
     position: absolute;
-    margin-left: 10px;
+    margin-left: 120px;
     font-family: headingtext;
     text-align: left
 }
@@ -495,7 +495,7 @@ li3 {
     font-family: weathertext2;
     font-size: 1.25rem;
     background-color: hsla(204, 31%, 21%, .429);
-    margin-left: 198px;
+    margin-left: 5px;
     margin-top: -72px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -504,7 +504,7 @@ li3 {
 }
 
 .till {
-    position: absolute;
+    position: relative;
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
@@ -512,7 +512,7 @@ li3 {
     z-index: 99999;
     color: var(--silver);
     font-family: weathertext2;
-    margin-left: 55px
+    left:-100px
 }
 
 belowthehorizon {
