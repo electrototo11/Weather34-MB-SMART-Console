@@ -1,3 +1,9 @@
+/*
+ * @Author: Weather34 (Brian Underdown)
+ * @Date:   2020-02-10 09:56:54
+ * @Last Modified by:   Weather34 (Brian Underdown)
+ * @Last Modified time: 2020-02-10 09:56:55
+ */
 @font-face {
     font-family: clock;
     src: url(fonts/clock3-webfont.woff) format("woff")
@@ -484,12 +490,12 @@ li3 {
     padding-bottom: 8px;
     background: 0 0;
     border-radius: 5px;
-    width: 5.55rem;
+    width: 6rem;
     height: 1.75rem;
     font-family: weathertext2;
     font-size: 1.25rem;
     background-color: hsla(204, 31%, 21%, .429);
-    margin-left: 185px;
+    margin-left: 198px;
     margin-top: -72px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -506,7 +512,7 @@ li3 {
     z-index: 99999;
     color: var(--silver);
     font-family: weathertext2;
-    margin-left: 45px
+    margin-left: 55px
 }
 
 belowthehorizon {
@@ -695,7 +701,7 @@ indoor-temp-trend2 {
     margin-left: 165px;
     margin-top: -5px;
     z-index: 99999;
-    width: 6.5rem;
+    width: 8rem;
     line-height: 2;
     height: 20px;
     border-radius: 2px;
@@ -725,7 +731,7 @@ indoor-temp-trend2 {
     margin-left: 165px;
     margin-top: 35px;
     z-index: 99999;
-    width: 6.5rem;
+    width: 8rem;
     line-height: 2;
     height: 20px;
     border-radius: 2px;
@@ -4623,6 +4629,11 @@ smallrainunit2b {
         display: none
     }
 
+    .indoorfeels-mod2,.indoorhumidity-mod2 {
+        margin-left:135px
+    
+    }
+
     .lity-iframe-container iframe {
         max-height: 500px
     }
@@ -4868,3 +4879,46 @@ darkred {
 purple {
     color: var(--purple)
 }
+
+
+
+.weather-toggle-theme { 
+    width: 52px;
+    height: 18px;    
+    border-radius: 100px;
+    position: relative;
+    display: inline-block;
+    top:-6px;
+    margin-right:5px;
+    color:#ffffff;
+    font-size:10px;
+    background: #35393b;   
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+  }
+
+
+  labelspan{    
+    margin-left:8px;
+    color:#fff;
+    font-size:10px;
+    line-height:2;
+    font-family: Headingtext;
+  }
+
+  labelspan:hover{  
+    color:#ccc;    
+  }
+  
+  .weather-toggle-theme:after {
+    z-index:999;
+    content: '';
+    position: absolute;  
+    top: 4px;
+    left: 37px;
+    width: 10px;
+    height: 10px;
+    background: rgb(196, 199, 204);
+    border-radius: 90px;   
+  } 
