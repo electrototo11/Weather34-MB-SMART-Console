@@ -258,9 +258,7 @@ echo "<br><div class=tempconverter1><div class=tempmodulehome5-10c>".$weather['w
 else if ($weather['windydmax']>=0 && $weather["wind_units"]=="kts") {
 echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>".$weather['windydmax']. "&nbsp;<smalltempunit2>".$weather["wind_units"];}
     
-//greater or less than today
-if ($weather['windydmax'] < $weather["winddmax"]){echo " ".$fallingsymbolsmall;}
-else if ($weather['windydmax'] > $weather["winddmax"]){echo " ".$risingsymbolsmall;}
+
 
 ?>
 </div>

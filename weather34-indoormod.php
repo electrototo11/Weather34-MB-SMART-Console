@@ -48,8 +48,8 @@ else if($weather["humidity_indoor"]>=40) {
 echo '<green>'.$hometemp.'&nbsp;</green>'.$lang['Humidity'].'&nbsp; <green>'.$weather["humidity_indoor"].'</green><smalltempunit2>%</smalltempunit2>';}
 else if($weather["humidity_indoor"]<40) {
 echo '<red>'.$hometemp.'&nbsp;</red>'.$lang['Humidity'].'&nbsp; <red>'.$weather["humidity_indoor"].'</red><smalltempunit2>%</smalltempunit2>';}
-if($weather["humidity_indoortrend"] >0)echo $risingsymbolsmall;
-else if($weather["humidity_indoortrend"]<0)echo $fallingsymbolsmall;?>
+if($weather["humidity_indoortrend"] >0)echo "&nbsp;".$risingsymbolsmall;
+else if($weather["humidity_indoortrend"]<0)echo "&nbsp;".$fallingsymbolsmall;?>
 </div>
 
 
@@ -74,6 +74,6 @@ else if($weather["temp_units"]=='F' && $weather["temp_indoor_feel"]>66.2) {
 echo '<orange>'.$hometemp.'</orange>&nbsp;'.$lang['Feelslike'].' &nbsp;<orange>'.$weather["temp_indoor_feel"].'</orange>&deg;';}
 else if($weather["temp_units"]=='F' && $weather["temp_indoor_feel"]>=59) {
 echo '<yellow>'.$hometemp.'</yellow>&nbsp;'.$lang['Feelslike'].' &nbsp;<yellow>'.$weather["temp_indoor_feel"].'</yellow>&deg;';}
-if($weather["temp_indoor_trend"] >0)echo $risingsymbolsmall;
-else if($weather["temp_indoor_trend"]<0)echo $fallingsymbolsmall;?>
+if($weather["temp_indoor_trend"] >0)echo "&nbsp;".$risingsymbolsmall;
+else if($weather["temp_indoor_trend"]<0)echo "&nbsp;".$fallingsymbolsmall;?>
 </div>
