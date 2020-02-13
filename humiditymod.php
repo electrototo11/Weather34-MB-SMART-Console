@@ -72,7 +72,7 @@ else if ($weather["humidity_ymin"]>=0){
 
 <div class="heatcircleindoor"><div class="heatcircle-content"><?php echo $lang['Month'];?> <orange>Max</orange>-<blue>Min</blue></valuetextheading1>
 <?php //avg today
-echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["humidity_mmax"]."<smalltempunit2>%</smalltempunit2>&nbsp;|&nbsp;";
+echo "<div class=tempconverter1><div class=tempmodulehomemaxmin>". $weather["humidity_mmax"]."<smalltempunit2>%</smalltempunit2>&nbsp;|&nbsp;";
 //non metric avg today
 echo $weather["humidity_mmin"]."<smalltempunit2>%</smalltempunit2>";?>
 </div></div></div><div>

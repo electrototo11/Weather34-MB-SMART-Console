@@ -75,7 +75,7 @@ echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["thb0s
 
 <div class="heatcircle-content" style="margin-top:5px"><?php echo $lang['Today']?> <orange>Max</orange>-<blue>Min</blue>
 <?php //avg today
-echo "<div class=tempconverter1><div class=tempmodulehome15-20c style='font-size:.6rem'>". $weather["barometer_max"]."<smalltempunit2>".$weather["barometer_units"]."</smalltempunit2>&nbsp;|&nbsp; ";
+echo "<div class=tempconverter1><div class=tempmodulehomemaxmin style='font-size:.6rem'>". $weather["barometer_max"]."<smalltempunit2>".$weather["barometer_units"]."</smalltempunit2>&nbsp;|&nbsp; ";
 echo $weather["barometer_min"]."<smalltempunit2>".$weather["barometer_units"] 
 ?></smalltempunit2></div></div>
 

@@ -1652,7 +1652,8 @@ bluesmall {
 .tempmodulehome30-35c,
 .tempmodulehome35-40c,
 .tempmodulehome40-50c,
-.tempmodulehome5-10c {
+.tempmodulehome5-10c,
+.tempmodulehomemaxmin {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1722,6 +1723,16 @@ valuetextheading1 {
 .tempmodulehome-10-0c {
     -webkit-box-shadow: inset 3px 0 0 0 #487da8;
     box-shadow: inset 3px 0 0 0 #487da8
+}
+
+.tempmodulehomemaxmin { 
+    margin-left:28px;
+    padding-left:3px; 
+    width: 7.35rem;
+    height: 1rem;
+    border-radius:0;     
+    border-right:3px solid var(--blue);
+    box-shadow: inset 3px 0 0 0 var(--orange), 5px 5px 8px rgba(0, 0, 0, 0.07);
 }
 
 .tempmodulehome0-5c {
