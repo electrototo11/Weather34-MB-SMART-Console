@@ -1,15 +1,23 @@
 <?php include('livedata.php');include('common.php');?>
 <div class="modulecaption2" ><?php echo $lang['Windspeed'];?></div>
-<div class="button button-dial">
-        
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>        
-        <div class="button-dial-top"></div>
-        <div class="button-dial-label">
+<div class="button button-dial">            
+<div class="button-dial-top"></div>
+<realfeel>
+<?php  //max last 10 mins
+echo '10" Max ';
+//kmh
+if($weather["wind_speed_max"]>=50 && $weather["wind_units"]=="km/h"){echo "<red>" .number_format($weather["wind_speed_max"],1)."</red>&nbsp;";}
+else if($weather["wind_speed_max"]>=30 && $weather["wind_units"]=="km/h"){echo "<orange>" .number_format($weather["wind_speed_max"],1)."</orange>&nbsp;";}
+else if($weather["wind_speed_max"]>=10 && $weather["wind_units"]=="km/h"){echo "<yellow>" .number_format($weather["wind_speed_max"],1)."</yellow>&nbsp;";}
+else if($weather["wind_speed_max"]>=0 && $weather["wind_units"]=="km/h"){echo "<green>" .number_format($weather["wind_speed_max"],1)."</green>&nbsp;";}
+//mph
+if($weather["wind_speed_max"]>=31 && $weather["wind_units"]=="mph"){echo "<red>" .number_format($weather["wind_speed_max"],1)."</red>&nbsp;";}
+else if($weather["wind_speed_max"]>=18.6 && $weather["wind_units"]=="mph"){echo "<orange>" .number_format($weather["wind_speed_max"],1)."</orange>&nbsp;";}
+else if($weather["wind_speed_max"]>=6.2 && $weather["wind_units"]=="mph"){echo "<yellow>" .number_format($weather["wind_speed_max"],1)."</yellow>&nbsp;";}
+else if($weather["wind_speed_max"]>=0 && $weather["wind_units"]=="mph"){echo "<green>" .number_format($weather["wind_speed_max"],1)."</green>&nbsp;";}
+?>
+</realfeel>
+ <div class="button-dial-label">
           
           <?php 
           //kmh
