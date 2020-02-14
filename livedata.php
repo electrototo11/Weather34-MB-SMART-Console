@@ -339,7 +339,7 @@ $windchillmintime2=date($dateFormat,strtotime($originalDatechill));
 	$weather["windymax"]		    = $meteobridgeapi[98]; //wind max year
 	$weather["windymaxtime"]		= $windymaxtime; //seconds
 	$weather["windymaxtime2"]		= $windymaxtime2; //seconds
-	$weather["winddmax"]		    = $meteobridgeapi[32]; //wind max year
+	$weather["winddmax"]		    = $meteobridgeapi[32]; //wind max 
 	$weather["winddmaxtime"]		= $winddmaxtime ; //seconds
 	
 	//rain

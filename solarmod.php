@@ -1,27 +1,33 @@
 <?php require_once('livedata.php');require_once('common.php');?>
-<div class="modulecaption"><?php echo $lang['Solarradiation']?></div>
-<div class="tempcontainer">
-<?php echo "<div class='maxdata'>&nbsp;&nbsp;&nbsp;&nbsp;". $weather["solardmax"]."<smalltempunit4>&nbsp;wm/2</smalltempunit4></div>";?> 
-<?php echo "<div class='mindata'>".$weather["solardmaxtime"]."</div>";?>
-<?php echo "<div class='hidata'>Max</div>";?> 
-<?php echo "<div class='lodata'>Time</div>";?>
-<?php 
-if ($weather["solar"]>800) {echo '<div class=windbox style="color:#d05f2d;font-size:2.1em" >'.number_format($weather["solar"],0)."<smalltempunit>&nbsp;wm/2";}
-else if ($weather["solar"]>=0){echo '<div class=windbox style="color:#e6a141;font-size:2.1em">'.number_format($weather["solar"],0)."<smalltempunit>&nbsp;wm/2";}
+<div class="modulecaption2"><?php echo $lang['Solarradiation']?></div>
+<div class="button button-dial">
+        
+        <span class="button-dial-spoke"></span>
+        <span class="button-dial-spoke"></span>
+        <span class="button-dial-spoke"></span>
+        <span class="button-dial-spoke"></span>
+        <span class="button-dial-spoke"></span>
+        <span class="button-dial-spoke"></span>        
+        <div class="button-dial-top"></div>
+        <div class="button-dial-label">
+          
+          <?php 
+          if ($weather["solar"]>=500){echo "<orange>".$weather["solar"]."</orange>";}
+          else if ($weather["solar"]>=0){echo "<yellow>".$weather["solar"]."</yellow>";}
+          ?>
+        </div>
+      </div>
+<div>
+
+<?php //wind unit
+echo "<tempman style='margin-top:-48px;padding-left:3px'>";
+if($weather["solar"]>500){ echo "<orange>".$tempman."</orange>";}
+else if($weather["solar"]>=0){ echo "<yellow>".$tempman."</yellow>";}
+echo "</tempman>";
 ?>
-</div></smalltempunit2>
+</div></div></div></div></div>
 
-<?php //uv indicator
-echo "<uvman>";
-if($weather["solar"]>500){ echo "<orange>".$solaricon."</orange>";}
-else if($weather["solar"]>0){ echo "<yellow>".$solaricon."</yellow>";}
-echo "</uvman>";
- ?>
-
-
-</div></div></div>
-
-
+</div></div></div></div></div>
 
 <div class="heatcircle"><div class="heatcircle-content">
 <?php  //solar
@@ -40,19 +46,32 @@ else if ($weather["solarymax"]>=0){
 }
 ?><smalltempunit2></div></div></div>
 
-<div class="heatcircle2"><div class="heatcircle-content"><valuetextheading1>&nbsp;<?php echo $lang['Luminance']?></valuetextheading1>
+<div class="heatcircle2"><div class="heatcircle-content"><valuetextheading1>&nbsp;Luminance Lux</valuetextheading1>
 <?php //lux
-echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["lux"]."<smalltempunit2>&nbsp;Lux";
+echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["lux"]."<smalltempunit2> &nbsp;Lux";
 ?>
-</smalltempunit2></div></div>
+</smalltempunit2></div></div></div>
+
+<div class="heatcircleindoor"><div class="heatcircle-content">&nbsp;&nbsp;&nbsp;<?php echo $lang['Month']?> <orange>Max</orange> <deepblue><?php echo $weather["solarmmaxtime"]?> </deepblue></valuetextheading1>
+<?php //SOLAR max year
+    echo "<div class=tempconverter1><div class=tempmodulehome10-15c>". $weather["solarmmax"]."<smalltempunit2> &nbsp;wm/2</smalltempunit2>";
+?>
+</div></div></div><div>
+
 
 
 <div class=thetrendgap>
-<?php 
-if ($weather["solar"]>=800) {echo "<div class=theuvpurple>".$uviclear.$lang['Good'];}
-else if ($weather["solar"]>=500) {echo "<div class=theuvred>".$uviclear.$lang['High'];}
-else if ($weather["solar"]>=200) {echo "<div class=theuvorange>".$uviclear.$lang['Moderate'];}
-else if ($weather["solar"]>=0) {echo "<div class=theuvyellow>".$uviclear.$lang['Low'];}
 
+<?php 
+if ($weather["solar"]>=800) {echo "<div class=theuvorange>Strong Radiation";}
+else if ($weather["solar"]>=300) {echo "<div class=theuvyellow>Moderate";}
+else echo "<div class=theuvgreen>Low Radiation";
 ?>
-</div></div></div></div>
+</div></div></div></div></div>
+<div class="maxwind">
+<?php  //Max-Min
+echo "Max ";
+echo "<yellow>".$weather["solardmax"]."</yellow>";
+echo " Time:";echo $weather["solardmaxtime"];
+?>
+</div>
