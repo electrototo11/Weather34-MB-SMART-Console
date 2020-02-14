@@ -121,7 +121,7 @@ li {
     min-width: 310px;
     max-width: 310px;
     padding: 0;
-    height: 185px;
+    height: 175px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background-color: var(--light);
@@ -943,7 +943,7 @@ steady {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-left: -150px;
+    margin-left: -145px;
     z-index: auto;
     position: absolute;
     margin-top: 25px;
@@ -974,7 +974,7 @@ steady {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-left: -140px;
+    margin-left: -143px;
     z-index: auto;
     position: absolute;
     margin-top: 25px;
@@ -1025,13 +1025,13 @@ steady {
 .thetrendgap {
     position: absolute;
     margin-top: 5px;
-    padding:12px;
+    padding:5px;
 }
 
 .thetrendgapwind {
     position: absolute;
     margin-top: 10px;
-    padding:12px;
+    padding:5px;
 }
 
 .theraingap {
@@ -1230,13 +1230,13 @@ blue {
 
 .heatcirclerain {
     margin-top: -10px;
-    margin-left: 120px
+    margin-left: 115px
 }
 
 .heatcirclerain1 {
     position: absolute;
     margin-top: -70px;
-    margin-left: -119px
+    margin-left: -118px
 }
 
 .rainratetextheading {
@@ -2526,7 +2526,7 @@ valuebeaufort {
     display: flex;
     position: relative;
     left: 85px;
-    top: -22px;
+    top: -20px;
     color: var(--silver);
     background-color: hsla(204, 31%, 21%, .429);
     font-family: Headingtext;
@@ -2592,7 +2592,7 @@ valuebeaufort {
     display: flex;
     position: relative;
     left: 185px;
-    top: -26px;
+    top: -22px;
     color: var(--silver);
     background-color: hsla(204, 31%, 21%, .429);
     font-family: Headingtext;
@@ -2614,7 +2614,7 @@ valuebeaufort {
     display: flex;
     position: relative;
     left: 85px;
-    top: -78px;
+    top: -75px;
     color: var(--silver);
     background-color: hsla(204, 31%, 21%, .429);
     font-family: Headingtext;
@@ -2646,7 +2646,7 @@ valuebeaufort {
     line-height: 1.2;
     align-items: center;
     justify-content: center;
-    top: -15px;
+    top: -10px;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -2668,7 +2668,7 @@ valuebeaufort {
     line-height: 1.2;
     align-items: center;
     justify-content: center;
-    top: -15px;
+    top: -9px;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -2679,7 +2679,7 @@ valuebeaufort {
 .modulecaptionrainrate {
     display: flex;
     position: relative;
-    left: -75px;
+    left: -65px;
     color: var(--silver);
     background-color: hsla(204, 31%, 21%, .429);
     font-family: Headingtext;
@@ -2690,7 +2690,7 @@ valuebeaufort {
     line-height: 1.2;
     align-items: center;
     justify-content: center;
-    top: -14px;
+    top: -10px;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -2701,8 +2701,8 @@ valuebeaufort {
 .modulecaptionrain {
     display: flex;
     position: relative;
-    left: 85px;
-    top: -27px;
+    left: 110px;
+    top: -23px;
     color: var(--silver);
     background-color: hsla(204, 31%, 21%, .429);
     font-family: Headingtext;
@@ -3258,7 +3258,7 @@ alertunit {
 .feels,
 .maxwind {
     position: absolute;
-    margin-top: -30px;
+    margin-top: -28px;
     margin-left: -145px;
     font-size: .6rem;
     font-family: weathertext2;
@@ -3273,6 +3273,20 @@ alertunit {
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+}
+
+realfeel {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 5px;
+    font-size: .6rem;
+    font-family: weathertext2;
+    width: 100px;
+    line-height: 1.4;
+    color: grey;    
+    border-radius: 3px;
+    color: var(--silver);
+    background-color: hsla(204, 31%, 21%, .429);
 }
 
 .frost {

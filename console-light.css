@@ -3172,6 +3172,20 @@ alertunit {
     background: #fff;
 }
 
+realfeel {
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 5px;
+    font-size: .6rem;
+    font-family: weathertext2;
+    width: 100px;
+    line-height: 1.4;
+    color: grey;    
+    border-radius: 3px;
+    color: var(--silver);    
+    z-index:100
+}
+
 .frost {
     position: absolute;
     margin-top: -76px;

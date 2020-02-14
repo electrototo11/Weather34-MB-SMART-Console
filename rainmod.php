@@ -40,7 +40,7 @@ if ($weather["rain_units"] =='mm'){echo "<rainunitmm>mm </rainunitmm>";}
 if ($weather["rain_units"] =='in'){echo "<rainunitin>in </rainunitin>";}
 ?></div>
 
-<div class="heatcirclerain" style="margin-left:100px;"><div class="heatcircle-content">
+<div class="heatcirclerain"><div class="heatcircle-content">
 <?php  //Current Year Total
 echo "<valuetextheading1>".date('Y')." ".$lang['Total']."</valuetextheading1><br><div class=tempconverter1><div class=tempmodulehome0-5c ><blue>".$weather["rain_year"]."</blue>&nbsp;<smalltempunit2>".$weather["rain_units"];
 ?><smalltempunit2></div></div></div>
