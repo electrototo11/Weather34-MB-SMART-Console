@@ -1764,9 +1764,20 @@ uvman {
 windindicator {
     position: absolute;
     width: 4rem;
-    height: 4rem;
-    margin-left: -88px;
-    margin-top: -22px
+    height: 4rem;    
+    margin-left:-120px;
+    margin-top:-40px;
+    z-index:100;
+    font-size:13px
+}
+
+unitindicator {
+   display:none
+}
+
+windtodaymax {
+    font-size: .55rem;
+    color: var(--body-text-light)
 }
 
 windtodaymax {

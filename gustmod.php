@@ -57,8 +57,44 @@ else if($weather["wind_speed_max"]>=0 && $weather["wind_units"]=="mph"){echo "<g
       </div>
 <div>
 
-<?php //wind unit
-echo "<tempman>";echo $weather["wind_units"];echo "</tempman>";?>
+<?php //unit
+echo "<unitindicator>";echo $weather["wind_units"];echo "</unitindicator>";?>
+
+<?php //man walking-running
+echo "<windindicator>";
+if($weather["wind_units"]=="km/h" && $weather["wind_gust_speed"]<10){ echo "<icon-0-5>".$walkingman."</icon-0-5>";}
+          else if($weather["wind_units"]=="km/h" && $weather["wind_gust_speed"]<30){ echo "<icon-6-10>".$walkingman."</icon-6-10>";}
+          else if($weather["wind_units"]=="km/h" && $weather["wind_gust_speed"]<40){ echo "<icon-11-15>".$walkingman."</icon-11-15>";}         
+          else if($weather["wind_units"]=="km/h" && $weather["wind_gust_speed"]<50){ echo "<icon-21-25>".$walkingman."</icon-21-25>";}
+          else if($weather["wind_units"]=="km/h" && $weather["wind_gust_speed"]<60){ echo "<icon-26-30>".$walkingman."</icon-26-30>";}
+          else if($weather["wind_units"]=="km/h" && $weather["wind_gust_speed"]<70){ echo "<icon-31-35>".$walkingman."</icon-31-35>";}
+          else if($weather["wind_units"]=="km/h" && $weather["wind_gust_speed"]<300){ echo "<icon-36-40>".$walkingman."</icon-36-40>";}
+
+          if($weather["wind_units"]=="mph" && $weather["wind_gust_speed"]<6.2){ echo "<icon-0-5>".$walkingman."</icon-0-5>";}
+          else if($weather["wind_units"]=="mph" && $weather["wind_gust_speed"]<18.6){ echo "<icon-6-10>".$walkingman."</icon-6-10>";}
+          else if($weather["wind_units"]=="mph" && $weather["wind_gust_speed"]<24.8){ echo "<icon-11-15>".$walkingman."</icon-11-15>";}         
+          else if($weather["wind_units"]=="mph" && $weather["wind_gust_speed"]<31){ echo "<icon-21-25>".$walkingman."</icon-21-25>";}
+          else if($weather["wind_units"]=="mph" && $weather["wind_gust_speed"]<37.2){ echo "<icon-26-30>".$walkingman."</icon-26-30>";}
+          else if($weather["wind_units"]=="mph" && $weather["wind_gust_speed"]<43.4){ echo "<icon-31-35>".$walkingman."</icon-31-35>";}
+          else if($weather["wind_units"]=="mph" && $weather["wind_gust_speed"]<300){ echo "<icon-36-40>".$walkingman."</icon-36-40>";}
+
+          if($weather["wind_units"]=="m/s" && $weather["wind_gust_speed"]<6.2){ echo "<icon-0-5>".$walkingman."</icon-0-5>";}
+          else if($weather["wind_units"]=="m/s" && $weather["wind_gust_speed"]<18.6){ echo "<icon-6-10>".$walkingman."</icon-6-10>";}
+          else if($weather["wind_units"]=="m/s" && $weather["wind_gust_speed"]<24.8){ echo "<icon-11-15>".$walkingman."</icon-11-15>";}         
+          else if($weather["wind_units"]=="m/s" && $weather["wind_gust_speed"]<31){ echo "<icon-21-25>".$walkingman."</icon-21-25>";}
+          else if($weather["wind_units"]=="m/s" && $weather["wind_gust_speed"]<37.2){ echo "<icon-26-30>".$walkingman."</icon-26-30>";}
+          else if($weather["wind_units"]=="m/s" && $weather["wind_gust_speed"]<43.4){ echo "<icon-31-35>".$walkingman."</icon-31-35>";}
+          else if($weather["wind_units"]=="m/s" && $weather["wind_gust_speed"]<300){ echo "<icon-36-40>".$walkingman."</icon-36-40>";}
+
+          if($weather["wind_units"]=="kts" && $weather["wind_gust_speed"]<6.2){ echo "<icon-0-5>".$walkingman."</icon-0-5>";}
+          else if($weather["wind_units"]=="kts" && $weather["wind_gust_speed"]<18.6){ echo "<icon-6-10>".$walkingman."</icon-6-10>";}
+          else if($weather["wind_units"]=="kts" && $weather["wind_gust_speed"]<24.8){ echo "<icon-11-15>".$walkingman."</icon-11-15>";}         
+          else if($weather["wind_units"]=="kts" && $weather["wind_gust_speed"]<31){ echo "<icon-21-25>".$walkingman."</icon-21-25>";}
+          else if($weather["wind_units"]=="kts" && $weather["wind_gust_speed"]<37.2){ echo "<icon-26-30>".$walkingman."</icon-26-30>";}
+          else if($weather["wind_units"]=="kts" && $weather["wind_gust_speed"]<43.4){ echo "<icon-31-35>".$walkingman."</icon-31-35>";}
+          else if($weather["wind_units"]=="kts" && $weather["wind_gust_speed"]<300){ echo "<icon-36-40>".$walkingman."</icon-36-40>";}
+
+echo "</windindicator>";?>
 </div></div></div></div></div>
 
 <div class="heatcircle"><div class="heatcircle-content">  

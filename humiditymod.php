@@ -1,15 +1,8 @@
 <?php include('livedata.php');include('common.php');?>
 <div class="modulecaption2"><?php echo $lang['Humidity']; ?></div>
 <div class="button button-dial">
-        
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>        
-        <div class="button-dial-top"></div>
-        <div class="button-dial-label">
+<div class="button-dial-top"></div>
+ <div class="button-dial-label">
           
           <?php 
           if($weather["humidity"]<30){ echo "<icon-26-30>".$weather["humidity"]."<smallhumidityunit>%</smallhumidityunit></icon-26-30>";}

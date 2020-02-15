@@ -65,6 +65,10 @@ else if($weather["temp_units"]=='F' && $weather["temp"]<300){ echo "<icon-41-45>
       </div>
 <div>
 
+<?php //unit
+echo "<unitindicator>&deg;";echo $weather["temp_units"];echo "</unitindicator>";?>
+
+
 <?php //feels like man
 echo "<tempman>";
 //c

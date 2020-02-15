@@ -1,18 +1,8 @@
 <?php include('livedata.php');include('common.php');?>
 <div class="modulecaption2"><?php echo $lang['Dewpoint']; ?> &deg;<?php echo $weather["temp_units"]?></div>
 <div class="button button-dial">
-        
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>        
-        <div class="button-dial-top"></div>
-        <div class="button-dial-label">
-
-
-          
+ <div class="button-dial-top"></div>
+  <div class="button-dial-label">
           <?php 
           if($weather["temp_units"]=='C' && $weather["dewpoint"]<-10){ echo "<icon-minus10>".$weather["dewpoint"]."</icon-minus10 >";}
 else if($weather["temp_units"]=='C' && $weather["dewpoint"]<-5){ echo "<icon-minus5>".$weather["dewpoint"]."</icon-minus5>";}
@@ -39,13 +29,13 @@ else if($weather["temp_units"]=='F' && $weather["dewpoint"]<86){ echo "<icon-26-
 else if($weather["temp_units"]=='F' && $weather["dewpoint"]<95){ echo "<icon-31-35>".$weather["dewpoint"]."</icon-31-35>";}
 else if($weather["temp_units"]=='F' && $weather["dewpoint"]<104){ echo "<icon-36-40>".$weather["dewpoint"]."</icon-36-40>";}
 else if($weather["temp_units"]=='F' && $weather["dewpoint"]<300){ echo "<icon-41-45>".$weather["dewpoint"]."</icon-41-45>";}
-          
-         
-          
-          ?>
+ ?>
         </div>
       </div>
 <div>
+
+<?php //unit
+echo "<unitindicator>&deg;";echo $weather["temp_units"];echo "</unitindicator>";?>
 
 <?php //feels like man
 echo "<tempman>";
