@@ -432,4 +432,15 @@ $lang['Very High Caution']='Hoog Risico';
 $lang['Extreme Caution']='Extreem Risico';
 
 $lang['Chart Data']='Grafiekgegevens';
+
+$lang['Cooler']='Cooler';
+$lang['Feels Warm']='Feels Warm';
+$lang['Discomfort']='Discomfort';
+$lang['Comfortable']='Comfortable';
+$lang['Feels Colder']='Feels Colder';
+
+$lang['Very Windy']='Very Windy';
+$lang['Windy']='Windy';
+$lang['Breezy']='Breezy';
+$lang['Light Winds']='Light Winds';
 ?>

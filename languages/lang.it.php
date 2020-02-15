@@ -437,4 +437,15 @@ $lang['Extreme Caution']='Rischio Estremo';
 
 $lang['Chart Data']='Dati del Grafico';
 
+$lang['Cooler']='Più fresco';
+$lang['Feels Warm']='Più caldo';
+$lang['Discomfort']='il disagio';
+$lang['Comfortable']='Confortevole';
+$lang['Feels Colder']='Freddo';
+
+$lang['Very Windy']='Ventoso';
+$lang['Windy']='Ventoso';
+$lang['Breezy']='Fresco';
+$lang['Light Winds']='Mite';
+
 ?>

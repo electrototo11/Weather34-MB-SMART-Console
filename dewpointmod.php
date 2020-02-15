@@ -5,17 +5,17 @@
 <realfeel>
 <?php  
 //C dewpoint feels
-if ($weather["temp_units"]=='C' && $weather["dewpoint"]>=20){ echo "Discomfort";}
-else if($weather["temp_units"]=='C' && $weather["dewpoint"]>=15){ echo "Feels Warm";}
-else if($weather["temp_units"]=='C' && $weather["dewpoint"]>=10){ echo "Comfortable";}
-else if($weather["temp_units"]=='C' && $weather["dewpoint"]>=5 ){ echo "Cooler";}
-else if($weather["temp_units"]=='C' && $weather["dewpoint"]>-50 ){ echo "Feels Colder";}
+if ($weather["temp_units"]=='C' && $weather["dewpoint"]>=20){ echo $lang['Discomfort'];}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]>=15){ echo $lang['Feels Warm'];}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]>=10){ echo $lang['Comfortable'];}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]>=5 ){ echo $lang['Cooler'];}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]>-50 ){ echo $lang['Feels Colder'];}
 
-if ($weather["temp_units"]=='F' && $weather["dewpoint"]>=68){ echo "Discomfort";}
-else if($weather["temp_units"]=='F' && $weather["dewpoint"]>=59){ echo "Feels Warm";}
-else if($weather["temp_units"]=='F' && $weather["dewpoint"]>=50){ echo "Comfortable";}
-else if($weather["temp_units"]=='F' && $weather["dewpoint"]>=41 ){ echo "Cooler";}
-else if($weather["temp_units"]=='F' && $weather["dewpoint"]>-100 ){ echo "Feels Colder";}
+if ($weather["temp_units"]=='F' && $weather["dewpoint"]>=68){ echo $lang['Discomfort'];}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]>=59){  $lang['Feels Warm'];}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]>=50){ echo $lang['Comfortable'];}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]>=41 ){ echo $lang['Cooler'];}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]>-100 ){ echo $lang['Feels Colder'];}
 ?>
 </realfeel>
 <div class="button-dial-label">
