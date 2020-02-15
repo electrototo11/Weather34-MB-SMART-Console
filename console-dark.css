@@ -3307,7 +3307,7 @@ alertunit {
 realfeel {
     position: absolute;
     top: 23px;
-    margin-left: 12px;
+    margin-left: 5px;
     font-size: .6rem;
     font-family: weathertext2;
     width: 100px;
@@ -4241,7 +4241,7 @@ button:focus {
     line-height: 1;
     top: 10px;
     position: absolute;
-    margin-left: 235px;
+    margin-left: 220px;
     font-family: headingtext;
     text-align: left;
     width:130px
