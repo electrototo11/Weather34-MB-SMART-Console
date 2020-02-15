@@ -79,37 +79,39 @@ echo "</indoortempman>";?>
 </div>
 
 <div class="indoorhumidity-mod2"> 
+<?php echo $lang['Humidity']?>&nbsp;
 <?php //indoor humidity
 if($weather["humidity_indoor"]>70) {
-echo '<blue>&nbsp;</blue>Humidity&nbsp; <blue>'.$weather["humidity_indoor"].'</blue><smalltempunit2>%</smalltempunit2>';}
+echo '<blue>'.$weather["humidity_indoor"].'</blue><smalltempunit2>%</smalltempunit2>';}
 else if($weather["humidity_indoor"]>=40) {
-echo '<green>&nbsp;</green>Humidity&nbsp; <green>'.$weather["humidity_indoor"].'</green><smalltempunit2>%</smalltempunit2>';}
+echo '<green>'.$weather["humidity_indoor"].'</green><smalltempunit2>%</smalltempunit2>';}
 else if($weather["humidity_indoor"]<40) {
-echo '<red>&nbsp;</red>Humidity&nbsp; <red>'.$weather["humidity_indoor"].'</red><smalltempunit2>%</smalltempunit2>';}
+echo '<red>'.$weather["humidity_indoor"].'</red><smalltempunit2>%</smalltempunit2>';}
 if($weather["humidity_indoortrend"] >0)echo "&nbsp;".$risingsymbolsmall;
 else if($weather["humidity_indoortrend"]<0)echo "&nbsp;".$fallingsymbolsmall;?>
 </div>
 
 <div class="indoorfeels-mod2"> 
+<?php echo $lang['Feelslike']?>&nbsp;
 <?php //indoor feels
 //c
 if($weather["temp_units"]=='C' && $weather["temp_indoor_feel"]<15) {
-echo '<blue></blue>&nbsp;Feels &nbsp;<blue>'.$weather["temp_indoor_feel"].'</blue>&deg;';}
+echo '<blue>'.$weather["temp_indoor_feel"].'</blue>&deg;';}
 else if($weather["temp_units"]=='C' && $weather["temp_indoor_feel"]>24) {
-echo '<red></red>&nbsp;Feels &nbsp;<red>'.$weather["temp_indoor_feel"].'</red>&deg;';}
+echo '<red>'.$weather["temp_indoor_feel"].'</red>&deg;';}
 else if($weather["temp_units"]=='C' && $weather["temp_indoor_feel"]>19) {
-echo '<orange></orange>&nbsp;Feels &nbsp;<orange>'.$weather["temp_indoor_feel"].'</orange>&deg;';}
+echo '<orange>'.$weather["temp_indoor_feel"].'</orange>&deg;';}
 else if($weather["temp_units"]=='C' && $weather["temp_indoor_feel"]>=15) {
-echo '<yellow></yellow>&nbsp;Feels &nbsp;<yellow>'.$weather["temp_indoor_feel"].'</yellow>&deg;';}
+echo '<yellow>'.$weather["temp_indoor_feel"].'</yellow>&deg;';}
 //f
 if($weather["temp_units"]=='F' && $weather["temp_indoor_feel"]<59) {
-echo '<blue></blue>&nbsp;Feels &nbsp;<blue>'.$weather["temp_indoor_feel"].'</blue>&deg;';}
+echo '<blue>'.$weather["temp_indoor_feel"].'</blue>&deg;';}
 else if($weather["temp_units"]=='F' && $weather["temp_indoor_feel"]>75.2) {
-echo '<red></red>&nbsp;Feels &nbsp;<red>'.$weather["temp_indoor_feel"].'</red>&deg;';}
+echo '<red>'.$weather["temp_indoor_feel"].'</red>&deg;';}
 else if($weather["temp_units"]=='F' && $weather["temp_indoor_feel"]>66.2) {
-echo '<orange></orange>&nbsp;Feels &nbsp;<orange>'.$weather["temp_indoor_feel"].'</orange>&deg;';}
+echo '<orange>'.$weather["temp_indoor_feel"].'</orange>&deg;';}
 else if($weather["temp_units"]=='F' && $weather["temp_indoor_feel"]>=59) {
-echo '<yellow></yellow>&nbsp;Feels &nbsp;<yellow>'.$weather["temp_indoor_feel"].'</yellow>&deg;';}
+echo '<yellow>'.$weather["temp_indoor_feel"].'</yellow>&deg;';}
 if($weather["temp_indoor_trend"] >0)echo "&nbsp;".$risingsymbolsmall;
 else if($weather["temp_indoor_trend"]<0)echo "&nbsp;".$fallingsymbolsmall;?>
 </div>
