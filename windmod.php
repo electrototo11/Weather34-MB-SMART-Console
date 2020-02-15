@@ -4,17 +4,32 @@
 <div class="button-dial-top"></div>
 <realfeel>
 <?php  //average last 10 mins
-echo '15" Avg ';
 //kmh
-if($weather["wind_speed_avg15"]>=50 && $weather["wind_units"]=="km/h"){echo "<red>" .number_format($weather["wind_speed_avg15"],1)."</red>&nbsp;";}
-else if($weather["wind_speed_avg15"]>=30 && $weather["wind_units"]=="km/h"){echo "<orange>" .number_format($weather["wind_speed_avg15"],1)."</orange>&nbsp;";}
-else if($weather["wind_speed_avg15"]>=10 && $weather["wind_units"]=="km/h"){echo "<yellow>" .number_format($weather["wind_speed_avg15"],1)."</yellow>&nbsp;";}
-else if($weather["wind_speed_avg15"]>=0 && $weather["wind_units"]=="km/h"){echo "<green>" .number_format($weather["wind_speed_avg15"],1)."</green>&nbsp;";}
+if($weather["wind_speed"]>=30 && $weather["wind_units"]=="km/h"){echo "Very Windy;";}
+else if($weather["wind_speed"]>=20 && $weather["wind_units"]=="km/h"){echo "Windy";}
+else if($weather["wind_speed"]>=10 && $weather["wind_units"]=="km/h"){echo "Breezy";}
+else if($weather["wind_speed"]>=5 && $weather["wind_units"]=="km/h"){echo "Light Winds";}
+else if($weather["wind_speed"]>=0 && $weather["wind_units"]=="km/h"){echo "Calm";}
 //mph
-if($weather["wind_speed_avg15"]>=31 && $weather["wind_units"]=="mph"){echo "<red>" .number_format($weather["wind_speed_avg15"],1)."</red>&nbsp;";}
-else if($weather["wind_speed_avg15"]>=18.6 && $weather["wind_units"]=="mph"){echo "<orange>" .number_format($weather["wind_speed_avg15"],1)."</orange>&nbsp;";}
-else if($weather["wind_speed_avg15"]>=6.2 && $weather["wind_units"]=="mph"){echo "<yellow>" .number_format($weather["wind_speed_avg15"],1)."</yellow>&nbsp;";}
-else if($weather["wind_speed_avg15"]>=0 && $weather["wind_units"]=="mph"){echo "<green>" .number_format($weather["wind_speed_avg15"],1)."</green>&nbsp;";}
+if($weather["wind_speed"]>=18 && $weather["wind_units"]=="mph"){echo "Very Windy;";}
+else if($weather["wind_speed"]>=12.4 && $weather["wind_units"]=="mph"){echo "Windy";}
+else if($weather["wind_speed"]>=6.2 && $weather["wind_units"]=="mph"){echo "Breezy";}
+else if($weather["wind_speed"]>=3.1 && $weather["wind_units"]=="mph"){echo "Light Winds";}
+else if($weather["wind_speed"]>=0 && $weather["wind_units"]=="mph"){echo "Calm";}
+
+//ms
+if($weather["wind_speed"]>=8.33 && $weather["wind_units"]=="m/s"){echo "Very Windy;";}
+else if($weather["wind_speed"]>=5.5 && $weather["wind_units"]=="m/s"){echo "Windy";}
+else if($weather["wind_speed"]>=2.7 && $weather["wind_units"]=="m/s"){echo "Breezy";}
+else if($weather["wind_speed"]>=1.3 && $weather["wind_units"]=="m/s"){echo "Light Winds";}
+else if($weather["wind_speed"]>=0 && $weather["wind_units"]=="m/s"){echo "Calm";}
+
+//kts
+if($weather["wind_speed"]>=16.1 && $weather["wind_units"]=="kts"){echo "Very Windy;";}
+else if($weather["wind_speed"]>=10.7 && $weather["wind_units"]=="kts"){echo "Windy";}
+else if($weather["wind_speed"]>=5.3 && $weather["wind_units"]=="kts"){echo "Breezy";}
+else if($weather["wind_speed"]>=2.6 && $weather["wind_units"]=="kts"){echo "Light Winds";}
+else if($weather["wind_speed"]>=0 && $weather["wind_units"]=="kts"){echo "Calm";}
 ?>
 </realfeel>
 
