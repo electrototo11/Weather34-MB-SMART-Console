@@ -1,35 +1,51 @@
 <?php include('livedata.php');include('common.php');?>
 <div class="modulecaption2"><?php echo $lang['Dewpoint']; ?> &deg;<?php echo $weather["temp_units"]?></div>
 <div class="button button-dial">
- <div class="button-dial-top"></div>
-  <div class="button-dial-label">
-          <?php 
-          if($weather["temp_units"]=='C' && $weather["dewpoint"]<-10){ echo "<icon-minus10>".$weather["dewpoint"]."</icon-minus10 >";}
-else if($weather["temp_units"]=='C' && $weather["dewpoint"]<-5){ echo "<icon-minus5>".$weather["dewpoint"]."</icon-minus5>";}
-else if($weather["temp_units"]=='C' && $weather["dewpoint"]<0){ echo "<icon-zero>".$weather["dewpoint"]."</icon-zero>";}
-else if($weather["temp_units"]=='C' && $weather["dewpoint"]<6){ echo "<icon-0-5>".$weather["dewpoint"]."</icon-0-5>";}
-else if($weather["temp_units"]=='C' && $weather["dewpoint"]<10){ echo "<icon-6-10>".$weather["dewpoint"]."</icon-6-10>";}
-else if($weather["temp_units"]=='C' && $weather["dewpoint"]<15){ echo "<icon-11-15>".$weather["dewpoint"]."</icon-11-15>";}
-else if($weather["temp_units"]=='C' && $weather["dewpoint"]<20){ echo "<icon-16-20>".$weather["dewpoint"]."</icon-16-20>";}
-else if($weather["temp_units"]=='C' && $weather["dewpoint"]<25){ echo "<icon-21-25>".$weather["dewpoint"]."</icon-21-25>";}
-else if($weather["temp_units"]=='C' && $weather["dewpoint"]<30){ echo "<icon-26-30>".$weather["dewpoint"]."</icon-26-30>";}
-else if($weather["temp_units"]=='C' && $weather["dewpoint"]<35){ echo "<icon-31-35>".$weather["dewpoint"]."</icon-31-35>";}
-else if($weather["temp_units"]=='C' && $weather["dewpoint"]<40){ echo "<icon-36-40>".$weather["dewpoint"]."</icon-36-40>";}
-else if($weather["temp_units"]=='C' && $weather["dewpoint"]<100){ echo "<icon-41-45>".$weather["dewpoint"]."</icon-41-45>";}
+<div class="button-dial-top"></div>
+<realfeel>
+<?php  
+//C dewpoint feels
+if ($weather["temp_units"]=='C' && $weather["dewpoint"]>=20){ echo "Discomfort";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]>=15){ echo "Feels Warm";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]>=10){ echo "Comfortable";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]>=5 ){ echo "Cooler";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]>-50 ){ echo "Feels Colder";}
+
+if ($weather["temp_units"]=='F' && $weather["dewpoint"]>=68){ echo "Discomfort";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]>=59){ echo "Feels Warm";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]>=50){ echo "Comfortable";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]>=41 ){ echo "Cooler";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]>-100 ){ echo "Feels Colder";}
+?>
+</realfeel>
+<div class="button-dial-label">
+<?php 
+if($weather["temp_units"]=='C' && $weather["dewpoint"]<-10){ echo "<icon-minus10>".$weather["dewpoint"]."&deg;</icon-minus10 >";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]<-5){ echo "<icon-minus5>".$weather["dewpoint"]."&deg;</icon-minus5>";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]<0){ echo "<icon-zero>".$weather["dewpoint"]."&deg;</icon-zero>";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]<6){ echo "<icon-0-5>".$weather["dewpoint"]."&deg;</icon-0-5>";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]<10){ echo "<icon-6-10>".$weather["dewpoint"]."&deg;</icon-6-10>";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]<15){ echo "<icon-11-15>".$weather["dewpoint"]."&deg;</icon-11-15>";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]<20){ echo "<icon-16-20>".$weather["dewpoint"]."&deg;</icon-16-20>";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]<25){ echo "<icon-21-25>".$weather["dewpoint"]."&deg;</icon-21-25>";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]<30){ echo "<icon-26-30>".$weather["dewpoint"]."&deg;</icon-26-30>";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]<35){ echo "<icon-31-35>".$weather["dewpoint"]."&deg;</icon-31-35>";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]<40){ echo "<icon-36-40>".$weather["dewpoint"]."&deg;</icon-36-40>";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]<100){ echo "<icon-41-45>".$weather["dewpoint"]."&deg;</icon-41-45>";}
           
-if($weather["temp_units"]=='F' && $weather["dewpoint"]<14){ echo "<icon-minus10>".$weather["dewpoint"]."</icon-minus10 >";}
-else if($weather["temp_units"]=='F' && $weather["dewpoint"]<23){ echo "<icon-minus5>".$weather["dewpoint"]."</icon-minus5>";}
-else if($weather["temp_units"]=='F' && $weather["dewpoint"]<32){ echo "<icon-zero>".$weather["dewpoint"]."</icon-zero>";}
-else if($weather["temp_units"]=='F' && $weather["dewpoint"]<42){ echo "<icon-0-5>".$weather["dewpoint"]."</icon-0-5>";}
-else if($weather["temp_units"]=='F' && $weather["dewpoint"]<50){ echo "<icon-6-10>".$weather["dewpoint"]."</icon-6-10";}
-else if($weather["temp_units"]=='F' && $weather["dewpoint"]<59){ echo "<icon-11-15>".$weather["dewpoint"]."</icon-11-15>";}
-else if($weather["temp_units"]=='F' && $weather["dewpoint"]<68){ echo "<icon-16-20>".$weather["dewpoint"]."</icon-16-20>";}
-else if($weather["temp_units"]=='F' && $weather["dewpoint"]<77){ echo "<icon-21-25>".$weather["dewpoint"]."</icon-21-25>";}
-else if($weather["temp_units"]=='F' && $weather["dewpoint"]<86){ echo "<icon-26-30>".$weather["dewpoint"]."</icon-26-30>";}
-else if($weather["temp_units"]=='F' && $weather["dewpoint"]<95){ echo "<icon-31-35>".$weather["dewpoint"]."</icon-31-35>";}
-else if($weather["temp_units"]=='F' && $weather["dewpoint"]<104){ echo "<icon-36-40>".$weather["dewpoint"]."</icon-36-40>";}
-else if($weather["temp_units"]=='F' && $weather["dewpoint"]<300){ echo "<icon-41-45>".$weather["dewpoint"]."</icon-41-45>";}
- ?>
+if($weather["temp_units"]=='F' && $weather["dewpoint"]<14){ echo "<icon-minus10>".$weather["dewpoint"]."&deg;</icon-minus10 >";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]<23){ echo "<icon-minus5>".$weather["dewpoint"]."&deg;</icon-minus5>";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]<32){ echo "<icon-zero>".$weather["dewpoint"]."&deg;</icon-zero>";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]<42){ echo "<icon-0-5>".$weather["dewpoint"]."&deg;</icon-0-5>";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]<50){ echo "<icon-6-10>".$weather["dewpoint"]."&deg;</icon-6-10";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]<59){ echo "<icon-11-15>".$weather["dewpoint"]."&deg;</icon-11-15>";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]<68){ echo "<icon-16-20>".$weather["dewpoint"]."&deg;</icon-16-20>";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]<77){ echo "<icon-21-25>".$weather["dewpoint"]."&deg;</icon-21-25>";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]<86){ echo "<icon-26-30>".$weather["dewpoint"]."&deg;</icon-26-30>";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]<95){ echo "<icon-31-35>".$weather["dewpoint"]."&deg;</icon-31-35>";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]<104){ echo "<icon-36-40>".$weather["dewpoint"]."&deg;</icon-36-40>";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]<300){ echo "<icon-41-45>".$weather["dewpoint"]."&deg;</icon-41-45>";}
+?>
         </div>
       </div>
 <div>
