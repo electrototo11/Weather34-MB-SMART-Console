@@ -721,8 +721,8 @@ indoor-temp-trend2 {
     color: var(--dark);
     position: absolute;
     float: none;
-    margin-left: 100px;
-    margin-top: -5px;
+    left: 100px;
+    top: 15px;
     width: 7rem;
     line-height: 1;
     height: 16px;
@@ -751,8 +751,8 @@ indoor-temp-trend2 {
     color: var(--dark);
     position: absolute;
     float: none;
-    margin-left: 100px;
-    margin-top: 15px;
+    left: 100px;
+    top: 35px;
     width: 7rem;
     line-height: 1;
     height: 16px;
@@ -3213,7 +3213,7 @@ alertunit {
 
 realfeel {
     position: absolute;
-    margin-top: -20px;
+    top: 30px;
     margin-left: 0;
     font-size: .6rem;
     font-family: weathertext2;

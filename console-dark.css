@@ -520,7 +520,7 @@ belowthehorizon {
     background: 0 0;
     color: var(--light);
     font-size: .65rem;
-    line-height: 1;
+    line-height: 1.2;
     margin-top: -5px;
     position: absolute;
     margin-left: 15px;
@@ -539,7 +539,7 @@ belowthehorizon {
     color: var(--silver);
     display: flex;
     font-size: .6rem;
-    line-height: .9;
+    line-height: 1.1;
     margin-top: 15px;
     position: absolute;
     margin-left: 125px;
@@ -564,7 +564,7 @@ belowthehorizon {
     font-size: 1.35rem;
     background-color: hsla(204, 31%, 21%, .229);
     margin-left: 15px;
-    margin-top: -55px;
+    top: 25px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -575,9 +575,9 @@ belowthehorizon {
     color: var(--silver);
     font-size: .6rem;
     line-height: 1.2;
-    margin-top: 12px;
+    top: 35px;
     position: absolute;
-    margin-left: -5px;
+    left: 5px;
     font-family: headingtext;
     text-align: left;
     width: 300px;
@@ -688,8 +688,8 @@ indoor-temp-trend2 {
     color: var(--light);
     position: absolute;
     float: none;
-    margin-left: 125px;
-    margin-top: -15px;
+    left: 120px;
+    top: 20px;
     width: 7rem;
     line-height: 2;
     height: 16px;
@@ -717,8 +717,8 @@ indoor-temp-trend2 {
     color: var(--silver);
     position: absolute;
     float: none;
-    margin-left: 125px;
-    margin-top: 10px;
+    left: 120px;
+    top: 45px;
     width: 7rem;
     line-height: 2;
     height: 16px;
@@ -3306,7 +3306,7 @@ alertunit {
 
 realfeel {
     position: absolute;
-    margin-top: -30px;
+    top: 20px;
     margin-left: 5px;
     font-size: .6rem;
     font-family: weathertext2;
