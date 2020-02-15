@@ -404,6 +404,7 @@ $consoleforecast    = "' . $_POST['consoleforecast'] . '";
                                                 <option><?php echo $uvsensor; ?></option>
                                                 <option>uvindexmod.php</option>
                                                 <option>solarmod.php</option>
+                                                <option>indoortempmod.php</option>
                                                 
                                             </select>
 

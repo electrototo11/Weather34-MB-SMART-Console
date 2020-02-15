@@ -3795,7 +3795,7 @@ bottom-bar-textfore {
         min-width: 305px;
         max-width: 305px;
         padding: 0;
-        height: 185px;
+        height: 175px;
         border: 1px solid hsla(208, 12%, 24%, .2);
         -webkit-box-sizing: border-box;
         box-sizing: border-box;

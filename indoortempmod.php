@@ -1,15 +1,8 @@
 <?php include('livedata.php');include('common.php');?>
 <div class="modulecaption2"><?php echo $lang['Indoor']?> &deg;<blue1><?php echo $weather["temp_units"]?></blue1></div>
-<div class="button button-dial">
-        
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>        
-        <div class="button-dial-top"></div>
-        <div class="button-dial-label">
+<div class="button button-dial">     
+  <div class="button-dial-top"></div>
+  <div class="button-dial-label">
           
         <?php 
           if($weather["temp_units"]=='C' && $weather["temp_indoor"]<-10){ echo "<icon-minus10>".$weather["temp_indoor"]."</icon-minus10 >";}
@@ -75,7 +68,7 @@ echo "</tempman>";?>
 
 </div></div></div></div></div>
 
-<div class="indoorhumidity-mod2"> 
+<div class="indoorhumidity-mod"> 
 <?php //indoor humidity
 if($weather["humidity_indoor"]>70) {
 echo '<blue>'.$hometemp.'&nbsp;</blue>'.$lang['Humidity'].'&nbsp; <blue>'.$weather["humidity_indoor"].'</blue><smalltempunit2>%</smalltempunit2>';}
@@ -89,7 +82,7 @@ else if($weather["humidity_indoortrend"]<0)echo "&nbsp;".$fallingsymbolsmall;?>
 
 
 
-<div class="indoorfeels-mod2"> 
+<div class="indoorfeels-mod"> 
 <?php //indoor feels
 //c
 if($weather["temp_units"]=='C' && $weather["temp_indoor_feel"]<15) {
