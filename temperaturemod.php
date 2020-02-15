@@ -5,7 +5,7 @@
 <realfeel>
 <?php  //heat-index/Feels
 //C Feels 
-if ($weather["temp_units"]=='C' && $weather["windchill"]<0){ echo $windchillalert8 . " Windchill <blue>".$weather["windchill"]."&deg;</blue><smalltempunit2>";}
+if ($weather["temp_units"]=='C' && $weather["windchill"]<0){ echo "Windchill<blue> ".$weather["windchill"]."&deg;</blue><smalltempunit2>";}
 else if ($weather["temp_units"]=='C' && $weather["realfeel"]>=40){ echo "Feels<purple> ".$weather['realfeel']."&deg;</purple><smalltempunit2>";}
 else if ($weather["temp_units"]=='C' && $weather["realfeel"]>=35){ echo "Feels<red> ".$weather['realfeel']."&deg;</red><smalltempunit2>";}
 else if ($weather["temp_units"]=='C' && $weather["realfeel"]>=30){ echo "Feels<red> ".$weather['realfeel']."&deg;</red><smalltempunit2>";}
@@ -15,10 +15,10 @@ else if($weather["temp_units"]=='C' && $weather["realfeel"]>=15 ){ echo "Feels<o
 else if($weather["temp_units"]=='C' && $weather["realfeel"]>=10 ){ echo "Feels<yellow> ".$weather['realfeel']."</yellow>&deg;<smalltempunit2>";}
 else if($weather["temp_units"]=='C' && $weather["realfeel"]>=5 ){ echo "Feels<green> ".$weather['realfeel']."</green>&deg;<smalltempunit2>";}
 else if($weather["temp_units"]=='C' && $weather["realfeel"]>=0 ){ echo "Feels<blue> ".$weather['realfeel']."</blue>&deg;<smalltempunit2>";}
-else if($weather["temp_units"]=='C' && $weather["realfeel"]>-10 ){ echo $windchillalert8. " Feels<blue> ".$weather['realfeel']."</blue>&deg;<smalltempunit2>";}
-else if($weather["temp_units"]=='C' && $weather["realfeel"]>-50 ){ echo $windchillalert8. " Feels<deepblue> ".$weather['realfeel']."</deepblue>&deg;<smalltempunit2>";}
+else if($weather["temp_units"]=='C' && $weather["realfeel"]>-10 ){ echo "Feels<blue> ".$weather['realfeel']."</blue>&deg;<smalltempunit2>";}
+else if($weather["temp_units"]=='C' && $weather["realfeel"]>-50 ){ echo "Feels<deepblue> ".$weather['realfeel']."</deepblue>&deg;<smalltempunit2>";}
 //F
-else if ($weather["temp_units"]=='F' && $weather["windchill"]<32){ echo $windchillalert8. "Windchill <blue>".$weather["windchill"]."&deg;</blue><smalltempunit2>";}
+else if ($weather["temp_units"]=='F' && $weather["windchill"]<32){ echo "Windchill<blue> ".$weather["windchill"]."&deg;</blue><smalltempunit2>";}
 else if ($weather["temp_units"]=='F' && $weather["realfeel"]>=104){ echo "Feels<purple> ".$weather['realfeel']."&deg;</purple><smalltempunit2>";}
 else if ($weather["temp_units"]=='F' && $weather["realfeel"]>=95){ echo "Feels<red> ".$weather['realfeel']."&deg;</red><smalltempunit2>";}
 else if ($weather["temp_units"]=='F' && $weather["realfeel"]>=86){ echo "Feels<red> ".$weather['realfeel']."&deg;</red><smalltempunit2>";}
@@ -28,8 +28,8 @@ else if($weather["temp_units"]=='F' && $weather["realfeel"]>=59 ){ echo "Feels<o
 else if($weather["temp_units"]=='F' && $weather["realfeel"]>=50 ){ echo "Feels<yellow> ".$weather['realfeel']."</yellow>&deg;<smalltempunit2>";}
 else if($weather["temp_units"]=='F' && $weather["realfeel"]>=41 ){ echo "Feels<green> ".$weather['realfeel']."</green>&deg;<smalltempunit2>";}
 else if($weather["temp_units"]=='F' && $weather["realfeel"]>=32 ){ echo "Feels<blue> ".$weather['realfeel']."</blue>&deg;<smalltempunit2>";}
-else if($weather["temp_units"]=='F' && $weather["realfeel"]>-14 ){ echo $windchillalert8. " Feels<blue> ".$weather['realfeel']."</blue>&deg;<smalltempunit2>";}
-else if($weather["temp_units"]=='F' && $weather["realfeel"]>-58 ){ echo $windchillalert8. " Feels<deepblue> ".$weather['realfeel']."</deepblue>&deg;<smalltempunit2>";}
+else if($weather["temp_units"]=='F' && $weather["realfeel"]>-14 ){ echo "Feels<blue> ".$weather['realfeel']."</blue>&deg;<smalltempunit2>";}
+else if($weather["temp_units"]=='F' && $weather["realfeel"]>-58 ){ echo "Feels<deepblue> ".$weather['realfeel']."</deepblue>&deg;<smalltempunit2>";}
 ?>
 </realfeel>
 <div class="button-dial-label">

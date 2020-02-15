@@ -449,7 +449,7 @@ li4 {
     height: 1.75rem;
     font-family: weathertext2;
     font-size: 1.25rem;
-    background-color: hsla(204, 31%, 21%, .429);
+    background-color: hsla(204, 31%, 21%, .229);
     margin-left: 5px;
     margin-top: -68px;
     -webkit-border-radius: 5px;
@@ -551,26 +551,37 @@ belowthehorizon {
 }
 
 .wutemp {
-    color: var(--silver);
-    font-size: 1.75rem;
+    display: flex;
+    color: var(--orange);
     line-height: 1;
-    top: 27px;
     position: absolute;
-    margin-left: 15px;
+    padding: 5px 5px;
+    padding-bottom: 8px;    
+    border-radius: 5px;
+    width: 3rem;
+    height: 1.15rem;
     font-family: weathertext2;
-    text-align: left
+    font-size: 1.35rem;
+    background-color: hsla(204, 31%, 21%, .229);
+    margin-left: 15px;
+    margin-top: -55px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px
 }
 
 .wuahead {
     color: var(--silver);
     font-size: .6rem;
-    line-height: 1;
-    margin-top: 8px;
+    line-height: 1.2;
+    margin-top: 12px;
     position: absolute;
-    margin-left: 5px;
+    margin-left: -5px;
     font-family: headingtext;
     text-align: left;
-    width: 300px
+    width: 300px;
+    
 }
 
 wuunits {
