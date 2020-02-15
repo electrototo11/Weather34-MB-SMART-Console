@@ -3306,8 +3306,8 @@ alertunit {
 
 realfeel {
     position: absolute;
-    top: 20px;
-    margin-left: 5px;
+    top: 23px;
+    margin-left: 12px;
     font-size: .6rem;
     font-family: weathertext2;
     width: 100px;
