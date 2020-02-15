@@ -559,7 +559,7 @@ li3 {
     display: block;
     background: 0 0;
     color: var(--body-text-light);
-    font-size: .7rem;
+    font-size: .65rem;
     line-height: 1;
     top: 5px;
     position: absolute;
@@ -721,11 +721,11 @@ indoor-temp-trend2 {
     color: var(--dark);
     position: absolute;
     float: none;
-    margin-left: 60px;
-    margin-top: -90px;
-    width: 8rem;
-    line-height: 2;
-    height: 20px;
+    margin-left: 100px;
+    margin-top: -5px;
+    width: 7rem;
+    line-height: 1;
+    height: 16px;
     background: #fff;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.07);
     border-radius: 2px;
@@ -739,8 +739,7 @@ indoor-temp-trend2 {
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    padding-top: 4px;
+    align-items: center;    
 
 }
 
@@ -752,11 +751,11 @@ indoor-temp-trend2 {
     color: var(--dark);
     position: absolute;
     float: none;
-    margin-left: 60px;
-    margin-top: -60px;
-    width: 8rem;
-    line-height: 2;
-    height: 20px;
+    margin-left: 100px;
+    margin-top: 15px;
+    width: 7rem;
+    line-height: 1;
+    height: 16px;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -768,8 +767,7 @@ indoor-temp-trend2 {
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    padding-top: 4px;
+    align-items: center;    
     background: #fff;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.07);
 }
@@ -794,11 +792,11 @@ indoor-temp-trend2 {
     color: var(--dark);
     position: absolute;
     float: none;
-    margin-left: 125px;
-    margin-top: -5px;
-    width: 9rem;
+    margin-left: 135px;
+    margin-top: -55px;
+    width: 8rem;
     line-height: 1;
-    height: 20px;
+    height: 16px;
     background: #fff;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.07);
     border-radius: 2px;
@@ -824,11 +822,11 @@ indoor-temp-trend2 {
     color: var(--dark);
     position: absolute;
     float: none;
-    margin-left: 125px;
-    margin-top: 28px;
-    width: 9rem;
+    margin-left: 135px;
+    margin-top: -35px;
+    width: 8rem;
     line-height: 1;
-    height: 20px;
+    height: 16px;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -1396,8 +1394,8 @@ indoor-temp-trend {
     color: var(--dark);
     position: absolute;
     float: none;
-    margin-left: 140px;
-    margin-top: -3px;
+    margin-left: 60px;
+    margin-top: -85px;
     width: 7.5rem;
     line-height: 2;
     height: 20px;
@@ -1427,8 +1425,8 @@ indoor-temp-trend {
     color: var(--dark);
     position: absolute;
     float: none;
-    margin-left: 140px;
-    margin-top: 25px;
+    margin-left: 60px;
+    margin-top: -55px;
     width: 7.5rem;
     line-height: 2;
     height: 20px;
@@ -3715,7 +3713,7 @@ bottom-bar-textfore {
     }
 
     .desktoplink5 {
-        margin-top: 0px
+        margin-top: -10px
     }
 
     li3 {
@@ -4104,6 +4102,97 @@ button:focus {
     font-size: 13px;
 
 }
+
+.button-dial-small {
+    border-radius: 50%;
+    display: flex;
+    height: 60px;
+    margin: 0px;
+    left: -10px;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    font-family: weathertext3;
+    margin-top: -10px;
+    color: grey;
+}
+
+.button-dial-top-small {
+    background: var(--button-bg-color);
+    box-shadow: var(--button-shadow);
+    border-radius: 50%;
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    text-align: center;
+    z-index: 5;
+}
+
+.button-dial-label-small {
+    font-size: 16px;
+    position: relative;
+    z-index: 10;
+    color: grey;
+}
+
+.indoordesc {
+    display:flex;
+    background: 0 0;
+    color: var(--body-text-light);
+    font-size: .65rem;
+    line-height: 1;
+    top: 5px;
+    position: absolute;
+    margin-left: 205px;
+    font-family: headingtext;
+    text-align: left;
+    width:80px
+}
+
+.lightningdesc {
+    display:flex;
+    background: 0 0;
+    color: var(--body-text-light);
+    font-size: .65rem;
+    line-height: 1;
+    top: 5px;
+    position: absolute;
+    margin-left: 165px;
+    font-family: headingtext;
+    text-align: left;
+    width:120px;
+}
+
+laststrike {
+    display:flex;
+    background: 0 0;
+    color: var(--body-text-light);
+    font-size: 9px;
+    line-height: 1;
+    top: 25px;
+    position: absolute;
+    margin-left: 65px;
+    font-family: headingtext;
+    text-align: left;
+    width:60px;
+    word-wrap: break-word;    
+}
+
+indoortempman {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;    
+    margin-left:-27px;
+    margin-top:24px;
+    z-index:100;
+    font-size:8px
+}
+
+
+
 
 .button-block span {
     font-size: .75rem;

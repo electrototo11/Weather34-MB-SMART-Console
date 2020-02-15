@@ -519,7 +519,7 @@ belowthehorizon {
     display: block;
     background: 0 0;
     color: var(--light);
-    font-size: .7rem;
+    font-size: .65rem;
     line-height: 1;
     margin-top: -5px;
     position: absolute;
@@ -641,9 +641,10 @@ wuunits {
     height: 2.5rem;
     font-family: weathertext2;
     font-size: 2.5rem;
-    background-color: hsla(204, 31%, 21%, .429);
+    background-color: hsla(204, 31%, 21%, .229);
     margin-left: 150px;
-    margin-top: -10px
+    margin-top: -10px;
+    
 }
 
 indoor-temp-trend2 {
@@ -676,11 +677,11 @@ indoor-temp-trend2 {
     color: var(--light);
     position: absolute;
     float: none;
-    margin-left: 60px;
-    margin-top: -90px;
+    margin-left: 125px;
+    margin-top: -15px;
     width: 7rem;
     line-height: 2;
-    height: 20px;
+    height: 16px;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -693,8 +694,8 @@ indoor-temp-trend2 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 4px;
-    background-color: hsla(204, 31%, 21%, .429)
+    padding-top: 1px;
+    background-color: hsla(204, 31%, 21%, .229)
 }
 
 .indoorfeels-mod2 {
@@ -702,14 +703,14 @@ indoor-temp-trend2 {
     display: -ms-flexbox;
     display: flex;
     font-size: 10px;
-    color: var(--light);
+    color: var(--silver);
     position: absolute;
     float: none;
-    margin-left: 60px;
-    margin-top: -60px;
+    margin-left: 125px;
+    margin-top: 10px;
     width: 7rem;
     line-height: 2;
-    height: 20px;
+    height: 16px;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -722,8 +723,8 @@ indoor-temp-trend2 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 4px;
-    background-color: hsla(204, 31%, 21%, .429)
+    padding-top: 1px;
+    background-color: hsla(204, 31%, 21%, .229)
 }
 
 .lightningyear-mod2 {
@@ -735,10 +736,10 @@ indoor-temp-trend2 {
     position: absolute;
     float: none;
     margin-left: 155px;
-    margin-top: -5px;
-    width: 9.25rem;
+    margin-top: -60px;
+    width: 8.25rem;
     line-height: 1;
-    height: 20px;
+    height: 16px;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -751,7 +752,7 @@ indoor-temp-trend2 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: hsla(204, 31%, 21%, .429)
+    background-color: hsla(204, 31%, 21%, .229)
 }
 
 .lightningmonth-mod2 {
@@ -763,8 +764,8 @@ indoor-temp-trend2 {
     position: absolute;
     float: none;
     margin-left: 155px;
-    margin-top: 30px;
-    width: 9.25rem;
+    margin-top: -35px;
+    width: 8.25rem;
     line-height: 1;
     height: 20px;
     border-radius: 2px;
@@ -779,7 +780,7 @@ indoor-temp-trend2 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: hsla(204, 31%, 21%, .429)
+    background-color: hsla(204, 31%, 21%, .229)
 }
 
 .lightningmod {
@@ -792,6 +793,7 @@ indoor-temp-trend2 {
     font-family: weathertext2;
     text-align: left
 }
+
 
 .tempcontainer {
     position: relative;
@@ -1435,7 +1437,7 @@ smallrainunit4 {
     height: 1.75rem;
     font-family: weathertext2;
     font-size: 1.25rem;
-    background-color: hsla(204, 31%, 21%, .429);
+    background-color: hsla(204, 31%, 21%, .229);
     margin-left: 150px;
     margin-top: -43px
 }
@@ -1470,12 +1472,12 @@ indoor-temp-trend {
     color: var(--silver);
     position: absolute;
     float: none;
-    margin-left: 170px;
-    margin-top: 5px;
+    margin-left: 60px;
+    margin-top: -90px;
     width: 7.5rem;
     line-height: 1.5;
-    height: 16px;
-    background-color: hsla(204, 31%, 21%, .429);
+    height: 22px;
+    background-color: hsla(204, 31%, 21%, .229);
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -1498,12 +1500,12 @@ indoor-temp-trend {
     color: var(--silver);
     position: absolute;
     float: none;
-    margin-left: 170px;
-    margin-top: 30px;
+    margin-left: 60px;
+    margin-top: -60px;
     width: 7.5rem;
     line-height: 1.5;
-    height: 16px;
-    background-color: hsla(204, 31%, 21%, .429);
+    height: 22px;
+    background-color: hsla(204, 31%, 21%, .229);
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -1517,7 +1519,6 @@ indoor-temp-trend {
     -ms-flex-align: center;
     align-items: center
 }
-
 bluesmall {
     font-size: 9px
 }
@@ -4185,6 +4186,95 @@ button:focus {
     font-size: 13px;
     
 }
+
+.button-dial-small {
+    border-radius: 50%;
+    display: flex;
+    height: 80px;
+    margin: 0px;
+    left: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    font-family: weathertext3;
+    margin-top: -10px;
+    color: grey;
+}
+
+.button-dial-top-small {
+    background: var(--button-bg-color);
+    box-shadow: var(--button-shadow);
+    border-radius: 50%;
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    text-align: center;
+    z-index: 5;
+}
+
+.button-dial-label-small {
+    font-size: 16px;
+    position: relative;
+    z-index: 10;
+    color: grey;
+}
+
+.indoordesc {
+    display:flex;
+    background: 0 0;
+    color: var(--silver);
+    font-size: .65rem;
+    line-height: 1;
+    top: 10px;
+    position: absolute;
+    margin-left: 235px;
+    font-family: headingtext;
+    text-align: left;
+    width:130px
+}
+
+indoortempman {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;    
+    margin-left:-27px;
+    margin-top:25px;
+    z-index:100;
+    font-size:8px
+}
+
+.lightningdesc {
+    display:flex;
+    background: 0 0;
+    color: var(--silver);
+    font-size: .65rem;
+    line-height: 1;
+    top: 10px;
+    position: absolute;
+    margin-left: 185px;
+    font-family: headingtext;
+    text-align: left;
+    width:120px;
+}
+
+laststrike {
+    display:flex;
+    background: 0 0;
+    color: var(--silver);
+    font-size: 9px;
+    line-height: 1;
+    top: 25px;
+    position: absolute;
+    margin-left: 85px;
+    font-family: headingtext;
+    text-align: left;
+    width:60px;
+    word-wrap: break-word;    
+}
+
 
 .button-block span {
     font-size: .75rem;
