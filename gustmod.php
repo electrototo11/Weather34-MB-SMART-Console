@@ -58,7 +58,7 @@ else if($weather["wind_speed_max"]>=0 && $weather["wind_units"]=="mph"){echo "<g
 <div>
 
 <?php //unit
-echo "<unitindicator>";echo $weather["wind_units"];echo "</unitindicator>";?>
+echo "<windunitindicator>";echo $weather["wind_units"];echo "</windunitindicator>";?>
 
 <?php //man walking-running
 echo "<windindicator>";

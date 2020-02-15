@@ -1678,7 +1678,7 @@ tempman {
     font-size:11px
 }
 
-unitindicator {
+unitindicator,windunitindicator {
     position: absolute;
     width: 2rem;
     height: .8rem;    
