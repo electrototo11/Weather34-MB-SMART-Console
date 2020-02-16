@@ -459,15 +459,15 @@ li4 {
 }
 
 .till {
-    position: absolute;
+    position: relative;
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
-    margin-top: -40px;
+    top: -38px;
     z-index: 99999;
     color: var(--silver);
     font-family: weathertext2;
-    margin-left: -120px
+    left:-115px
 }
 
 .sunrise1 {

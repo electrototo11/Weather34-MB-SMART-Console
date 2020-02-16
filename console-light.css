@@ -506,15 +506,16 @@ li3 {
 }
 
 .till {
-    position: absolute;
+     color: var(--body-text-light);
+    font-family: weathertext2;
+    position: relative;
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
-    margin-top: -35px;
-    z-index: 99999;
-    color: var(--body-text-light);
+    top: -36px;
+    z-index: 99999;    
     font-family: weathertext2;
-    margin-left: -125px
+    left:-115px
 }
 
 .phase2 {
