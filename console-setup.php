@@ -29,6 +29,7 @@ $UTC = "' . $_POST["UTC"] . '";
 $clockformat    = "' . $_POST["clockformat"] . '";
 $hemisphere   = "' . $_POST["hemisphere"] . '";
 $consoleforecast    = "' . $_POST['consoleforecast'] . '";
+$webcamurl   = "' . $_POST["webcamurl"] . '";
 ';
 
     $fp = FOPEN("console-settings.php", "w") or die("Unable to open console-settings.php file check file permissions !");
@@ -386,10 +387,11 @@ $consoleforecast    = "' . $_POST['consoleforecast'] . '";
                                                 <path d="M13 2 L13 6 11 7 8 4 4 8 7 11 6 13 2 13 2 19 6 19 7 21 4 24 8 28 11 25 13 26 13 30 19 30 19 26 21 25 24 28 28 24 25 21 26 19 30 19 30 13 26 13 25 11 28 8 24 4 21 7 19 6 19 2 Z" />
                                                 <circle cx="16" cy="16" r="4" />
                                             </svg>
-                                            Do you have UV Index and Solar Sensor Installed ? 3 options <br>
+                                            Do you have UV Index and Solar Sensor Installed ? 4 options <br>
                                         uvindexmod.php if you have uvindex + solar<br>
                                         solarmod.php if you only have a solar radiation sensor<br>
-                                        indoortempmod.php if oyu have none of above
+                                        or weather34-webcam.php if you have a webcam..
+                                        use indoortempmod.php if you have none of above
                                         
                                         </div>
                                         <br>
@@ -405,10 +407,22 @@ $consoleforecast    = "' . $_POST['consoleforecast'] . '";
                                                 <option>uvindexmod.php</option>
                                                 <option>solarmod.php</option>
                                                 <option>indoortempmod.php</option>
+                                                <option>weather34-webcam.php</option>
                                                 
                                             </select>
 
 <br><br>
+
+<div class="stationvalue">Webcam Add Your Path/Url to your webcam (i.e https://something.com/webcam.jpg)</div>
+                                                                            <svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                                                <path d="M30 12 L16 24 2 12" /></svg><br>
+
+                                                                            <input name="webcamurl" type="text" id="webcamurl" value="<?php echo $webcamurl; ?>" class="chooseapi">
+
+                                                                            <br><br>
+
+
+                                                                           
 <p>
                                     <div class="stationvalue">
                                         Language Default Display</div>

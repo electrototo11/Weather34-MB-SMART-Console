@@ -4245,3 +4245,30 @@ button-block-date {
     margin-left: 180px;
 
 }
+
+.weather34-webcam{   
+   border-radius:5px;
+   -webkit-border-radius:5px;
+   -moz-border-radius:5px;
+   -ms-border-radius:5px;
+   -o-border-radius:5px;
+    width:270px;height:135px;
+    box-shadow: -6px -6px 8px rgba(255, 255, 255, 0.9), 5px 5px 8px rgba(0, 0, 0, 0.07);    
+    background: #fff;
+    }
+
+    .modulecaptioncam {
+        
+        left: 165px;
+        top: -11px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;        
+        font-size: .6rem;
+        font-family: weathertext2;
+        width: 12em;
+        box-shadow: -1px -1px 8px rgba(255, 255, 255, 0.9), 2px 2px 2px rgba(0, 0, 0, 0.07);
+        line-height: 1.4;
+        background: #fff;
+    }
