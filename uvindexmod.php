@@ -4,11 +4,11 @@
 <div class="button-dial-top"></div>
 <realfeel>
 <?php 
-if ($weather["uv"]>=10) {echo "<purple>".$uviclear.'Extreme</purple>';}
-else if ($weather["uv"]>=8) {echo "<red>".$uviclear.'Very High</red>';}
-else if ($weather["uv"]>=6) {echo "<orange>".$uviclear.'High</orange>';}
-else if ($weather["uv"]>=3) {echo "<yellow>".$uviclear.'Moderate</yellow>';}
-else if ($weather["uv"]>=0 ) {echo "<green>".$uviclear.'No Caution</green>';}
+if ($weather["uv"]>=10) {echo "<purple>Extreme</purple>";}
+else if ($weather["uv"]>=8) {echo "<red>Very High</red>";}
+else if ($weather["uv"]>=6) {echo "<orange>High</orange>";}
+else if ($weather["uv"]>=3) {echo "<yellow>Moderate</yellow>";}
+else if ($weather["uv"]>=0 ) {echo "<green>No Caution</green>";}
 ?>
 </realfeel>
 <div class="button-dial-label">          
@@ -83,8 +83,8 @@ else if ($weather["uvymax"]>=0) {
 
 <div class=thetrendgap>
 <?php 
-if ($weather["uv"]>=700) {echo "<div class=theuvred>".$uviclear.'Strong Sun Radiation';}
-else if ($weather["solar"]>=300) {echo "<div class=theuvyellow>".$uviclear.'Moderate Radiation';}
+if ($weather["solar"]>=700) {echo "<div class=theuvred>Strong Radiation";}
+else if ($weather["solar"]>=300) {echo "<div class=theuvyellow>Moderate Radiation";}
 else if ($weather["solar"]>=0) {echo "<div class=theuvgreen>Low Radiation";}
 ?>
 </div></div></div></div></div>

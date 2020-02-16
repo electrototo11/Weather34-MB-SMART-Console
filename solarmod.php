@@ -1,15 +1,8 @@
 <?php require_once('livedata.php');require_once('common.php');?>
 <div class="modulecaption2"><?php echo $lang['Solarradiation']?></div>
-<div class="button button-dial">
-        
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>
-        <span class="button-dial-spoke"></span>        
-        <div class="button-dial-top"></div>
-        <div class="button-dial-label">
+<div class="button button-dial">    
+<div class="button-dial-top"></div>
+<div class="button-dial-label">
           
           <?php 
           if ($weather["solar"]>=500){echo "<orange>".$weather["solar"]."</orange>";}
@@ -61,13 +54,13 @@ echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["lux"]
 
 
 <div class=thetrendgap>
-
 <?php 
-if ($weather["solar"]>=800) {echo "<div class=theuvorange>Strong Radiation";}
-else if ($weather["solar"]>=300) {echo "<div class=theuvyellow>Moderate";}
-else echo "<div class=theuvgreen>Low Radiation";
+if ($weather["solar"]>=700) {echo "<div class=theuvred>Strong Radiation";}
+else if ($weather["solar"]>=300) {echo "<div class=theuvyellow>Moderate Radiation";}
+else if ($weather["solar"]>=0) {echo "<div class=theuvgreen>Low Radiation";}
 ?>
 </div></div></div></div></div>
+
 <div class="maxwind">
 <?php  //Max-Min
 echo "Max ";
