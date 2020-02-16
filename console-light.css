@@ -556,16 +556,16 @@ li3 {
 }
 
 .wudesc {
-    display: block;
-    background: 0 0;
+    display: block;    
     color: var(--body-text-light);
     font-size: .65rem;
     line-height: 1;
     top: 5px;
     position: absolute;
     margin-left: -15px;
-    font-family: headingtext;
-    text-align: left
+    font-family: headingtext;    
+    box-shadow: -6px -6px 8px rgba(255, 255, 255, 0.9), 5px 5px 8px rgba(0, 0, 0, 0.07);    
+    background: #fff;
 }
 
 .wuicon {
@@ -599,7 +599,15 @@ li3 {
     margin-left: -5px;
     font-family: weathertext2;
     text-align: left;
-    width: auto
+    width: auto;
+    box-shadow: -6px -6px 8px rgba(255, 255, 255, 0.9), 5px 5px 8px rgba(0, 0, 0, 0.07);
+    background: #fff;
+    padding:3px;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
 }
 
 .wuahead {
@@ -611,7 +619,7 @@ li3 {
     margin-left: -5px;
     font-family: headingtext;
     text-align: left;
-    width: 300px
+    width: 300px;
 }
 
 wuunits {
@@ -739,7 +747,8 @@ indoor-temp-trend2 {
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;    
+    align-items: center;   
+    text-transform:none; 
 
 }
 
@@ -770,6 +779,7 @@ indoor-temp-trend2 {
     align-items: center;    
     background: #fff;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.07);
+    text-transform:none;
 }
 
 .lightningmod {
@@ -3213,9 +3223,9 @@ alertunit {
 
 realfeel {
     position: absolute;
-    top: 30px;
+    top: 33px;
     margin-left: 0;
-    font-size: .6rem;
+    font-size: 7.5pt;
     font-family: weathertext2;
     width: 100px;
     line-height: 1.4;
@@ -4121,8 +4131,8 @@ button:focus {
     background: var(--button-bg-color);
     box-shadow: var(--button-shadow);
     border-radius: 50%;
-    width: 70%;
-    height: 70%;
+    width: 71%;
+    height: 71%;
     margin: 0 auto;
     position: absolute;
     top: 15%;
@@ -4139,31 +4149,32 @@ button:focus {
 }
 
 .indoordesc {
-    display:flex;
-    background: 0 0;
+    display:flex;    
     color: var(--body-text-light);
     font-size: .65rem;
     line-height: 1;
     top: 5px;
     position: absolute;
-    margin-left: 205px;
+    margin-left: 175px;
     font-family: headingtext;
-    text-align: left;
-    width:80px
+    text-align: center;
+    width:80px;
+    box-shadow: -6px -6px 8px rgba(255, 255, 255, 0.9), 5px 5px 8px rgba(0, 0, 0, 0.07);    
+    background: #fff;    
 }
 
 .lightningdesc {
-    display:flex;
-    background: 0 0;
+    display:flex;    
     color: var(--body-text-light);
     font-size: .65rem;
     line-height: 1;
     top: 5px;
     position: absolute;
     margin-left: 165px;
-    font-family: headingtext;
-    text-align: left;
+    font-family: headingtext;    
     width:120px;
+    box-shadow: -6px -6px 8px rgba(255, 255, 255, 0.9), 5px 5px 8px rgba(0, 0, 0, 0.07);    
+    background: #fff;
 }
 
 laststrike {

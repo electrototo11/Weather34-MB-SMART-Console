@@ -45,7 +45,7 @@ function map($value, $fromLow, $fromHigh, $toLow, $toHigh)
     // Re-zero back to the to range
     return $tmpValue + $toLow;
 }
-$json_string             = file_get_contents("jsondata/purpleair.txt");
+$json_string             = file_get_contents("../jsondata/purpleair.txt");
 $parsed_json             = json_decode($json_string);
 $aqiweather["aqi"]       = number_format(pm25_to_aqi(($parsed_json->{'results'}[0]->{'PM2_5Value'} + $parsed_json->{'results'}[1]->{'PM2_5Value'}) / 2), 1);
 $aqiweather["aqiozone"]  = 'N/A';
@@ -61,7 +61,6 @@ $a=""; if ($aqiweather["aqi"]==$a) {
 <?php 
 echo '<div class="sunblock">';
 echo '<div class="wudesc">Purple Air Quality</div>
-
 <div class="aqicon">';
 //aq icon
 if ($aqiweather["aqi"]>=300){echo "<purple><img src='aqi/hazair.svg?ver=1.4' width='110px' height='100px'>";}
@@ -71,8 +70,6 @@ else if ($aqiweather["aqi"]>=150){echo "<red><img src='aqi/uhair.svg?ver=1.4' wi
 else if ($aqiweather["aqi"]>=100){echo "<orange><img src='aqi/uhfsair.svg?ver=1.4' width='110px' height='100px'>";}
 else if ($aqiweather["aqi"]>=50){echo "<yellow><img src='aqi/modair.svg?ver=1.4' width='110px' height='100px'>";}
 else if ($aqiweather["aqi"]>=0){echo "<purple><img src='aqi/goodair.svg?ver=1.4' width='110px' height='100px'>";}
-//aq icon
-
 // icon description
 echo '</div>
 <div class="wuicondesc">';
@@ -86,7 +83,6 @@ else if ($aqiweather["aqi"]>=50){echo "Moderate Conditions Caution";}
 else if ($aqiweather["aqi"]>=0){echo "Good Conditions No Caution</green>";}
 echo'</div><br>
 
-
 <div class="wutemp">';
 //aq value
 if ($aqiweather["aqi"]>=300){echo "<purple>".$aqiweather["aqi"]."</purple>";}
@@ -97,8 +93,6 @@ else if ($aqiweather["aqi"]>=100){echo "<orange>".$aqiweather["aqi"]."</orange";
 else if ($aqiweather["aqi"]>=50){echo "<yellow>".$aqiweather["aqi"]."</yellow>";}
 else if ($aqiweather["aqi"]>=0){echo "<green>".$aqiweather["aqi"]."</green>";}
 echo '<br>';
-
-
 
 //aq description
 echo '<div class=wuahead>PM 2.5';?></div></div></div></div>

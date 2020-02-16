@@ -35,34 +35,37 @@ else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<300){ echo "<icon
       </div>
 <div>
 
+<?php //unit
+echo "<unitindicator>&deg;";echo $weather["temp_units"];echo "</unitindicator>";?>
+
 <?php //feels like man
 echo "<tempman>";
 //c
-if($weather["temp_units"]=='C' && $weather["temp_indoor"]<-10){ echo "<icon-minus10>".$tempman."</icon-minus10 >";}
-else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<-5){ echo "<icon-minus5>".$tempman."</icon-minus5>";}
-else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<0){ echo "<icon-zero>".$tempman."</icon-zero>";}
-else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<6){ echo "<icon-0-5>".$tempman."</icon-0-5>";}
-else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<10){ echo "<icon-6-10>".$tempman."</icon-6-10>";}
-else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<15){ echo "<icon-11-15>".$tempman."</icon-11-15>";}
-else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<20){ echo "<icon-16-20>".$tempman."</icon-16-20";}
-else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<25){ echo "<icon-21-25>".$tempman."</icon-21-25>";}
-else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<30){ echo "<icon-26-30>".$tempman."</icon-26-30>";}
-else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<35){ echo "<icon-31-35>".$tempman."</icon-31-35>";}
-else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<40){ echo "<icon-36-40>".$tempman."</icon-36-40>";}
-else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<100){ echo "<icon-41-45>".$tempman."</icon-41-45>";}
+if($weather["temp_units"]=='C' && $weather["temp_indoor"]<-10){ echo "<icon-minus10>".$hometemp1."</icon-minus10 >";}
+else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<-5){ echo "<icon-minus5>".$hometemp1."</icon-minus5>";}
+else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<0){ echo "<icon-zero>".$hometemp1."</icon-zero>";}
+else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<6){ echo "<icon-0-5>".$hometemp1."</icon-0-5>";}
+else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<10){ echo "<icon-6-10>".$hometemp1."</icon-6-10>";}
+else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<15){ echo "<icon-11-15>".$hometemp1."</icon-11-15>";}
+else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<20){ echo "<icon-16-20>".$hometemp1."</icon-16-20";}
+else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<25){ echo "<icon-21-25>".$hometemp1."</icon-21-25>";}
+else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<30){ echo "<icon-26-30>".$hometemp1."</icon-26-30>";}
+else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<35){ echo "<icon-31-35>".$hometemp1."</icon-31-35>";}
+else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<40){ echo "<icon-36-40>".$hometemp1."</icon-36-40>";}
+else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<100){ echo "<icon-41-45>".$hometemp1."</icon-41-45>";}
 
-if($weather["temp_units"]=='F' && $weather["temp_indoor"]<14){ echo "<icon-minus10>".$tempman."</icon-minus10 >";}
-else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<26){ echo "<icon-minus5>".$tempman."</icon-minus5>";}
-else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<32){ echo "<icon-zero>".$tempman."</icon-zero>";}
-else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<42.8){ echo "<icon-0-5>".$tempman."</icon-0-5>";}
-else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<50){ echo "<icon-6-10>".$tempman."</icon-6-10>";}
-else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<59){ echo "<icon-11-15>".$tempman."</icon-11-15>";}
-else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<68){ echo "<icon-16-20>".$tempman."</icon-16-20>";}
-else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<77){ echo "<icon-21-25>".$tempman."</icon-21-25>";}
-else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<86){ echo "<icon-26-30>".$tempman."</icon-26-30>";}
-else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<95){ echo "<icon-31-35>".$tempman."</icon-31-35>";}
-else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<104){ echo "<icon-36-40>".$tempman."</icon-36-40>";}
-else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<300){ echo "<icon-41-45>".$tempman."</icon-41-45>";}
+if($weather["temp_units"]=='F' && $weather["temp_indoor"]<14){ echo "<icon-minus10>".$hometemp1."</icon-minus10 >";}
+else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<26){ echo "<icon-minus5>".$hometemp1."</icon-minus5>";}
+else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<32){ echo "<icon-zero>".$hometemp1."</icon-zero>";}
+else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<42.8){ echo "<icon-0-5>".$hometemp1."</icon-0-5>";}
+else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<50){ echo "<icon-6-10>".$hometemp1."</icon-6-10>";}
+else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<59){ echo "<icon-11-15>".$hometemp1."</icon-11-15>";}
+else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<68){ echo "<icon-16-20>".$hometemp1."</icon-16-20>";}
+else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<77){ echo "<icon-21-25>".$hometemp1."</icon-21-25>";}
+else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<86){ echo "<icon-26-30>".$hometemp1."</icon-26-30>";}
+else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<95){ echo "<icon-31-35>".$hometemp1."</icon-31-35>";}
+else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<104){ echo "<icon-36-40>".$hometemp1."</icon-36-40>";}
+else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<300){ echo "<icon-41-45>".$hometemp1."</icon-41-45>";}
 
 echo "</tempman>";?>
 
