@@ -4334,6 +4334,19 @@ laststrike {
     margin-top:0px;
     }
 
+    .weather34-webcam-large{
+        border: 5px solid hsla(217, 15%, 17%, .5);
+       border-radius:5px;
+       -webkit-border-radius:5px;
+       -moz-border-radius:5px;
+       -ms-border-radius:5px;
+       -o-border-radius:5px;
+        width:90%;height:99%;
+        box-shadow: var(--button-shadow);
+        margin-top:0px;
+        }
+   
+
     .modulecaptioncam {
         display: flex;
         position: relative;
@@ -4354,4 +4367,17 @@ laststrike {
         -moz-border-radius: 3px;
         -ms-border-radius: 3px;
         -o-border-radius: 3px
+    }
+
+
+    .webcamlink {        
+        margin-left:10px;
+        margin-top:100px;
+        display: flex;
+        position:absolute;
+        align-items: center;
+        justify-content: center;        
+        font-size: 3rem;  
+        z-index:200;       
+
     }
