@@ -42,7 +42,7 @@ class sunPos{public function getSunPos(){$date=clone $this->date;$date->setTimez
 $light =$weather["daylight"]; $daylight = ltrim($light, '0'); $dark = 24 - str_replace(':','.',$daylight);$lighthours = substr($daylight, 0, 2); $lightmins = substr($daylight, -2);
 $darkhours = 23 - $lighthours; $darkminutes = 60 - $lightmins;if ($darkminutes<10) $darkminutes= '0' .$darkminutes;else $darkminutes=$darkminutes;$thehour=date('H');$theminute=date('i');?>
 
-<div class="sunblock">
+<div class="sunblock" style="top:7px;">
 </div>
 
 <div class="sunrise1"> <?php echo $sunuphalf.' '. $lang['Sunrise'];?> 
