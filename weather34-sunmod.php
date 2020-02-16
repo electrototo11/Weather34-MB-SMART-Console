@@ -42,7 +42,7 @@ class sunPos{public function getSunPos(){$date=clone $this->date;$date->setTimez
 $light =$weather["daylight"]; $daylight = ltrim($light, '0'); $dark = 24 - str_replace(':','.',$daylight);$lighthours = substr($daylight, 0, 2); $lightmins = substr($daylight, -2);
 $darkhours = 23 - $lighthours; $darkminutes = 60 - $lightmins;if ($darkminutes<10) $darkminutes= '0' .$darkminutes;else $darkminutes=$darkminutes;$thehour=date('H');$theminute=date('i');?>
 
-<div class="sunblock" style="top:7px;">
+<div class="sunblock">
 </div>
 
 <div class="sunrise1"> <?php echo $sunuphalf.' '. $lang['Sunrise'];?> 
@@ -54,6 +54,6 @@ $darkhours = 23 - $lighthours; $darkminutes = 60 - $lightmins;if ($darkminutes<1
 <div class="sunset1"><?php echo $sundownhalf.' '.$lang['Sunset'];?> 
 <?php echo $nextsettxt.' (<blue>'.$nextset.'</blue>)<br>'.$sundownhalf.' '. $lang['Darkness'].' (<blue>'.$darkhours,":".$darkminutes.'</blue> hrs)';?>
 </div>
-<div class="daylight1">&nbsp;<?php echo $hrs."<smalltempunit2>hrs</smalltempunit2>:". $min."<smalltempunit2>min</smalltempunit2>" ?></div> 
-<tdiv class=till><?php echo $txt?></div>
+<div class="daylight1">&nbsp;<?php echo $hrs."<smalltempunit2>hrs</smalltempunit2>:". $min."<smalltempunit2>min</smalltempunit2>" ?>
+<tdiv class=till><?php echo $txt?></div></div> 
 

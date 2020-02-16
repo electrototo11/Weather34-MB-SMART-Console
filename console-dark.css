@@ -451,7 +451,7 @@ li4 {
     font-size: 1.25rem;
     background-color: hsla(204, 31%, 21%, .229);
     margin-left: 5px;
-    margin-top: -58px;
+    margin-top: -68px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -459,15 +459,15 @@ li4 {
 }
 
 .till {
-    position: relative;
+    color: var(--silver);    
+    position: absolute;
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
-    top: -28px;
-    z-index: 99999;
-    color: var(--silver);
+    top:30px;
+    z-index: 99999;   
     font-family: weathertext2;
-    left:-115px
+    left:15px
 }
 
 .sunrise1 {
@@ -476,7 +476,7 @@ li4 {
     color: var(--body-text-dark);
     font-size: .7rem;
     line-height: 1;
-    margin-top: -60px;
+    margin-top: -70px;
     position: absolute;
     margin-left: 115px;
     font-family: headingtext;
@@ -489,7 +489,7 @@ li4 {
     color: var(--body-text-dark);
     font-size: .7rem;
     line-height: 1;
-    margin-top: -35px;
+    margin-top: -40px;
     position: absolute;
     margin-left: 115px;
     font-family: headingtext;
@@ -502,7 +502,7 @@ li4 {
     color: var(--silver);
     font-size: .7rem;
     line-height: 1;
-    margin-top: -45px;
+    margin-top: -50px;
     position: absolute;
     margin-left: 0;
     font-family: headingtext;
