@@ -688,8 +688,8 @@ indoor-temp-trend2 {
     color: var(--light);
     position: absolute;
     float: none;
-    left: 120px;
-    top: 20px;
+    left: 125px;
+    top: 25px;
     width: 7rem;
     line-height: 2;
     height: 16px;
@@ -706,7 +706,8 @@ indoor-temp-trend2 {
     -ms-flex-align: center;
     align-items: center;
     padding-top: 1px;
-    background-color: hsla(204, 31%, 21%, .229)
+    background-color: hsla(204, 31%, 21%, .229);
+    text-transform:none;
 }
 
 .indoorfeels-mod2 {
@@ -717,7 +718,7 @@ indoor-temp-trend2 {
     color: var(--silver);
     position: absolute;
     float: none;
-    left: 120px;
+    left: 125px;
     top: 45px;
     width: 7rem;
     line-height: 2;
@@ -735,7 +736,8 @@ indoor-temp-trend2 {
     -ms-flex-align: center;
     align-items: center;
     padding-top: 1px;
-    background-color: hsla(204, 31%, 21%, .229)
+    background-color: hsla(204, 31%, 21%, .229);
+    text-transform:none;
 }
 
 .lightningyear-mod2 {
@@ -4201,14 +4203,14 @@ button:focus {
 .button-dial-small {
     border-radius: 50%;
     display: flex;
-    height: 80px;
+    height: 85px;
     margin: 0px;
     left: 10px;
     align-items: center;
     justify-content: center;
-    width: 80px;
-    font-family: weathertext3;
-    margin-top: -10px;
+    width: 85px;
+    font-family: weathertext2;
+    margin-top: -15px;
     color: grey;
 }
 
@@ -4216,8 +4218,8 @@ button:focus {
     background: var(--button-bg-color);
     box-shadow: var(--button-shadow);
     border-radius: 50%;
-    width: 70%;
-    height: 70%;
+    width: 73%;
+    height: 73%;
     margin: 0 auto;
     position: absolute;
     top: 15%;
@@ -4227,7 +4229,7 @@ button:focus {
 }
 
 .button-dial-label-small {
-    font-size: 16px;
+    font-size: 18px;
     position: relative;
     z-index: 10;
     color: grey;
@@ -4252,7 +4254,7 @@ indoortempman {
     width: 4rem;
     height: 4rem;    
     margin-left:-27px;
-    margin-top:25px;
+    margin-top:27px;
     z-index:100;
     font-size:8px
 }

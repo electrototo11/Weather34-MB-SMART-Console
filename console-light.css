@@ -729,8 +729,8 @@ indoor-temp-trend2 {
     color: var(--dark);
     position: absolute;
     float: none;
-    left: 100px;
-    top: 15px;
+    left: 120px;
+    top: 20px;
     width: 7rem;
     line-height: 1;
     height: 16px;
@@ -760,8 +760,8 @@ indoor-temp-trend2 {
     color: var(--dark);
     position: absolute;
     float: none;
-    left: 100px;
-    top: 35px;
+    left: 120px;
+    top: 40px;
     width: 7rem;
     line-height: 1;
     height: 16px;
@@ -4116,14 +4116,14 @@ button:focus {
 .button-dial-small {
     border-radius: 50%;
     display: flex;
-    height: 60px;
+    height: 65px;
     margin: 0px;
     left: -10px;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    font-family: weathertext3;
-    margin-top: -10px;
+    width: 65px;
+    font-family: weathertext2;
+    margin-top: -15px;
     color: grey;
 }
 
@@ -4131,8 +4131,8 @@ button:focus {
     background: var(--button-bg-color);
     box-shadow: var(--button-shadow);
     border-radius: 50%;
-    width: 71%;
-    height: 71%;
+    width: 73%;
+    height: 73%;
     margin: 0 auto;
     position: absolute;
     top: 15%;
@@ -4142,7 +4142,7 @@ button:focus {
 }
 
 .button-dial-label-small {
-    font-size: 16px;
+    font-size: 18px;
     position: relative;
     z-index: 10;
     color: grey;
@@ -4197,7 +4197,7 @@ indoortempman {
     width: 4rem;
     height: 4rem;    
     margin-left:-27px;
-    margin-top:24px;
+    margin-top:27px;
     z-index:100;
     font-size:8px
 }
