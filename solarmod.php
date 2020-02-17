@@ -13,9 +13,9 @@
 <div>
 
 <?php //wind unit
-echo "<tempman style='margin-top:-48px;padding-left:3px'>";
-if($weather["solar"]>500){ echo "<orange>".$tempman."</orange>";}
-else if($weather["solar"]>=0){ echo "<yellow>".$tempman."</yellow>";}
+echo "<tempman style='margin-top:-40px;padding-left:5px'>";
+if($weather["solar"]>500){ echo "<orange>".$solarpanelicon."</orange>";}
+else if($weather["solar"]>=0){ echo "<yellow>".$solarpanelicon."</yellow>";}
 echo "</tempman>";
 ?>
 </div></div></div></div></div>

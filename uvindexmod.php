@@ -83,9 +83,9 @@ else if ($weather["uvymax"]>=0) {
 
 <div class=thetrendgap>
 <?php 
-if ($weather["solar"]>=700) {echo "<div class=theuvred>Strong Radiation";}
-else if ($weather["solar"]>=300) {echo "<div class=theuvyellow>Moderate Radiation";}
-else if ($weather["solar"]>=0) {echo "<div class=theuvgreen>Low Radiation";}
+if ($weather["uv"]>=700) {echo "<div class=theuvred><orange>".$solaricon.'</orange> Strong Sun Radiation';}
+else if ($weather["solar"]>0) {echo "<div class=theuvyellow><yellow>".$solaricon.'</yellow> Moderate Radiation';}
+else if ($weather["solar"]==0) {echo "<div class=theuvgreen><grey>".$solaricon.'</grey> Low Radiation';}
 ?>
 </div></div></div></div></div>
 

@@ -3972,6 +3972,12 @@ purple {
     color: var(--purple)
 }
 
+
+grey {
+    color: var(--dark-toggle)
+}
+
+
 .weather-toggle-theme {
     width: 52px;
     height: 18px;

@@ -4071,6 +4071,12 @@ purple {
     color: var(--purple)
 }
 
+
+grey {
+    color: var(--dark-toggle)
+}
+
+
 legendlightning {
     position: relative;
     border-radius: 2px;
