@@ -3974,7 +3974,8 @@ purple {
 
 
 grey {
-    color: var(--dark-toggle)
+    color: var(--font-color);
+    opacity:.5
 }
 
 
