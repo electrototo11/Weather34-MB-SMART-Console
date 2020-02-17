@@ -15,7 +15,7 @@ else if ($weather["uv"]>=0 ) {echo "<green>No Caution</green>";}
           <?php 
           if ($weather["uv"]>=10){echo "<purple>".$weather["uv"]."</purple>";}
           else if ($weather["uv"]>=8){echo "<red>".$weather["uv"]."</red>";}
-          else if ($weather["uv"]>=5){echo "<orange>".$weather["uv"]."</orange>";}
+          else if ($weather["uv"]>=6){echo "<orange>".$weather["uv"]."</orange>";}
           else if ($weather["uv"]>=3){echo "<yellow>".$weather["uv"]."</yellow>";}
           else if ($weather["uv"]>=0){echo "<green>".$weather["uv"]."</green>";}
           ?>
@@ -23,11 +23,11 @@ else if ($weather["uv"]>=0 ) {echo "<green>No Caution</green>";}
 
 <?php //wind unit
 echo "<tempman style='margin-top:-51px;padding-left:4px'>";
-if($weather["uv"]>10){ echo "<purple>".$uvicon."</purple>";}
-else if($weather["uv"]>8){ echo "<darkred>".$uvicon."</darkred>";}
-else if($weather["uv"]>5){ echo "<orange>".$uvicon."</orange>";}
-else if($weather["uv"]>3){ echo "<yellow>".$uvicon."</yellow>";}
-else if($weather["uv"]>0){ echo "<green>".$uvicon."</green>";}
+if($weather["uv"]>=10){ echo "<purple>".$uvicon."</purple>";}
+else if($weather["uv"]>=8){ echo "<darkred>".$uvicon."</darkred>";}
+else if($weather["uv"]>=6){ echo "<orange>".$uvicon."</orange>";}
+else if($weather["uv"]>=3){ echo "<yellow>".$uvicon."</yellow>";}
+else if($weather["uv"]>=0){ echo "<green>".$uvicon."</green>";}
 echo "</tempman>";
 ?>
 </div></div></div></div></div>
@@ -94,7 +94,7 @@ else if ($weather["solar"]>=0) {echo "<div class=theuvgreen>Low Radiation";}
 echo "Max ";
 if ($weather["uvdmax"]>=10){echo "<purple>".$weather["uvdmax"]."</purple>";}
 else if ($weather["uvdmax"]>=8){echo "<red>".$weather["uvdmax"]."</red>";}
-else if ($weather["uvdmax"]>=5){echo "<orange>".$weather["uvdmax"]."</orange>";}
+else if ($weather["uvdmax"]>=6){echo "<orange>".$weather["uvdmax"]."</orange>";}
 else if ($weather["uvdmax"]>=3){echo "<yellow>".$weather["uvdmax"]."</yellow>";}
 else if ($weather["uvdmax"]>=0){echo "<green>".$weather["uvdmax"]."</green>";}
 echo " Time:";echo $weather["uvdmaxtime"];

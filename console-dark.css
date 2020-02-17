@@ -688,8 +688,8 @@ indoor-temp-trend2 {
     color: var(--light);
     position: absolute;
     float: none;
-    left: 125px;
-    top: 25px;
+    left: 135px;
+    top: 27px;
     width: 7rem;
     line-height: 2;
     height: 16px;
@@ -718,8 +718,8 @@ indoor-temp-trend2 {
     color: var(--silver);
     position: absolute;
     float: none;
-    left: 125px;
-    top: 45px;
+    left: 135px;
+    top: 50px;
     width: 7rem;
     line-height: 2;
     height: 16px;
@@ -1275,21 +1275,18 @@ blue {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 117px;
-    height: 1.58em;
+    width: 7.5rem;
+    height: 1rem;
     overflow: hidden;
-    -webkit-box-shadow: inset 3px 0 0 0 #3b9cac;
-    box-shadow: inset 3px 0 0 0 #3b9cac;
     font-family: weathertext2;
     line-height: 1.4;
-    -webkit-border-left: 0;
-    -webkit-border-top-right-radius: 2px;
-    -webkit-border-bottom-right-radius: 2px;
-    border: 1px solid hsla(206, 12%, 27%, .502);
+    border: 1px solid hsla(206, 12%, 27%, .3);
     border-width: thin;
-    border-left: 0;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .rainratebar,
@@ -4203,14 +4200,14 @@ button:focus {
 .button-dial-small {
     border-radius: 50%;
     display: flex;
-    height: 85px;
+    height: 86px;
     margin: 0px;
-    left: 10px;
+    left: 15px;
     align-items: center;
     justify-content: center;
-    width: 85px;
+    width: 86px;
     font-family: weathertext2;
-    margin-top: -15px;
+    margin-top: -17px;
     color: grey;
 }
 
@@ -4229,7 +4226,7 @@ button:focus {
 }
 
 .button-dial-label-small {
-    font-size: 18px;
+    font-size: 19px;
     position: relative;
     z-index: 10;
     color: grey;
@@ -4253,8 +4250,8 @@ indoortempman {
     position: absolute;
     width: 4rem;
     height: 4rem;    
-    margin-left:-27px;
-    margin-top:27px;
+    margin-left:-30px;
+    margin-top:31px;
     z-index:100;
     font-size:8px
 }

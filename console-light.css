@@ -1238,19 +1238,18 @@ blue {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 117px;
-    height: 1.58em;
+    width: 7.25rem;
+    height: 1rem;
     overflow: hidden;
-    -webkit-box-shadow: inset 3px 0 0 0 #3b9cac, 5px 5px 8px rgba(0, 0, 0, 0.07);
-    box-shadow: inset 3px 0 0 0 #3b9cac, 5px 5px 8px rgba(0, 0, 0, 0.07);
+    -webkit-box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.07);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.07);
     font-family: weathertext2;
     line-height: 1.2;
-    -webkit-border-left: 0;
-    -webkit-border-top-right-radius: 2px;
-    -webkit-border-bottom-right-radius: 2px;
-    border-left: 0;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .rainratebar,
@@ -4072,18 +4071,15 @@ button:focus {
     justify-content: center;
     width: 120px;
     font-family: weathertext3;
-    margin-top: -25px;
-    color: grey;
-
-
+    margin-top: -25px; 
 }
 
 .button-dial-top {
     background: var(--button-bg-color);
     box-shadow: var(--button-shadow);
     border-radius: 50%;
-    width: 70%;
-    height: 70%;
+    width: 73%;
+    height: 73%;
     margin: 0 auto;
     position: absolute;
     top: 15%;
@@ -4142,7 +4138,7 @@ button:focus {
 }
 
 .button-dial-label-small {
-    font-size: 18px;
+    font-size: 19px;
     position: relative;
     z-index: 10;
     color: grey;
@@ -4196,8 +4192,8 @@ indoortempman {
     position: absolute;
     width: 4rem;
     height: 4rem;    
-    margin-left:-27px;
-    margin-top:27px;
+    margin-left:-29px;
+    margin-top:29px;
     z-index:100;
     font-size:8px
 }
