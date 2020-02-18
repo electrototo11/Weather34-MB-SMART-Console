@@ -1740,6 +1740,16 @@ solaricon {
     z-index:100;
     font-size:11px
 }
+
+uvicon {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;    
+    margin-left:-138px;
+    margin-top:-47px;
+    z-index:100;
+    font-size:11px
+}
 .daylightcompass2>.daylightcompass-line2,
 .homeweathercompass1>.homeweathercompass-line1,
 .homeweathercompass2>.homeweathercompass-line2 {
