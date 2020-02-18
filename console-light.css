@@ -1710,10 +1710,10 @@ tempman {
     position: absolute;
     width: 4rem;
     height: 4rem;    
-    margin-left:-145px;
-    margin-top:-33px;
-    z-index:100;
-    font-size:11px
+    margin-left:-150px;
+    margin-top:-33px;   
+    font-size:11px;
+    z-index:10;
 }
 
 umbrella {
@@ -1721,25 +1721,18 @@ umbrella {
     width: 4rem;
     height: 4rem;
     left: -50px;
-    margin-top: 109px
-}
-
-uvman {
-    position: absolute;
-    width: 4rem;
-    height: 4rem;
-    margin-left: -87px;
-    margin-top: -22px
+    margin-top: 109px;
+    z-index:10;
 }
 
 windindicator {
     position: absolute;
     width: 4rem;
     height: 4rem;    
-    margin-left:-140px;
-    margin-top:-25px;
-    z-index:100;
-    font-size:13px
+    margin-left:-148px;
+    margin-top:-25px;    
+    font-size:13px;
+    z-index:10;
 }
 
 unitindicator ,windunitindicator {
@@ -1748,7 +1741,7 @@ unitindicator ,windunitindicator {
     height: 1rem;    
     margin-left:-2px;
     margin-top:-28px;
-    z-index:100;
+    z-index:10;
     font-size:10px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1782,18 +1775,18 @@ solaricon {
     width: 4rem;
     height: 4rem;    
     margin-left:-140px;
-    margin-top:-32px;
-    z-index:100;
-    font-size:11px
+    margin-top:-32px;    
+    font-size:11px;
+    z-index:10;
 }
 
 uvicon {
     position: absolute;
-    width: 4rem;
-    height: 4rem;    
-    margin-left:-138px;
-    margin-top:-37px;
-    z-index:100;
+    width: 3rem;
+    height: 3rem;    
+    margin-left:-136px;
+    margin-top:-40px;
+    z-index:10;
     font-size:11px
 }
 
@@ -3976,7 +3969,7 @@ labelspan {
     line-height: 2;
     font-family: Headingtext
 }
-
+ƒ
 .weather-toggle-theme:after {
     z-index: 999;
     content: '';
