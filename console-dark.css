@@ -1730,6 +1730,16 @@ windindicator {
     margin-left: -145px;
     margin-top: -38px
 }
+
+solaricon {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;    
+    margin-left:-140px;
+    margin-top:-40px;
+    z-index:100;
+    font-size:11px
+}
 .daylightcompass2>.daylightcompass-line2,
 .homeweathercompass1>.homeweathercompass-line1,
 .homeweathercompass2>.homeweathercompass-line2 {
@@ -2802,8 +2812,7 @@ valuebeaufort {
 .online2 {
     position: absolute;
     font-size: .65em;
-    color: var(--blue);
-    z-index: 100000;
+    color: var(--blue);    
     margin-top: -20px;
     float: right;
     padding-left: 10px;

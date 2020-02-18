@@ -21,17 +21,15 @@ else if ($weather["uv"]>=0 ) {echo "<green>No Caution</green>";}
           ?>
 </div></div><div>
 
-<?php //wind unit
-echo "<tempman style='margin-top:-51px;padding-left:4px'>";
-if($weather["uv"]>=10){ echo "<purple>".$uvicon."</purple>";}
-else if($weather["uv"]>=8){ echo "<darkred>".$uvicon."</darkred>";}
-else if($weather["uv"]>=6){ echo "<orange>".$uvicon."</orange>";}
+<?php //uv unit
+echo "<tempman style='margin-top:-38px;padding-left:10px'>";
+if($weather["uv"]>10){ echo "<purple>".$uvicon."</purple>";}
+else if($weather["uv"]>=8){ echo "<red>".$uvicon."</red>";}
+else if($weather["uv"]>=5){ echo "<orange>".$uvicon."</orange>";}
 else if($weather["uv"]>=3){ echo "<yellow>".$uvicon."</yellow>";}
 else if($weather["uv"]>=0){ echo "<green>".$uvicon."</green>";}
 echo "</tempman>";
 ?>
-</div></div></div></div></div>
-
 </div></div></div></div></div>
 
 <div class="heatcircle"><div class="heatcircle-content">

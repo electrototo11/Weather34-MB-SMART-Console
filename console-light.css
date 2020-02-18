@@ -1287,7 +1287,7 @@ smallrainrateunit {
 }
 
 .heatcircle {
-    margin-top:-105px;margin-left:55px;
+    margin-top:-95px;margin-left:55px;
 }
 
 .heatcircle2 {
@@ -1595,10 +1595,6 @@ smallrainunit4 {
     background: #fff;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.07);
 
-
-    
-
-
 }
 
 
@@ -1619,9 +1615,6 @@ valuetextheading2 {
     text-align: left;
     left: 2px
 }
-
-
-
 
 .rainmodulehome,
 .rainratemodulehome {
@@ -1658,11 +1651,6 @@ valuetextheading2 {
     font-size: .55rem
 }
 
-.tempmodulehome40-50c {
-    -webkit-box-shadow: inset 3px 0 0 0 #e26971;
-    box-shadow: inset 3px 0 0 0 #e26971
-}
-
 .rainratemodulehome {
     width: 4.5rem
 }
@@ -1671,31 +1659,7 @@ raiblue {
     color: var(--blue)
 }
 
-.intempmodulehome0-5c {
-    -webkit-box-shadow: inset 3px 0 0 0 var(--blue);
-    box-shadow: inset 3px 0 0 0 var(--blue)
-}
 
-.intempmodulehome5-10c {
-    -webkit-box-shadow: inset 3px 0 0 0 var(--green);
-    box-shadow: inset 3px 0 0 0 var(--green)
-}
-
-.intempmodulehome10-15c,
-.intempmodulehome15-20c {
-    -webkit-box-shadow: inset 3px 0 0 0 var(--yellow);
-    box-shadow: inset 3px 0 0 0 var(--yellow)
-}
-
-.intempmodulehome20-25c {
-    -webkit-box-shadow: inset 3px 0 0 0 #ec5732;
-    box-shadow: inset 3px 0 0 0 #ec5732
-}
-
-.intempmodulehome25-30c {
-    -webkit-box-shadow: inset 3px 0 0 0 #d15f2e;
-    box-shadow: inset 3px 0 0 0 #d15f2e
-}
 
 valuewindunit {
     font-size: .55rem
@@ -1746,8 +1710,8 @@ tempman {
     position: absolute;
     width: 4rem;
     height: 4rem;    
-    margin-left:-125px;
-    margin-top:-45px;
+    margin-left:-145px;
+    margin-top:-33px;
     z-index:100;
     font-size:11px
 }
@@ -1765,31 +1729,31 @@ uvman {
     width: 4rem;
     height: 4rem;
     margin-left: -87px;
-    margin-top: -32px
+    margin-top: -22px
 }
 
 windindicator {
     position: absolute;
     width: 4rem;
     height: 4rem;    
-    margin-left:-120px;
-    margin-top:-40px;
+    margin-left:-140px;
+    margin-top:-25px;
     z-index:100;
     font-size:13px
 }
 
-windunitindicator {
+unitindicator ,windunitindicator {
     position: absolute;
-    width: 4rem;
+    width: 2rem;
     height: 1rem;    
-    margin-left:130px;
-    margin-top:7px;
+    margin-left:-2px;
+    margin-top:-28px;
     z-index:100;
     font-size:10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;    
-    color: var(--body-text-light);
+    color: var(--font-color);
     overflow: hidden;
     font-family: weathertext2;
     line-height: 1;
@@ -1808,18 +1772,19 @@ windunitindicator {
     box-shadow: -6px -6px 8px rgba(255, 255, 255, 0.9), 2px 2px 2px rgba(0, 0, 0, 0.07);
 }
 
-unitindicator {
-   display:none
-}
-
 windtodaymax {
     font-size: .55rem;
     color: var(--body-text-light)
 }
 
-windtodaymax {
-    font-size: .55rem;
-    color: var(--body-text-light)
+solaricon {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;    
+    margin-left:-140px;
+    margin-top:-32px;
+    z-index:100;
+    font-size:11px
 }
 
 .daylightcompass2>.daylightcompass-line2,
@@ -2651,7 +2616,7 @@ valuebeaufort {
     align-items: center;
     justify-content: center;
     left: 85px;
-    top: -30px;
+    top: -45px;
     font-size: .6rem;
     font-family: weathertext2;
     width: 12em;
@@ -2795,8 +2760,7 @@ valuebeaufort {
 .online2 {
     position: absolute;
     font-size: .65em;
-    color: var(--blue);
-    z-index: 100000;
+    color: var(--blue);    
     margin-top: -20px;
     float: right;
     padding-left: 10px;
@@ -3210,7 +3174,7 @@ alertunit {
 .feels,
 .maxwind {
     position: absolute;
-    margin-top: -32px;
+    margin-top: -12px;
     margin-left: -145px;
     font-size: .6rem;
     font-family: weathertext2;
@@ -3222,17 +3186,17 @@ alertunit {
 
 realfeel {
     position: absolute;
-    top: 33px;
-    margin-left: 0;
+    top: 10px;
+    left: 15px;
     font-size: 7.5pt;
     font-family: weathertext2;
     width: 100px;
     line-height: 1.4;
     color: grey;    
-    border-radius: 3px;
     color: var(--silver);    
-    z-index:100
+    z-index:100;
 }
+
 
 .frost {
     position: absolute;
@@ -4069,30 +4033,145 @@ button:focus {
 }
 
 .button-dial {
-    border-radius: 50%;
+    border-radius:5px;
+   -webkit-border-radius:5px;
+   -moz-border-radius:5px;
+   -ms-border-radius:5px;
+   -o-border-radius:5px;
     display: flex;
-    height: 120px;
+    height: 90px;
     margin: 0px;
-    left: -90px;
+    left: -80px;
     align-items: center;
     justify-content: center;
-    width: 120px;
+    width: 130px;
     font-family: weathertext3;
-    margin-top: -25px; 
+    margin-top: -25px;
+    color: grey;
+
+
 }
 
 .button-dial-top {
     background: var(--button-bg-color);
     box-shadow: var(--button-shadow);
-    border-radius: 50%;
-    width: 73%;
-    height: 73%;
+    border-radius:5px;
+   -webkit-border-radius:5px;
+   -moz-border-radius:5px;
+   -ms-border-radius:5px;
+   -o-border-radius:5px;
+    width: 75%;
+    height: 75%;
     margin: 0 auto;
     position: absolute;
     top: 15%;
     left: 15%;
     text-align: center;
     z-index: 5;
+}
+
+
+.button-dial-small {
+    border-radius: 50%;
+    display: flex;
+    height: 67px;
+    margin: 0px;
+    left: -10px;
+    align-items: center;
+    justify-content: center;
+    width: 67px;
+    font-family: weathertext2;
+    margin-top: -15px;
+    color: var(--temp20-25);
+}
+
+.button-dial-top-small {
+    background: var(--button-bg-color);
+    box-shadow: var(--button-shadow);
+    border-radius: 50%;
+    width: 75%;
+    height: 75%;
+    margin: 0 auto;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    text-align: center;
+    z-index: 5;
+}
+
+.button-dial-label-small {
+    font-size: 19px;
+    position: relative;
+    z-index: 10;    
+}
+
+.indoordesc {
+    display:flex;
+    background: 0 0;
+    color: var(--body-text-light);
+    font-size: .65rem;
+    line-height: 1;
+    top: 5px;
+    position: absolute;
+    margin-left: 195px;
+    font-family: headingtext;
+    text-align: left;
+    width:80px;
+    box-shadow: -6px -6px 8px rgba(255, 255, 255, 0.9), 5px 5px 8px rgba(0, 0, 0, 0.07);    
+    background: #fff;
+}
+
+.lightningdesc {
+    display:flex;
+    background: 0 0;
+    color: var(--body-text-light);
+    font-size: .65rem;
+    line-height: 1;
+    top: 5px;
+    position: absolute;
+    margin-left: 145px;
+    font-family: headingtext;
+    text-align: left;
+    width:120px;
+    box-shadow: -6px -6px 8px rgba(255, 255, 255, 0.9), 5px 5px 8px rgba(0, 0, 0, 0.07);    
+    background: #fff;
+}
+
+laststrike {
+    display:flex;
+    background: 0 0;
+    color: var(--body-text-light);
+    font-size: 9px;
+    line-height: 1;
+    top: 25px;
+    position: absolute;
+    left: 65px;
+    font-family: headingtext;
+    text-align: left;
+    width:60px;
+    word-wrap: break-word;    
+    
+}
+
+indoortempman {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;    
+    margin-left:-30px;
+    margin-top:29px;
+    z-index:100;
+    font-size:8px
+}
+
+strikeicon {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;    
+    left:25px;
+    top:43px;
+    z-index:100;
+    font-size:8px;
+    opacity:0.7
 }
 
 .button-dial-label {
@@ -4115,98 +4194,6 @@ button:focus {
     font-size: 13px;
 
 }
-
-.button-dial-small {
-    border-radius: 50%;
-    display: flex;
-    height: 65px;
-    margin: 0px;
-    left: -10px;
-    align-items: center;
-    justify-content: center;
-    width: 65px;
-    font-family: weathertext2;
-    margin-top: -15px;
-    color: grey;
-}
-
-.button-dial-top-small {
-    background: var(--button-bg-color);
-    box-shadow: var(--button-shadow);
-    border-radius: 50%;
-    width: 73%;
-    height: 73%;
-    margin: 0 auto;
-    position: absolute;
-    top: 15%;
-    left: 15%;
-    text-align: center;
-    z-index: 5;
-}
-
-.button-dial-label-small {
-    font-size: 19px;
-    position: relative;
-    z-index: 10;
-    color: grey;
-}
-
-.indoordesc {
-    display:flex;    
-    color: var(--body-text-light);
-    font-size: .65rem;
-    line-height: 1;
-    top: 5px;
-    position: absolute;
-    margin-left: 175px;
-    font-family: headingtext;
-    text-align: center;
-    width:80px;
-    box-shadow: -6px -6px 8px rgba(255, 255, 255, 0.9), 5px 5px 8px rgba(0, 0, 0, 0.07);    
-    background: #fff;    
-}
-
-.lightningdesc {
-    display:flex;    
-    color: var(--body-text-light);
-    font-size: .65rem;
-    line-height: 1;
-    top: 5px;
-    position: absolute;
-    margin-left: 165px;
-    font-family: headingtext;    
-    width:120px;
-    box-shadow: -6px -6px 8px rgba(255, 255, 255, 0.9), 5px 5px 8px rgba(0, 0, 0, 0.07);    
-    background: #fff;
-}
-
-laststrike {
-    display:flex;
-    background: 0 0;
-    color: var(--body-text-light);
-    font-size: 9px;
-    line-height: 1;
-    top: 25px;
-    position: absolute;
-    margin-left: 65px;
-    font-family: headingtext;
-    text-align: left;
-    width:60px;
-    word-wrap: break-word;    
-}
-
-indoortempman {
-    position: absolute;
-    width: 4rem;
-    height: 4rem;    
-    margin-left:-29px;
-    margin-top:29px;
-    z-index:100;
-    font-size:8px
-}
-
-
-
 
 .button-block span {
     font-size: .75rem;
@@ -4240,7 +4227,6 @@ button-block-date {
     background: #fff;
     top: -15px;
 }
-
 .aqicon {
     background: 0 0;
     margin-top: -32px;

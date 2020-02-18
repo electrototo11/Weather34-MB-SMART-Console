@@ -12,11 +12,15 @@
       </div>
 <div>
 
-<?php //wind unit
-echo "<tempman style='margin-top:-40px;padding-left:5px'>";
+<?php //unit
+echo "<unitindicator>wm/2</unitindicator>";?>
+
+
+<?php //solar icon
+echo "<solaricon>";
 if($weather["solar"]>500){ echo "<orange>".$solarpanelicon."</orange>";}
 else if($weather["solar"]>=0){ echo "<yellow>".$solarpanelicon."</yellow>";}
-echo "</tempman>";
+echo "</solaricon>";
 ?>
 </div></div></div></div></div>
 
@@ -52,19 +56,20 @@ echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["lux"]
 </div></div></div><div>
 
 
-
 <div class=thetrendgap>
 <?php 
-if ($weather["solar"]>=700) {echo "<div class=theuvred>Strong Radiation";}
-else if ($weather["solar"]>=300) {echo "<div class=theuvyellow>Moderate Radiation";}
-else if ($weather["solar"]>=0) {echo "<div class=theuvgreen>Low Radiation";}
+if ($weather["solar"]>=700) {echo "<div class=theuvred><orange>".$solaricon.'</orange> Strong Sun Radiation';}
+else if ($weather["solar"]>300) {echo "<div class=theuvyellow><yellow>".$solaricon.'</yellow> Moderate Radiation';}
+else if ($weather["solar"]>0) {echo "<div class=theuvyellow><yellow>".$solaricon.'</yellow> Low Radiation';}
+else if ($weather["solar"]==0) {echo "<div class=theuvgreen><grey>".$solaricon.'</grey> Low Radiation';}
 ?>
 </div></div></div></div></div>
 
 <div class="maxwind">
-<?php  //Max-Min
+<?php  //Max
 echo "Max ";
-echo "<yellow>".$weather["solardmax"]."</yellow>";
+if ($weather["solardmax"]>800){echo "<orange>".$weather["solardmax"]."</orange>";}
+else if ($weather["solardmax"]>0){echo "<yellow>".$weather["solardmax"]."</yellow>";}
 echo " Time:";echo $weather["solardmaxtime"];
 ?>
 </div>
