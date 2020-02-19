@@ -6,7 +6,7 @@
 <?php  
 //saturation
 if ($weather["humidity"]>90){ echo $lang['High']." ".$lang['Saturation'];echo " ".$humidityhighalert;}
-else if ($weather["humidity"]>40){echo $lang['Saturation'];}
+else if ($weather["humidity"]>=40){echo "&nbsp;&nbsp; ".$lang['Saturation'];}
 else if ($weather["humidity"]<40){echo $lang['Low']." ".$lang['Saturation'];echo " ".$humiditylowalert;}
 ?>
 </realfeel>
