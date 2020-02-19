@@ -454,4 +454,8 @@ $lang['Windy']='Windig';
 $lang['Breezy']='Luftig';
 $lang['Light Winds']='Leichter';
 
+$lang['Saturation']='Sättigung';
+$lang['High']='Hoch';
+$lang['Low']='Niedrig';
+
 ?>

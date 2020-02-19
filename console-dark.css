@@ -3325,10 +3325,10 @@ alertunit {
 realfeel {
     position: absolute;
     top: 23px;
-    margin-left: 5px;
-    font-size: .6rem;
+    left: 10px;
+    font-size: 7.5pt;
     font-family: weathertext2;
-    width: 100px;
+    width: 7rem;
     line-height: 1.4;
     color: grey;    
     border-radius: 3px;

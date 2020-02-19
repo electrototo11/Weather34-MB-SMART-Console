@@ -3190,10 +3190,10 @@ alertunit {
 realfeel {
     position: absolute;
     top: 10px;
-    left: 15px;
+    left: 5px;
     font-size: 7.5pt;
     font-family: weathertext2;
-    width: 100px;
+    width: 7rem;
     line-height: 1.4;
     color: grey;    
     color: var(--silver);    
