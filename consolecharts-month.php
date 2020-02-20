@@ -59,7 +59,7 @@
     <li2><div id=time-date></div></li2>  
   </ul>
   <div class="nav">
-    <a href="consoledavis.php" alt="previous page" title="previous page"><?php echo $backhome?></a>
+    <a href="index.php" alt="previous page" title="previous page"><?php echo $backhome?></a>
     <a class="consoleunits" href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
     <a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
       <?php
