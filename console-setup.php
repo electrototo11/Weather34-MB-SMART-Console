@@ -17,6 +17,7 @@ $dateFormat   = "' . $_POST["dateFormat"] . '";
 $password    = "' . $_POST['password'] . '";
 $uvsensor    = "' . $_POST['uvsensor'] . '";
 $display2019    = "' . $_POST['display2019'] . '";
+$smarttv    = "' . $_POST['smarttv'] . '";
 $chartoption    = "' . $_POST['chartoption'] . '";
 $chartoption2    = "' . $_POST['chartoption2'] . '";
 $defaultlanguage   = "' . $_POST["defaultlanguage"] . '";
@@ -634,6 +635,29 @@ $webcamurl   = "' . $_POST["webcamurl"] . '";
                                             </select>
 
                                                 <br><br>
+
+
+                                                <div class="weathersectiontitle">
+                                            <svg id="i-settings" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M13 2 L13 6 11 7 8 4 4 8 7 11 6 13 2 13 2 19 6 19 7 21 4 24 8 28 11 25 13 26 13 30 19 30 19 26 21 25 24 28 28 24 25 21 26 19 30 19 30 13 26 13 25 11 28 8 24 4 21 7 19 6 19 2 Z" />
+                                                <circle cx="16" cy="16" r="4" />
+                                            </svg>
+                                            Do You Have a SMART TV in use  <br></div>
+                                        
+                                            <br>
+                                            <label name="unit"></label>
+                                            <div class="stationvalue">choose which file to use</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M12 30 L24 16 12 2" />
+                                            </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="silver" stroke="silver" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M30 12 L16 24 2 12" />
+                                            </svg>
+                                            <select id="smarttv" name="smarttv" class="choose">
+                                                <option><?php echo $smarttv; ?></option>
+                                                <option>yes</option>
+                                                <option>no</option>
+                                               
+                                            </select>
+
                                             <p>
 
 </div>
