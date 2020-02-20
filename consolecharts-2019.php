@@ -58,7 +58,7 @@
     <li2><div id=time-date></div></li2>  
   </ul>
   <div class="nav">
-    <a href="consoledavis.php" alt="previous page" title="previous page"><?php echo $backhome?></a>
+    <a href="index.php" alt="previous page" title="previous page"><?php echo $backhome?></a>
 
     <a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
     <?php
@@ -85,7 +85,7 @@
        ?>
        
        <chartpage><?php echo $lang['Updated'] ?> <?php 
-       $dayfile=date('Y')."/".date('jMY');$forecastime=filemtime('../weather34charts/'.$dayfile.'.csv');echo date("jS M Y H:i a",$forecastime);?>     
+       $dayfile=date('Y')."/".date('jMY');$forecastime=filemtime('weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M %p",$forecastime);?>     
       </chartpage>
 
       <a class="desktoplink" href="info.html" data-lity alt="weather34 info console " title="info console">      
