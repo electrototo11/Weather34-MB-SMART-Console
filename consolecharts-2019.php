@@ -57,43 +57,37 @@
     <li2><div id=sun></div></li2> 
     <li2><div id=time-date></div></li2>  
   </ul>
-    <div class="nav">
-    <a href="index.php" class="consolesetup"><?php echo $backhome?></a>
-    <a class="consoleunits" href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
-      <?php
-        if ($theme == 'dark') {echo '<div class="weather34-toggle">
-          <div class="circleblob"></div> 
-          <div class="tog red">Light</div>
-         </div>';} 
-        else {echo '<div class="weather34-toggle">
-          <div class="circleblob"></div> 
-         <div class="tog red">Dark</div>
-         </div>';}?></a>
+  <div class="nav">
+    <a href="consoledavis.php" alt="previous page" title="previous page"><?php echo $backhome?></a>
 
-<a href="consolecharts.php" alt="Today Charts" title="Today Charts">
-        <div class="weather34-togglechartdate">
-        <div class="circleblob"></div> 
-       <div class="tog red"><?php echo $lang['Today'];?></div>
-       </div></a>
+    <a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
+    <?php
+        if ($theme == 'dark') {
+          echo '<div class="weather34-sphere-dark"></div>
+          <bottom-bar-text>Light</bottom-bar-text>';} 
+        else {
+          echo '<div class="weather34-sphere-dark"></div>
+          <bottom-bar-text>Dark</bottom-bar-text>';}?></a>
 
-       <a href="consolecharts-month.php" alt="Month Charts" title="Month Charts">
-        <div class="weather34-togglechartdate">
-        <div class="circleblob"></div> 
-       <div class="tog red"><?php echo date('F');?></div>
-       </div></a>
+<a href="consolecharts-month.php" alt="<?php echo date('M');?> Charts" title="<?php echo date('M');?> Charts">
+       <div class="weather34-sphere-orange"></div>
+          <bottom-bar-text><?php echo date('F');?></bottom-bar-text></a>
+
+          <a href="consolecharts-year.php" alt="<?php echo date('Y');?> Charts" title="<?php echo date('Y');?> Charts">
+       <div class="weather34-sphere-blue"></div>
+          <bottom-bar-text><?php echo date('Y');?></bottom-bar-text></a>
 
 
-
-       <a href="consolecharts-year.php" alt="<?php echo $themonth;?> Charts" title="<?php echo $themonth;?> Charts">
-        <div class="weather34-toggleyellow">
-        <div class="circleblob"></div> 
-       <div class="tog red"><?php echo strftime("%Y",time()); ?></div>
-       </div></a>
-
+       <?php if ($display2019=='yes'){echo '
+        <a href="consolecharts-2019.php">
+        <div class="weather34-sphere-yellow"></div>
+          <bottom-bar-text>2019</bottom-bar-text></a>';}
+       ?>
+       
        <chartpage><?php echo $lang['Updated'] ?> <?php 
-       $dayfile=date('Y');$forecastime=filemtime('../weather34charts/2019.csv');echo strftime("%A %d %B %Y %l:%M %p",$forecastime);?>     
+       $dayfile=date('Y')."/".date('jMY');$forecastime=filemtime('../weather34charts/'.$dayfile.'.csv');echo date("jS M Y H:i a",$forecastime);?>     
       </chartpage>
-      
+
       <a class="desktoplink" href="info.html" data-lity alt="weather34 info console " title="info console">      
        <div class="logofooter">
         <img src="Wxsoft34-appsmall.png" width="25px"height="25px" alt="weather34 &copy;2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>"></div></div>
