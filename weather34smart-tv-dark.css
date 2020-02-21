@@ -3513,7 +3513,8 @@ smallrainunit2b {
     opacity: 0;
     background: hsla(214, 10%, 14%, .5);
     outline: 0 !important;
-    white-space: nowrap
+    white-space: nowrap;
+   
 }
 
 .lity.lity-opened {
@@ -3534,7 +3535,7 @@ smallrainunit2b {
     position: fixed;
     top: 0;
     right: 0;
-    bottom: 0;
+    bottom: 10%;
     left: 0;
     margin: 0 auto;
     outline: 0 !important;
