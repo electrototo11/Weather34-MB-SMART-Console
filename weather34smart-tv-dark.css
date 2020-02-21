@@ -3746,7 +3746,8 @@ smallrainunit2b {
     font-size: 100%;
     position: relative;
     display: inline-block;
-    margin: 2px
+    margin: 2px;
+    z-index:10
 }
 
 .weather34-sphere-orange,
@@ -4408,6 +4409,7 @@ laststrike {
         z-index:200;       
 
     }
+
     #weather34popup .window {
         position:absolute;   
         width:440px;

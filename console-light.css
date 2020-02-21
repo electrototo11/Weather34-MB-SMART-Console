@@ -3671,7 +3671,7 @@ bottom-bar-textfore {
 }
 
 @media screen and (max-width:960px) {
-    chartpage {
+    chartpage,.weather34-desktopicon-link {
         display: none
     }
 
