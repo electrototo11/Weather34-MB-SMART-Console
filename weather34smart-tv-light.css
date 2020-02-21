@@ -4299,3 +4299,32 @@ button-block-date {
         z-index:200;       
 
     }
+
+    #weather34popup .window {
+        position:absolute;   
+        width:440px;
+        height:120px;
+        display:none;
+        z-index:9999;
+        padding:5px;
+        top: 35%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        background: #3d464d;
+        margin:0 auto;
+        text-align:center;
+        color:white;
+        font-family: weathertext2;
+      }
+    
+      #weather34popup .window a{
+        font-size: 18px;
+        color: var(--grey);
+        font-family: weathertext2;
+      }
