@@ -455,4 +455,8 @@ $lang['Saturation']='Mättnad';
 $lang['High']='Hög';
 $lang['Low']='Låg';
 
+$lang['Dark']='Mörk';
+$lang['Light']='Ljus';
+$lang['Charts']='Diagram';
+
 ?>

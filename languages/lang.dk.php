@@ -450,4 +450,8 @@ $lang['Light Winds']='Light Winds';
 $lang['Saturation']='Mætning';
 $lang['High']='Høj';
 $lang['Low']='Lav';
+
+$lang['Dark']='Mørk';
+$lang['Light']='Lys';
+$lang['Charts']='Diagram';
 ?>

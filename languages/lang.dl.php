@@ -458,4 +458,8 @@ $lang['Saturation']='Sättigung';
 $lang['High']='Hoch';
 $lang['Low']='Niedrig';
 
+$lang['Dark']='Dunkel';
+$lang['Light']='Leuchte';
+$lang['Charts']='Diagramme';
+
 ?>

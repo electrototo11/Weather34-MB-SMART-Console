@@ -447,4 +447,8 @@ $lang['Light Winds']='Light Winds';
 $lang['Saturation']='Verzadiging';
 $lang['High']='Hoog';
 $lang['Low']='Laag';
+
+$lang['Dark']='Donker';
+$lang['Light']='Licht';
+$lang['Charts']='Weerkaart';
 ?>

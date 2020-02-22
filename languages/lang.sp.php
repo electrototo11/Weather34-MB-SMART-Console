@@ -451,4 +451,8 @@ $lang['Light Winds']='Light Winds';
 $lang['Saturation']='Saturación';
 $lang['High']='Alto';
 $lang['Low']='Bajo';
+
+$lang['Dark']='Oscuro';
+$lang['Light']='La luz';
+$lang['Charts']='Gráfico';
 ?>

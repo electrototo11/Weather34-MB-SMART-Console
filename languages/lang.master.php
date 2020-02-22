@@ -448,7 +448,11 @@ $lang['Breezy']='Breezy';
 $lang['Light Winds']='Light Winds';
 
 $lang['Saturation']='Saturation';
+$lang['High']='High';
+$lang['Low']='Low';
 
-
+$lang['Dark']='Dark';
+$lang['Light']='Light';
+$lang['Charts']='Charts';
 
 ?>
