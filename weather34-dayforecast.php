@@ -11,7 +11,7 @@
 include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');error_reporting(0); date_default_timezone_set($TZ);	?>
 <?php 
 //start the wu output
-$json='../jsondata/wuforecast.txt';
+$json='jsondata/wuforecast.txt';
 $weather34wuurl=file_get_contents($json);
 $parsed_weather34wujson = json_decode($weather34wuurl,false);
 {    if ($parsed_weather34wujson->{'daypart'}[0]->{'iconCode'}[0]==null){

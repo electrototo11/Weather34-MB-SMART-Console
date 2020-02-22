@@ -514,7 +514,7 @@ li3 {
     z-index: 99999;
     color: var(--body-text-light);
     font-family: weathertext2;
-    left: 15px
+    left: 5px
 }
 
 .phase2 {
@@ -3689,7 +3689,7 @@ bottom-bar-textfore {
     }
 
     .desktoplink5 {
-        margin-top: -10px
+        margin-top: -30px
     }
 
     li3 {

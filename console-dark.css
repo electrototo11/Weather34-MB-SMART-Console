@@ -467,7 +467,7 @@ li4 {
     top:30px;
     z-index: 99999;   
     font-family: weathertext2;
-    left:15px
+    left:5px
 }
 
 .sunrise1 {
@@ -3803,7 +3803,7 @@ bottom-bar-textfore {
     }
 
     .desktoplink5 {
-        margin-top: -25px
+        margin-top: -15px
     }
 
     li3 {
