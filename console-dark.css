@@ -3790,7 +3790,7 @@ bottom-bar-textfore {
 }
 
 @media screen and (max-width:960px) {
-    chartpage,.weather34-desktopicon-link {
+    chartpage,.weather34-desktopicon-link,.weather34-refreshicon {
         display: none
     }
 
@@ -3803,7 +3803,7 @@ bottom-bar-textfore {
     }
 
     .desktoplink5 {
-        margin-top: -15px
+        margin-top: -25px
     }
 
     li3 {
@@ -3902,7 +3902,7 @@ bottom-bar-textfore {
     }
 
     .desktoplink {
-        margin-top: 15px
+        margin-top: -10px
     }
 
     .weather34-tablet {

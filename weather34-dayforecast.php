@@ -8,10 +8,10 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
-include('livedata.php');header('Content-type: text/html; charset=utf-8');error_reporting(0); date_default_timezone_set($TZ);	?>
+include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');error_reporting(0); date_default_timezone_set($TZ);	?>
 <?php 
 //start the wu output
-$json='jsondata/wuforecast.txt';
+$json='../jsondata/wuforecast.txt';
 $weather34wuurl=file_get_contents($json);
 $parsed_weather34wujson = json_decode($weather34wuurl,false);
 {    if ($parsed_weather34wujson->{'daypart'}[0]->{'iconCode'}[0]==null){
@@ -197,7 +197,7 @@ if ($rainunit=='in' && $wuapiunit=='h' ){$wuskydayprecipIntensity2=$wuskydayprec
 if ($rainunit=='in' && $wuapiunit=='m' ){$wuskydayprecipIntensity=$wuskydayprecipIntensity*0.0393701;}
 //icon + day wu
 echo '<div class="sunblock">';
-echo '<div class="wudesc">'.$wuskydayTime.'s Forecast</div>
+echo '<div class="wudesc">'.$wuskydayTime;echo ' '.$lang['Forecast'].'</div>
 
 <div class="wuicon">';
 if ($wuskydaynight=='D'){echo '<img src="wuicons/'.$wuskydayIcon.'.svg" width="60" height="50" alt="'.$wuskydesc.'" title="'.$wuskydesc.'"></img>';}

@@ -1,14 +1,15 @@
-<?php
+<?php 
   ####################################################################################################
-	#	PART OF THE WEATHER34 DESIGNED TEMPLATES FOR METEOBRIDGE OWNERS				                           #
-	# https://weather34.com/homeweatherstation/index.html 											                       #
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											                           #
+	# https://weather34.com/homeweatherstation/index.html 											                       # 
 	# 	                                                                                               #
-	# 	Release: January 2020               				  	                                               #
-	# 	Standalone Console Version                                                                     #
+	# 	Release: December 2019	            				  	                                               #
+	# 	  Console Version                                                                              #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 include_once('livedata.php');include_once('updater2.php');
 ?>
+
 <!DOCTYPE html><html><head>
 <title><?php echo $stationName;?> </title>
 <meta name="title" content="<?php echo $stationName;?>">
@@ -20,7 +21,7 @@ include_once('livedata.php');include_once('updater2.php');
 <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 <link rel="manifest" href="favicon/site.webmanifest">
 <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="favicon/favicon.ico">
+<link rel="shortcut icon" href="favicon.ico">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-config" content="favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
@@ -31,20 +32,21 @@ include_once('livedata.php');include_once('updater2.php');
 <link rel="preload" href="fonts/verbatim-regular.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="fonts/verbatim-medium.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="fonts/HelveticaNeue-Medium.woff" as="font" type="font/woff" crossorigin>
-<script>function pageLoaded() {document.querySelector("body").style.opacity = 1;}window.onload = pageLoaded;</script>
 </head>
 <body>
 <!-- weather34 NANOSD console flex layout -->
 <div class="weather34-tablet">
-<div class="fade-in">
 <div class="container">
-<div class="nav-top">
+<div class="nav-top"> 
 <div class="weather34-indoor">
-<?php echo $timeicon?> <div id="weather34clock4"></div>
-</div>
+<?php echo $timeicon?> <div id="weather34clock4"></div></div>
+
 <div class="desktoplink3"><?php echo $headerlocation?> <?php echo $stationName?></div>
-<div class="online"><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;else echo $wireless?></div></div>
-  <ul class="grid-container">
+<div class="online"><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;else echo $wireless?></div>
+
+
+</div>
+<ul class="grid-container">
     <li><div id=temperature></div></li>
     <li><div id=humidity></div></li>
     <li><div id=dewpoint></div></li>
@@ -54,65 +56,65 @@ include_once('livedata.php');include_once('updater2.php');
     <li><div id=rain></div></li>
     <li><div id=barometer></div></li>
     <li><div id=uvindex></div></li>
-    <li2><div id=moon></div></li2>
-    <li2><div id=sun></div></li2>
-    <li2><div id=time-date></div></li2>
+    <li2><div id=moon></div></li2> 
+    <li2><div id=sun></div></li2> 
+    <li2><div id=time-date></div></li2>  
     <li3><div id=clock-date></div></li3>
   </ul>
 
-
+ 
   <div class="nav-bottom">
   <a href="console-setup.php" target="_blank" alt="Setup Screen" title="Setup Screen"> <?php echo $settingsicon ?></a>
 
-<a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
 <a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
   <?php
     if ($theme == 'dark') {echo '<div class="weather34-sphere-dark"></div><bottom-bar-text>'.$lang['Light'].'</bottom-bar-text>
      ';} 
     else {echo '<div class="weather34-sphere-dark"></div><bottom-bar-text>'.$lang['Dark'].'</bottom-bar-text>
      ';}?></a>
+     
 
-<?php
-  if ($units=='us') {
+<?php 
+  if ($units=='us') {     
      echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
-     <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';
+     <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';  
 
-    echo '<a href="?units=scandinavia" alt="MS Units" title="MS Units">
-   <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C ms</bottom-bar-text></a>';
-
+    echo '<a href="?units=scandinavia" alt="MS Units" title="MS Units"> 
+   <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C ms</bottom-bar-text></a>';  
+    
   }
   if ($units=='uk'){
     echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
-    <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>';
+    <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>';  
 
      echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
-    <div class="weather34-sphere-blue"></div><bottom-bar-text>C km/h</bottom-bar-text></a>';
-
-  }
+    <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';  
+   
+  }  
   if ($units=='metric'){
     echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
-    <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>';
+    <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>';  
 
-     echo '<a href="?units=uk" alt="UK Units" title="UK Units">
-     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C mph</bottom-bar-text></a>';
-
-  }
+     echo '<a href="?units=uk" alt="UK Units" title="UK Units"> 
+     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C mph</bottom-bar-text></a>';  
+    
+  }  
 
   if ($units=='scandinavia'){
     echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
-    <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>';
+    <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>';  
 
      echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
-     <div class="weather34-sphere-blue"></div><bottom-bar-text>C km/h</bottom-bar-text></a>';
-
-  }
-  else if ($units==''){
+     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';     
+      
+  }  
+  else if ($units==''){   
     echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
-    <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>';
-
+    <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>';  
+    
      echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
-     <div class="weather34-sphere-blue"></div><bottom-bar-text>C km/h</bottom-bar-text></a>';
-
+     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';  
+   
    }
 ?>
 
@@ -127,21 +129,23 @@ include_once('livedata.php');include_once('updater2.php');
   <a href="outlookwutext.php"  data-lity title="Summary Forecast">
   <div class="weather34-sphere-red"></div>
   <bottom-bar-textfore><?php echo $lang['Forecastsummary']?></bottom-bar-textfore></a>
-  <?php 
+
+<?php 
 //weather34 smart tv option
 if ($smarttv=='yes'){echo '
-  <div class="weather34-desktopicon-link" style="margin-right:0px;margin-top:-27px"><a href="weather34-tv.php" alt="smart tv version" title="smart tv version">'.$weather34tvicon.'</a>
+  <div class="weather34-desktopicon-link" style="margin-right:40px;margin-top:-27px"><a href="weather34-tv.php" alt="smart tv version" title="smart tv version">'.$weather34tvicon.'</a>
 </div>
 ';}
 ?>
+  <div class="weather34-desktopicon-link" ><a href="../index.php" alt="desktop version" title="desktop version"><?php echo $desktop?></a>
+</div>
 
   <div class="weather34-refreshicon">
-<a href="index.php" alt="refresh this dashboard " title="weather34 refresh this dashboard ">
+<a href="consoledavis.php" alt="refresh this dashboard " title="weather34 refresh this dashboard ">
 <?php echo $weather34refreshicon?></a></div>
 
-
-  <a class="desktoplink" href="info.html" data-lity alt="weather34 info console " title="info console">
+  <a class="desktoplink" href="info.html" data-lity alt="weather34 info console " title="info console">      
        <div class="logofooter">
         <img src="Wxsoft34-appsmall.png" width="25px"height="25px" alt="weather34 &copy;2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>"></div></div>
-       </a></div>
+       </a></div> 
  </body></html>
