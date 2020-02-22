@@ -79,6 +79,11 @@ echo "<div class=tempconverter1><div class=tempmodulehomemaxmin style='font-size
 echo $weather["barometer_min"]."<smalltempunit2>".$weather["barometer_units"] 
 ?></smalltempunit2></div></div>
 
+<div class="weather-pressureicon-identity">    
+<?php echo "<icon-zero>".$weather34_pressure_icon."</icon-zero>";
+ ?>
+</div>
+
 <?php
 
 //weather34 script Davis forecast outlook

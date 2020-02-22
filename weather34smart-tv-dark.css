@@ -3795,7 +3795,7 @@ bottom-bar-textfore {
 }
 
 @media screen and (max-width:960px) {
-    chartpage {
+    chartpage ,.weather34-desktopicon-link,.weather34-refreshicon {
         display: none
     }
 
@@ -4439,3 +4439,59 @@ laststrike {
         color: var(--grey);
         font-family: weathertext2;
       }
+
+
+.weather-icon-identity {
+    position: absolute;
+    width: 2rem;
+    height: 1.2rem;
+    margin-left: 120px;
+    margin-top: 22px;
+    z-index: 10;      
+    border-left: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 3px;
+    background-color: hsla(204, 31%, 21%, .229);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    padding-top: 4px
+
+}
+
+.weather-tempicon-identity,.weather-pressureicon-identity  {
+    display:none
+}
+
+.weather-directionicon-identity {
+    position: absolute;
+    width: 2rem;
+    height: 1.5rem;    
+    margin-left: 118px;
+    margin-top: 45px;
+    z-index: 10;      
+    border-left: 0;    
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 3px;
+    background-color: hsla(204, 31%, 21%, .229);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px; 
+    line-height:1.4;
+    padding-bottom:4px
+
+}

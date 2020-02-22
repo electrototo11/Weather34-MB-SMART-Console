@@ -96,8 +96,6 @@ echo $weather["humidity_mmin"]."<smalltempunit2>%</smalltempunit2>";?>
 
 </div></div></div><div>
 
-
-
 <div class=thetrendgap>
 <?php 
 //falling
@@ -106,13 +104,21 @@ if($weather["humidity_trend"]<0){echo '<div class=thetrendboxblue>'.$lang['Falli
 else if($weather["humidity_trend"]>0){echo '<div class=thetrendboxorange>&nbsp;'.$lang['Rising']. '';echo '&nbsp;'.$risingsymbolx.'&nbsp;<orange> + '.number_format($weather["temp_trend"],1).'</orange>%';}
 //steady
 else echo '<div class=thetrendboxblue>'.$lang['Steady']. ' '.$steadysymbol.'';?>
-</div></div></div></div></div>
+</div></div></div>
 
+<div class="weather-tempicon-identity">    
+<?php //humidity id
+if($weather["humidity"]<30){ echo "<icon-26-30>".$weather34_humidity_icon."</icon-26-30>";}
+else if($weather["humidity"]<50){ echo "<icon-6-10>".$weather34_humidity_icon."</icon-6-10>";}
+else if($weather["humidity"]<70){ echo "<icon-11-15>".$weather34_humidity_icon."</icon-11-15>";}
+else if($weather["humidity"]<100){ echo "<icon-zero>".$weather34_humidity_icon."</icon-zero>";}
+ ?>
+</div>
+</div></div>
 
 <div class="maxwind">
 <?php  //Max-Min
 echo "Max ";
-
 if($weather["humidity_max"]<30){ echo "<icon-26-30>".$weather["humidity_max"]."</icon-26-30>";}
           else if($weather["humidity_max"]<50){ echo "<icon-6-10>".$weather["humidity_max"]."</icon-6-10>";}
           else if($weather["humidity_max"]<70){ echo "<icon-11-15>".$weather["humidity_max"]."</icon-11-15>";}

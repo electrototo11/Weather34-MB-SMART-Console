@@ -228,7 +228,8 @@ if ($weather["wind_direction"]<=11.25) {
 } elseif ($weather["wind_direction_avg"]<=360) {
     echo $lang['North'];
 }"&deg;"?></averwordwindword>
-</div></div></div></div></div></div></div>
+</div></div></div></div></div>
+</div></div>
 
 
 
@@ -277,5 +278,9 @@ else if( $weather['wind_direction_avgmonth']<=326.25){echo $lang['NW'];}
 else if( $weather['wind_direction_avgmonth']<=348.75){echo $lang['NNW'];}
 else if( $weather['wind_direction_avgmonth']<=360){echo $lang['North'];}
 ?>
-</smalltempunit2></div></div></div></div></div>
+</smalltempunit2></div></div></div>
+<div class="weather-directionicon-identity">    
+<?php echo "<icon-zero>".$weather34compassicon."</icon-zero>";?>
+</div>
+</div></div>
 <div class="modulecaptiondirection"><?php echo $lang['Wind']; echo " ".$lang['Direction'];?></div></div>

@@ -86,7 +86,18 @@ else if ($weather["solar"]>300) {echo "<div class=theuvyellow><yellow>".$solaric
 else if ($weather["solar"]>0) {echo "<div class=theuvyellow><yellow>".$solaricon.'</yellow> Low Radiation';}
 else if ($weather["solar"]==0) {echo "<div class=theuvgreen><grey>".$solaricon.'</grey> Low Radiation';}
 ?>
-</div></div></div></div></div>
+</div></div></div>
+<div class="weather-tempicon-identity">
+<?php //uv icon
+if($weather["uv"]>=8){ echo "<red>".$weather34_sun_icon."</red>";}
+else if($weather["uv"]>=6){ echo "<orange>".$weather34_sun_icon."</orange>";}
+else if($weather["uv"]>0){ echo "<yellow>".$weather34_sun_icon."</yellow>";}
+else if($weather["uv"]==0){ echo "<grey>".$weather34_sun_icon."</grey>";}
+?>
+</div>
+
+
+</div></div>
 
 <div class="maxwind">
 <?php  //Max

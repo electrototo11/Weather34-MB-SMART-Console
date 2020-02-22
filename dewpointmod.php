@@ -83,7 +83,11 @@ else if($weather["temp_units"]=='F' && $weather["dewpoint"]<104){ echo "<icon-36
 else if($weather["temp_units"]=='F' && $weather["dewpoint"]<300){ echo "<icon-41-45>".$tempman."</icon-41-45>";}
 echo "</tempman>";?>
 
-</div></div></div></div></div>
+</div></div></div>
+
+
+
+</div></div>
 
 <div class="heatcircle"><div class="heatcircle-content">
 <?php  //dewpoint max Year
@@ -154,7 +158,38 @@ if($weather["dewpoint_trend"]<0){echo '<div class=thetrendboxblue>'.$lang['Falli
 else if($weather["dewpoint_trend"]>0){echo '<div class=thetrendboxorange>&nbsp;'.$lang['Rising']. '';echo '&nbsp;'.$risingsymbolx.'&nbsp;<orange> + '.number_format($weather["temp_trend"],1).'</orange>&deg;';}
 //steady
 else echo '<div class=thetrendboxblue>'.$lang['Steady']. ' '.$steadysymbol.'';?>
-</div></div></div></div></div>
+</div></div></div>
+
+<div class="weather-tempicon-identity">    
+<?php //dewpoint id
+//c
+if($weather["temp_units"]=='C' && $weather["dewpoint"]<-10){ echo "<icon-minus10>".$weather34_temp_icon."</icon-minus10 >";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]<-5){ echo "<icon-minus5>".$weather34_temp_icon."</icon-minus5>";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]<0){ echo "<icon-zero>".$weather34_temp_icon."</icon-zero>";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]<6){ echo "<icon-0-5>".$weather34_temp_icon."</icon-0-5>";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]<10){ echo "<icon-6-10>".$weather34_temp_icon."</icon-6-10>";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]<15){ echo "<icon-11-15>".$weather34_temp_icon."</icon-11-15>";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]<20){ echo "<icon-16-20>".$weather34_temp_icon."</icon-16-20>";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]<25){ echo "<icon-21-25>".$weather34_temp_icon."</icon-21-25>";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]<30){ echo "<icon-26-30>".$weather34_temp_icon."</icon-26-30>";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]<35){ echo "<icon-31-35>".$weather34_temp_icon."</icon-31-35>";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]<40){ echo "<icon-36-40>".$weather34_temp_icon."</icon-36-40>";}
+else if($weather["temp_units"]=='C' && $weather["dewpoint"]<100){ echo "<icon-41-45>".$weather34_temp_icon."</icon-41-45>";}
+
+if($weather["temp_units"]=='F' && $weather["dewpoint"]<14){ echo "<icon-minus10>".$weather34_temp_icon."</icon-minus10 >";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]<26){ echo "<icon-minus5>".$weather34_temp_icon."</icon-minus5>";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]<32){ echo "<icon-zero>".$weather34_temp_icon."</icon-zero>";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]<42.8){ echo "<icon-0-5>".$weather34_temp_icon."</icon-0-5>";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]<50){ echo "<icon-6-10>".$weather34_temp_icon."</icon-6-10>";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]<59){ echo "<icon-11-15>".$weather34_temp_icon."</icon-11-15>";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]<68){ echo "<icon-16-20>".$weather34_temp_icon."</icon-16-20>";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]<77){ echo "<icon-21-25>".$weather34_temp_icon."</icon-21-25>";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]<86){ echo "<icon-26-30>".$weather34_temp_icon."</icon-26-30>";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]<95){ echo "<icon-31-35>".$weather34_temp_icon."</icon-31-35>";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]<104){ echo "<icon-36-40>".$weather34_temp_icon."</icon-36-40>";}
+else if($weather["temp_units"]=='F' && $weather["dewpoint"]<300){ echo "<icon-41-45>".$weather34_temp_icon."</icon-41-45>";}
+ ?>
+</div></div></div>
 
 
 <div class="maxwind">
