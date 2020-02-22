@@ -65,9 +65,11 @@ else if ($weather["rain_units"] =='mm'){echo $weather["rain_rate"]*3;}
 else if ($weather["rain_units"] =='in'){echo $weather["rain_rate"]*80;}?>px;">
 <rainratevalue>
 <?php echo $weather["rain_rate"]."&nbsp;<smalltempunit2>".$weather["rain_units"]."</smalltempunit2>";?></rainratevalue>
-</div></div></div>
+</div></div>
 
-
+<?php //rain id
+if ($weather["rain_lasthour"]==0) {echo '<div class="weather-rain-icon-identity">'.$weather34_rain_icon;echo '</div>';}?>
+</div>
 
 <?php //weather34 clean notifications 
 //offline

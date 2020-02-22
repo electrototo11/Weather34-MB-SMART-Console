@@ -4354,7 +4354,7 @@ button-block-date {
 
 }
 
-.weather-tempicon-identity,.weather-pressureicon-identity  {
+.weather-tempicon-identity,.weather-pressureicon-identity,.weather-rain-icon-identity {
     display:none
 }
 

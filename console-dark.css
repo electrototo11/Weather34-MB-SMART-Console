@@ -4457,6 +4457,52 @@ laststrike {
 
 }
 
+.weather-indoor-tempicon-identity {
+    position: absolute;
+    width: 1.05rem;
+    height: 1rem;
+    margin-left: 240px;
+    margin-top: 22px;
+    z-index: 10;      
+    border-left: 0;    
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 3px;
+    background-color: hsla(204, 31%, 21%, .229);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    padding:2px
+}
+
+.weather-rain-icon-identity {
+    position: absolute;
+    width: 1.05rem;
+    height: 1rem;
+    margin-left: -175px;
+    margin-top: 0;
+    z-index: 10;   
+    -webkit-border-left: 0;
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    border-left: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: hsla(204, 31%, 21%, .229);
+    padding:2px
+}
+
 .weather-directionicon-identity {
     position: absolute;
     width: 2rem;
