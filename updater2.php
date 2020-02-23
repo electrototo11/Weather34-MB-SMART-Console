@@ -1,21 +1,22 @@
 <?php include('settings.php');include('common.php');?>
 <script src="js/jquery.js"></script>
 <script>
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#wind").show()}});var c=a("#wind");c.load("windmod.php");var b=setInterval(function(){c.load("windmod.php")},11000)})})(jQuery);
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#gust").show()}});var c=a("#gust");c.load("gustmod.php");var b=setInterval(function(){c.load("gustmod.php")},11000)})})(jQuery);
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#direction").show()}});var c=a("#direction");c.load("directionmod.php");var b=setInterval(function(){c.load("directionmod.php")},10000)})})(jQuery);
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#rain").show()}});var c=a("#rain");c.load("rainmod.php");var b=setInterval(function(){c.load("rainmod.php")},50000)})})(jQuery);
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:false,success:function(){a("#temperature").show()}});var c=a("#temperature");c.load("temperaturemod.php");var b=setInterval(function(){c.load("temperaturemod.php")},70000)})})(jQuery);
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#dewpoint").show()}});var c=a("#dewpoint");c.load("dewpointmod.php");var b=setInterval(function(){c.load("dewpointmod.php")},71000)})})(jQuery);
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#uvindex").show()}});var c=a("#uvindex");c.load("<?php echo $uvsensor ?>");var b=setInterval(function(){c.load("<?php echo $uvsensor ?>")},120000)})})(jQuery);
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#barometer").show()}});var c=a("#barometer");c.load("barometermod.php");var b=setInterval(function(){c.load("barometermod.php")},1300000 )})})(jQuery);
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#humidity").show()}});var c=a("#humidity");c.load("humiditymod.php");var b=setInterval(function(){c.load("humiditymod.php")},62000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:false,success:function(){a("#position1").show()}});var c=a("#position1");c.load("<?php echo $position1 ?>");var b=setInterval(function(){c.load("<?php echo $position1 ?>")},70000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position2").show()}});var c=a("#position2");c.load("<?php echo $position2 ?>");var b=setInterval(function(){c.load("<?php echo $position2 ?>")},62000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position3").show()}});var c=a("#position3");c.load("<?php echo $position3 ?>");var b=setInterval(function(){c.load("<?php echo $position3 ?>")},71000)})})(jQuery);
 
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position4").show()}});var c=a("#position4");c.load("<?php echo $position4 ?>");var b=setInterval(function(){c.load("<?php echo $position4 ?>")},11000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position5").show()}});var c=a("#position5");c.load("<?php echo $position5 ?>");var b=setInterval(function(){c.load("<?php echo $position5 ?>")},10000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position6").show()}});var c=a("#position6");c.load("<?php echo $position6 ?>");var b=setInterval(function(){c.load("<?php echo $position6 ?>")},11000)})})(jQuery);
 
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#moon").show()}});var c=a("#moon");c.load("weather34-dayforecast.php");var b=setInterval(function(){c.load("weather34-dayforecast.php")},80000)})})(jQuery);
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#sun").show()}});var c=a("#sun");c.load("weather34-indoormod.php");var b=setInterval(function(){c.load("weather34-indoormod.php")},72000)})})(jQuery);
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#time-date").show()}});var c=a("#time-date");c.load("<?php echo $consoleforecast?>");var b=setInterval(function(){c.load("<?php echo $consoleforecast?>")},130000)})})(jQuery);
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#clock-date").show()}});var c=a("#clock-date");c.load("weather34-indoormod2.php");var b=setInterval(function(){c.load("weather34-indoormod2.php")},130000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position7").show()}});var c=a("#position7");c.load("<?php echo $position7 ?>");var b=setInterval(function(){c.load("<?php echo $position7 ?>")},50000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position8").show()}});var c=a("#position8");c.load("<?php echo $position8 ?>");var b=setInterval(function(){c.load("<?php echo $position8 ?>")},1300000 )})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position9").show()}});var c=a("#position9");c.load("<?php echo $position9 ?>");var b=setInterval(function(){c.load("<?php echo $position9 ?>")},120000)})})(jQuery);
+
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position10").show()}});var c=a("#position10");c.load("<?php echo $position10 ?>");var b=setInterval(function(){c.load("<?php echo $position10 ?>")},80000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position11").show()}});var c=a("#position11");c.load("<?php echo $position11 ?>");var b=setInterval(function(){c.load("<?php echo $position11 ?>")},72000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position12").show()}});var c=a("#position12");c.load("<?php echo $position12 ?>");var b=setInterval(function(){c.load("<?php echo $position12 ?>")},1300000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position13").show()}});var c=a("#position13");c.load("<?php echo $position13 ?>");var b=setInterval(function(){c.load("<?php echo $position13 ?>")},130000)})})(jQuery);
 </script>
 
 <script type="text/javascript">

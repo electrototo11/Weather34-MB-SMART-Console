@@ -1,6 +1,6 @@
 <?php
 include('console-settings.php');
-$weather34tvicon='<svg width="16pt" height="16pt" viewBox="0 0 512 512" version="weather34 smart tv icon">
+$weather34tvicon='<svg width="18pt" height="18pt" viewBox="0 0 512 512" version="weather34 smart tv icon">
 <g id="#00a4b4"><path fill="#00a4b4" opacity="1.00" d=" M 34.18 52.19 C 38.04 49.11 43.05 47.89 47.93 48.00 C 186.98 48.02 326.04 47.97 465.09 48.02 C 476.40 47.50 486.34 57.77 485.97 68.99 C 486.04 165.65 485.99 262.32 485.99 358.99 C 486.20 366.47 482.38 374.01 475.83 377.78 C 471.70 380.37 466.69 380.76 461.94 380.65 C 433.86 380.50 405.76 380.87 377.68 380.46 C 378.40 391.28 377.80 402.16 378.00 413.00 C 400.00 413.00 422.00 413.00 444.00 413.00 C 444.00 416.33 444.00 419.66 444.00 423.00 C 318.67 423.00 193.33 423.00 68.00 423.00 C 68.00 419.66 68.00 416.33 68.00 413.00 C 90.67 413.00 113.33 413.00 136.00 413.00 C 136.20 402.16 135.59 391.28 136.32 380.46 C 107.22 380.87 78.10 380.50 49.00 380.65 C 43.65 380.83 38.03 379.70 33.84 376.18 C 28.67 372.13 25.88 365.54 26.01 359.03 C 25.99 262.65 26.00 166.28 26.01 69.90 C 25.80 63.15 28.71 56.27 34.18 52.19 M 53.06 75.72 C 53.06 149.64 53.06 223.56 53.06 297.47 C 188.35 297.47 323.65 297.48 458.94 297.47 C 458.94 223.55 458.94 149.64 458.94 75.72 C 323.65 75.72 188.35 75.72 53.06 75.72 M 64.27 324.27 C 57.22 325.89 51.68 332.68 51.91 339.97 C 51.57 348.56 59.36 356.39 67.95 356.09 C 76.93 356.48 84.95 347.97 84.07 339.02 C 83.88 329.35 73.60 321.79 64.27 324.27 M 110.36 324.46 C 102.96 326.05 97.42 333.47 98.09 341.03 C 98.39 349.57 106.57 356.74 115.08 355.91 C 123.99 355.58 131.25 346.68 129.81 337.89 C 128.88 328.83 119.17 322.13 110.36 324.46 M 151.69 380.46 C 152.40 391.28 151.81 402.16 152.00 413.00 C 222.00 413.00 292.00 413.00 362.00 413.00 C 362.20 402.16 361.59 391.28 362.32 380.46 C 348.57 380.86 334.81 380.52 321.06 380.63 C 305.05 380.37 289.06 381.24 273.04 381.00 C 251.70 380.83 230.33 381.38 209.00 380.62 C 189.90 380.53 170.79 380.85 151.69 380.46 Z" />
 </g><g id="#b0a9a5">
 <path fill="#b0a9a5" opacity="1.00" d=" M 80.13 94.10 C 91.35 89.76 104.38 91.01 115.32 95.64 C 113.83 99.59 112.31 103.54 110.85 107.50 C 104.66 104.63 97.70 103.36 90.90 103.99 C 87.57 104.24 83.56 106.24 83.60 110.08 C 83.52 113.43 86.60 115.41 89.25 116.73 C 97.00 120.52 106.28 121.89 112.43 128.44 C 117.91 133.98 117.89 142.98 114.83 149.73 C 111.63 156.60 104.07 160.03 96.89 160.88 C 87.05 161.99 76.93 160.66 67.66 157.22 C 69.20 153.22 70.80 149.23 72.32 145.22 C 80.53 148.47 90.00 150.60 98.58 147.53 C 103.20 146.23 104.15 139.29 100.03 136.81 C 92.31 131.67 82.15 131.20 75.20 124.72 C 65.57 116.63 68.24 98.67 80.13 94.10 Z" />
@@ -29,9 +29,24 @@ $livedataFormat = "' . $_POST["livedataFormat"] . '";
 $livedata   = "' . $_POST["livedata"] . '";
 $dateFormat   = "' . $_POST["dateFormat"] . '";
 $password    = "' . $_POST['password'] . '";
-$uvsensor    = "' . $_POST['uvsensor'] . '";
 $display2019    = "' . $_POST['display2019'] . '";
 $smarttv    = "' . $_POST['smarttv'] . '";
+$notifications    = "' . $_POST['notifications'] . '";
+
+$position1    = "' . $_POST['position1'] . '";
+$position2    = "' . $_POST['position2'] . '";
+$position3    = "' . $_POST['position3'] . '";
+$position4    = "' . $_POST['position4'] . '";
+$position5    = "' . $_POST['position5'] . '";
+$position6    = "' . $_POST['position6'] . '";
+$position7    = "' . $_POST['position7'] . '";
+$position8    = "' . $_POST['position8'] . '";
+$position9    = "' . $_POST['position9'] . '";
+$position10    = "' . $_POST['position10'] . '";
+$position11    = "' . $_POST['position11'] . '";
+$position12    = "' . $_POST['position12'] . '";
+$position13    = "' . $_POST['position13'] . '";
+
 $chartoption    = "' . $_POST['chartoption'] . '";
 $chartoption2    = "' . $_POST['chartoption2'] . '";
 $defaultlanguage   = "' . $_POST["defaultlanguage"] . '";
@@ -43,7 +58,6 @@ $lat = ' . $_POST["lat"] . ';
 $UTC = "' . $_POST["UTC"] . '";
 $clockformat    = "' . $_POST["clockformat"] . '";
 $hemisphere   = "' . $_POST["hemisphere"] . '";
-$consoleforecast    = "' . $_POST['consoleforecast'] . '";
 $webcamurl   = "' . $_POST["webcamurl"] . '";
 ';
 
@@ -59,7 +73,17 @@ $webcamurl   = "' . $_POST["webcamurl"] . '";
    @font-face{font-family:weathertext2;src:url(fonts/verbatim-medium.woff) format("woff")}
    @font-face{font-family:headingtext;src:url(fonts/HelveticaNeue-Medium.woff) format("woff")}
    body{font-family:headingtext;margin:0 auto;color:#aeb6bf;background:#141418;width:100%;max-width:1024px;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;-moz-font-smoothing:unset;-moz-osx-font-smoothing:grayscale;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;backface-visibility:hidden}h1{color:rgba(86,95,103,1);font-size:24px;margin-bottom:10px;font-weight:700;margin:10px 0}h2{color:rgba(86,95,103,1);font-size:20px;margin-bottom:10px;font-weight:700;margin:10px 0}h3{color:silver;font-size:14px;margin-bottom:20px;font-weight:700;margin:20px 0}.weathersetuptitle{font-size:18px;text-align:center;font-weight:200;font-family:Arial,Helvetica,sans-serif;padding:5px;border:0;background:rgba(67,58,80,1);border-radius:5px;color:#fff;width:600px;margin:0 auto;border:0;border:1px solid silver}.theframe1{font-size:14px;font-family:Arial,Helvetica,sans-serif;color:#fff;border:0 solid silver;margin:0 auto;margin-top:10px;margin-bottom:10px;width:1024px;background:0;padding:5px;border-radius:4px}.theframe{font-size:14px;font-family:Arial,Helvetica,sans-serif;color:#fff;border:1px solid rgba(7,114,125,1,.4);margin:0 auto;margin-top:10px;margin-bottom:10px;width:960px;font-family:headingtext;margin:0 auto;color:#aeb6bf;background:#141418;width:100%;max-width:1024px;padding:5px;border-radius:4px;-webkit-box-shadow:4px 7px 20px -5px rgba(0,0,0,.75);-moz-box-shadow:4px 7px 20px -5px rgba(0,0,0,.75);box-shadow:4px 7px 20px -5px rgba(0,0,0,.75)}.weatheroptions{margin:5px;padding:10px;border-radius:4px;border:1px solid #3d464d;border-bottom:18px solid #3d464d;width:95%}.weatheroptionssidebar{display:none}.weatheroptionssidebarbottom{display:none}.weatherbottominfo{position:absolute;font-size:12px;color:silver;padding:3px;margin-top:3px}.weatherbottomwarning{position:absolute;font-size:12px;color:silver;padding:3px;margin-top:7px}.weatheroptions .button{background:rgba(240,94,64,1);border-radius:4px;padding:5px;font-size:16px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;outline:0;-webkit-appearance:none}
-   .weatheroptions .choose{background:rgba(7,114,125,1);border-radius:4px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;width:200px;max-width:400px;outline:0;-webkit-appearance:none;text-align:left}.weatheroptions .choose1{background:rgba(7,114,125,1);border-radius:3px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;width:130px;outline:0;-webkit-appearance:none}.weatheroptions .choose2{background:rgba(86,95,103,1);border-radius:3px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;width:100px;outline:0;-webkit-appearance:none}.weatheroptions .chooseapi{background:rgba(7,114,125,1);border-radius:4px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;width:300px;outline:0;-webkit-appearance:none;text-align:left}.weatheroptions .personal{background:rgba(7,114,125,1);border-radius:4px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;width:99%;outline:0;-webkit-appearance:none;text-align:left}.weatheroptions .stationvalue{background:rgba(86,95,103,1);border-radius:3px;padding:5px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;outline:0;display:inline-block;-webkit-appearance:none}.weatheroptions .stationvalue1{background:silver;border-radius:3px;padding:5px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;outline:0;display:inline-block;-webkit-appearance:none}.weathersectiontitle{background:silver;border-radius:4px;padding:5px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;outline:0;margin:5px;display:inline-block;-webkit-appearance:none;background:#444}.weatheroptions a{font-size:14px;color:rgba(86,95,103,1);font-family:Arial,Helvetica,sans-serif;border:0;text-transform:none;outline:0;-webkit-appearance:none}a{font-size:14px;color:rgba(86,95,103,1);font-family:Arial,Helvetica,sans-serif;border:0;text-transform:none;outline:0;-webkit-appearance:none}#weatherpopupcontainer{width:960px;margin:auto;padding:30px}p{margin-bottom:20px;line-height:24px}#hover{position:fixed;background:#fff;width:100%;height:100%;opacity:.6}#weatherpopup{position:fixed;width:600px;height:320px;background:#fff;left:50%;top:25%;border-radius:5px;padding:60px 0;margin-left:-320px;margin-top:-100px;text-align:center;border:1px solid #e9ebf1;border-bottom:23px solid rgba(40,39,39,.7);color:#fff;padding:10px}.weatherpopupbottom{margin-top:55px;padding:10px;float:left;color:#fff;position:absolute;font-size:11px}#close{position:absolute;background:#fff;color:#fff;right:-10px;top:-10px;border-radius:50%;width:30px;height:30px;line-height:30px;text-align:center;font-size:14px;font-weight:700;font-family:Arial,Arial,sans-serif;cursor:pointer}body{font-family:headingtext;margin:0 auto;color:#aeb6bf;background:#141418;width:100%;max-width:1024px}.seperator{width:700px;border-top:1px #ddd dotted;margin-top:5px;padding:10px}*{box-sizing:border-box}:focus{outline:0}.login{margin:0 auto;width:300px;background-color:none}a{font-size:12px;text-transform:none;text-decoration:none;color:silver}a:hover{color:#7bbb28}.login-screen{background-color:none;padding:20px;border-radius:5px;margin:0 auto}.app-title{text-align:center;color:silver;background-color:none}.login-form{text-align:center;background-color:none}.control-group{margin-bottom:10px}input{text-align:center;background-color:silver;border:2px solid transparent;border-radius:3px;font-size:16px;font-weight:200;padding:10px 0;width:250px;transition:border .5s;color:#fff;border:2px solid rgba(86,95,103,1);box-shadow:none;margin:0 auto;margin-top:10px}input:focus{border:2px solid rgba(86,95,103,1);box-shadow:none}.btn{border:2px solid transparent;background:rgba(86,95,103,1);color:#fff;font-size:16px;line-height:25px;padding:10px 0;text-decoration:none;text-shadow:none;border-radius:3px;box-shadow:none;transition:.25s;display:block;width:150px;margin:10px;text-align:center;-webkit-appearance:none}.btn:hover{background-color:rgba(86,95,103,1)}.login-link{font-size:12px;color:#444;display:block;margin-top:12px}.loginformarea{margin:0 auto;text-align:center;font-size:16px}orange{color:rgba(236,87,27,1)}green{color:rgba(67,58,80,1)}blue{color:rgba(67,58,80,1)}img{border-radius:4px}white{color:#fff}.input-button,.modal-button{font-size:18px;padding:10px 40px}.input-block input,.input-button,.modal-button{font-family:Arial,sans-serif;border:1px solid #ccc}.icon-button,.input-block input,.input-button,.modal-button{outline:0;cursor:pointer}.modal-button{color:#f5f5f5;border-radius:5px;background:#2095a7;width:120px;text-align:center}.modal-button:hover{border-color:rgba(255,255,255,.2);background:rgba(144,177,42,1);color:#f8f8f8}.input-button{color:#7d695e;border-radius:5px;background:#fff}.input-button:hover{background:rgba(144,177,42,1);color:#fff}.input-label{font-size:11px;text-transform:uppercase;font-family:Arial,sans-serif;font-weight:600;letter-spacing:.7px;color:#8c7569}.input-block{display:flex;flex-direction:column;padding:10px 10px 8px;border:1px solid #ddd;border-radius:4px;margin-bottom:20px}.input-block input{color:#fff;font-size:18px;padding:10px 40px;border-radius:5px;background:rgba(144,177,42,1)}.input-block input::-webkit-input-placeholder{color:silver;opacity:1}.input-block input:-ms-input-placeholder{color:silver;opacity:1}.input-block input::-ms-input-placeholder{color:silver;opacity:1}.input-block input::placeholder{color:silver;opacity:1}.input-block:focus-within{border-color:#8c7569}.input-block:focus-within .input-label{color:rgba(140,117,105,.8)}.icon-button{position:absolute;right:10px;top:12px;width:32px;height:32px;background:0;padding:0}oblue{color:#00a4b4}
+   .weatheroptions .choose{background:rgba(7,114,125,1);border-radius:4px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;
+   border:0;width:200px;max-width:400px;outline:0;-webkit-appearance:none;text-align:left;margin-bottom:5px;}
+   .weatheroptions .choose1{background:rgba(7,114,125,1);border-radius:3px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;
+   border:0;width:130px;outline:0;-webkit-appearance:none;margin-bottom:5px;}
+   .weatheroptions .choose2{background:rgba(86,95,103,1);border-radius:3px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;
+   border:0;width:100px;outline:0;-webkit-appearance:none;margin-bottom:5px;}
+   .weatheroptions .chooseapi{background:rgba(7,114,125,1);border-radius:4px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;
+   border:0;width:300px;outline:0;-webkit-appearance:none;text-align:left;margin-bottom:5px;}
+   .weatheroptions .personal{background:rgba(7,114,125,1);border-radius:4px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;
+   border:0;width:99%;outline:0;-webkit-appearance:none;text-align:left;margin-bottom:5px;}
+   .weatheroptions .stationvalue{background:rgba(86,95,103,1);border-radius:3px;padding:5px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;outline:0;display:inline-block;-webkit-appearance:none}.weatheroptions .stationvalue1{background:silver;border-radius:3px;padding:5px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;outline:0;display:inline-block;-webkit-appearance:none}.weathersectiontitle{background:silver;border-radius:4px;padding:5px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;outline:0;margin:5px;display:inline-block;-webkit-appearance:none;background:#444}.weatheroptions a{font-size:14px;color:rgba(86,95,103,1);font-family:Arial,Helvetica,sans-serif;border:0;text-transform:none;outline:0;-webkit-appearance:none}a{font-size:14px;color:rgba(86,95,103,1);font-family:Arial,Helvetica,sans-serif;border:0;text-transform:none;outline:0;-webkit-appearance:none}#weatherpopupcontainer{width:960px;margin:auto;padding:30px}p{margin-bottom:20px;line-height:24px}#hover{position:fixed;background:#fff;width:100%;height:100%;opacity:.6}#weatherpopup{position:fixed;width:600px;height:320px;background:#fff;left:50%;top:25%;border-radius:5px;padding:60px 0;margin-left:-320px;margin-top:-100px;text-align:center;border:1px solid #e9ebf1;border-bottom:23px solid rgba(40,39,39,.7);color:#fff;padding:10px}.weatherpopupbottom{margin-top:55px;padding:10px;float:left;color:#fff;position:absolute;font-size:11px}#close{position:absolute;background:#fff;color:#fff;right:-10px;top:-10px;border-radius:50%;width:30px;height:30px;line-height:30px;text-align:center;font-size:14px;font-weight:700;font-family:Arial,Arial,sans-serif;cursor:pointer}body{font-family:headingtext;margin:0 auto;color:#aeb6bf;background:#141418;width:100%;max-width:1024px}.seperator{width:700px;border-top:1px #ddd dotted;margin-top:5px;padding:10px}*{box-sizing:border-box}:focus{outline:0}.login{margin:0 auto;width:300px;background-color:none}a{font-size:12px;text-transform:none;text-decoration:none;color:silver}a:hover{color:#7bbb28}.login-screen{background-color:none;padding:20px;border-radius:5px;margin:0 auto}.app-title{text-align:center;color:silver;background-color:none}.login-form{text-align:center;background-color:none}.control-group{margin-bottom:10px}input{text-align:center;background-color:silver;border:2px solid transparent;border-radius:3px;font-size:16px;font-weight:200;padding:10px 0;width:250px;transition:border .5s;color:#fff;border:2px solid rgba(86,95,103,1);box-shadow:none;margin:0 auto;margin-top:10px}input:focus{border:2px solid rgba(86,95,103,1);box-shadow:none}.btn{border:2px solid transparent;background:rgba(86,95,103,1);color:#fff;font-size:16px;line-height:25px;padding:10px 0;text-decoration:none;text-shadow:none;border-radius:3px;box-shadow:none;transition:.25s;display:block;width:150px;margin:10px;text-align:center;-webkit-appearance:none}.btn:hover{background-color:rgba(86,95,103,1)}.login-link{font-size:12px;color:#444;display:block;margin-top:12px}.loginformarea{margin:0 auto;text-align:center;font-size:16px}orange{color:rgba(236,87,27,1)}green{color:rgba(67,58,80,1)}blue{color:rgba(67,58,80,1)}img{border-radius:4px}white{color:#fff}.input-button,.modal-button{font-size:18px;padding:10px 40px}.input-block input,.input-button,.modal-button{font-family:Arial,sans-serif;border:1px solid #ccc}.icon-button,.input-block input,.input-button,.modal-button{outline:0;cursor:pointer}.modal-button{color:#f5f5f5;border-radius:5px;background:#2095a7;width:120px;text-align:center}.modal-button:hover{border-color:rgba(255,255,255,.2);background:rgba(144,177,42,1);color:#f8f8f8}.input-button{color:#7d695e;border-radius:5px;background:#fff}.input-button:hover{background:rgba(144,177,42,1);color:#fff}.input-label{font-size:11px;text-transform:uppercase;font-family:Arial,sans-serif;font-weight:600;letter-spacing:.7px;color:#8c7569}.input-block{display:flex;flex-direction:column;padding:10px 10px 8px;border:1px solid #ddd;border-radius:4px;margin-bottom:20px}.input-block input{color:#fff;font-size:18px;padding:10px 40px;border-radius:5px;background:rgba(144,177,42,1)}.input-block input::-webkit-input-placeholder{color:silver;opacity:1}.input-block input:-ms-input-placeholder{color:silver;opacity:1}.input-block input::-ms-input-placeholder{color:silver;opacity:1}.input-block input::placeholder{color:silver;opacity:1}.input-block:focus-within{border-color:#8c7569}.input-block:focus-within .input-label{color:rgba(140,117,105,.8)}.icon-button{position:absolute;right:10px;top:12px;width:32px;height:32px;background:0;padding:0}oblue{color:#00a4b4}
 </style>
 </head>
 
@@ -397,36 +421,7 @@ $webcamurl   = "' . $_POST["webcamurl"] . '";
                                         <br>
 
 
-                                        <div class="weathersectiontitle">
-                                            <svg id="i-settings" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-                                                <path d="M13 2 L13 6 11 7 8 4 4 8 7 11 6 13 2 13 2 19 6 19 7 21 4 24 8 28 11 25 13 26 13 30 19 30 19 26 21 25 24 28 28 24 25 21 26 19 30 19 30 13 26 13 25 11 28 8 24 4 21 7 19 6 19 2 Z" />
-                                                <circle cx="16" cy="16" r="4" />
-                                            </svg>
-                                            Do you have UV Index and Solar Sensor Installed ? 4 options <br>
-                                        uvindexmod.php if you have uvindex + solar<br>
-                                        solarmod.php if you only have a solar radiation sensor<br>
-                                        or weather34-webcam.php if you have a webcam..
-                                        use indoortempmod.php if you have none of above
                                         
-                                        </div>
-                                        <br>
-
-                                            <label name="unit"></label>
-                                            <div class="stationvalue">choose which file to use</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-                                                <path d="M12 30 L24 16 12 2" />
-                                            </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="silver" stroke="silver" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-                                                <path d="M30 12 L16 24 2 12" />
-                                            </svg>
-                                            <select id="uvsensor" name="uvsensor" class="choose1">
-                                                <option><?php echo $uvsensor; ?></option>
-                                                <option>uvindexmod.php</option>
-                                                <option>solarmod.php</option>
-                                                <option>indoortempmod.php</option>
-                                                <option>weather34-webcam.php</option>
-                                                
-                                            </select>
-
-<br><br>
 
 <div class="stationvalue">Webcam Add Your Path/Url to your webcam (i.e https://something.com/webcam.jpg)</div>
                                                                             <svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
@@ -625,38 +620,38 @@ $webcamurl   = "' . $_POST["webcamurl"] . '";
                                                   <svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                                                  <path d="M16 14 L16 23 M16 8 L16 10" />
                                                  <circle cx="16" cy="16" r="14" /></svg> 180 for southern hemisphere </span>
-<br><br>
+                                                 <br><br>
 
 <div class="weathersectiontitle">
-                                            <svg id="i-settings" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-                                                <path d="M13 2 L13 6 11 7 8 4 4 8 7 11 6 13 2 13 2 19 6 19 7 21 4 24 8 28 11 25 13 26 13 30 19 30 19 26 21 25 24 28 28 24 25 21 26 19 30 19 30 13 26 13 25 11 28 8 24 4 21 7 19 6 19 2 Z" />
-                                                <circle cx="16" cy="16" r="4" />
-                                            </svg>
-                                            If you have Purple Air Quality select weather34-airquality.php if not select weather34-sunmod.php <br></div>
+                                            
+                                            <?php 
+                                            $warmalert='<svg id="weather34 warm alert2" width="16pt" height="16pt" fill="#ff552e" viewBox="0 0 20 20">
+                                            <path d="M19.64 16.36L11.53 2.3A1.85 1.85 0 0 0 10 1.21 1.85 1.85 0 0 0 8.48 2.3L.36 16.36C-.48 17.81.21 19 1.88 19h16.24c1.67 0 
+                                            2.36-1.19 1.52-2.64zM11 16H9v-2h2zm0-4H9V6h2z"/></svg>';
+                                            echo $warmalert?>
+
+                                            Display Notifications Alerts (yes or no) <br></div>
                                         
                                             <br>
                                             <label name="unit"></label>
-                                            <div class="stationvalue">choose which file to use</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                            <div class="stationvalue">Select Yes or No</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
                                                 <path d="M12 30 L24 16 12 2" />
                                             </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="silver" stroke="silver" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
                                                 <path d="M30 12 L16 24 2 12" />
                                             </svg>
-                                            <select id="consoleforecast" name="consoleforecast" class="choose">
-                                                <option><?php echo $consoleforecast; ?></option>
-                                                <option>weather34-airquality.php</option>
-                                                <option>weather34-sunmod.php</option>
+                                            <select id="notifications" name="notifications" class="choose">
+                                                <option><?php echo $notifications ; ?></option>
+                                                <option>yes</option>
+                                                <option>no</option>
                                                
                                             </select>
 
                                                 <br><br>
 
 
+
                                                 <div class="weathersectiontitle">
-                                            <svg id="i-settings" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-                                                <path d="M13 2 L13 6 11 7 8 4 4 8 7 11 6 13 2 13 2 19 6 19 7 21 4 24 8 28 11 25 13 26 13 30 19 30 19 26 21 25 24 28 28 24 25 21 26 19 30 19 30 13 26 13 25 11 28 8 24 4 21 7 19 6 19 2 Z" />
-                                                <circle cx="16" cy="16" r="4" />
-                                            </svg>
-                                            Do You Have a SMART TV in use  <?php echo $weather34tvicon?> <br></div>
+                                                <?php echo $weather34tvicon?> Do You Have a SMART TV (Android TV only) in use  <br></div>    
                                         
                                             <br>
                                             <label name="unit"></label>
@@ -672,10 +667,340 @@ $webcamurl   = "' . $_POST["webcamurl"] . '";
                                                
                                             </select>
 
+                                                <br><br>
+
                                             <p>
 
 </div>
 <p>
+
+<div class="weatheroptions">
+                                            <div class="weathersectiontitle">
+                                            <svg id="i-settings" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M13 2 L13 6 11 7 8 4 4 8 7 11 6 13 2 13 2 19 6 19 7 21 4 24 8 28 11 25 13 26 13 30 19 30 19 26 21 25 24 28 28 24 25 21 26 19 30 19 30 13 26 13 25 11 28 8 24 4 21 7 19 6 19 2 Z" />
+                                                <circle cx="16" cy="16" r="4" />
+                                            </svg>
+                                           Module Positions (13)</div>
+                                           <img src="images/positions.jpg" style="width:35%;float:right;margin-top:50px;margin-right:20px;">
+                                        
+<br>
+                                            <label name="unit"></label>
+                                            <div class="stationvalue">Position 1 choose which file to use</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M12 30 L24 16 12 2" />
+                                            </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="silver" stroke="silver" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M30 12 L16 24 2 12" />
+                                            </svg>
+
+
+                                            <select id="position1" name="position1" class="choose">
+                                                <option><?php echo $position1; ?></option>
+                                                <option>temperaturemod.php</option>
+                                                <option>humiditymod.php</option>
+                                                <option>dewpointmod.php</option>
+                                                <option>windmod.php</option>
+                                                <option>directionmod.php</option>
+                                                <option>gustmod.php</option>
+                                                <option>rainmod.php</option>
+                                                <option>barometermod.php</option>
+                                                <option>uvindexmod.php</option>
+                                                <option>solarmod.php</option>
+                                                <option>weather34-indoormod.php</option>
+                                                <option>weather34-webcam.php</option>
+                                                
+                                            </select>
+
+<br>
+
+<label name="unit"></label>
+                                            <div class="stationvalue">Position 2 choose which file to use</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M12 30 L24 16 12 2" />
+                                            </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="silver" stroke="silver" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M30 12 L16 24 2 12" />
+                                            </svg>
+
+
+                                            <select id="position2" name="position2" class="choose">
+                                                <option><?php echo $position2; ?></option>
+                                                <option>temperaturemod.php</option>
+                                                <option>humiditymod.php</option>
+                                                <option>dewpointmod.php</option>
+                                                <option>windmod.php</option>
+                                                <option>directionmod.php</option>
+                                                <option>gustmod.php</option>
+                                                <option>rainmod.php</option>
+                                                <option>barometermod.php</option>
+                                                <option>uvindexmod.php</option>
+                                                <option>solarmod.php</option>
+                                                <option>weather34-indoormod.php</option>
+                                                <option>weather34-webcam.php</option>
+                                            </select>
+
+<br>
+
+                                            <label name="unit"></label>
+                                            <div class="stationvalue">Position 3 choose which file to use</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M12 30 L24 16 12 2" />
+                                            </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="silver" stroke="silver" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M30 12 L16 24 2 12" />
+                                            </svg>
+
+
+                                            <select id="position3" name="position3" class="choose">
+                                                <option><?php echo $position3; ?></option>
+                                                <option>temperaturemod.php</option>
+                                                <option>humiditymod.php</option>
+                                                <option>dewpointmod.php</option>
+                                                <option>windmod.php</option>
+                                                <option>directionmod.php</option>
+                                                <option>gustmod.php</option>
+                                                <option>rainmod.php</option>
+                                                <option>barometermod.php</option>
+                                                <option>uvindexmod.php</option>
+                                                <option>solarmod.php</option>
+                                                <option>weather34-indoormod.php</option>
+                                                <option>weather34-webcam.php</option>
+                                            </select>
+
+<br>
+
+
+<label name="unit"></label>
+                                            <div class="stationvalue">Position 4 choose which file to use</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M12 30 L24 16 12 2" />
+                                            </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="silver" stroke="silver" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M30 12 L16 24 2 12" />
+                                            </svg>
+
+
+                                            <select id="position4" name="position4" class="choose">
+                                                <option><?php echo $position4; ?></option>
+                                                <option>temperaturemod.php</option>
+                                                <option>humiditymod.php</option>
+                                                <option>dewpointmod.php</option>
+                                                <option>windmod.php</option>
+                                                <option>directionmod.php</option>
+                                                <option>gustmod.php</option>
+                                                <option>rainmod.php</option>
+                                                <option>barometermod.php</option>
+                                                <option>uvindexmod.php</option>
+                                                <option>solarmod.php</option>
+                                                <option>weather34-indoormod.php</option>
+                                                <option>weather34-webcam.php</option>
+                                            </select>
+
+<br>
+
+<label name="unit"></label>
+                                            <div class="stationvalue">Position 5 choose which file to use</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M12 30 L24 16 12 2" />
+                                            </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="silver" stroke="silver" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M30 12 L16 24 2 12" />
+                                            </svg>
+
+
+                                            <select id="position5" name="position5" class="choose">
+                                                <option><?php echo $position5; ?></option>
+                                                <option>temperaturemod.php</option>
+                                                <option>humiditymod.php</option>
+                                                <option>dewpointmod.php</option>
+                                                <option>windmod.php</option>
+                                                <option>directionmod.php</option>
+                                                <option>gustmod.php</option>
+                                                <option>rainmod.php</option>
+                                                <option>barometermod.php</option>
+                                                <option>uvindexmod.php</option>
+                                                <option>solarmod.php</option>
+                                                <option>weather34-indoormod.php</option>
+                                                <option>weather34-webcam.php</option>
+                                            </select>
+
+<br>
+
+<label name="unit"></label>
+                                            <div class="stationvalue">Position 6 choose which file to use</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M12 30 L24 16 12 2" />
+                                            </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="silver" stroke="silver" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M30 12 L16 24 2 12" />
+                                            </svg>
+
+
+                                            <select id="position6" name="position6" class="choose">
+                                                <option><?php echo $position6; ?></option>
+                                                <option>temperaturemod.php</option>
+                                                <option>humiditymod.php</option>
+                                                <option>dewpointmod.php</option>
+                                                <option>windmod.php</option>
+                                                <option>directionmod.php</option>
+                                                <option>gustmod.php</option>
+                                                <option>rainmod.php</option>
+                                                <option>barometermod.php</option>
+                                                <option>uvindexmod.php</option>
+                                                <option>solarmod.php</option>
+                                                <option>weather34-indoormod2.php</option>
+                                                <option>weather34-webcam.php</option>
+                                            </select>
+
+<br>
+
+<label name="unit"></label>
+                                            <div class="stationvalue">Position 7 choose which file to use</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M12 30 L24 16 12 2" />
+                                            </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="silver" stroke="silver" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M30 12 L16 24 2 12" />
+                                            </svg>
+
+
+                                            <select id="position7" name="position7" class="choose">
+                                                <option><?php echo $position7; ?></option>
+                                                <option>temperaturemod.php</option>
+                                                <option>humiditymod.php</option>
+                                                <option>dewpointmod.php</option>
+                                                <option>windmod.php</option>
+                                                <option>directionmod.php</option>
+                                                <option>gustmod.php</option>
+                                                <option>rainmod.php</option>
+                                                <option>barometermod.php</option>
+                                                <option>uvindexmod.php</option>
+                                                <option>solarmod.php</option>
+                                                <option>weather34-indoormod2.php</option>
+                                                <option>weather34-webcam.php</option>
+                                            </select>
+
+<br>
+
+<label name="unit"></label>
+                                            <div class="stationvalue">Position 8 choose which file to use</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M12 30 L24 16 12 2" />
+                                            </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="silver" stroke="silver" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M30 12 L16 24 2 12" />
+                                            </svg>
+
+
+                                            <select id="position8" name="position8" class="choose">
+                                                <option><?php echo $position8; ?></option>
+                                                <option>temperaturemod.php</option>
+                                                <option>humiditymod.php</option>
+                                                <option>dewpointmod.php</option>
+                                                <option>windmod.php</option>
+                                                <option>directionmod.php</option>
+                                                <option>gustmod.php</option>
+                                                <option>rainmod.php</option>
+                                                <option>barometermod.php</option>
+                                                <option>uvindexmod.php</option>
+                                                <option>solarmod.php</option>
+                                                <option>weather34-indoormod2.php</option>
+                                                <option>weather34-webcam.php</option>
+                                            </select>
+
+<br>
+
+<label name="unit"></label>
+                                            <div class="stationvalue">Position 9 choose which file to use</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M12 30 L24 16 12 2" />
+                                            </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="silver" stroke="silver" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M30 12 L16 24 2 12" />
+                                            </svg>
+
+
+                                            <select id="position9" name="position9" class="choose">
+                                                <option><?php echo $position9; ?></option>
+                                                <option>temperaturemod.php</option>
+                                                <option>humiditymod.php</option>
+                                                <option>dewpointmod.php</option>
+                                                <option>windmod.php</option>
+                                                <option>directionmod.php</option>
+                                                <option>gustmod.php</option>
+                                                <option>rainmod.php</option>
+                                                <option>barometermod.php</option>
+                                                <option>uvindexmod.php</option>
+                                                <option>solarmod.php</option>
+                                                <option>weather34-indoormod2.php</option>
+                                                <option>weather34-webcam.php</option>
+                                            </select>
+
+<br>
+
+
+<label name="unit"></label>
+                                            <div class="stationvalue">Position 10 bottom row choose which file to use</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M12 30 L24 16 12 2" />
+                                            </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="silver" stroke="silver" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M30 12 L16 24 2 12" />
+                                            </svg>
+
+
+                                            <select id="position10" name="position10" class="choose">
+                                                <option><?php echo $position10; ?></option>
+                                                <option>weather34-moonphasemod.php</option>
+                                                <option>weather34-sunmod.php</option>
+                                                <option>weather34-dayforecast.php</option>
+                                                <option>weather34-airquality.php</option>
+                                                <option>weather34-indoormod.php</option>
+                                            </select>
+
+<br>
+
+
+<label name="unit"></label>
+                                            <div class="stationvalue">Position 11 bottom row choose which file to use</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M12 30 L24 16 12 2" />
+                                            </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="silver" stroke="silver" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M30 12 L16 24 2 12" />
+                                            </svg>
+
+
+                                            <select id="position11" name="position11" class="choose">
+                                                <option><?php echo $position11; ?></option>
+                                                <option>weather34-moonphasemod.php</option>
+                                                <option>weather34-sunmod.php</option>
+                                                <option>weather34-dayforecast.php</option>
+                                                <option>weather34-airquality.php</option>
+                                                <option>weather34-indoormod.php</option>
+                                            </select>
+
+<br>
+
+
+<label name="unit"></label>
+                                            <div class="stationvalue">Position 12 bottom row choose which file to use</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M12 30 L24 16 12 2" />
+                                            </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="silver" stroke="silver" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M30 12 L16 24 2 12" />
+                                            </svg>
+
+
+                                            <select id="position12" name="position12" class="choose">
+                                                <option><?php echo $position12; ?></option>
+                                                <option>weather34-moonphasemod.php</option>
+                                                <option>weather34-sunmod.php</option>
+                                                <option>weather34-dayforecast.php</option>
+                                                <option>weather34-airquality.php</option>
+                                                <option>weather34-indoormod.php</option>
+                                            </select>
+
+<br>
+<label name="unit"></label>
+                                            <div class="stationvalue">Position 13 module appears when in potrtait view choose which file to use</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M12 30 L24 16 12 2" />
+                                            </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="silver" stroke="silver" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M30 12 L16 24 2 12" />
+                                            </svg>
+
+
+                                            <select id="position13" name="position13" class="choose">
+                                                <option><?php echo $position13; ?></option>
+                                                <option>weather34-indoormod2.php</option>
+                                                <option>weather34-clockphone.php</option>
+                                            </select>
+
+<br>
+
+
+</div>
+
+
+
+
 
 <br>
                                         <div class="weatheroptions">

@@ -47,19 +47,19 @@ include_once('livedata.php');include_once('updater2.php');
 
 </div>
 <ul class="grid-container">
-    <li><div id=temperature></div></li>
-    <li><div id=humidity></div></li>
-    <li><div id=dewpoint></div></li>
-    <li><div id=wind></div></li>
-    <li><div id=direction></div></li>
-    <li><div id=gust></div></li>
-    <li><div id=rain></div></li>
-    <li><div id=barometer></div></li>
-    <li><div id=uvindex></div></li>
-    <li2><div id=moon></div></li2> 
-    <li2><div id=sun></div></li2> 
-    <li2><div id=time-date></div></li2>  
-    <li3><div id=clock-date></div></li3>
+    <li><div id=position1></div></li>
+    <li><div id=position2></div></li>
+    <li><div id=position3></div></li>
+    <li><div id=position4></div></li>
+    <li><div id=position5></div></li>
+    <li><div id=position6></div></li>
+    <li><div id=position7></div></li>
+    <li><div id=position8></div></li>
+    <li><div id=position9></div></li>
+    <li2><div id=position10></div></li2> 
+    <li2><div id=position11></div></li2> 
+    <li2><div id=position12></div></li2>  
+    <li3><div id=position13></div></li3>
   </ul>
 
  

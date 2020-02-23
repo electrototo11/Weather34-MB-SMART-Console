@@ -47,31 +47,31 @@ include_once('livedata.php');include_once('updater2.php');
 
 </div>
 <ul class="grid-container">
-    <li><div id=temperature></div></li>
-    <li><div id=humidity></div></li>
-    <li><div id=dewpoint></div></li>
-    <li><div id=wind></div></li>
-    <li><div id=direction></div></li>
-    <li><div id=gust></div></li>
-    <li><div id=rain></div></li>
-    <li><div id=barometer></div></li>
-    <li><div id=uvindex></div></li>
-    <li2><div id=moon></div></li2> 
-    <li2><div id=sun></div></li2> 
-    <li2><div id=time-date></div></li2>  
-    <li3><div id=clock-date></div></li3>
+    <li><div id=position1></div></li> 
+    <li><div id=position2></div></li>
+    <li><div id=position3></div></li>
+    <li><div id=position4></div></li>
+    <li><div id=position5></div></li>
+    <li><div id=position6></div></li>
+    <li><div id=position7></div></li>
+    <li><div id=position8></div></li>
+    <li><div id=position9></div></li>
+    <li2><div id=position10></div></li2> 
+    <li2><div id=position11></div></li2> 
+    <li2><div id=position12></div></li2>  
+    <li3><div id=position13></div></li3>
   </ul>
 
  
   <div class="nav-bottom">
   <a href="console-setup.php" target="_blank" alt="Setup Screen" title="Setup Screen"> <?php echo $settingsicon ?></a>
 
-<a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
+  <a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
   <?php
-    if ($theme == 'dark') {echo '<div class="weather34-sphere-dark"></div><bottom-bar-text>Light</bottom-bar-text>
+    if ($theme == 'dark') {echo '<div class="weather34-sphere-dark"></div><bottom-bar-text>'.$lang['Light'].'</bottom-bar-text>
      ';} 
-    else {echo '<div class="weather34-sphere-dark"></div><bottom-bar-text>Dark</bottom-bar-text>
-     ';}?></a>
+    else {echo '<div class="weather34-sphere-dark"></div><bottom-bar-text>'.$lang['Dark'].'</bottom-bar-text>
+     ';}?></a>    
      
 
 <?php 
@@ -119,19 +119,19 @@ include_once('livedata.php');include_once('updater2.php');
 ?>
 
 <a href="consolecharts.php" alt="Daily Charts" title="Daily Charts">
-<div class="weather34-sphere-yellow"></div><bottom-bar-text>Charts</bottom-bar-text></a>
+<div class="weather34-sphere-yellow"></div><bottom-bar-text><?php echo $lang['Charts']?></bottom-bar-text></a>
 
 
 <a href="outlookwu.php" data-lity alt="5 day Forecast" title="5 day Forecast">
 <div class="weather34-sphere-orangefore"></div>
-  <bottom-bar-textfore>Forecast</bottom-bar-textfore></a>
+  <bottom-bar-textfore><?php echo $lang['Forecast']?></bottom-bar-textfore></a>
 
-  <a href="outlookwutext.php"  data-lity title="Summary Forecast" alt="Summary Forecast">
+  <a href="outlookwutext.php"  data-lity title="Summary Forecast">
   <div class="weather34-sphere-red"></div>
-  <bottom-bar-textfore>Summary</bottom-bar-textfore></a>
+  <bottom-bar-textfore><?php echo $lang['Forecastsummary']?></bottom-bar-textfore></a>
 
-
-  <div class="weather34-desktopicon-link"><a href="index.php" alt="desktop version" title="desktop version"><?php echo $desktop?></a>
+  <div class="weather34-desktopicon-link">
+  <a href="consoledavis.php" alt="desktop version" title="desktop version"><?php echo $desktop?></a>
 </div>
 
   <div class="weather34-refreshicon">
@@ -143,7 +143,8 @@ include_once('livedata.php');include_once('updater2.php');
         <img src="Wxsoft34-appsmall.png" width="25px"height="25px" alt="weather34 &copy;2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>"></div></div>
        </a></div> 
 
-<script type="text/javascript">
+
+       <script type="text/javascript">
 //weather34 android tv pop up
 $(document).ready(function() {
 		var id = '#weather34androidtvdialog';	

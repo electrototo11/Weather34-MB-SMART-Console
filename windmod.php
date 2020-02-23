@@ -1,5 +1,5 @@
 <?php include('livedata.php');include('common.php');?>
-<div class="modulecaption2" ><?php echo $lang['Avg Wind'];?></div>
+<div class="modulecaption2" ><?php echo $lang['Avg']; echo " ".$lang['Windspeed'];?></div>
 <div class="button button-dial">       
 <div class="button-dial-top"></div>
 <realfeel>
@@ -74,7 +74,6 @@ else if($weather["wind_speed"]>=0 && $weather["wind_units"]=="kts"){echo $lang['
 
 <?php //unit
 echo "<windunitindicator>";echo $weather["wind_units"];echo "</windunitindicator>";?>
-
 <?php //man walking-running
 echo "<windindicator>";
 if($weather["wind_units"]=="km/h" && $weather["wind_speed"]<10){ echo "<icon-0-5>".$walkingman."</icon-0-5>";}

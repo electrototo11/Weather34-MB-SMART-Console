@@ -10,7 +10,7 @@
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
 include('livedata.php');include('common.php');include('console-settings.php');header('Content-type: text/html; charset=utf-8');	?>
 
-<div class="online2"><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;else echo $wireless?></div>
+
 <div id="weather34clock2"></div>
 <script type="text/javascript">
 var clockID;var yourTimeZoneFrom='<?php echo $UTC?>';var d=new Date();
