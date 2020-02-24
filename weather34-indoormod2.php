@@ -1,5 +1,5 @@
 <?php include('livedata.php');?>
-<div class="modulecaption2">Salon &deg;<?php echo $weather["temp_units"]?></div>
+<div class="modulecaption2"><?php echo $lang['Indoor']?> &deg;<?php echo $weather["temp_units"]?></div>
 <div class="button button-dial">     
 <div class="button-dial-top"></div>
 <div class="button-dial-label">
