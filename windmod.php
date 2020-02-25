@@ -210,7 +210,7 @@ if($weather["wind_units"]=="km/h" && $weather["wind_speed"]<10){ echo "<icon-0-5
 
 <div class="maxwind">
 <?php  //60 Min Avg
-echo "60 Min Avg ";
+echo '60" Avg ';
 //kmh
 if($weather["wind_speed_avg"]>=50 && $weather["wind_units"]=="km/h"){echo "<red>" .number_format($weather["wind_speed_avg"],1)."</red>&nbsp;<smalltempunit2> ".$windunit;}
 else if($weather["wind_speed_avg"]>=30 && $weather["wind_units"]=="km/h"){echo "<orange>" .number_format($weather["wind_speed_avg"],1)."</orange>&nbsp;<smalltempunit2>".$windunit;}

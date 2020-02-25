@@ -1991,7 +1991,7 @@ averwordwindword {
 
 .homeweathercompass2>.homeweathercompass-line2 {
     position: absolute;
-    left: -125px;
+    left: 40px;
     width: 105px;
     height: 105px;
     margin: 0 auto;
@@ -2005,16 +2005,18 @@ averwordwindword {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    margin-top: -10px;
+    margin-top: -7px;
     box-shadow: inset 3px 3px 7px rgba(136, 165, 191, .48), inset -3px -3px 7px #fff
 }
 
 .homeweathercompass2 {
-    display: block;
-    margin: 0;
-    text-align: center;
-    font-family: headingtext;
-    line-height: 12px
+    z-index: 1;
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin-top: 0px;
+    margin-left:0px;
+    text-align: center
 }
 
 .text3 {
@@ -2024,7 +2026,7 @@ averwordwindword {
 .text2 {
     position: absolute;
     margin-top: 41px;
-    margin-left: 45px;
+    margin-left: 65px;
     font-size: 1.25em;
     text-shadow: 1px 1px hsla(0, 0%, 80%, .5);
     color: var(--blue);
@@ -2033,9 +2035,9 @@ averwordwindword {
 
 thetrend {
     display: block;
-    margin-top: 9px;
+    margin-top: 8px;
     margin-left: 0;
-    font-size: .75em;
+    font-size: .7em;
     color: var(--silver);
     font-family: headingtext;
     text-shadow: none
@@ -2919,8 +2921,8 @@ iconcolor2 {
 
 .consoleicon1 {
     position: absolute;
-    margin-left: -163px;
-    margin-top: -100px;
+    margin-left: -140px;
+    margin-top: -90px;
     width: 25px
 }
 
@@ -3692,6 +3694,8 @@ bottom-bar-textfore {
         margin-top: -30px
     }
 
+    
+
     li3 {
         align-items: center;
         display: flex;
@@ -3743,9 +3747,7 @@ bottom-bar-textfore {
         max-width: 310px
     }
 
-    .homeweathercompass2>.homeweathercompass-line2 {
-        left: 190px
-    }
+    
 
     
 
@@ -3780,9 +3782,7 @@ bottom-bar-textfore {
         margin-top: -200px
     }
 
-    .text2 {
-        margin-left: 40px
-    }
+   
 
     .weather34-refreshicon {
         margin-top: -25px
@@ -3822,9 +3822,7 @@ bottom-bar-textfore {
         max-height: 600px
     }
 
-    .homeweathercompass2>.homeweathercompass-line2 {
-        left: -125px
-    }
+    
 
     .desktoplink2 {
         color: var(--white);
@@ -4392,6 +4390,28 @@ button-block-date {
     box-shadow: -6px -6px 8px rgba(255, 255, 255, .9), 2px 2px 2px rgba(0, 0, 0, .07) ;
     padding-bottom:2px
 
+}
+
+.weather-indoor-tempicon-identity2 {
+    position: absolute;
+    width: 1.05rem;
+    height: 1.2rem;
+    margin-left: 135px;
+    margin-top: 77px;
+    z-index: 10;   
+    -webkit-border-left: 0;
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    border-left: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    box-shadow: -6px -6px 8px rgba(255, 255, 255, .9), 2px 2px 2px rgba(0, 0, 0, .07) 
 }
 
 

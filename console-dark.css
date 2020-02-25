@@ -1935,7 +1935,7 @@ averwordwindword {
 
 .homeweathercompass2>.homeweathercompass-line2 {
     position: absolute;
-    left: -125px;
+    left: 15px;
     width: 100px;
     height: 100px;
     margin: 0 auto;
@@ -1954,12 +1954,13 @@ averwordwindword {
 }
 
 .homeweathercompass2 {
-    z-index: 10;
-    display: block;
-    margin: 0;
-    text-align: center;
-    font-family: headingtext;
-    line-height: 12px
+    z-index: 1;
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin-top: 0px;
+    margin-left: -5px;
+    text-align: center
 }
 
 .text3 {
@@ -3914,14 +3915,6 @@ bottom-bar-textfore {
         margin-top: -200px
     }
 
-    .homeweathercompass2>.homeweathercompass-line2 {
-        left: 195px
-    }
-
-    .text2 {
-        margin-left: 40px
-    }
-
     .weather34-refreshicon {
         margin-top: -25px
     }
@@ -3978,10 +3971,6 @@ bottom-bar-textfore {
         margin-top: -15px
     }
 
-    .text2 {
-        margin-left: 45px
-    }
-
     .lity-iframe-container iframe {
         max-height: 600px
     }
@@ -3994,10 +3983,7 @@ bottom-bar-textfore {
         right: 5%
     }
 
-    .homeweathercompass2>.homeweathercompass-line2 {
-        left: -120px
-    }
-
+    
     .consolesetup,
     a {
         font-size: 10px;
@@ -4463,6 +4449,30 @@ laststrike {
     height: 1rem;
     margin-left: 240px;
     margin-top: 22px;
+    z-index: 10;      
+    border-left: 0;    
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 3px;
+    background-color: hsla(204, 31%, 21%, .229);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    padding:2px
+}
+
+
+.weather-indoor-tempicon-identity2 {
+    position: absolute;
+    width: 1.05rem;
+    height: 1rem;
+    margin-left: 125px;
+    margin-top: 60px;
     z-index: 10;      
     border-left: 0;    
     -webkit-box-pack: center;

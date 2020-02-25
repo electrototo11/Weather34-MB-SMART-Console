@@ -6,7 +6,7 @@ Language: German
 Translated by: Torsten
 Developed By: Brian Underdown/Erik M Madsen
 October/November 2016
-Revised: August 2019
+Revised: Feb 2020
 
 -----------------
 */
@@ -148,9 +148,9 @@ $lang['NNWdir']                 = 'Nord Nord<br><span>West</span>';
 $lang['North']                  = 'Nord';
 $lang['NNE']                    = 'NNO';
 $lang['NE']                     = 'NO';
-$lang['ENE']                    = 'ENO';
+$lang['ENE']                    = 'ONO';
 $lang['East']                   = 'Ost ';
-$lang['ESE']                    = 'ESO';
+$lang['ESE']                    = 'OSO';
 $lang['SE']                     = 'SO';
 $lang['SSE']                    = 'SSO';
 $lang['South']                  = 'Süd';
@@ -413,7 +413,7 @@ $lang['Days']='Tage';
 $lang['Hours']='Std';
 $lang['Hour']='Std';
 $lang['Minute']='Minute';
-$lang['Minutes']='Minute';
+$lang['Minutes']='Minuten';
 $lang['Last Rainfall']='Letzter Regen';
 
 //more extras
@@ -445,21 +445,21 @@ $lang['Chart Data']='Diagrammdaten';
 
 $lang['Cooler']='Kühler';
 $lang['Feels Warm']='Wärmer';
-$lang['Discomfort']='Beschwerden';
-$lang['Comfortable']='Komfortabel';
+$lang['Discomfort']='Unbehaglich';
+$lang['Comfortable']='Angenehm';
 $lang['Feels Colder']='Kälter';
 
-$lang['Very Windy']='Windig';
-$lang['Windy']='Windig';
-$lang['Breezy']='Luftig';
-$lang['Light Winds']='Leichter';
+$lang['Very Windy']='Stürmisch';
+$lang['Windy']='Windreich';
+$lang['Breezy']='Windig';
+$lang['Light Winds']='leichte Brise';
 
 $lang['Saturation']='Sättigung';
 $lang['High']='Hoch';
 $lang['Low']='Niedrig';
 
 $lang['Dark']='Dunkel';
-$lang['Light']='Leuchte';
+$lang['Light']='Hell';
 $lang['Charts']='Diagramme';
 
 ?>

@@ -107,6 +107,6 @@ else if ($weather["uvdmax"]>=8){echo "<red>".$weather["uvdmax"]."</red>";}
 else if ($weather["uvdmax"]>=6){echo "<orange>".$weather["uvdmax"]."</orange>";}
 else if ($weather["uvdmax"]>=3){echo "<yellow>".$weather["uvdmax"]."</yellow>";}
 else if ($weather["uvdmax"]>=0){echo "<green>".$weather["uvdmax"]."</green>";}
-echo " Time:";echo $weather["uvdmaxtime"];
+echo "<span style='position:relative;top:1px'>".$maxclock."</span>"; echo $weather["uvdmaxtime"];
 ?>
 </div>

@@ -41,7 +41,7 @@ valuetextba{font-size:1em}valuetextbc{font-size:1.1em}valuetexttr{font-size:8px}
 
 
 
-<div class=barometerpos >
+
 <div class="homeweathercompass2" >
 <div class="homeweathercompass-line2">
 <div class="weather34barometerarrowactual"></div>
