@@ -1980,7 +1980,7 @@ thetrend {
     display: block;
     margin-top: 5px;
     margin-left: 0;
-    font-size: .7em;
+    font-size: .65em;
     color: var(--light);
     font-family: headingtext
 }
@@ -3021,7 +3021,7 @@ iconcolor2 {
 
 .consoleicon1 {
     position: absolute;
-    margin-left: -163px;
+    margin-left: -168px;
     margin-top: -95px;
     width: 25px
 }

@@ -1993,7 +1993,7 @@ averwordwindword {
 
 .homeweathercompass2>.homeweathercompass-line2 {
     position: absolute;
-    left: 40px;
+    left: 10px;
     width: 105px;
     height: 105px;
     margin: 0 auto;
@@ -2028,7 +2028,7 @@ averwordwindword {
 .text2 {
     position: absolute;
     margin-top: 41px;
-    margin-left: 65px;
+    margin-left: 45px;
     font-size: 1.25em;
     text-shadow: 1px 1px hsla(0, 0%, 80%, .5);
     color: var(--blue);
@@ -2037,9 +2037,9 @@ averwordwindword {
 
 thetrend {
     display: block;
-    margin-top: 8px;
+    margin-top: 4px;
     margin-left: 0;
-    font-size: .7em;
+    font-size: .65em;
     color: var(--silver);
     font-family: headingtext;
     text-shadow: none
@@ -2923,7 +2923,7 @@ iconcolor2 {
 
 .consoleicon1 {
     position: absolute;
-    margin-left: -140px;
+    margin-left: -165px;
     margin-top: -90px;
     width: 25px
 }
@@ -3816,10 +3816,6 @@ bottom-bar-textfore {
         margin-top: -10px
     }
 
-    .text2 {
-        margin-left: 45px
-    }
-
     .lity-iframe-container iframe {
         max-height: 600px
     }
@@ -4421,7 +4417,7 @@ button-block-date {
     position: absolute;
     width: 2rem;
     height: 1rem;
-    margin-left: -142px;
+    margin-left: -147px;
     margin-top: 3px;
     z-index: 10;   
     -webkit-border-left: 0;

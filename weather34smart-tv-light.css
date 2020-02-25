@@ -2016,7 +2016,7 @@ averwordwindword {
 
 .homeweathercompass2>.homeweathercompass-line2 {
     position: absolute;
-    left: 20px;
+    left: 25px;
     width: 105px;
     height: 105px;
     margin: 0 auto;
@@ -2030,7 +2030,7 @@ averwordwindword {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    margin-top: -7px;
+    margin-top: -10px;
     box-shadow: inset 3px 3px 7px rgba(136, 165, 191, .48), inset -3px -3px 7px #fff
 }
 
@@ -2050,8 +2050,8 @@ averwordwindword {
 
 .text2 {
     position: absolute;
-    margin-top: 41px;
-    margin-left: 45px;
+    margin-top: 38px;
+    margin-left: 55px;
     font-size: 1.25em;
     text-shadow: 1px 1px hsla(0, 0%, 80%, .5);
     color: var(--blue);
@@ -2060,9 +2060,9 @@ averwordwindword {
 
 thetrend {
     display: block;
-    margin-top: 8px;
+    margin-top: 4px;
     margin-left: 0;
-    font-size: .7em;
+    font-size: .65em;
     color: var(--silver);
     font-family: headingtext;
     text-shadow: none
@@ -3805,10 +3805,6 @@ bottom-bar-textfore {
         margin-top: -200px
     }
 
-    .text2 {
-        margin-left: 40px
-    }
-
     .weather34-refreshicon {
         margin-top: -25px
     }
@@ -3841,9 +3837,6 @@ bottom-bar-textfore {
         margin-top: -10px
     }
 
-    .text2 {
-        margin-left: 45px
-    }
 
     .lity-iframe-container iframe {
         max-height: 600px
