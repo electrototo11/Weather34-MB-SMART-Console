@@ -57,7 +57,7 @@ if($weather["barometer_trend"]<0){echo $fallingsymbolx.' <blue>'.number_format($
 //rising
 else if($weather["barometer_trend"]>0){echo $risingsymbolx.' <orange> + '.number_format($weather["barometer_trend"],2).'</orange>';}
 //steady
-else echo 'Steady'.$steadysymbol.'';?>
+else echo "<span style='font-size:11px'>".$lang['Steady'].' '.$steadysymbol.'';?>
 </thetrend>
 </div></div></div>
 
