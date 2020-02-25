@@ -52,6 +52,6 @@ else if($day===date("l jS F Y",strtotime('2020-10-31'))){echo 'Event: Blue <blue
 else if($day===date("l jS F Y",strtotime('2020-11-30'))){echo 'Event: Lunar <blue>Eclipse</blue>';}	
 else if($day===date("l jS F Y",strtotime('2020-12-14'))){echo 'Event: Total <blue>Eclipse</blue>';}			
 // weather34 moonphase no scraping its calculated from the livedata !
-	else echo $lang['Moonphase']."<blue>" .$weather['moonphase']."</blue>";}?>  
+	else echo $lang['Moonphase']."<blue>&nbsp;" .$weather['moonphase']."</blue>";}?>  
 </div>
 </div></div>

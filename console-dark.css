@@ -313,8 +313,8 @@ li4 {
 .date1 {
     display: block;
     background: 0 0;
-    color: var(--silver);
-    font-size: .75rem;
+    color: hsla(214, 29%, 91%, .6);
+    font-size: .7rem;
     font-family: clock;
     line-height: 1;
     margin-top: -60px;
@@ -326,8 +326,8 @@ li4 {
 .date2 {
     display: block;
     background: 0 0;
-    color: var(--silver);
-    font-size: .75rem;
+    color: hsla(214, 29%, 91%, .6);
+    font-size: .7rem;
     font-family: clock;
     line-height: 1;
     margin-top: -45px;
@@ -339,8 +339,8 @@ li4 {
 .phase2 {
     display: block;
     background: 0 0;
-    color: var(--light);
-    font-size: .75rem;
+    color: hsla(214, 29%, 91%, .6);
+    font-size: .7rem;
     font-family: clock;
     line-height: 1;
     margin-top: -30px;
@@ -3791,7 +3791,7 @@ bottom-bar-textfore {
 }
 
 @media screen and (max-width:960px) {
-    chartpage,.weather34-desktopicon-link,.weather34-refreshicon {
+    chartpage,.weather34-desktopicon-link,.weather34-refreshicon,.weather34-sphere-red,.weather34-sphere-orangefore,bottom-bar-textfore {
         display: none
     }
 
@@ -3903,7 +3903,7 @@ bottom-bar-textfore {
     }
 
     .desktoplink {
-        margin-top: -10px
+        margin-top: 15px
     }
 
     .weather34-tablet {
@@ -3934,6 +3934,8 @@ bottom-bar-textfore {
     chartpage {
         display: none
     }
+
+    bottom-bar-text{ font-size:9px;}
 
     li4 {
         align-items: center;
@@ -4447,8 +4449,8 @@ laststrike {
     position: absolute;
     width: 1.05rem;
     height: 1rem;
-    margin-left: 240px;
-    margin-top: 22px;
+    left: 260px;
+    top: 55px;
     z-index: 10;      
     border-left: 0;    
     -webkit-box-pack: center;

@@ -360,7 +360,7 @@ li3 {
     display: block;
     background: 0 0;
     color: var(--body-text-light);
-    font-size: .75rem;
+    font-size: .7rem;
     line-height: 1;
     margin-top: -60px;
     position: absolute;
@@ -372,7 +372,7 @@ li3 {
     display: block;
     background: 0 0;
     color: var(--body-text-light);
-    font-size: .75rem;
+    font-size: .7rem;
     line-height: 1;
     margin-top: -45px;
     position: absolute;
@@ -518,14 +518,16 @@ li3 {
 }
 
 .phase2 {
-    position: absolute;
-    padding: 2px 3px 1px 3px;
-    display: inline-flex;
-    background: #fff;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.07);
-    font-size: 12px;
+    display: block;
+    background: 0 0;
+    color: var(--body-text-light);
+    font-size: .7rem;
+    font-family: clock;
+    line-height: 1;
     margin-top: -30px;
-    margin-left: -55px;
+    position: absolute;
+    margin-left: 60px;
+    font-family: headingtext
 
 }
 
@@ -3673,10 +3675,9 @@ bottom-bar-textfore {
 }
 
 @media screen and (max-width:960px) {
-    chartpage,.weather34-desktopicon-link,.weather34-refreshicon {
+    chartpage,.weather34-desktopicon-link,.weather34-refreshicon,.weather34-sphere-red,.weather34-sphere-orangefore,bottom-bar-textfore {
         display: none
     }
-
     .indoorfeels-mod2,
     .indoorhumidity-mod2 {
         margin-left: 60px
@@ -3773,7 +3774,7 @@ bottom-bar-textfore {
     }
 
     .desktoplink {
-        margin-top: -10px
+        margin-top: 15px
     }
 
 
@@ -3804,6 +3805,7 @@ bottom-bar-textfore {
     chartpage {
         display: none
     }
+    bottom-bar-text{ font-size:9px;}
 
     li8 {
         min-width: 320px;
@@ -4327,8 +4329,8 @@ button-block-date {
     position: absolute;
     width: 1.05rem;
     height: 1.2rem;
-    margin-left: 230px;
-    margin-top: 28px;
+    left: 260px;
+    top: 48px;
     z-index: 10;   
     -webkit-border-left: 0;
     -webkit-border-top-right-radius: 2px;

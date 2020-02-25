@@ -383,7 +383,7 @@ li3 {
     display: block;
     background: 0 0;
     color: var(--body-text-light);
-    font-size: .75rem;
+    font-size: .7rem;
     line-height: 1;
     margin-top: -60px;
     position: absolute;
@@ -395,7 +395,7 @@ li3 {
     display: block;
     background: 0 0;
     color: var(--body-text-light);
-    font-size: .75rem;
+    font-size: .7rem;
     line-height: 1;
     margin-top: -45px;
     position: absolute;
@@ -541,14 +541,16 @@ li3 {
 }
 
 .phase2 {
-    position: absolute;
-    padding: 2px 3px 1px 3px;
-    display: inline-flex;
-    background: #fff;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.07);
-    font-size: 12px;
+    display: block;
+    background: 0 0;
+    color: var(--body-text-light);
+    font-size: .7rem;
+    font-family: clock;
+    line-height: 1;
     margin-top: -30px;
-    margin-left: -55px;
+    position: absolute;
+    margin-left: 60px;
+    font-family: headingtext
 
 }
 
@@ -3698,7 +3700,7 @@ bottom-bar-textfore {
 }
 
 @media screen and (max-width:960px) {
-    chartpage {
+    chartpage,.weather34-desktopicon-link,.weather34-refreshicon,.weather34-sphere-red,.weather34-sphere-orangefore,bottom-bar-textfore {
         display: none
     }
 
@@ -3726,7 +3728,7 @@ bottom-bar-textfore {
         min-width: 310px;
         max-width: 310px;
         padding: 0;
-        height: 170px;
+        height: 145px;
         border: 0;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
@@ -3827,6 +3829,8 @@ bottom-bar-textfore {
     chartpage {
         display: none
     }
+
+    bottom-bar-text{ font-size:9px;}
 
     li8 {
         min-width: 320px;
@@ -4265,14 +4269,14 @@ button-block-date {
    -moz-border-radius:5px;
    -ms-border-radius:5px;
    -o-border-radius:5px;
-    width:270px;height:135px;
+    width:270px;height:125px;
     box-shadow: -6px -6px 8px rgba(255, 255, 255, 0.9), 5px 5px 8px rgba(0, 0, 0, 0.07);    
     background: #fff;
     }
 
     .modulecaptioncam {        
         left: 165px;
-        top: -11px;
+        top: -2px;
         display: flex;
         position: relative;
         align-items: center;
@@ -4288,7 +4292,7 @@ button-block-date {
 
     .webcamlink {        
         margin-left:10px;
-        margin-top:100px;
+        margin-top:85px;
         display: flex;
         position:absolute;
         align-items: center;
@@ -4378,3 +4382,26 @@ button-block-date {
     padding-bottom:2px
 
 }
+
+.weather-indoor-tempicon-identity2 {
+    position: absolute;
+    width: 1.05rem;
+    height: 1.2rem;
+    margin-left: 135px;
+    margin-top: 60px;
+    z-index: 10;   
+    -webkit-border-left: 0;
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    border-left: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    box-shadow: -6px -6px 8px rgba(255, 255, 255, .9), 2px 2px 2px rgba(0, 0, 0, .07) 
+}
+

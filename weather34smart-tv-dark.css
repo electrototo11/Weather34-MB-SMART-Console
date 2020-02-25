@@ -313,8 +313,8 @@ li4 {
 .date1 {
     display: block;
     background: 0 0;
-    color: var(--silver);
-    font-size: .75rem;
+    color: hsla(214, 29%, 91%, .6);
+    font-size: .7rem;
     font-family: clock;
     line-height: 1;
     margin-top: -60px;
@@ -326,8 +326,8 @@ li4 {
 .date2 {
     display: block;
     background: 0 0;
-    color: var(--silver);
-    font-size: .75rem;
+    color: hsla(214, 29%, 91%, .6);
+    font-size: .7rem;
     font-family: clock;
     line-height: 1;
     margin-top: -45px;
@@ -339,8 +339,8 @@ li4 {
 .phase2 {
     display: block;
     background: 0 0;
-    color: var(--light);
-    font-size: .75rem;
+    color: hsla(214, 29%, 91%, .6);
+    font-size: .7rem;
     font-family: clock;
     line-height: 1;
     margin-top: -30px;
@@ -3796,7 +3796,7 @@ bottom-bar-textfore {
 }
 
 @media screen and (max-width:960px) {
-    chartpage ,.weather34-desktopicon-link,.weather34-refreshicon {
+    chartpage,.weather34-desktopicon-link,.weather34-refreshicon,.weather34-sphere-red,.weather34-sphere-orangefore,bottom-bar-textfore {
         display: none
     }
 
@@ -3819,7 +3819,7 @@ bottom-bar-textfore {
         min-width: 305px;
         max-width: 305px;
         padding: 0;
-        height: 175px;
+        height: 145px;
         border: 1px solid hsla(208, 12%, 24%, .2);
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
@@ -3939,6 +3939,8 @@ bottom-bar-textfore {
     chartpage {
         display: none
     }
+
+    bottom-bar-text{ font-size:9px;}
 
     li4 {
         align-items: center;
@@ -4482,4 +4484,27 @@ laststrike {
     line-height:1.4;
     padding-bottom:4px
 
+}
+
+.weather-indoor-tempicon-identity2 {
+    position: absolute;
+    width: 1.05rem;
+    height: 1rem;
+    margin-left: 125px;
+    margin-top: 60px;
+    z-index: 10;      
+    border-left: 0;    
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 3px;
+    background-color: hsla(204, 31%, 21%, .229);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    padding:2px
 }
