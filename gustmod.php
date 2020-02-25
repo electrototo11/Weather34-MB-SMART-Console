@@ -216,7 +216,7 @@ echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>".$weather['wi
 <div class=thetrendgapwind>
 <?php 
 //windrun
-echo '<div class=thetrendboxblue>'.$lang['Wind'].' Run';echo '&nbsp;<blue>'.number_format($weather["windrun34"],1).'</blue><smalltempunit2>&nbsp;';if ($weather["wind_units"]=='km/h'){echo 'km';}else echo 'mi';?>
+echo '<div class=thetrendboxblue>'.$lang['Wind Run'].'';echo '&nbsp;<blue>'.number_format($weather["windrun34"],1).'</blue><smalltempunit2>&nbsp;';if ($weather["wind_units"]=='km/h'){echo 'km';}else echo 'mi';?>
 </div></div>
 
 <div class="weather-icon-identity"><?php 
