@@ -8,13 +8,13 @@ if ($seconds_ago >= 86400) {
 echo $lang['Last-Twenty-Four-Hour'].'&nbsp;<blue>'.$weather["rain_24hrs"]. '</blue>&nbsp;<smalltempunit2>'.$weather["rain_units"].'</smalltempunit2>';}
 // weather34 sez lets get rainfall hours or minutes ago if within last 24 hours
 else if ($seconds_ago >= 7200) {   
-  echo 'Rainfall &nbsp;<blue>'.intval($seconds_ago / 3600) .'</blue>&nbsp; Hours Ago'; }
+  echo $lang['Rainfall'].'&nbsp;<blue>'.intval($seconds_ago / 3600) .'</blue>&nbsp;'.$lang['Hours'].' '.$lang['Ago'].''; }
 else if ($seconds_ago >= 3600) {
-  echo 'Rainfall &nbsp;<blue>'.intval($seconds_ago / 3600) .'</blue>&nbsp; Hour Ago'; }
+  echo $lang['Rainfall'].'&nbsp;<blue>'.intval($seconds_ago / 3600) .'</blue>&nbsp;'.$lang['Hour'].' '.$lang['Ago'].''; }
 else if ($seconds_ago > 60) {
-  echo 'Rainfall &nbsp;<blue>'.intval($seconds_ago / 60) .'</blue>&nbsp; Mins Ago'; }
-else if ($seconds_ago <= 60) {
-  echo 'Rainfall &nbsp;<blue>'.intval($seconds_ago / 3600) .'</blue>&nbsp; Min Ago'; }
+  echo $lang['Rainfall'].'&nbsp;<blue>'.intval($seconds_ago / 60) .'</blue>&nbsp;'.$lang['Minutes'].' '.$lang['Ago'].''; }
+else if ($seconds_ago <= 60) { 
+  echo $lang['Rainfall'].'&nbsp;<blue>'.intval($seconds_ago / 3600) .'</blue>&nbsp;'.$lang['Minute'].' '.$lang['Ago'].''; }
 ?>
 </div>
 <div class="modulecaptionrain"><?php echo $lang['Rainfall']?></div>

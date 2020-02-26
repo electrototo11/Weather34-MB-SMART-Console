@@ -17,12 +17,12 @@ $notifications    = "no";
 
 $position1    = "temperaturemod.php";
 $position2    = "humiditymod.php";
-$position3    = "barometermod.php";
-$position4    = "directionmod.php";
-$position5    = "gustmod.php";
+$position3    = "dewpointmod.php";
+$position4    = "gustmod.php";
+$position5    = "directionmod.php";
 $position6    = "windmod.php";
 $position7    = "rainmod.php";
-$position8    = "weather34-webcam.php";
+$position8    = "barometermod.php";
 $position9    = "uvindexmod.php";
 $position10    = "weather34-dayforecast.php";
 $position11    = "weather34-sunmod.php";
@@ -31,7 +31,7 @@ $position13    = "weather34-indoormod2.php";
 
 $chartoption    = "todaysolarmodule.php";
 $chartoption2    = "todayindoormodule.php";
-$defaultlanguage   = "dl";
+$defaultlanguage   = "en";
 $stationName   = "Demo Home Weather Station";
 $theme   = "dark";
 $TZ = "Europe/Berlin";
