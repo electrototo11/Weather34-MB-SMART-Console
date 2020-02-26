@@ -61,7 +61,7 @@
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
-				if ( rowData[3] >999)
+				if ( rowData[3] >900)
 					dataPoints1.push({label:rowData[1],y:parseFloat(rowData[3] *<?php echo $conv ?>)});		}
 		}
 		requestTempCsv();}function requestTempCsv(){}
@@ -72,7 +72,7 @@
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
-				if ( rowData[3] >999)
+				if ( rowData[3] >900)
 					dataPoints2.push({label:rowData[1],y:parseFloat(rowData[3]*<?php echo $conv ?>)});
 				
 			}
