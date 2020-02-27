@@ -1,10 +1,10 @@
 <?php 
 	####################################################################################################
-	#	HOME WEATHER STATION TEMPLATE by BRIAN UNDERDOWN 2015-2016-2017                                #
+	#	HOME WEATHER STATION TEMPLATE by BRIAN UNDERDOWN 2015-2020			                           #
 	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at 													   #
 	#   https://weather34.com/homeweatherstation/index.html 										   # 
-	# 	WEATHER STATION TEMPLATE 2015-2017                 										       #
-	# 	     MB SMART Version Revised September 2019 								                   #
+	# 	WEATHER STATION TEMPLATE 2015-2020                 										       #
+	# 	      MB SMART Console Version Revised FEB 2020								                   #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
@@ -38,20 +38,16 @@ function showMoon(){var t=(Date.now()/86400000-Date.UTC(2018,0,17,1,0,0,0)/86400
 
 
 <?php
-//2019-2020 lunar events 
-{$day = date('l jS F Y');
-if($day===date("l jS F Y",strtotime('2019-12-26'))){echo 'Event: Lunar <blue>Eclipse</blue>';}
-else if($day===date("l jS F Y",strtotime('2020-1-10'))){echo 'Event: Lunar <blue>Eclipse</blue>';}
-else if($day===date("l jS F Y",strtotime('2020-2-9'))){echo 'Event: Super <blue>Moon</blue>';}
-else if($day===date("l jS F Y",strtotime('2020-3-9'))){echo 'Event: Super <blue>Moon</blue>';}
-else if($day===date("l jS F Y",strtotime('2020-4-8'))){echo 'Event: Super <blue>Moon</blue>';}
-else if($day===date("l jS F Y",strtotime('2020-6-5'))){echo 'Event: Lunar <blue>Eclipse</blue>';}	
-else if($day===date("l jS F Y",strtotime('2020-6-21'))){echo 'Event: Solar <blue>Eclipse</blue>';}	
-else if($day===date("l jS F Y",strtotime('2020-7-5'))){echo 'Event: Lunar <blue>Eclipse</blue>';}	
-else if($day===date("l jS F Y",strtotime('2020-10-31'))){echo 'Event: Blue <blue>Moon</blue>';}
-else if($day===date("l jS F Y",strtotime('2020-11-30'))){echo 'Event: Lunar <blue>Eclipse</blue>';}	
-else if($day===date("l jS F Y",strtotime('2020-12-14'))){echo 'Event: Total <blue>Eclipse</blue>';}			
-// weather34 moonphase no scraping its calculated from the livedata !
-	else echo $lang['Moonphase']."<blue>&nbsp;" .$weather['moonphase']."</blue>";}?>  
+echo $lang['Moonphase']."<blue>&nbsp;";
+//weather34 convert moonphase in other languages
+if ($meteobridgeapi[153]==0) {echo $lang['Newmoon'];} 
+else if ($meteobridgeapi[153]==1) {echo $lang['Waxingcrescent'];} 
+else if ($meteobridgeapi[153]==2) {echo $lang['Firstquarter'];} 
+else if ($meteobridgeapi[153]==3) {echo $lang['Waxinggibbous'];} 
+else if ($meteobridgeapi[153]==4) {echo $lang['Fullmoon'];} 
+else if ($meteobridgeapi[153]==5) {echo $lang['Waninggibbous'];} 
+else if ($meteobridgeapi[153]==6) {echo $lang['Lastquarter'] ;} 
+else if ($meteobridgeapi[153]==7) {echo $lang['Waningcrescent'];}
+?>  
 </div>
 </div></div>

@@ -1,4 +1,14 @@
-<?php require_once('livedata.php');require_once('common.php');?>
+<?php 
+    ####################################################################################################
+	#	HOME WEATHER STATION TEMPLATE by BRIAN UNDERDOWN 2015-2020			                           #
+	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at 													   #
+	#   https://weather34.com/homeweatherstation/index.html 										   # 
+	# 	WEATHER STATION TEMPLATE 2015-2020                 										       #
+	# 	      MB SMART Console Version Revised FEB 2020								                   #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
+
+require_once('livedata.php');require_once('common.php');?>
 <meta http-equiv="Content-Type: text/html; charset=UTF-8" />
 <head>
 <style>
@@ -234,7 +244,7 @@ if ($weather["wind_direction"]<=11.25) {
 
 
 
-<div class="heatcircle5" style="margin-left:55px;"><div class="heatcircle-content"><valuetextheading1><?php echo $lang['Avg']?> 10 Min</valuetextheading1>
+<div class="heatcircle5" style="margin-left:55px;"><div class="heatcircle-content"><valuetextheading1>10" <?php echo $lang['Avg']?> </valuetextheading1>
 <?php 
 echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>" .number_format($weather['wind_direction_avg'],0)."&deg; &nbsp;";
 if( $weather['wind_direction_avg']<=11.25){echo $lang['North'];}
@@ -257,7 +267,7 @@ else if( $weather["wind_direction_avg"]<=360){echo $lang['North'];}
 ?><smalltempunit2></div></div></div>
 
 
-<div class="heatcircle6"><div class="heatcircle-content"><valuetextheading1><?php echo $lang['Avg-Dir']?> <?php echo date('F')?></valuetextheading1>
+<div class="heatcircle6"><div class="heatcircle-content"><valuetextheading1> <?php echo $lang['Month']?> <?php echo $lang['Avg-Dir']?> </valuetextheading1>
 <?php 
 echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>" .number_format($weather['wind_direction_avgmonth'],0)."&deg; &nbsp;";
 if( $weather['wind_direction_avgmonth']<=11.25){echo $lang['North'];}

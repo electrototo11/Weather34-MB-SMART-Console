@@ -1,10 +1,10 @@
 <?php 
 	####################################################################################################
-	#	HOME WEATHER STATION TEMPLATE by BRIAN UNDERDOWN 2015-2016-2017                                #
+	#	HOME WEATHER STATION TEMPLATE by BRIAN UNDERDOWN 2015-2020			                           #
 	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at 													   #
 	#   https://weather34.com/homeweatherstation/index.html 										   # 
-	# 	WEATHER STATION TEMPLATE 2015-2017                 										       #
-	# 	     MB SMART Version Revised September 2019 								                   #
+	# 	WEATHER STATION TEMPLATE 2015-2020                 										       #
+	# 	      MB SMART Console Version Revised FEB 2020								                   #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
@@ -49,12 +49,12 @@ $darkhours = 23 - $lighthours; $darkminutes = 60 - $lightmins;if ($darkminutes<1
 
 <div class="sunrise1"> <?php echo $sunuphalf.' '. $lang['Sunrise'];?> 
 
-<?php echo $nextrisetxt.' (<orange>'.$nextrise.'</orange>)<br>'.$sunuphalf.' '. $lang['Daylight'].' (<blue>'.$light.'</blue> hrs)';?>
+<?php echo $nextrisetxt.' (<orange>'.$nextrise.'</orange>)<br>'.$sunuphalf.' '. $lang['Daylight'].' (<blue>'.$light.'</blue>'.$lang['Hrs'].')';?>
 
 </div>
 
 <div class="sunset1"><?php echo $sundownhalf.' '.$lang['Sunset'];?> 
-<?php echo $nextsettxt.' (<blue>'.$nextset.'</blue>)<br>'.$sundownhalf.' '. $lang['Darkness'].' (<blue>'.$darkhours,":".$darkminutes.'</blue> hrs)';?>
+<?php echo $nextsettxt.' (<blue>'.$nextset.'</blue>)<br>'.$sundownhalf.' '. $lang['Darkness'].' (<blue>'.$darkhours,":".$darkminutes.'</blue>'.$lang['Hrs'].')';?>
 </div>
 <div class="daylight1">&nbsp;<?php echo $hrs."<smalltempunit2>hrs</smalltempunit2>:". $min."<smalltempunit2>min</smalltempunit2>" ?>
 <tdiv class=till><?php echo $txt?></div></div> 

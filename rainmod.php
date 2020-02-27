@@ -1,4 +1,14 @@
-<?php include('livedata.php');include('common.php');date_default_timezone_set($TZ);$raintimeago=$originalDate124;$seconds_ago = (time() - strtotime($raintimeago));?>
+<?php 
+####################################################################################################
+	#	HOME WEATHER STATION TEMPLATE by BRIAN UNDERDOWN 2015-2020			                           #
+	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at 													   #
+	#   https://weather34.com/homeweatherstation/index.html 										   # 
+	# 	WEATHER STATION TEMPLATE 2015-2020                 										       #
+	# 	      MB SMART Console Version Revised FEB 2020								                   #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
+
+include('livedata.php');include('common.php');date_default_timezone_set($TZ);$raintimeago=$originalDate124;$seconds_ago = (time() - strtotime($raintimeago));?>
 <div class=modulecaptionrainrate>
 <?php
 // *rainfall hours or minutes ago if within last 24 hours
@@ -53,7 +63,7 @@ echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["rain_
 
 <div class="heatcirclerain1" ><div class="heatcircle-content">
 <div class="rainrateextra">
-<valuetextheading1><?php echo $lang['Rain']?> Rate <deepblue>per/hr</deepblue></valuetextheading1>
+<valuetextheading1><?php echo $lang['Rate']?>&nbsp;&nbsp;&nbsp;&nbsp;</valuetextheading1>
 <div class=rainratebar>
 <div class="weather34ratebar" style="width:
 <?php //weather34 rain rate bar 
