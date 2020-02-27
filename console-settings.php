@@ -31,7 +31,7 @@ $position13    = "weather34-indoormod2.php";
 
 $chartoption    = "todaysolarmodule.php";
 $chartoption2    = "todayindoormodule.php";
-$defaultlanguage   = "en";
+$defaultlanguage   = "dl";
 $stationName   = "Demo Home Weather Station";
 $theme   = "dark";
 $TZ = "Europe/Berlin";

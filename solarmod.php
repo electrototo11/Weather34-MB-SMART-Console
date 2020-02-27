@@ -58,10 +58,10 @@ echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["lux"]
 
 <div class=thetrendgap>
 <?php 
-if ($weather["solar"]>=700) {echo "<div class=theuvred><orange>".$solaricon.'</orange> Strong Sun Radiation';}
-else if ($weather["solar"]>300) {echo "<div class=theuvyellow><yellow>".$solaricon.'</yellow> Moderate Radiation';}
-else if ($weather["solar"]>0) {echo "<div class=theuvyellow><yellow>".$solaricon.'</yellow> Low Radiation';}
-else if ($weather["solar"]==0) {echo "<div class=theuvgreen><grey>".$solaricon.'</grey> Low Radiation';}
+if ($weather["solar"]>=700) {echo "<div class=theuvred style='width:150px'><orange>".$solaricon.'</orange>'.$lang['Good-solar'] .'';}
+else if ($weather["solar"]>300) {echo "<div class=theuvyellow style='width:150px'><yellow>".$solaricon.'</yellow>'.$lang['Moderate-solar'].'';}
+else if ($weather["solar"]>0) {echo "<div class=theuvyellow style='width:150px'><yellow>".$solaricon.'</yellow>'.$lang['Low-solar'].'';}
+else if ($weather["solar"]==0) {echo "<div class=theuvgreen style='width:150px'><grey>".$solaricon.'</grey>'.$lang['Low-solar'].'';}
 ?>
 </div></div></div>
 

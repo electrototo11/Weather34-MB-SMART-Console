@@ -987,7 +987,7 @@ icon-50 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 8.5rem;
+    width: 10rem;
     height: .9rem;
     color: var(--body-text-light);
     overflow: hidden;
@@ -999,7 +999,7 @@ icon-50 {
     border-left: 0;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
-    font-size: 10px;
+    font-size: .55rem;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -3006,8 +3006,11 @@ a {
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     padding: 10px;
-    background: #1c1c1f;
-    z-index: 9999999
+    background: #1b1b1b;
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #252529;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #252529;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #252529;
+    z-index:999
 }
 
 .weather34alert.weather34alert-hide {
@@ -3025,7 +3028,7 @@ a {
     width: 40px;
     padding: 10px;
     text-align: center;
-    background-color: rgba(0, 0, 0, .25);
+    background-color: #2e3235;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -3071,7 +3074,23 @@ valuealertcold {
     font-size: 16px;
     font-family: weathertext2;
     background: 0;
-    background: var(--blue);
+    background: #00a4b3;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    width: 4rem;
+    padding: 5px
+}
+
+valuealertwarm {
+    line-height: 1;
+    top: 5px;
+    font-size: 16px;
+    font-family: weathertext2;
+    background: 0;
+    background: #d55948;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -3113,22 +3132,6 @@ valuealertyellow {
     padding: 5px
 }
 
-valuealertwarm {
-    line-height: 1;
-    top: 5px;
-    font-size: 16px;
-    font-family: weathertext2;
-    background: 0;
-    background: var(--deepred);
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-    width: 4rem;
-    padding: 5px
-}
-
 alertunit {
     font-size: .75rem
 }
@@ -3136,7 +3139,7 @@ alertunit {
 .weather34alert-button {
     position: relative;
     margin: 15px 5px -10px;
-    background-color: rgba(0, 0, 0, .25);
+    background-color: #3d464d;
     box-shadow: 0 3px rgba(0, 0, 0, .4);
     border: none;
     padding: 10px 15px;
@@ -3148,18 +3151,18 @@ alertunit {
 }
 
 .weather34alert-button:hover {
-    background: rgba(0, 0, 0, .3)
+    background:#3d464d
 }
 
 .weather34alert-button:active {
-    background: rgba(0, 0, 0, .3);
+    background: #3d464d;
     box-shadow: 0 0 rgba(0, 0, 0, .4);
     top: 3px
 }
 
 .weather34alert-close {
     position: absolute;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: #3d464d;
     color: var(--white);
     border: none;
     outline: 0;
@@ -3175,7 +3178,7 @@ alertunit {
 }
 
 .weather34alert-close:hover {
-    background-color: rgba(0, 0, 0, .5)
+    background-color: #3d464d;
 }
 
 .feels,

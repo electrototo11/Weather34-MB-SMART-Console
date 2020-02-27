@@ -1,14 +1,14 @@
-<?php include('livedata.php');?>
+<?php include('livedata.php');include('common.php');?>
 <div class="modulecaption2">UV-Index</div>
 <div class="button button-dial">       
 <div class="button-dial-top"></div>
 <realfeel>
 <?php 
-if ($weather["uv"]>=10) {echo "<purple>Extreme</purple>";}
-else if ($weather["uv"]>=8) {echo "<red>Very High</red>";}
-else if ($weather["uv"]>=6) {echo "<orange>High</orange>";}
-else if ($weather["uv"]>=3) {echo "<yellow>Moderate</yellow>";}
-else if ($weather["uv"]>=0 ) {echo "<green>No Caution</green>";}
+if ($weather["uv"]>=10) {echo "<purple>".$lang['Extreme Caution']."</purple>";}
+else if ($weather["uv"]>=8) {echo "<red>".$lang['Very High Caution']."</red>";}
+else if ($weather["uv"]>=6) {echo "<orange>".$lang['High Caution']."</orange>";}
+else if ($weather["uv"]>=3) {echo "<yellow>".$lang['Moderate Caution']."</yellow>";}
+else if ($weather["uv"]>=0 ) {echo "<green>".$lang['Low Caution']."</green>";}
 ?>
 </realfeel>
 <div class="button-dial-label">          
@@ -34,7 +34,7 @@ echo "</uvicon>";
 
 <div class="heatcircle"><div class="heatcircle-content">
 <?php  //solar
-echo "<valuetextheading1>&nbsp;&nbsp;Solar Radiation </valuetextheading1><br>";
+echo "<valuetextheading1>&nbsp;&nbsp;".$lang['Solarradiation'] ." </valuetextheading1><br>";
 if ($weather["solar"]>800){
     echo "
 <div class=tempconverter1><div class=tempmodulehome30-35c >".$weather["solar"]."<smalltempunit2> &nbsp;wm/2";
@@ -81,10 +81,10 @@ else if ($weather["uvymax"]>=0) {
 
 <div class=thetrendgap>
 <?php 
-if ($weather["solar"]>=700) {echo "<div class=theuvred><orange>".$solaricon.'</orange> Strong Sun Radiation';}
-else if ($weather["solar"]>300) {echo "<div class=theuvyellow><yellow>".$solaricon.'</yellow> Moderate Radiation';}
-else if ($weather["solar"]>0) {echo "<div class=theuvyellow><yellow>".$solaricon.'</yellow> Low Radiation';}
-else if ($weather["solar"]==0) {echo "<div class=theuvgreen><grey>".$solaricon.'</grey> Low Radiation';}
+if ($weather["solar"]>=700) {echo "<div class=theuvred style='width:150px'><orange>".$solaricon.'</orange>'.$lang['Good-solar'] .'';}
+else if ($weather["solar"]>300) {echo "<div class=theuvyellow style='width:150px'><yellow>".$solaricon.'</yellow>'.$lang['Moderate-solar'].'';}
+else if ($weather["solar"]>0) {echo "<div class=theuvyellow style='width:150px'><yellow>".$solaricon.'</yellow>'.$lang['Low-solar'].'';}
+else if ($weather["solar"]==0) {echo "<div class=theuvgreen style='width:150px'><grey>".$solaricon.'</grey>'.$lang['Low-solar'].'';}
 ?>
 </div></div></div>
 <div class="weather-tempicon-identity">

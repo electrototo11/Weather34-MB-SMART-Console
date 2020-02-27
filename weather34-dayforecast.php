@@ -197,7 +197,7 @@ if ($rainunit=='in' && $wuapiunit=='h' ){$wuskydayprecipIntensity2=$wuskydayprec
 if ($rainunit=='in' && $wuapiunit=='m' ){$wuskydayprecipIntensity=$wuskydayprecipIntensity*0.0393701;}
 //icon + day wu
 echo '<div class="sunblock">';
-echo '<div class="wudesc">'.$wuskydayTime;echo ' '.$lang['Forecast'].'</div>
+echo '<div class="wudesc">'.$lang['Forecast'].' '.$wuskydayTime.'</div>
 
 <div class="wuicon">';
 if ($wuskydaynight=='D'){echo '<img src="wuicons/'.$wuskydayIcon.'.svg" width="60" height="50" alt="'.$wuskydesc.'" title="'.$wuskydesc.'"></img>';}
