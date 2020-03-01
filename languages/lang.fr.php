@@ -456,4 +456,11 @@ $lang['Dark']='Noir';
 $lang['Light']='Lumière';
 $lang['Charts']='Graphique';
 
+//solar
+$lang['Poor-solar']                   = 'Radiations<color><br>Faibles</color>';
+$lang['Low-solar']                    = 'Radiations<color><br>Modérées<color>';
+$lang['Moderate-solar']               = 'Radiations<color><br>Fortes <br></color>';
+$lang['Good-solar']                   = 'Radiations<color><br>Extrème <br></color>';
+
+
 ?>

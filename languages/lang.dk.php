@@ -240,9 +240,9 @@ $lang['Trytoavoid']              = 'Prøv at undgå <color>solen</color> mellem 
 
 //solar
 $lang['Poor']                    = 'Ingen<color> <br>Stråling</color>';
-$lang['Low']                     = 'Lav <br><color>Stråling</color>';
-$lang['Moderate']                = 'Moderat <br><color>Stråling</color>';
-$lang['Good']                    = 'God <br><color>Stråling</color>';
+$lang['Low-solar']                     = 'Lav <br><color>Stråling</color>';
+$lang['Moderate-solar']                = 'Moderat <br><color>Stråling</color>';
+$lang['Good-solar']                    = 'God <br><color>Stråling</color>';
 $lang['Solarradiation']          = 'Solstråling';
 //current sky
 $lang['Currentsky']              = 'Aktuelle forhold';

@@ -1,36 +1,43 @@
-<?php include_once('livedata.php');include('common.php');?>
+<?php include_once('livedata.php');include('common.php');
+// pressure mmHG quick fix over rides mb or hPa 
+if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa" ){$weather["barometer"]=number_format($weather["barometer"]*0.75006157584566,1);}
+if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa" ){$weather["barometer_max"]=number_format($weather["barometer_max"]*0.75006157584566,1);}
+if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa" ){$weather["barometer_min"]=number_format($weather["barometer_min"]*0.75006157584566,1);}
+if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa" ){$weather["thb0seapressymax"]=number_format($weather["thb0seapressymax"]*0.75006157584566,1);}
+if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa" ){$weather["thb0seapressymin"]=number_format($weather["thb0seapressymin"]*0.75006157584566,1);}
+if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa" ){$weather["barometer_units"]="mmHG";}
+?>
 <meta http-equiv="Content-Type: text/html; charset=UTF-8" />
-
 <style>
 .weather34barometerarrowactual{-webkit-transform:rotate(<?php
-if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
+if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa" or $weather["barometer_units"]=="mmHG") {
     echo $weather["barometer"]*0.02953*50.5;
 } elseif ($weather["barometer_units"]=='inHg') {
     echo $weather["barometer"]*50.5;
 }?>deg);
-transform:rotate(<?php if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
+transform:rotate(<?php if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa" or $weather["barometer_units"]=="mmHG") {
     echo $weather["barometer"]*0.02953*50.5;
 } elseif ($weather["barometer_units"]=='inHg') {
     echo $weather["barometer"]*50.5;
 }?>deg);z-index:99}
 .weather34barometerarrowmin{-webkit-transform:rotate(<?php
-if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
+if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa" or $weather["barometer_units"]=="mmHG") {
     echo $weather["barometer_min"]*0.02953*50.5;
 } elseif ($weather["barometer_units"]=='inHg') {
     echo $weather["barometer_min"]*50.5;
 }?>deg);
-transform:rotate(<?php if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
+transform:rotate(<?php if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa" or $weather["barometer_units"]=="mmHG") {
     echo $weather["barometer_min"]*0.02953*50.5;
 } elseif ($weather["barometer_units"]=='inHg') {
     echo $weather["barometer_min"]*50.5;
 }?>deg);z-index:9}
 .weather34barometerarrowmax{-webkit-transform:rotate(<?php
-if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
+if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa" or $weather["barometer_units"]=="mmHG") {
     echo $weather["barometer_max"]*0.02953*50.5;
 } elseif ($weather["barometer_units"]=='inHg') {
     echo $weather["barometer_max"]*50.5;
 }?>deg);
-transform:rotate(<?php if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
+transform:rotate(<?php if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa" or $weather["barometer_units"]=="mmHG") {
     echo $weather["barometer_max"]*0.02953*50.5;
 } elseif ($weather["barometer_units"]=='inHg') {
     echo $weather["barometer_max"]*50.5;
@@ -61,19 +68,19 @@ else echo "<span style='font-size:11px'>".$lang['Steady'].' '.$steadysymbol.'';?
 </thetrend>
 </div></div></div>
 
-<div class="heatcircleindoor" style="margin-top:-3px;margin-left:145px">
-<div class="heatcircle-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo date('Y')?> Max <blue><?php echo $weather["thb0seapressyearmaxtime"]?></blue>
+<div class="heatcircleindoor" style="margin-top:-3px;margin-left:156px">
+<div class="heatcircle-content"><?php echo date('Y')?> Max <blue><?php echo $weather["thb0seapressyearmaxtime"]?></blue>
 <?php //avg today
 echo "<div class=tempconverter1><div class=tempmodulehome20-25c>". $weather["thb0seapressymax"]."<smalltempunit2>&nbsp;".$weather["barometer_units"];?></smalltempunit2></div></div>
 
 
 
-<div class="heatcircle-content" style="margin-top:5px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo date('Y')?> Min <blue><?php echo $weather["thb0seapressyearmintime"]?></blue>
+<div class="heatcircle-content" style="margin-top:5px"><?php echo date('Y')?> Min <blue><?php echo $weather["thb0seapressyearmintime"]?></blue>
 <?php //avg today
 echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["thb0seapressymin"]."<smalltempunit2>&nbsp;".$weather["barometer_units"];?></smalltempunit2></div></div>
 
 
-<div class="heatcircle-content" style="margin-top:5px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $lang['Today']?> <orange>Max</orange>-<blue>Min</blue>
+<div class="heatcircle-content" style="margin-top:5px"><?php echo $lang['Today']?> <orange>Max</orange>-<blue>Min</blue>
 <?php //avg today
 echo "<div class=tempconverter1><div class=tempmodulehomemaxmin style='font-size:.6rem'>". $weather["barometer_max"]."<smalltempunit2>".$weather["barometer_units"]."</smalltempunit2>&nbsp;|&nbsp; ";
 echo $weather["barometer_min"]."<smalltempunit2>".$weather["barometer_units"] 

@@ -10,13 +10,13 @@
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position6").show()}});var c=a("#position6");c.load("<?php echo $position6 ?>");var b=setInterval(function(){c.load("<?php echo $position6 ?>")},11000)})})(jQuery);
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position7").show()}});var c=a("#position7");c.load("<?php echo $position7 ?>");var b=setInterval(function(){c.load("<?php echo $position7 ?>")},50000)})})(jQuery);
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position8").show()}});var c=a("#position8");c.load("<?php echo $position8 ?>");var b=setInterval(function(){c.load("<?php echo $position8 ?>")},1300000 )})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position8").show()}});var c=a("#position8");c.load("<?php echo $position8 ?>");var b=setInterval(function(){c.load("<?php echo $position8 ?>")},130000 )})})(jQuery);
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position9").show()}});var c=a("#position9");c.load("<?php echo $position9 ?>");var b=setInterval(function(){c.load("<?php echo $position9 ?>")},120000)})})(jQuery);
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position10").show()}});var c=a("#position10");c.load("<?php echo $position10 ?>");var b=setInterval(function(){c.load("<?php echo $position10 ?>")},80000)})})(jQuery);
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position11").show()}});var c=a("#position11");c.load("<?php echo $position11 ?>");var b=setInterval(function(){c.load("<?php echo $position11 ?>")},72000)})})(jQuery);
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position12").show()}});var c=a("#position12");c.load("<?php echo $position12 ?>");var b=setInterval(function(){c.load("<?php echo $position12 ?>")},1300000)})})(jQuery);
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position13").show()}});var c=a("#position13");c.load("<?php echo $position13 ?>");var b=setInterval(function(){c.load("<?php echo $position13 ?>")},130000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position12").show()}});var c=a("#position12");c.load("<?php echo $position12 ?>");var b=setInterval(function(){c.load("<?php echo $position12 ?>")},130000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position13").show()}});var c=a("#position13");c.load("<?php echo $position13 ?>");var b=setInterval(function(){c.load("<?php echo $position13 ?>")},13000)})})(jQuery);
 </script>
 
 <script type="text/javascript">

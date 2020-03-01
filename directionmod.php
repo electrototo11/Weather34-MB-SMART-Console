@@ -47,7 +47,14 @@ require_once('livedata.php');require_once('common.php');?>
         height: 0;
         border-style: solid;
         border-width: 14px 9px 0 9px;
-        border-color: rgba(208, 95, 45, 1.000) transparent transparent transparent;
+        border-color: 
+        <?php 
+        if ($weather["wind_direction"]>300){echo "#00adbd";}
+        elseif ($weather["wind_direction"]>220){echo "#ec5732";}
+        elseif ($weather["wind_direction"]>100){echo "#e6a241";}        
+        elseif ($weather["wind_direction"]>=0){echo "#00adbd";}         
+        ?>
+         transparent transparent transparent;
         -webkit-transform: translate(-50%, -50%);
         -moz-transform: translate(-50%, -50%);
         -o-transform: translate(-50%, -50%);
@@ -60,6 +67,16 @@ require_once('livedata.php');require_once('common.php');?>
         transition-duration: 3s
     }
 
+    .weather-directionicon-identity,.windirectiontext1 span
+    {
+        color: 
+        <?php 
+        if ($weather["wind_direction"]>300){echo "#00adbd";}
+        elseif ($weather["wind_direction"]>220){echo "#ec5732";}
+        elseif ($weather["wind_direction"]>100){echo "#e6a241";}        
+        elseif ($weather["wind_direction"]>=0){echo "#00adbd";}         
+        ?>;
+    }
     .thearrow2:before {
         content:'';
         color: rgba(208, 95, 45, 1.000);
@@ -244,7 +261,7 @@ if ($weather["wind_direction"]<=11.25) {
 
 
 
-<div class="heatcircle5" style="margin-left:55px;"><div class="heatcircle-content"><valuetextheading1>10" <?php echo $lang['Avg']?> </valuetextheading1>
+<div class="heatcircle5" style="margin-left:50px;"><div class="heatcircle-content"><valuetextheading1>10" <?php echo $lang['Avg']?> </valuetextheading1>
 <?php 
 echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>" .number_format($weather['wind_direction_avg'],0)."&deg; &nbsp;";
 if( $weather['wind_direction_avg']<=11.25){echo $lang['North'];}

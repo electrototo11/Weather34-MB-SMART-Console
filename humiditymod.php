@@ -31,7 +31,7 @@ echo "</tempman>";
 
 <div class="heatcircle"><div class="heatcircle-content">
 <?php //humidity max year
-echo "<valuetextheading1>".date('Y')." Max <deepblue>".$weather["humidity_ymaxtime"]."</deepblue></valuetextheading1><br>";
+echo "<valuetextheading1>".date('Y')." ".$lang['Max']." <deepblue>".$weather["humidity_ymaxtime"]."</deepblue></valuetextheading1><br>";
 if ($weather["humidity_ymax"]>75){
     echo "<div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["humidity_ymax"]."<smalltempunit2>%";
 }
@@ -59,7 +59,7 @@ else if ($weather["humidity_ymax"]>=0){
 
 <div class="heatcircle2"><div class="heatcircle-content">
 <?php //humidity min yesterday
-echo "<valuetextheading1>".date('Y')." Min <deepblue>".$weather["humidity_ymintime"]."</deepblue></valuetextheading1><br>";
+echo "<valuetextheading1>".date('Y')." ".$lang['Min']." <deepblue>".$weather["humidity_ymintime"]."</deepblue></valuetextheading1><br>";
 if ($weather["humidity_ymin"]>75){
     echo "
 <div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["humidity_ymin"]."<smalltempunit2>%";
@@ -88,7 +88,7 @@ else if ($weather["humidity_ymin"]>=0){
 </smalltempunit2></div></div>
 </div>
 
-<div class="heatcircleindoor"><div class="heatcircle-content"><?php echo $lang['Month']?> <orange>Max</orange>-<deepblue>Min</deepblue></valuetextheading1>
+<div class="heatcircleindoor"><div class="heatcircle-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $lang['Month']?> <orange><?php echo $lang['Max']?></orange>-<deepblue><?php echo $lang['Min']?> </deepblue></valuetextheading1>
 <?php //avg today
 echo "<div class=tempconverter1><div class=tempmodulehomemaxmin>". $weather["humidity_mmax"]."<smalltempunit2>%</smalltempunit2>&nbsp;|&nbsp;";
 //non metric avg today
@@ -118,13 +118,13 @@ else if($weather["humidity"]<100){ echo "<icon-zero>".$weather34_humidity_icon."
 
 <div class="maxwind">
 <?php  //Max-Min
-echo "Max ";
+echo $lang['Max']." " ;
 if($weather["humidity_max"]<30){ echo "<icon-26-30>".$weather["humidity_max"]."</icon-26-30>";}
           else if($weather["humidity_max"]<50){ echo "<icon-6-10>".$weather["humidity_max"]."</icon-6-10>";}
           else if($weather["humidity_max"]<70){ echo "<icon-11-15>".$weather["humidity_max"]."</icon-11-15>";}
           else if($weather["humidity_max"]<100){ echo "<icon-zero>".$weather["humidity_max"]."</icon-zero>";}
 echo "% | ";
-echo "Min ";
+echo $lang['Min']." "  ;
 if($weather["humidity_min"]<30){ echo "<icon-26-30>".$weather["humidity_min"]."%</icon-26-30>";}
           else if($weather["humidity_min"]<50){ echo "<icon-6-10>".$weather["humidity_min"]."</icon-6-10>";}
           else if($weather["humidity_min"]<70){ echo "<icon-11-15>".$weather["humidity_min"]."</icon-11-15>";}

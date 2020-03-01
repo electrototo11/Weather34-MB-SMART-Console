@@ -142,7 +142,7 @@ if ($weather["temp_units"]=='C' && $weather["dewymin"]>24) {
  ?>
 </smalltempunit2></div></div></div>
 
-<div class="heatcircleindoor"><div class="heatcircle-content"><?php echo $lang['Month']?> <orange>Max</orange>-<deepblue>Min</deepblue></valuetextheading1>
+<div class="heatcircleindoor"><div class="heatcircle-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $lang['Month']?> <orange>Max</orange>-<deepblue>Min</deepblue></valuetextheading1>
 <?php //avg today
 echo "<div class=tempconverter1><div class=tempmodulehomemaxmin>". $weather["dewmmax"]."&deg;<smalltempunit2>".$weather["temp_units"]."</smalltempunit2>&nbsp;|&nbsp;";
 //non metric avg today

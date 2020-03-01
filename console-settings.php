@@ -13,7 +13,7 @@ $dateFormat   = "d-m-Y";
 $password    = "";
 $display2019    = "yes";
 $smarttv    = "yes";
-$notifications    = "no";
+$notifications    = "yes";
 
 $position1    = "temperaturemod.php";
 $position2    = "humiditymod.php";
@@ -31,7 +31,7 @@ $position13    = "weather34-indoormod2.php";
 
 $chartoption    = "todaysolarmodule.php";
 $chartoption2    = "todayindoormodule.php";
-$defaultlanguage   = "dl";
+$defaultlanguage   = "en";
 $stationName   = "Demo Home Weather Station";
 $theme   = "dark";
 $TZ = "Europe/Berlin";
@@ -41,3 +41,9 @@ $UTC = "1";
 $clockformat    = "24";
 $hemisphere   = "0";
 $webcamurl   = "https://camo.githubusercontent.com/5715cfae1f9df766ba0fd8528ff13a590865461b/687474703a2f2f67302e697063616d6c6976652e636f6d2f706c617965722f736e617073686f742e7068703f616c6961733d35633639396562636338373130";
+
+$wuapikey = "123456789";
+$wuapiunit   = "m";
+$purpleairID = "1218";
+$purpleairhardware   = "no";
+$wulanguage    = "en-GB";

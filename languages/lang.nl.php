@@ -451,4 +451,9 @@ $lang['Low']='Laag';
 $lang['Dark']='Donker';
 $lang['Light']='Licht';
 $lang['Charts']='Weerkaart';
+
+$lang['Poor-solar']                   = 'Zonnestraling<br><color2> Pover</color>';
+$lang['Low-solar']                    = 'Zonnestraling<br><color2> Laag</color>';
+$lang['Moderate-solar']               = 'Zonnestraling<br><color1> Matig</color>';
+$lang['Good-solar']                   = 'Zonnestraling<br><color> Sterk</color>';
 ?>
