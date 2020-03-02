@@ -43,6 +43,8 @@ transform:rotate(<?php if ($weather["barometer_units"]=='mb' or $weather["barome
     echo $weather["barometer_max"]*50.5;
 }?>deg);z-index:9}
 valuetextba{font-size:1em}valuetextbc{font-size:1.1em}valuetexttr{font-size:8px}
+.text2{font-size:1.1em}
+.consoleicon1{margin-left:-166px}
 </style>
 <div class="modulecaptionpressure"><?php echo $lang['Barometer']?></div>
 
