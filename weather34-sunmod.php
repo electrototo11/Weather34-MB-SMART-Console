@@ -9,6 +9,12 @@
 	####################################################################################################
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
 include('livedata.php');include('console-settings.php');include('common.php');header('Content-type: text/html; charset=utf-8');
+if ($clockformat=='24'){
+    $timeformat='H:i';
+}
+if ($clockformat=='12'){
+    $timeformat='h:ia';
+}
 $TZconf = $TZ; 
 $rise_zenith = 90+ 40/60;  
 $set_zenith = 90+ 36/60; 
@@ -25,17 +31,17 @@ $sunsetoday= date_sunset(time(), SUNFUNCS_RET_STRING, $lat, $lont, $rise_zenith,
 $nextday = time() + 24*60*60;$result2 = date_sun_info($nextday,$lat, $lon);
 //weather34 sunrise 
 $nextrise = $result['sunrise']; $now = time(); 
-if ($now > $nextrise) { $nextrise = date('H:i',$result2['sunrise']);
+if ($now > $nextrise) { $nextrise = date($timeformat,$result2['sunrise']);
 $nextrisetxt = $lang['Tomorrow']   ;} 
-else { $nextrisetxt = $lang['Today'];$nextrise = date('H:i',$nextrise);} 
+else { $nextrisetxt = $lang['Today'];$nextrise = date($timeformat,$nextrise);} 
 //weather34 sunset
-$nextset = $result['sunset'];if ($now > $nextset) { $nextset = date('H:i',$result2['sunset']);
-$nextsettxt = $lang['Tomorrow'];}else { $nextsettxt = $lang['Today']; $nextset = date('H:i',$nextset);} 
+$nextset = $result['sunset'];if ($now > $nextset) { $nextset = date($timeformat,$result2['sunset']);
+$nextsettxt = $lang['Tomorrow'];}else { $nextsettxt = $lang['Today']; $nextset = date($timeformat,$nextset);} 
 //weather34 sunrise firstlight
-$nextfirstlight = $result['civil_twilight_begin']; $now = time();if ($now > $nextfirstlight) {$nextfirstlight = date('H:i',$result2['civil_twilight_begin']); } 
-else {$nextfirstlight = date('H:i',$nextfirstlight);} 
+$nextfirstlight = $result['civil_twilight_begin']; $now = time();if ($now > $nextfirstlight) {$nextfirstlight = date($timeformat,$result2['civil_twilight_begin']); } 
+else {$nextfirstlight = date($timeformat,$nextfirstlight);} 
 //weather34 sunset last light
-$nextlastlight = $result['civil_twilight_end'];if ($now > $nextlastlight) { $nextlastlight = date('H:i',$result2['civil_twilight_end']);}else {$nextlastlight = date('H:i',$nextlastlight);}
+$nextlastlight = $result['civil_twilight_end'];if ($now > $nextlastlight) { $nextlastlight = date($timeformat,$result2['civil_twilight_end']);}else {$nextlastlight = date($timeformat,$nextlastlight);}
 $firstrise = $result['sunrise']; $secondrise = $result2['sunrise']; $firstset = $result ['sunset'];if ($now < $firstrise) { $time = $firstrise - $now; $hrs = gmdate ('G',$time); $min = gmdate ('i',$time); $txt = '<sunsetvalue>'.$lang['Sunrise'];} elseif ($now < $firstset) { $time = $firstset - $now; $hrs = gmdate ('G',$time); $min = gmdate ('i',$time); $txt = ' <sunsetvalue>'.$lang['Sunset'];} else { $time = $secondrise - $now; $hrs = gmdate ('G',$time); $min = gmdate ('i',$time); 
 	$txt ='<sunsetvalue>'.$lang['Sunrise'].'';}echo "</sunsetvalue>";
 //sun position based on https://github.com/KiboOst/php-sunPos
