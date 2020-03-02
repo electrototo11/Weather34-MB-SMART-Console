@@ -1010,7 +1010,10 @@ $wulanguage    = "' . $_POST['wulanguage'] . '";
 
 <br><br><br>
 
+</div>
+<p>
 
+<div class="weatheroptions">
 <div class="stationvalue"> Weather Underground Forecast API KEY (New API Version Key Required)</div>
                                                                                     <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#F05E40" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
                                                                                         <path d="M12 30 L24 16 12 2" />
@@ -1082,18 +1085,10 @@ $wulanguage    = "' . $_POST['wulanguage'] . '";
                                                                                                             <div class="stationvalue"> English en-GB is the default
                                                                                                             </div>
 
-                                                                                                            <p>
-
-
-
-                                                                                                            
-
-                                                                                                                        
-                                                                                                                            * <span style="color:#777;">IMPORTANT TO NOTE <span style="color:#F75C46;">FOR PURPLE AIR OWNERS ONLY </span> </span></span> <br>
-
-
-
-
+                                                                                                            <p>   
+                                                                                                               </div>
+<p>
+                                                                                                               <div class="weatheroptions">           
                                                                                                                         <div class="stationvalue"> Do you have Purple Air Quality Hardware (yes or no) </div>
                                                                                                                         <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
                                                                                                                             <path d="M12 30 L24 16 12 2" />
