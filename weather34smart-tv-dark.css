@@ -1715,7 +1715,7 @@ umbrella {
     width: 4rem;
     height: 4rem;
     left: -50px;
-    margin-top: 89px
+    margin-top: 79px
 }
 
 uvman {
@@ -1974,8 +1974,7 @@ averwordwindword {
     position: absolute;
     margin-top: 44px;
     margin-left: 45px;
-    font-size: 1.25em;
-    color: var(--blue);
+    font-size: 1.25em;   
     font-family: weathertext3
 }
 
@@ -2337,12 +2336,12 @@ weather34-barometerlimitmax {
 
 .weather34barometerarrowactual:after {
     position: absolute;
-    top: 0;
+    top: 2px;
     left: 50%;
     width: 0;
     height: 0;
-    border-color: #d15f2e transparent transparent;
-    border-width: 10px 5px 0;
+    border-color:var(--yellow) transparent transparent;
+    border-width: 10px 7px 0;
     border-style: solid;
     background-color: 0;
     -webkit-transform: translate(-50%, -50%);
@@ -2418,7 +2417,7 @@ weather34-barometerlimitmax {
 }
 
 .weather34barometerarrowmax:after {
-    top: 0;
+    top: 1px;
     left: 50%;
     width: 0;
     height: 0;
