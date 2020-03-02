@@ -50,7 +50,7 @@ require_once('livedata.php');require_once('common.php');?>
         border-color: 
         <?php 
         if ($weather["wind_direction"]>300){echo "#00adbd";}
-        elseif ($weather["wind_direction"]>220){echo "#ec5732";}
+        elseif ($weather["wind_direction"]>260){echo "#ec5732";}
         elseif ($weather["wind_direction"]>100){echo "#e6a241";}        
         elseif ($weather["wind_direction"]>=0){echo "#00adbd";}         
         ?>
@@ -72,7 +72,7 @@ require_once('livedata.php');require_once('common.php');?>
         color: 
         <?php 
         if ($weather["wind_direction"]>300){echo "#00adbd";}
-        elseif ($weather["wind_direction"]>220){echo "#ec5732";}
+        elseif ($weather["wind_direction"]>260){echo "#ec5732";}
         elseif ($weather["wind_direction"]>100){echo "#e6a241";}        
         elseif ($weather["wind_direction"]>=0){echo "#00adbd";}         
         ?>;
