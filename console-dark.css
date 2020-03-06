@@ -4399,6 +4399,8 @@ laststrike {
     }
 
 
+
+
 .weather-icon-identity {
     position: absolute;
     width: 2rem;
@@ -4424,6 +4426,31 @@ laststrike {
     padding-top: 4px
 
 }
+
+.weather-clockicon-identity {
+    position: absolute;
+    width: 2rem;
+    height: 1rem;
+    margin-left: 110px;
+    margin-top: 93px;
+    z-index: 10;
+    border-left: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 3px;
+    background-color: hsla(204, 31%, 21%, .229);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    padding: 2px
+}
+
+
 
 .weather-tempicon-identity {
     position: absolute;
@@ -4567,4 +4594,128 @@ laststrike {
     line-height:1;
     padding-bottom:2px
 
+}
+
+
+.almanac,
+.almanac2,
+.almanac3,
+.almanac4,
+.almanac5,
+.almanac6 
+{
+    position: absolute;
+    width: 180px;
+    float: none;
+    padding: 0
+}
+
+.almanac {
+    margin-top: -77px;
+    margin-left: -165px
+}
+
+.almanac2 {
+    margin-top: 40px;
+    
+}
+
+.almanac3 {
+    margin-top: -40px;
+    margin-left: 155px
+}
+
+.almanac4 {
+    margin-top: 40px;
+   
+}
+
+.almanac5 {
+    margin-top: 41px;
+    margin-left: -155px
+}
+
+.almanac6 {
+    margin-top: 0px;
+    margin-left: 155px
+}
+
+.almanac-content {
+    display: block;
+    width: 160px;
+    float: left;
+    padding: 0;
+    color: var(--body-text-light);
+    text-align: center;
+    font: 500 10px weathertext2;
+    line-height: 15px;
+    
+}
+
+
+.almanac-word,
+.almanac-word-wind,
+.almanac-word-clock {
+    font-size: .6rem;
+    font-family: weathertext2;
+    width: 12em;
+    line-height: 1.4;
+    background: #fff;
+    text-align: center;
+    position: absolute;
+    margin: 0 auto;
+    margin-left: -150px;
+    margin-top: -60px;
+    padding: 2px;
+    display: flex;
+    color: var(--silver);
+    background-color: hsla(204, 31%, 21%, .429);
+    font-family: Headingtext;
+    width: 11em;
+    height: 10px;
+    font-size: 10px;
+    padding: 2px 3px 1px 3px;
+    line-height: 1.2;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px
+}
+
+.almanac-word-wind {
+    margin-top: 95px;
+}
+
+.almanac-word-clock {
+    position: relative;
+    margin-top: -80px;
+    margin-left: -145px
+}
+
+
+.clock4 {
+    display:flex;
+    position: absolute;
+    font-family: clock;
+    font-size: 3rem;
+    color: hsla(214, 29%, 91%, .6);
+    margin-top: 10px;
+    margin-left: -90px;
+    max-width:300px;
+}
+
+
+.thedate4 {
+    position: absolute;
+    display: block;
+    background: 0 0;
+    color: hsla(214, 29%, 91%, .6);
+    font-size: .75rem;
+    font-family: clock;
+    line-height: 1;
+    margin-top: -15px;   
+    margin-left: -70px
 }

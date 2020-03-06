@@ -59,6 +59,10 @@ $UTC = "' . $_POST["UTC"] . '";
 $clockformat    = "' . $_POST["clockformat"] . '";
 $hemisphere   = "' . $_POST["hemisphere"] . '";
 $webcamurl   = "' . $_POST["webcamurl"] . '";
+$displayalmanac    = "' . $_POST['displayalmanac'] . '";
+$uvsensor    = "' . $_POST['uvsensor'] . '";
+$mbyear    = "' . $_POST['mbyear'] . '";
+
 
 $wuapikey = "' . $_POST["wuapikey"] . '";
 $wuapiunit   = "' . $_POST["wuapiunit"] . '";
@@ -1116,7 +1120,83 @@ $wulanguage    = "' . $_POST['wulanguage'] . '";
                                                                                                                             </svg> <span style="color:#777;">enter your <strong>PurpleAir </strong> station id example <strong><span style="color:rgba(86, 95, 103, 1.000);"> 1200</strong></span>
                                                                                                                 </span>
 
+<P>
 
+</div>
+<p>
+
+<div class="weatheroptions">
+
+                                                                                                                <div class="weathersectiontitle">
+                                            <svg id="i-settings" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M13 2 L13 6 11 7 8 4 4 8 7 11 6 13 2 13 2 19 6 19 7 21 4 24 8 28 11 25 13 26 13 30 19 30 19 26 21 25 24 28 28 24 25 21 26 19 30 19 30 13 26 13 25 11 28 8 24 4 21 7 19 6 19 2 Z" />
+                                                <circle cx="16" cy="16" r="4" />
+                                            </svg>
+                                            Display Almanac Data (English Only) </div>
+                                            <br>
+                                            <div class="stationvalue">Dispaly link yes or no</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M12 30 L24 16 12 2" />
+                                            </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="silver" stroke="silver" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M30 12 L16 24 2 12" />
+                                            </svg>
+                                            <select id="displayalmanac" name="displayalmanac" class="choose1">
+                                                <option><?php echo $displayalmanac; ?></option>
+                                                <option>yes</option>
+                                                <option>no</option>
+                                            </select>
+
+
+                                            
+
+                                            <P>
+
+<div class="weathersectiontitle">
+<svg id="i-settings" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+<path d="M13 2 L13 6 11 7 8 4 4 8 7 11 6 13 2 13 2 19 6 19 7 21 4 24 8 28 11 25 13 26 13 30 19 30 19 26 21 25 24 28 28 24 25 21 26 19 30 19 30 13 26 13 25 11 28 8 24 4 21 7 19 6 19 2 Z" />
+<circle cx="16" cy="16" r="4" />
+</svg>
+What year does your records in meteobridge begin </div>
+<br>
+<div class="stationvalue">select year</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+<path d="M12 30 L24 16 12 2" />
+</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="silver" stroke="silver" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+<path d="M30 12 L16 24 2 12" />
+</svg>
+<select id="mbyear" name="mbyear" class="choose1">
+<option><?php echo $mbyear; ?></option>
+<option>2020</option>
+<option>2019</option>
+<option>2018</option>
+<option>2017</option>
+<option>2016</option>
+<option>2015</option>
+<option>2014</option>
+</select>
+
+
+
+<P>
+
+
+
+
+<div class="weathersectiontitle">
+<svg id="i-settings" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+<path d="M13 2 L13 6 11 7 8 4 4 8 7 11 6 13 2 13 2 19 6 19 7 21 4 24 8 28 11 25 13 26 13 30 19 30 19 26 21 25 24 28 28 24 25 21 26 19 30 19 30 13 26 13 25 11 28 8 24 4 21 7 19 6 19 2 Z" />
+<circle cx="16" cy="16" r="4" />
+</svg>
+Do you have a uv sensor </div>
+<br>
+<div class="stationvalue">yes or no</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+<path d="M12 30 L24 16 12 2" />
+</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="silver" stroke="silver" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+<path d="M30 12 L16 24 2 12" />
+</svg>
+<select id="uvsensor" name="uvsensor" class="choose1">
+<option><?php echo $uvsensor; ?></option>
+<option>yes</option>
+<option>no</option>
+</select>
 
 
 

@@ -88,6 +88,11 @@
        <div class="weather34-sphere-blue"></div>
           <bottom-bar-text><?php echo date('Y');?></bottom-bar-text></a>
 
+          <?php if ($displayalmanac=='yes'){echo '
+          <a href="weather34-almanac.php" alt="Almanac" title="Almanac">
+       <div class="weather34-sphere-red"></div>
+          <bottom-bar-text>Almanac History</bottom-bar-text></a>';}
+          ?>
 
        <?php if ($display2019=='yes'){echo '
         <a href="consolecharts-2019.php">
