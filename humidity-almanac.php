@@ -32,15 +32,15 @@ echo "<div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["humidi
 
 
 <div class="almanac5"><div class="almanac-content">
-<?php  //month min
-echo "<valuetextheading1>Record Max <deepblue>24th Oct 2018</deepblue></valuetextheading1><br>";
-echo "<div class=tempconverter1><div class=tempmodulehome0-5c>100<smalltempunit2>%";
+<?php  // max
+echo "<valuetextheading1>Yesterday Max <deepblue>".$weather["humidity_ydmaxtime"]."</deepblue></valuetextheading1><br>";
+echo "<div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["humidity_ydmax"]."<smalltempunit2>%";
 ?><smalltempunit2></div></div></div>
 
 <div class="almanac6"><div class="almanac-content">
-<?php  //min Year
-echo "<valuetextheading1>Record Min <deepblue> 12th Apr 2019</deepblue></valuetextheading1><br>";
-echo "<div class=tempconverter1><div class=tempmodulehome0-5c>12<smalltempunit2>%";
+<?php  //min
+echo "<valuetextheading1>Yesterday Min <deepblue>".$weather["humidity_ydmaxtime"]."</deepblue></valuetextheading1><br>";
+echo "<div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["humidity_ydmin"]."<smalltempunit2>%";
 ?><smalltempunit2></div></div></div>
 
 

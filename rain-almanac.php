@@ -33,8 +33,6 @@ echo "<div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["rainym
 
 <div class="almanac5"><div class="almanac-content">
 <?php  //last year
-$weather['rainlastmonth']=$meteobridgeapi[173];
-    $weather['rainlastyear']=$meteobridgeapi[174];
 echo "<valuetextheading1>Total <deepblue>2019</deepblue></valuetextheading1><br>";
 echo "<div class=tempconverter1><div class=tempmodulehome0-5c>".$weather['rainlastyear']."<smalltempunit2>".$weather["rain_units"];
 ?><smalltempunit2></div></div></div>
@@ -42,7 +40,7 @@ echo "<div class=tempconverter1><div class=tempmodulehome0-5c>".$weather['rainla
 
 <div class="almanac6"><div class="almanac-content">
 <?php  //all time
-$totalrain=$weather["rainymax"]+$weather['rainlastyear'];
+$totalrain=$weather["rainymax"]+ $weather['rainlastyear'];
 echo "<valuetextheading1>Total <deepblue>since ".$mbyear."</deepblue></valuetextheading1><br>";
 echo "<div class=tempconverter1><div class=tempmodulehome0-5c>".$totalrain."<smalltempunit2>".$weather["rain_units"];
 ?><smalltempunit2></div></div></div>
