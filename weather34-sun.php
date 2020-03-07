@@ -46,7 +46,7 @@ margin-left:108px}
 	top: 50%;left:calc(48% - 53%);
 	z-index:1;height:8px;width:8px;border:0;-webkit-border-radius:50%;border-radius:50%;
 	background:<?php if ($elev<=0.5 && $elev>-4){echo "rgba(255, 112, 50, 0.5)";}
-	else if ($elev<=0){echo "rgba(86, 95, 103, 0.7)";}else echo "rgba(255,124,57,1)"?>;}</style>
+	else if ($elev<=0){echo "hsla(12, 80%, 52%,.5))";}else echo "hsla(12, 80%, 52%,.8)"?>;}</style>
 
 <div class="modulecaptionsun"><?php echo $lang['Sun'];?></div>
 
