@@ -33,7 +33,7 @@ echo "<div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["rainym
 
 <div class="almanac5"><div class="almanac-content">
 <?php  //last year
-echo "<valuetextheading1>Total <deepblue>2019</deepblue></valuetextheading1><br>";
+echo "<valuetextheading1>Total <deepblue>".date('Y', strtotime('-1 year'))."</deepblue></valuetextheading1><br>";
 echo "<div class=tempconverter1><div class=tempmodulehome0-5c>".$weather['rainlastyear']."<smalltempunit2>".$weather["rain_units"];
 ?><smalltempunit2></div></div></div>
  

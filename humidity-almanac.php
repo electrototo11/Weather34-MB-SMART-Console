@@ -39,7 +39,7 @@ echo "<div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["humidi
 
 <div class="almanac6"><div class="almanac-content">
 <?php  //min
-echo "<valuetextheading1>Yesterday Min <deepblue>".$weather["humidity_ydmaxtime"]."</deepblue></valuetextheading1><br>";
+echo "<valuetextheading1>Yesterday Min <deepblue>".$weather["humidity_ydmintime"]."</deepblue></valuetextheading1><br>";
 echo "<div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["humidity_ydmin"]."<smalltempunit2>%";
 ?><smalltempunit2></div></div></div>
 
