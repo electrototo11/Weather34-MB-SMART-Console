@@ -57,15 +57,14 @@ include_once('livedata.php');include_once('updater-almanac.php');include('common
       <li><div id=wind></div></li>   
       <li><div id=rain></div></li>
       <li><div id=barometer></div></li>
+
       <?php if ($uvsensor=='yes'){;?>      
       <li><div id=uvindex></div></li>   
       <li><div id=solar></div></li> 
       <li><div id=clock></div></li> 
       <?php ;}?>
 
-      
-
-      <li2><div id=position10></div></li2> 
+    <li2><div id=position10></div></li2> 
     <li2><div id=position11></div></li2> 
     <li2><div id=position12></div></li2>  
     <li3><div id=position13></div></li3>  
@@ -74,7 +73,7 @@ include_once('livedata.php');include_once('updater-almanac.php');include('common
 
 
 <div class="nav-bottom">
-  <a href="console-setup.php" target="_blank" alt="Setup Screen" title="Setup Screen"> <?php echo $settingsicon ?></a>
+<a href="index.php" alt="previous page" title="previous page"><?php echo $backhome?></a>
 
 <a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
   <?php

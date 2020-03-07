@@ -2770,55 +2770,6 @@ valuebeaufort {
     -o-border-radius: 3px
 }
 
-@keyframes fadein {
-    from {
-        opacity: 0
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@-moz-keyframes fadein {
-    from {
-        opacity: 0
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@-webkit-keyframes fadein {
-    from {
-        opacity: 0
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@-ms-keyframes fadein {
-    from {
-        opacity: 0
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@-o-keyframes fadein {
-    from {
-        opacity: 0
-    }
-
-    to {
-        opacity: 1
-    }
-}
 
 .online,
 .online2 {
@@ -2827,73 +2778,13 @@ valuebeaufort {
     color: var(--blue);    
     margin-top: -20px;
     float: right;
-    padding-left: 10px;
-    -webkit-animation: fadein 5s infinite;
-    -moz-animation: fadein 5s infinite;
-    -ms-animation: fadein 5s infinite;
-    -o-animation: fadein 5s infinite;
-    animation: fadein 5s infinite;
-    -webkit-animation-direction: alternate;
-    -moz-animation-direction: alternate;
-    -ms-animation-direction: alternate;
-    -o-animation-direction: alternate;
-    animation-direction: alternate;
+    padding-left: 10px;   
     right: 10px
 }
 
 .online2 {
     position: relative;
     top: 0px
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@-moz-keyframes fadein {
-    from {
-        opacity: 0
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@-webkit-keyframes fadein {
-    from {
-        opacity: 0
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@-ms-keyframes fadein {
-    from {
-        opacity: 0
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@-o-keyframes fadein {
-    from {
-        opacity: 0
-    }
-
-    to {
-        opacity: 1
-    }
 }
 
 
@@ -4719,3 +4610,171 @@ laststrike {
     margin-top: -15px;   
     margin-left: -70px
 }
+
+
+.sundialcontainerdiv {
+    position: relative;
+    top: 0px;
+    margin-left: -5px;
+  }  
+  
+  .sundialcontainerdiv2 {
+    position: relative;
+    top: 5px;
+    margin-left: -5px;
+    image-rendering: high-quality;
+  }
+  
+  .circleborder {
+    width: 109px;
+    height: 109px;
+    border: 0.35rem solid var(--border-dark);
+    position: absolute;
+    left: 99px;
+    top: 20px;
+    border-radius: 50%;
+    border-radius: 100%;
+    background: transparent;
+  }
+  
+  .circleborder2 {
+    width: 90px;
+    height: 90px;
+    border: 14px solid hsla(206, 12%, 27%,.5);
+    position: absolute;
+    left: 100px;
+    top: 22px;
+    border-radius: 100%;   
+    background: transparent;
+    z-index:10;
+  }
+  
+  .suncanvasstyle {
+    margin: 18px 13px 10px;
+    left: 95px;
+    position: absolute;
+    image-rendering: high-quality;
+    height: 140px;
+    z-index:0;
+  }
+
+  .daylightmoduleposition {
+    position: absolute;
+    margin-left:-240px;    
+    margin-top: -75px;
+  }
+
+  .weather34sunclock {
+    border-radius: 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    background: 0;
+    width: 120px;
+    height: 120px;
+    margin-left: 95px;
+    margin-top: 15px;
+    position: absolute;
+    border: 4px solid #e6e8ef;
+    transform-origin: 50% 50%;
+  }
+  
+  .weather34sunclock div {
+    position: absolute;
+    -webkit-transform-origin: 49.6% 49.5%;
+    transform-origin: 49.6% 49.5%;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  .sunaboveweather34,
+.sunbelowweather34 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  margin-top: 3px;
+  margin-left: 2px;
+}
+
+.daylight2 {
+    display: flex;
+    background: 0;
+    color: var(--blue);
+    font-size: 1rem;
+    line-height: 1;
+    margin-top: 55px;
+    position: absolute;
+    padding: 10px 5px;
+    padding-bottom: 8px;
+    background: 0 0;
+    border-radius: 5px;
+    width: 6rem;
+    height: 1.75rem;
+    font-family: weathertext2;   
+    background:transparent;    
+    margin-left: 115px;
+}
+
+.till2 {
+    position: absolute;
+    padding: 2px 3px 1px 3px;
+    display: inline-flex;
+    font-size: 9px;
+    top: 30px;
+    z-index: 99999;
+    color: var(--body-text-dark);
+    font-family: weathertext2;
+    left: 1px
+}
+
+.sunrise-block {
+    display: block;
+    background: 0 0;
+    color: var(--body-text-dark);
+    font-size: .7rem;
+    line-height: 1;
+    margin-top: -30px;
+    position: absolute;
+    margin-left: -10px;
+    font-family: headingtext;
+    text-align: left
+}
+
+.sunset-block {
+    display: block;
+    background: 0 0;
+    color: var(--body-text-dark);
+    font-size: .7rem;
+    line-height: 1;
+    margin-top: 0px;
+    position: absolute;
+    margin-left: -10px;
+    font-family: headingtext;
+    text-align: left
+}
+
+.modulecaptionsun {
+    display: flex;
+    position: absolute;
+    margin-left: 25px;
+    margin-top: -80px;
+    color: var(--silver);
+    background-color: hsla(204, 31%, 21%, .429);
+    font-family: Headingtext;
+    width: 11em;
+    height: 10px;
+    font-size: 10px;
+    padding: 2px 3px 1px 3px;
+    line-height: 1.2;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    z-index:10;
+}
+  

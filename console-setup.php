@@ -717,6 +717,7 @@ $wulanguage    = "' . $_POST['wulanguage'] . '";
                                                 <option>solarmod.php</option>
                                                 <option>weather34-indoormod.php</option>
                                                 <option>weather34-webcam.php</option>
+                                                <option>weather34-sun.php</option>
                                                 
                                             </select>
 
@@ -745,6 +746,7 @@ $wulanguage    = "' . $_POST['wulanguage'] . '";
                                                 <option>solarmod.php</option>
                                                 <option>weather34-indoormod.php</option>
                                                 <option>weather34-webcam.php</option>
+                                                <option>weather34-sun.php</option>
                                             </select>
 
 <br>
@@ -772,6 +774,7 @@ $wulanguage    = "' . $_POST['wulanguage'] . '";
                                                 <option>solarmod.php</option>
                                                 <option>weather34-indoormod.php</option>
                                                 <option>weather34-webcam.php</option>
+                                                <option>weather34-sun.php</option>
                                             </select>
 
 <br>
@@ -800,6 +803,7 @@ $wulanguage    = "' . $_POST['wulanguage'] . '";
                                                 <option>solarmod.php</option>
                                                 <option>weather34-indoormod.php</option>
                                                 <option>weather34-webcam.php</option>
+                                                <option>weather34-sun.php</option>
                                             </select>
 
 <br>
@@ -827,6 +831,7 @@ $wulanguage    = "' . $_POST['wulanguage'] . '";
                                                 <option>solarmod.php</option>
                                                 <option>weather34-indoormod.php</option>
                                                 <option>weather34-webcam.php</option>
+                                                <option>weather34-sun.php</option>
                                             </select>
 
 <br>
@@ -854,6 +859,7 @@ $wulanguage    = "' . $_POST['wulanguage'] . '";
                                                 <option>solarmod.php</option>
                                                 <option>weather34-indoormod2.php</option>
                                                 <option>weather34-webcam.php</option>
+                                                <option>weather34-sun.php</option>
                                             </select>
 
 <br>
@@ -881,6 +887,7 @@ $wulanguage    = "' . $_POST['wulanguage'] . '";
                                                 <option>solarmod.php</option>
                                                 <option>weather34-indoormod2.php</option>
                                                 <option>weather34-webcam.php</option>
+                                                <option>weather34-sun.php</option>
                                             </select>
 
 <br>
@@ -908,6 +915,7 @@ $wulanguage    = "' . $_POST['wulanguage'] . '";
                                                 <option>solarmod.php</option>
                                                 <option>weather34-indoormod2.php</option>
                                                 <option>weather34-webcam.php</option>
+                                                <option>weather34-sun.php</option>
                                             </select>
 
 <br>
@@ -935,6 +943,7 @@ $wulanguage    = "' . $_POST['wulanguage'] . '";
                                                 <option>solarmod.php</option>
                                                 <option>weather34-indoormod2.php</option>
                                                 <option>weather34-webcam.php</option>
+                                                <option>weather34-sun.php</option>
                                             </select>
 
 <br>
