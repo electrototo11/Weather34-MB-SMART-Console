@@ -16,27 +16,29 @@ echo "<div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["rainyd
 ?><smalltempunit2></div></div></div>
 
 
-
-
 <div class="almanac3"><div class="almanac-content">
-<?php  //last month
-echo "<valuetextheading1>Total Last Month <deepblue>".date("M ",strtotime("-1 month"))."</deepblue> </valuetextheading1><br>";
-echo "<div class=tempconverter1><div class=tempmodulehome-10-0c>".$weather['rainlastmonth']."<smalltempunit2>".$weather["rain_units"];
+<?php  
+//last month
+    echo "<valuetextheading1>Total Last Month <deepblue>".date("M ", strtotime("-1 month"))."</deepblue> </valuetextheading1><br>";
+    echo "<div class=tempconverter1><div class=tempmodulehome-10-0c>";    
+    if ($weather['rainlastmonth']=='[rain0total-max@M1]'){echo "N/A <smalltempunit2>";}
+else if ($weather['rainlastmonth']>=0) {echo $weather['rainlastmonth']."<smalltempunit2>".$weather["rain_units"];}
 ?><smalltempunit2></div></div></div>
 
 <div class="almanac4"><div class="almanac-content">
 <?php  // year
 echo "<valuetextheading1>Total<deepblue> ".date('Y')."  </deepblue></valuetextheading1><br>";
 echo "<div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["rainymax"]."<smalltempunit2>".$weather["rain_units"];
- ?>
-</smalltempunit2></div></div></div>
+ ?></smalltempunit2></div></div></div>
 
 <div class="almanac5"><div class="almanac-content">
-<?php  //last year
-echo "<valuetextheading1>Total <deepblue>".date('Y', strtotime('-1 year'))."</deepblue></valuetextheading1><br>";
-echo "<div class=tempconverter1><div class=tempmodulehome0-5c>".$weather['rainlastyear']."<smalltempunit2>".$weather["rain_units"];
-?><smalltempunit2></div></div></div>
- 
+<?php 
+//last year 
+echo "<valuetextheading1>Total <deepblue>".date("Y ", strtotime("-1 year"))."</deepblue> </valuetextheading1><br>";
+echo "<div class=tempconverter1><div class=tempmodulehome-10-0c>";  
+if ($weather['rainlastyear']=='[rain0total-max@Y1]'){echo "N/A <smalltempunit2>";}
+else if ($weather['rainlastyear']>=0) {echo $weather['rainlastyear']."<smalltempunit2>".$weather["rain_units"];}
+?><smalltempunit2></div></div></div> 
 
 <div class="almanac6"><div class="almanac-content">
 <?php  //all time

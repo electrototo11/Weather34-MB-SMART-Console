@@ -2770,7 +2770,6 @@ valuebeaufort {
     -o-border-radius: 3px
 }
 
-
 .online,
 .online2 {
     position: absolute;
@@ -4611,7 +4610,6 @@ laststrike {
     margin-left: -70px
 }
 
-
 .sundialcontainerdiv {
     position: relative;
     top: 0px;
@@ -4701,10 +4699,10 @@ laststrike {
 .daylight2 {
     display: flex;
     background: 0;
-    color: var(--blue);
+    color: var(--deepblue);
     font-size: 1rem;
     line-height: 1;
-    margin-top: 55px;
+    margin-top: -20px;
     position: absolute;
     padding: 10px 5px;
     padding-bottom: 8px;
@@ -4714,7 +4712,7 @@ laststrike {
     height: 1.75rem;
     font-family: weathertext2;   
     background:transparent;    
-    margin-left: 115px;
+    margin-left:-126px;
 }
 
 .till2 {

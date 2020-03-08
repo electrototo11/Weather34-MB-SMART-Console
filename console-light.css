@@ -517,6 +517,7 @@ li3 {
     left: 5px
 }
 
+
 .phase2 {
     display: block;
     background: 0 0;
@@ -2782,8 +2783,6 @@ valuebeaufort {
     top: 0px
 }
 
-
-
 blue1 {
     color: var(--blue);
     font-size: .85em;
@@ -4524,8 +4523,7 @@ button-block-date {
     margin-left: -65px
 }
 
-
-.sundialcontainerdiv {
+  .sundialcontainerdiv {
     position: relative;
     top: 0px;
     margin-left: -5px;
@@ -4611,13 +4609,27 @@ button-block-date {
   margin-left: 2px;
 }
 
+.sunaboveweather34 {
+    border-width: 0 3px 6px;
+    border-color: transparent transparent rgba(208, 95, 45, 0.7);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  
+  .sunbelowweather34 {
+    border-width: 6px 3px 0;
+    border-color: rgba(74, 99, 111, 0.8) transparent transparent;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
 .daylight2 {
     display: flex;
     background: 0;
     color: var(--deepblue);
     font-size: 1rem;
     line-height: 1;
-    margin-top: 55px;
+    margin-top: -20px;
     position: absolute;
     padding: 10px 5px;
     padding-bottom: 8px;
@@ -4627,7 +4639,7 @@ button-block-date {
     height: 1.75rem;
     font-family: weathertext2;   
     background:transparent;    
-    margin-left: 115px;
+    margin-left:-126px;
 }
 
 .till2 {
@@ -4690,4 +4702,6 @@ button-block-date {
     -o-border-radius: 3px;    
     font-size: .6rem;
     font-family: weathertext2;
-} 
+}
+
+  
