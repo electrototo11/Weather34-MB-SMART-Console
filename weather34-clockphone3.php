@@ -8,12 +8,8 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
-include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');	
-$TZ= 'Europe/Istanbul'; $TZconf = $TZ; $UTC = '3';?>
-
-<div class="almanac-word-clock">Local Time</div>
-<br><br>
-
+include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');	?>
+<div class="almanac-word-clock">Local Time</div><br><br>
 <div id="weather34clock2"></div>
 <script type="text/javascript">
 var clockID;var yourTimeZoneFrom='<?php echo $UTC?>';var d=new Date();
@@ -62,7 +58,5 @@ document.getElementById("weather34clock2").innerHTML="<div class='thedate4'> "+i
 function StartClock(){clockID=setInterval(UpdateClock,500)}
 function KillClock(){clearTimeout(clockID)}window.onload=function(){StartClock()}(jQuery);</script>
 </div></div>
-
 <div class="weather-clockicon-identity" >   
 <?php echo "<icon-0-5>".$timeicon."</icon-0-5>"; ?></div>
-
