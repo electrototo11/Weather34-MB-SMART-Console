@@ -1745,6 +1745,6 @@ if ($wuskydaynight10=='N'){echo '<img src="wuicons/nt_'.$wuskydayIcon10.'.svg" w
   <?php echo $info?> CSS/SVG/PHP scripts were developed by <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:8px;">weather34.com</a>  for use in the weather34 template &copy; 2015-<?php echo date('Y');?></span> <br>
   <span style="font-size:8px;">
   <?php echo $info?> Data Forecast provided by <a href="https://www.wunderground.com/weather/api/" title="Weather Underground API" target="_blank">Weather Underground</a></span>
-  <div class="mbsmartlogo" style="margin-top:-25px"><img src="Wxsoft34-appsmall.png" alt="weather34 mb-smart" title="weather34 mb-smart" width="25px"></div>
+  <div class="mbsmartlogo" style="margin-top:-5px"><img src="Wxsoft34-appsmall.png" alt="weather34 mb-smart" title="weather34 mb-smart" width="25px"></div>
   </article> 
 </main>

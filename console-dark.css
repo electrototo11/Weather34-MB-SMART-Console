@@ -4720,8 +4720,7 @@ laststrike {
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
-    top: 30px;
-    z-index: 99999;
+    top: 30px;    
     color: var(--body-text-dark);
     font-family: weathertext2;
     left: 1px

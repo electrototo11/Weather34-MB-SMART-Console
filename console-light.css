@@ -4647,8 +4647,7 @@ button-block-date {
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
-    top: 30px;
-    z-index: 99999;
+    top: 30px;    
     color: var(--body-text-light);
     font-family: weathertext2;
     left: 1px
@@ -4702,6 +4701,10 @@ button-block-date {
     -o-border-radius: 3px;    
     font-size: .6rem;
     font-family: weathertext2;
+}
+
+sunsetvalue {
+    z-index:0
 }
 
   
