@@ -4523,7 +4523,8 @@ button-block-date {
     margin-left: -65px
 }
 
-  .sundialcontainerdiv {
+  
+.sundialcontainerdiv {
     position: relative;
     top: 0px;
     margin-left: -5px;
@@ -4537,42 +4538,44 @@ button-block-date {
   }
   
   .circleborder {
-    width: 109px;
-    height: 109px;
-    border: 0.35rem solid #e6e8ef;
+    width: 110px;
+    height: 110px;
+    border: 0.4rem solid #e6e8ef;
     position: absolute;
-    left: 99px;
-    top: 20px;
+    left: 98px;
+    top: 19px;
     border-radius: 50%;
     border-radius: 100%;
     background: transparent;
+    box-shadow: -6px -6px 8px rgba(255, 255, 255, .9), 5px 5px 8px rgba(0, 0, 0, .07);
   }
   
   .circleborder2 {
-    width: 90px;
-    height: 90px;
-    border: 14px solid hsla(227, 22%, 92%,.5);
+    width: 80px;
+    height: 80px;
+    border: 15px solid hsla(208, 9%, 37%,.8);
     position: absolute;
-    left: 100px;
-    top: 22px;
+    left: 104px;
+    top: 24.5px;
     border-radius: 100%;   
     background: transparent;
     z-index:10;
+    
   }
   
   .suncanvasstyle {
-    margin: 18px 13px 10px;
-    left: 95px;
+    margin: 18.5px 13px 10px;
+    left: 96px;
     position: absolute;
     image-rendering: high-quality;
     height: 140px;
-    z-index:0;
+    z-index:999
   }
 
   .daylightmoduleposition {
     position: absolute;
     margin-left:-240px;    
-    margin-top: -75px;
+    margin-top: -70px;
   }
 
   .weather34sunclock {
@@ -4624,22 +4627,20 @@ button-block-date {
   }
 
 .daylight2 {
-    display: flex;
-    background: 0;
-    color: var(--deepblue);
+    display: flex;    
+    color: var(--blue);
     font-size: 1rem;
     line-height: 1;
-    margin-top: -20px;
+    margin-top: -10px;
     position: absolute;
     padding: 10px 5px;
-    padding-bottom: 8px;
-    background: 0 0;
+    padding-bottom: 8px;    
     border-radius: 5px;
     width: 6rem;
     height: 1.75rem;
     font-family: weathertext2;   
     background:transparent;    
-    margin-left:-126px;
+    margin-left:-122px;
 }
 
 .till2 {
@@ -4647,10 +4648,10 @@ button-block-date {
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
-    top: 30px;    
+    top: 25px;    
     color: var(--body-text-light);
     font-family: weathertext2;
-    left: 1px
+    left: -2px
 }
 
 
@@ -4703,8 +4704,8 @@ button-block-date {
     font-family: weathertext2;
 }
 
-sunsetvalue {
-    z-index:0
-}
-
-  
+smallminutes
+{
+    font-size: 7px;
+    color: var(--body-text-light);
+} 
