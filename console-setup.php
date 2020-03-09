@@ -964,6 +964,7 @@ $wulanguage    = "' . $_POST['wulanguage'] . '";
                                                 <option>weather34-dayforecast.php</option>
                                                 <option>weather34-airquality.php</option>
                                                 <option>weather34-indoormod.php</option>
+                                                
                                             </select>
 
 <br>
@@ -1019,6 +1020,7 @@ $wulanguage    = "' . $_POST['wulanguage'] . '";
                                                 <option><?php echo $position13; ?></option>
                                                 <option>weather34-indoormod2.php</option>
                                                 <option>weather34-clockphone.php</option>
+                                                <option>weather34-sun.php</option>
                                             </select>
 
 <br><br><br>
