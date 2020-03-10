@@ -4559,7 +4559,7 @@ button-block-date {
     top: 24.5px;
     border-radius: 100%;   
     background: transparent;
-    z-index:10;
+   
     
   }
   
@@ -4568,8 +4568,7 @@ button-block-date {
     left: 96px;
     position: absolute;
     image-rendering: high-quality;
-    height: 140px;
-    z-index:999
+    height: 140px;   
   }
 
   .daylightmoduleposition {
