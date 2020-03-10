@@ -161,14 +161,65 @@ else if ( $weather['wind_speed_bft']>=2){echo "<div class=tempconverter1><div cl
 else if ( $weather['wind_speed_bft']>=1){echo "<div class=tempconverter1><div class=tempmodulehome0-5c><valuebeaufort>".$lang['Lightair'];}
 else if ( $weather['wind_speed_bft']>=0){echo "<div class=tempconverter1><div class=tempmodulehome0-5c><valuebeaufort>".$lang['Calm'];}
 ?>
-</smalltempunit2></div></div>
+</smalltempunit2>
+</div></div></div>
+
+<div class="heatcirclerain1" ><div class="heatcircle-content">
+<div class="rainrateextra">
+<valuetextheading1><?php echo $lang['Avg']; echo " ".$lang['Windspeed'];?>&nbsp;&nbsp;&nbsp;</valuetextheading1>
+<div class=rainratebar>
+<div class="weather34ratebar" 
+style="width:
+<?php 
+if ($weather["wind_units"]=="km/h"){echo $weather['wind_speed']*1.25;}
+if ($weather["wind_units"]=="mph"){echo $weather['wind_speed']*2;}
+if ($weather["wind_units"]=="kts"){echo $weather['wind_speed']*1.25;}
+if ($weather["wind_units"]=="m/s"){echo $weather['wind_speed']*1.25;}
+?>px;
+
+background:<?php 
+if ($weather['wind_speed']>=70 && $weather["wind_units"]=="km/h"){echo '#703232';}
+elseif ($weather['wind_speed']>=50 && $weather["wind_units"]=="km/h"){echo '#cc504c';}
+elseif ($weather['wind_speed']>=40 && $weather["wind_units"]=="km/h"){echo '#d87040';}
+elseif ($weather['wind_speed']>=30 && $weather["wind_units"]=="km/h"){echo '#e6a241';}
+elseif ($weather['wind_speed']>=10 && $weather["wind_units"]=="km/h"){echo '#9bbc2f';}
+elseif ($weather['wind_speed']>=0 && $weather["wind_units"]=="km/h"){echo '#00adbd';}
+
+if ($weather['wind_speed']>=46 && $weather["wind_units"]=="mph"){echo '#703232';}
+elseif ($weather['wind_speed']>=31.06 && $weather["wind_units"]=="mph"){echo '#cc504c';}
+elseif ($weather['wind_speed']>=24.8 && $weather["wind_units"]=="mph"){echo '#d87040';}
+elseif ($weather['wind_speed']>=18.6 && $weather["wind_units"]=="mph"){echo '#e6a241';}
+elseif ($weather['wind_speed']>=6.2 && $weather["wind_units"]=="mph"){echo '#9bbc2f';}
+elseif ($weather['wind_speed']>=0 && $weather["wind_units"]=="mph"){echo '#00adbd';}
+
+if ($weather['wind_speed']>=40.4 && $weather["wind_units"]=="kts"){echo '#703232';}
+elseif ($weather['wind_speed']>=26.99 && $weather["wind_units"]=="kts"){echo '#cc504c';}
+elseif ($weather['wind_speed']>=21.5 && $weather["wind_units"]=="kts"){echo '#d87040';}
+elseif ($weather['wind_speed']>=16.19 && $weather["wind_units"]=="kts"){echo '#e6a241';}
+elseif ($weather['wind_speed']>=5.3 && $weather["wind_units"]=="kts"){echo '#9bbc2f';}
+elseif ($weather['wind_speed']>=0 && $weather["wind_units"]=="kts"){echo '#00adbd';}
+
+if ($weather['wind_speed']>=20.83 && $weather["wind_units"]=="m/s"){echo '#703232';}
+elseif ($weather['wind_speed']>=13.88 && $weather["wind_units"]=="m/s"){echo '#cc504c';}
+elseif ($weather['wind_speed']>=11.11 && $weather["wind_units"]=="m/s"){echo '#d87040';}
+elseif ($weather['wind_speed']>=8.33 && $weather["wind_units"]=="m/s"){echo '#e6a241';}
+elseif ($weather['wind_speed']>=2.77 && $weather["wind_units"]=="m/s"){echo '#9bbc2f';}
+elseif ($weather['wind_speed']>=0 && $weather["wind_units"]=="m/s"){echo '#00adbd';}
+
+
+
+
+?>;">
+</div></div>
+
+
 
 <div class=thetrendgapwind>
 <?php 
 //windrun
 echo '<div class=thetrendboxblue>'.$lang['Avg'].' '.$lang['Today'].'';echo '&nbsp;<blue>'.number_format($weather["wind_speed_avg30"],1).'</blue><smalltempunit2>&nbsp;'.$windunit.'</smalltempunit2>';?>
 </div></div>
-<div class="weather-icon-identity"><?php 
+<div class="weather-icon-identity-wind"><?php 
 if($weather["wind_units"]=="km/h" && $weather["wind_speed"]<10){ echo "<icon-0-5>".$weather34_wind_icon."</icon-0-5>";}
           else if($weather["wind_units"]=="km/h" && $weather["wind_speed"]<30){ echo "<icon-6-10>".$weather34_wind_icon."</icon-6-10>";}
           else if($weather["wind_units"]=="km/h" && $weather["wind_speed"]<40){ echo "<icon-11-15>".$weather34_wind_icon."</icon-11-15>";}         
@@ -208,7 +259,7 @@ if($weather["wind_units"]=="km/h" && $weather["wind_speed"]<10){ echo "<icon-0-5
 
 </div></div>
 
-<div class="maxwind">
+<div class="maxwind2">
 <?php  //60 Min Avg
 echo '60" ';echo $lang['Avg']." ";
 //kmh

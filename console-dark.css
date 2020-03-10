@@ -1034,18 +1034,16 @@ steady {
     -ms-border-radius:3px;
     -o-border-radius:3px;
 }
-
-
-
-.thetrendgap {
+.thetrendgapwind {
     position: absolute;
-    margin-top: 5px;
-    padding:5px;
+    margin-top: -30px;
+    padding: 5px;
+    left: -30px
 }
 
 .thetrendgapwind {
     position: absolute;
-    margin-top: 10px;
+    margin-top: -30px;
     padding:5px;
 }
 
@@ -3216,6 +3214,24 @@ alertunit {
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
 }
+.maxwind2 {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -25px;
+    font-size: .6rem;
+    font-family: weathertext2;
+    width: 150px;
+    line-height: 1.4;
+    color: grey;
+    position: relative;
+    border-radius: 3px;
+    color: var(--silver);
+    background-color: hsla(204, 31%, 21%, .429);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px
+}
 
 realfeel {
     position: absolute;
@@ -4387,6 +4403,25 @@ laststrike {
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     padding:2px
+}
+
+.weather-icon-identity-wind {
+    position: absolute;
+    width: 2rem;
+    height: .9rem;
+    margin-left: 90px;
+    margin-top: 5px;
+    z-index: 10;
+    border-left: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: 0;
 }
 
 

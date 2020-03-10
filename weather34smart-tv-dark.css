@@ -1046,10 +1046,9 @@ steady {
 
 .thetrendgapwind {
     position: absolute;
-    margin-top: 8px;
-    padding:0;
-    left:5px
-
+    margin-top: -37px;
+    padding: 5px;
+    left: -30px
 }
 
 .theraingap {
@@ -3215,6 +3214,25 @@ alertunit {
     -o-border-radius: 3px;
 }
 
+.maxwind2 {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -25px;
+    font-size: .6rem;
+    font-family: weathertext2;
+    width: 150px;
+    line-height: 1.4;
+    color: grey;
+    position: relative;
+    border-radius: 3px;
+    color: var(--silver);
+    background-color: hsla(204, 31%, 21%, .429);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px
+}
+
 realfeel {
     position: absolute;
     top: 23px;
@@ -4346,7 +4364,7 @@ laststrike {
 
 }
 
-.weather-tempicon-identity,.weather-pressureicon-identity,.weather-rain-icon-identity,.weather-indoor-tempicon-identity {
+.weather-tempicon-identity,.weather-pressureicon-identity,.weather-rain-icon-identity,.weather-indoor-tempicon-identity,.weather-icon-identity-wind  {
     display:none
 }
 

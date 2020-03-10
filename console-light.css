@@ -1078,8 +1078,9 @@ icon-50 {
 
 .thetrendgapwind {
     position: absolute;
-    margin-top: 10px;
-    padding-top: 8px
+    margin-top: -30px;
+    padding: 5px;
+    left: -30px
 }
 
 trendmovementfallingx,
@@ -3138,6 +3139,18 @@ alertunit {
     background: #fff;
 }
 
+.maxwind2 {
+    position: absolute;
+    margin-top: 12px;
+    margin-left: -20px;
+    font-size: .6rem;
+    font-family: weathertext2;
+    width: 150px;
+    box-shadow: -1px -1px 8px rgba(255, 255, 255, .9), 2px 2px 2px rgba(0, 0, 0, .07);
+    line-height: 1.4;
+    background: #fff
+}
+
 realfeel {
     position: absolute;
     top: 10px;
@@ -4279,6 +4292,27 @@ button-block-date {
     align-items: center;
     box-shadow: -6px -6px 8px rgba(255, 255, 255, .9), 2px 2px 2px rgba(0, 0, 0, .07)
 }
+.weather-icon-identity-wind {
+    position: absolute;
+    width: 2rem;
+    height: 1rem;
+    margin-left: 100px;
+    margin-top: 5px;
+    z-index: 10;
+    -webkit-border-left: 0;
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    border-left: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    box-shadow: -6px -6px 8px rgba(255, 255, 255, .9), 2px 2px 2px rgba(0, 0, 0, .07)
+}
 
 .weather-tempicon-identity {
     position: absolute;
@@ -4558,8 +4592,7 @@ button-block-date {
     left: 104px;
     top: 24.5px;
     border-radius: 100%;   
-    background: transparent;
-   
+    background: transparent;   
     
   }
   
@@ -4649,7 +4682,7 @@ button-block-date {
     font-size: 9px;
     top: 25px;    
     color: var(--body-text-light);
-    font-family: weathertext2;
+    font-family: headingtext;
     left: -2px
 }
 
