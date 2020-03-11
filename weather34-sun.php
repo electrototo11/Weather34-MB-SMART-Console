@@ -45,18 +45,18 @@ $darkhours = 23 - $lighthours; $darkminutes = 60 - $lightmins;if ($darkminutes<1
 
 <style>
 .weather34sunclock {
--webkit-transform:rotate(<?php echo ((($thehour*15)+($theminute/4))-95)?>deg);
-transform:rotate(<?php echo ((($thehour*15)+($theminute/4))-95)?>deg);
+-webkit-transform:rotate(<?php echo ((($thehour*15)+($theminute/3))-84)?>deg);
+transform:rotate(<?php echo ((($thehour*15)+($theminute/3))-84)?>deg);
 border:5px solid rgba(255, 255,255,0);
 width:110px; 
 height:110px;
-top:-9px;
+top:-0px;
 margin-left:104px;
 z-index:10;
 }
 .weather34sunclock #poscircircle {
 top: 50%;
-left:calc(52% - 48%);
+left:calc(52% - 53%);
 height:8px;
 width:8px;
 border:0;

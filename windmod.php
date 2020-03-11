@@ -166,15 +166,22 @@ else if ( $weather['wind_speed_bft']>=0){echo "<div class=tempconverter1><div cl
 
 <div class="heatcirclerain1" ><div class="heatcircle-content">
 <div class="rainrateextra">
-<valuetextheading1><?php echo $lang['Avg']; echo " ".$lang['Windspeed'];?>&nbsp;&nbsp;&nbsp;</valuetextheading1>
+<valuetextheading1 style="margin-left:-16px;font-size:8.5px">
+<?php // wind speed scale 
+if ($weather["wind_units"]=="km/h"){echo "0&nbsp;10&nbsp;20&nbsp;30&nbsp;40&nbsp;50&nbsp;60+&nbsp;";}
+if ($weather["wind_units"]=="mph"){echo  "&nbsp;&nbsp;0&nbsp;10&nbsp; 20&nbsp;30&nbsp;40&nbsp;50&nbsp60+&nbsp;";}
+if ($weather["wind_units"]=="kts"){echo "0&nbsp;10&nbsp;20&nbsp;30&nbsp;40&nbsp;50&nbsp;60+&nbsp;";}
+if ($weather["wind_units"]=="m/s"){echo  "0&nbsp;&nbsp;2&nbsp;&nbsp;5&nbsp;&nbsp;8&nbsp;&nbsp;11&nbsp;&nbsp;14&nbsp;&nbsp;16+&nbsp;&nbsp;&nbsp;";}
+echo $weather["wind_units"];?>
+</valuetextheading1>
 <div class=rainratebar>
 <div class="weather34ratebar" 
 style="width:
 <?php 
-if ($weather["wind_units"]=="km/h"){echo $weather['wind_speed']*1.25;}
-if ($weather["wind_units"]=="mph"){echo $weather['wind_speed']*2;}
-if ($weather["wind_units"]=="kts"){echo $weather['wind_speed']*1.25;}
-if ($weather["wind_units"]=="m/s"){echo $weather['wind_speed']*1.25;}
+if ($weather["wind_units"]=="km/h"){echo $weather['wind_speed']*1.4;}
+if ($weather["wind_units"]=="mph"){echo $weather['wind_speed']*1.5;}
+if ($weather["wind_units"]=="kts"){echo $weather['wind_speed']*1.5;}
+if ($weather["wind_units"]=="m/s"){echo $weather['wind_speed']*4.4;}
 ?>px;
 
 background:<?php 
