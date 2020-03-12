@@ -45,8 +45,8 @@ $darkhours = 23 - $lighthours; $darkminutes = 60 - $lightmins;if ($darkminutes<1
 
 <style>
 .weather34sunclock {
--webkit-transform:rotate(<?php echo ((($thehour*15)+($theminute/3))-84)?>deg);
-transform:rotate(<?php echo ((($thehour*15)+($theminute/3))-84)?>deg);
+-webkit-transform:rotate(<?php echo ((($thehour*15)+($theminute/3))-86)?>deg);
+transform:rotate(<?php echo ((($thehour*15)+($theminute/3))-86)?>deg);
 border:5px solid rgba(255, 255,255,0);
 width:110px; 
 height:110px;
@@ -62,8 +62,7 @@ width:8px;
 border:0;
 -webkit-border-radius:50%;
 border-radius:50%;
-background:<?php if ($elev<=0.5 && $elev>-4){echo "rgba(255, 112, 50, 0.5)";}
-else if ($elev<=0){echo "hsla(4, 40%, 48%,.5)";}else echo "#ec5732"?>;
+background:<?php if ($elev<=0){echo "hsla(4, 40%, 48%,1)";}else echo "#ec5732"?>;
 }
 </style>
 <div class="modulecaptionsun"><?php echo $lang['Sun'];?></div>
