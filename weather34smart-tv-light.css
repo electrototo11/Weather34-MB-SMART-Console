@@ -603,16 +603,17 @@ li3 {
 .wuicondesc {
     color: var(--body-text-light);
     display: flex;
-    font-size: .6rem;
-    line-height: .9;
-    margin-top: 10px;
+    font-size: 10.5px;
+    line-height: 1;
+    margin-top: 5px;
     position: absolute;
     margin-left: 95px;
     font-family: headingtext;
     width: 100px;
     justify-content: center;
     align-items: center;
-    word-wrap: break-word
+    word-wrap: break-word;
+    text-transform:capitalize
 }
 
 .wutemp {
@@ -4481,11 +4482,11 @@ button-block-date {
     position: absolute;
     padding: 2px 3px 1px 3px;
     display: inline-flex;
-    font-size: 9px;
+    font-size: 8px;
     top: 25px;    
     color: var(--body-text-light);
     font-family: weathertext2;
-    left: -2px
+    left: 1px
 }
 
 

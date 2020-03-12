@@ -538,16 +538,17 @@ belowthehorizon {
 .wuicondesc {
     color: var(--silver);
     display: flex;
-    font-size: .6rem;
-    line-height: 1.1;
-    margin-top: 15px;
+    font-size: 10.5px;
+    line-height: 1;
+    margin-top: 10px;
     position: absolute;
     margin-left: 125px;
     font-family: headingtext;
     width: 100px;
     justify-content: center;
     align-items: center;
-    word-wrap: break-word
+    word-wrap: break-word;
+    text-transform:capitalize
 }
 
 .wutemp {
@@ -4759,8 +4760,8 @@ laststrike {
     font-size: 9px;
     top: 25px;    
     color: var(--body-text-dark);
-    font-family: weathertext2;
-    left: -2px
+    font-family: headingtext;
+    left: 0px
 }
 
 .sunrise-block {

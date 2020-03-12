@@ -193,7 +193,7 @@ if ($rainunit=='mm' && $wuapiunit=='e' ){$wuskydayprecipIntensity=$wuskydaypreci
 if ($rainunit=='in' && $wuapiunit=='s' ){$wuskydayprecipIntensity=$wuskydayprecipIntensity*0.0393701;}
 //rain mm to inches uk
 if ($rainunit=='in' && $wuapiunit=='h' ){$wuskydayprecipIntensity2=$wuskydayprecipIntensity2*0.0393701;}
-//rain mm to inches metric
+//rain mm to inches metric                  
 if ($rainunit=='in' && $wuapiunit=='m' ){$wuskydayprecipIntensity=$wuskydayprecipIntensity*0.0393701;}
 //icon + day wu
 echo '<div class="sunblock">';
@@ -203,11 +203,10 @@ echo '<div class="wudesc">'.$lang['Forecast'].' '.$wuskydayTime.'</div>
 if ($wuskydaynight=='D'){echo '<img src="wuicons/'.$wuskydayIcon.'.svg" width="60" height="50" alt="'.$wuskydesc.'" title="'.$wuskydesc.'"></img>';}
 if ($wuskydaynight=='N'){echo '<img src="wuicons/nt_'.$wuskydayIcon.'.svg" width="60" height="50" alt="'.$wuskydesc.'" title="'.$wuskydesc.'"></img>';}
 // icon description
-$wuskydesc	=str_replace('Wind', 'Windy Conditions', $wuskydesc);
+$wuskydesc	=str_replace('Wind', $lang["Windy"]." ". $lang["Conditions"], $wuskydesc);
 $wuskydesc	=str_replace('/', ' ', $wuskydesc);
 echo '</div>
 <div class="wuicondesc">'.$wuskydesc.'</div><br>
-
 
 <div class="wutemp">';
 //temp non metric wu
