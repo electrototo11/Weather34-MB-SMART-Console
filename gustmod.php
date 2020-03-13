@@ -75,14 +75,15 @@ echo "<windunitindicator>";echo $weather["wind_units"];echo "</windunitindicator
 
 <?php //man walking-running
 echo "<windindicator>";
-if($weather["wind_units"]=="km/h" && $weather["wind_gust_speed"]<10){ echo "<icon-0-5>".$walkingman."</icon-0-5>";}
+          //kmh
+          if($weather["wind_units"]=="km/h" && $weather["wind_gust_speed"]<10){ echo "<icon-0-5>".$walkingman."</icon-0-5>";}
           else if($weather["wind_units"]=="km/h" && $weather["wind_gust_speed"]<30){ echo "<icon-6-10>".$walkingman."</icon-6-10>";}
           else if($weather["wind_units"]=="km/h" && $weather["wind_gust_speed"]<40){ echo "<icon-11-15>".$walkingman."</icon-11-15>";}         
           else if($weather["wind_units"]=="km/h" && $weather["wind_gust_speed"]<50){ echo "<icon-21-25>".$walkingman."</icon-21-25>";}
           else if($weather["wind_units"]=="km/h" && $weather["wind_gust_speed"]<60){ echo "<icon-26-30>".$walkingman."</icon-26-30>";}
           else if($weather["wind_units"]=="km/h" && $weather["wind_gust_speed"]<70){ echo "<icon-31-35>".$walkingman."</icon-31-35>";}
           else if($weather["wind_units"]=="km/h" && $weather["wind_gust_speed"]<300){ echo "<icon-36-40>".$walkingman."</icon-36-40>";}
-
+          //mph
           if($weather["wind_units"]=="mph" && $weather["wind_gust_speed"]<6.2){ echo "<icon-0-5>".$walkingman."</icon-0-5>";}
           else if($weather["wind_units"]=="mph" && $weather["wind_gust_speed"]<18.6){ echo "<icon-6-10>".$walkingman."</icon-6-10>";}
           else if($weather["wind_units"]=="mph" && $weather["wind_gust_speed"]<24.8){ echo "<icon-11-15>".$walkingman."</icon-11-15>";}         
@@ -90,7 +91,6 @@ if($weather["wind_units"]=="km/h" && $weather["wind_gust_speed"]<10){ echo "<ico
           else if($weather["wind_units"]=="mph" && $weather["wind_gust_speed"]<37.2){ echo "<icon-26-30>".$walkingman."</icon-26-30>";}
           else if($weather["wind_units"]=="mph" && $weather["wind_gust_speed"]<43.4){ echo "<icon-31-35>".$walkingman."</icon-31-35>";}
           else if($weather["wind_units"]=="mph" && $weather["wind_gust_speed"]<300){ echo "<icon-36-40>".$walkingman."</icon-36-40>";}
-
           //ms
           if($weather["wind_units"]=="m/s" && $weather["wind_gust_speed"]<2.7){ echo "<icon-0-5>".$walkingman."</icon-0-5>";}
           else if($weather["wind_units"]=="m/s" && $weather["wind_gust_speed"]<8.33){ echo "<icon-6-10>".$walkingman."</icon-6-10>";}
@@ -186,7 +186,6 @@ else if ($weather['windmmax']>=6.2 && $weather["wind_units"]=="mph") {
 echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>".$weather['windmmax']. "&nbsp;<smalltempunit2>".$weather["wind_units"];}
 else if ($weather['windmmax']>=0 && $weather["wind_units"]=="mph") {
 echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>".$weather['windmmax']. "&nbsp;<smalltempunit2>".$weather["wind_units"];}
-
 //ms
 if ($weather['windmmax']>=46 && $weather["wind_units"]=="m/s") {
 echo "<br><div class=tempconverter1><div class=tempmodulehome30-35c>".$weather['windmmax']. "&nbsp;<smalltempunit2>".$weather["wind_units"];}
@@ -197,8 +196,7 @@ echo "<br><div class=tempconverter1><div class=tempmodulehome10-15c>".$weather['
 else if ($weather['windmmax']>=6.2 && $weather["wind_units"]=="m/s") {
 echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>".$weather['windmmax']. "&nbsp;<smalltempunit2>".$weather["wind_units"];}
 else if ($weather['windmmax']>=0 && $weather["wind_units"]=="m/s") {
-echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>".$weather['windmmax']. "&nbsp;<smalltempunit2>".$weather["wind_units"];}
-                        
+echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>".$weather['windmmax']. "&nbsp;<smalltempunit2>".$weather["wind_units"];}                        
 //kts
 if ($weather['windmmax']>=46 && $weather["wind_units"]=="kts") {
 echo "<br><div class=tempconverter1><div class=tempmodulehome30-35c>".$weather['windmmax']. "&nbsp;<smalltempunit2>".$weather["wind_units"];}
@@ -216,21 +214,50 @@ echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>".$weather['wi
 
 <div class="heatcirclerain1" ><div class="heatcircle-content">
 <div class="rainrateextra">
-<valuetextheading1 style="margin-left:-16px;font-size:8.5px">
-<?php // wind speed scale 
-if ($weather["wind_units"]=="km/h"){echo "0&nbsp;10&nbsp;20&nbsp;30&nbsp;40&nbsp;50&nbsp;60+&nbsp;";}
-if ($weather["wind_units"]=="mph"){echo  "&nbsp;&nbsp;0&nbsp;10&nbsp; 20&nbsp;30&nbsp;40&nbsp;50&nbsp60+&nbsp;";}
-if ($weather["wind_units"]=="kts"){echo "0&nbsp;10&nbsp;20&nbsp;30&nbsp;40&nbsp;50&nbsp;60+&nbsp;";}
-if ($weather["wind_units"]=="m/s"){echo  "0&nbsp;&nbsp;2&nbsp;&nbsp;5&nbsp;&nbsp;8&nbsp;&nbsp;11&nbsp;&nbsp;14&nbsp;&nbsp;16+&nbsp;&nbsp;&nbsp;";}
-echo $weather["wind_units"];?>
+<valuetextheading1 style="margin-left:-15px;font-size:8.5px">
+<?php // weather34 simple css wind speed scale 
+//kmh
+if ($weather["wind_units"]=="km/h" && $weather['wind_gust_speed']>=60){echo "0&nbsp;10&nbsp;20&nbsp;30&nbsp;40&nbsp;50&nbsp;<darkred>60+</darkred>&nbsp";}
+else if ($weather["wind_units"]=="km/h" && $weather['wind_gust_speed']>=50){echo "0&nbsp;10&nbsp;20&nbsp;30&nbsp;40&nbsp;<red>50</red>&nbsp;60+&nbsp";}
+else if ($weather["wind_units"]=="km/h" && $weather['wind_gust_speed']>=40){echo "0&nbsp;10&nbsp;20&nbsp;30&nbsp;<orange>40</orange>&nbsp;50&nbsp;60+&nbsp";}
+else if ($weather["wind_units"]=="km/h" && $weather['wind_gust_speed']>=30){echo "0&nbsp;10&nbsp;20&nbsp;<yellow>30</yellow>&nbsp;40&nbsp;50&nbsp;60+&nbsp";}
+else if ($weather["wind_units"]=="km/h" && $weather['wind_gust_speed']>=20){echo "0&nbsp;10&nbsp;<green>20</green>&nbsp;30&nbsp;40&nbsp;50&nbsp;60+&nbsp";}
+else if ($weather["wind_units"]=="km/h" && $weather['wind_gust_speed']>=10){echo "0&nbsp;<green>10</green>&nbsp;20&nbsp;30&nbsp;40&nbsp;50&nbsp;60+&nbsp";}
+else if ($weather["wind_units"]=="km/h" && $weather['wind_gust_speed']>=0){echo "<blue>0</blue>&nbsp;10&nbsp;20&nbsp;30&nbsp;40&nbsp;50&nbsp;60+&nbsp";}
+//mph
+if ($weather["wind_units"]=="mph" && $weather['wind_gust_speed']>=45){echo "0&nbsp;6&nbsp;12&nbsp;18&nbsp;24&nbsp;31&nbsp;<darkred>37</darkred>&nbsp;<darkred>45+</darkred>";}
+else if ($weather["wind_units"]=="mph" && $weather['wind_gust_speed']>=37.28){echo "0&nbsp;6&nbsp;12&nbsp;18&nbsp;24&nbsp;31&nbsp;<darkred>37</darkred>&nbsp;45+";}
+else if ($weather["wind_units"]=="mph" && $weather['wind_gust_speed']>=31.06){echo "0&nbsp;6&nbsp;12&nbsp;18&nbsp;24&nbsp;<red>31</red>&nbsp;37&nbsp;45+";}
+else if ($weather["wind_units"]=="mph" && $weather['wind_gust_speed']>=24.85){echo "0&nbsp;6&nbsp;12&nbsp;18&nbsp;<orange>24</orange>&nbsp;31&nbsp;37&nbsp;45+";}
+else if ($weather["wind_units"]=="mph" && $weather['wind_gust_speed']>=18.64){echo "0&nbsp;6&nbsp;12&nbsp;<yellow>18</yellow>&nbsp;24&nbsp;31&nbsp;37&nbsp;45+";}
+else if ($weather["wind_units"]=="mph" && $weather['wind_gust_speed']>=12.42){echo "0&nbsp;6&nbsp;<green>12</green>&nbsp;18&nbsp;24&nbsp;31&nbsp;37&nbsp;45+";}
+else if ($weather["wind_units"]=="mph" && $weather['wind_gust_speed']>=6.2){echo "0&nbsp;<green>6</green>&nbsp;12&nbsp;18&nbsp;24&nbsp;31&nbsp;37&nbsp;45+";}
+else if ($weather["wind_units"]=="mph" && $weather['wind_gust_speed']>=0){echo "<blue>0</blue>&nbsp;6&nbsp;12&nbsp;18&nbsp;24&nbsp;31&nbsp;37&nbsp;45+";}
+//kts
+if ($weather["wind_units"]=="kts" && $weather['wind_gust_speed']>=32){echo "0&nbsp;5&nbsp;10&nbsp;16&nbsp;21&nbsp;26&nbsp;<darkred>32+</darkred>&nbsp;";}
+else if ($weather["wind_units"]=="kts" && $weather['wind_gust_speed']>=26.99){echo "0&nbsp;5&nbsp;10&nbsp;16&nbsp;21&nbsp;<red>26</red>&nbsp;32+&nbsp;";}
+else if ($weather["wind_units"]=="kts" && $weather['wind_gust_speed']>=21.59){echo "0&nbsp;5&nbsp;10&nbsp;16&nbsp;<orange>21</orange>&nbsp;26&nbsp;32+&nbsp;";}
+else if ($weather["wind_units"]=="kts" && $weather['wind_gust_speed']>=16.10){echo "0&nbsp;5&nbsp;10&nbsp;<yellow>16</yellow>&nbsp;21&nbsp;26&nbsp;32+&nbsp;";}
+else if ($weather["wind_units"]=="kts" && $weather['wind_gust_speed']>=10.7){echo "0&nbsp;5&nbsp;<yellow>10</yellow>&nbsp;16&nbsp;21&nbsp;26&nbsp;32+&nbsp;";}
+else if ($weather["wind_units"]=="kts" && $weather['wind_gust_speed']>=5.3){echo "0&nbsp;<green>5</green>&nbsp;10&nbsp;16&nbsp;21&nbsp;26&nbsp;32+&nbsp;";}
+else if ($weather["wind_units"]=="kts" && $weather['wind_gust_speed']>=0){echo "<blue>0</blue>&nbsp;5&nbsp;10&nbsp;16&nbsp;21&nbsp;26&nbsp;32+&nbsp;";}
+//ms
+if ($weather["wind_units"]=="m/s" && $weather['wind_gust_speed']>=16){echo  "0&nbsp;&nbsp;2&nbsp;&nbsp;5&nbsp;&nbsp;8&nbsp;&nbsp;11&nbsp;&nbsp;14&nbsp;&nbsp;<darkred>16+</darkred>&nbsp;&nbsp;&nbsp;";}
+else if ($weather["wind_units"]=="m/s" && $weather['wind_gust_speed']>=14){echo  "0&nbsp;&nbsp;2&nbsp;&nbsp;5&nbsp;&nbsp;8&nbsp;&nbsp;11&nbsp;&nbsp;<red>14</red>&nbsp;&nbsp;16+&nbsp;&nbsp;&nbsp;";}
+else if ($weather["wind_units"]=="m/s" && $weather['wind_gust_speed']>=11){echo  "0&nbsp;&nbsp;2&nbsp;&nbsp;5&nbsp;&nbsp;8&nbsp;&nbsp;<orange>11</orange>&nbsp;&nbsp;14&nbsp;&nbsp;16+&nbsp;&nbsp;&nbsp;";}
+else if ($weather["wind_units"]=="m/s" && $weather['wind_gust_speed']>=8){echo  "0&nbsp;&nbsp;2&nbsp;&nbsp;5&nbsp;&nbsp;<yellow>8</yellow>&nbsp;&nbsp;11&nbsp;&nbsp;14&nbsp;&nbsp;16+&nbsp;&nbsp;&nbsp;";}
+else if ($weather["wind_units"]=="m/s" && $weather['wind_gust_speed']>=5){echo  "0&nbsp;&nbsp;2&nbsp;&nbsp;<green>5</green>&nbsp;&nbsp;8&nbsp;&nbsp;11&nbsp;&nbsp;14&nbsp;&nbsp;16+&nbsp;&nbsp;&nbsp;";}
+else if ($weather["wind_units"]=="m/s" && $weather['wind_gust_speed']>=2){echo  "0&nbsp;&nbsp;<green>2</green>&nbsp;&nbsp;5&nbsp;&nbsp;8&nbsp;&nbsp;11&nbsp;&nbsp;14&nbsp;&nbsp;16+&nbsp;&nbsp;&nbsp;";}
+else if ($weather["wind_units"]=="m/s" && $weather['wind_gust_speed']>=0){echo  "<blue>0</blue>&nbsp;&nbsp;2&nbsp;&nbsp;5&nbsp;&nbsp;8&nbsp;&nbsp;11&nbsp;&nbsp;14&nbsp;&nbsp;16+&nbsp;&nbsp;&nbsp;";}
+echo "<smalltempunit2>&nbsp;".$weather["wind_units"];?></smalltempunit2>
 </valuetextheading1>
 <div class=rainratebar>
 <div class="weather34ratebar" 
 style="width:
 <?php 
-if ($weather["wind_units"]=="km/h"){echo $weather['wind_gust_speed']*1.4;}
-if ($weather["wind_units"]=="mph"){echo $weather['wind_gust_speed']*1.5;}
-if ($weather["wind_units"]=="kts"){echo $weather['wind_gust_speed']*1.5;}
+if ($weather["wind_units"]=="km/h"){echo $weather['wind_gust_speed']*1.375;}
+if ($weather["wind_units"]=="mph"){echo $weather['wind_gust_speed']*2;}
+if ($weather["wind_units"]=="kts"){echo $weather['wind_gust_speed']*2;}
 if ($weather["wind_units"]=="m/s"){echo $weather['wind_gust_speed']*4.4;}
 ?>px;
 
