@@ -4314,22 +4314,13 @@ laststrike {
     height: 1.2rem;
     margin-left: 120px;
     margin-top: 32px;
-    z-index: 10;      
-    border-left: 0;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+    z-index: 10;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    border-radius: 3px;
-    background-color: hsla(204, 31%, 21%, .229);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    align-items: center;    
     padding-top: 4px
 
 }
@@ -4340,20 +4331,13 @@ laststrike {
     height: 1rem;
     margin-left: 110px;
     margin-top: 93px;
-    z-index: 10;
-    border-left: 0;
+    z-index: 10;    
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    border-radius: 3px;
-    background-color: hsla(204, 31%, 21%, .229);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
     padding: 2px
 }
 
@@ -4365,20 +4349,13 @@ laststrike {
     height: 1rem;
     margin-left: 118px;
     margin-top: 35px;
-    z-index: 10;      
-    border-left: 0;    
+    z-index: 10; 
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    border-radius: 3px;
-    background-color: hsla(204, 31%, 21%, .229);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
     padding:2px
 
 }
@@ -4389,20 +4366,13 @@ laststrike {
     height: 1rem;
     left: 260px;
     top: 55px;
-    z-index: 10;      
-    border-left: 0;    
+    z-index: 10;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    border-radius: 3px;
-    background-color: hsla(204, 31%, 21%, .229);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
     padding:2px
 }
 
@@ -4412,17 +4382,13 @@ laststrike {
     height: .9rem;
     margin-left: 90px;
     margin-top: 5px;
-    z-index: 10;
-    border-left: 0;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+    z-index: 10;    
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    background: 0;
+    align-items: center;    
 }
 
 
@@ -4432,20 +4398,13 @@ laststrike {
     height: 1rem;
     margin-left: 125px;
     margin-top: 60px;
-    z-index: 10;      
-    border-left: 0;    
+    z-index: 10;       
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    border-radius: 3px;
-    background-color: hsla(204, 31%, 21%, .229);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    align-items: center;    
     padding:2px
 }
 
@@ -4453,22 +4412,15 @@ laststrike {
     position: absolute;
     width: 1.05rem;
     height: 1rem;
-    margin-left: -175px;
-    margin-top: 0;
-    z-index: 10;   
-    -webkit-border-left: 0;
-    -webkit-border-top-right-radius: 2px;
-    -webkit-border-bottom-right-radius: 2px;
-    border-left: 0;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+    margin-left: 95px;
+    margin-top: 4px;
+    z-index: 10; 
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    background-color: hsla(204, 31%, 21%, .229);
+    align-items: center;    
     padding:2px
 }
 
@@ -4478,20 +4430,13 @@ laststrike {
     height: 1.5rem;    
     margin-left: 118px;
     margin-top: 55px;
-    z-index: 10;      
-    border-left: 0;    
+    z-index: 10;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    border-radius: 3px;
-    background-color: hsla(204, 31%, 21%, .229);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px; 
     line-height:1.4;
     padding-bottom:4px
 
@@ -4501,22 +4446,15 @@ laststrike {
     position: absolute;
     width: 2rem;
     height: 1.1rem;    
-    margin-left: -142px;
-    margin-top: 1px;
-    z-index: 10;      
-    border-left: 0;    
+    margin-left: 120px;
+    margin-top: 5px;
+    z-index: 10; 
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    border-radius: 3px;
-    background-color: hsla(204, 31%, 21%, .229);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px; 
     line-height:1;
     padding-bottom:2px
 

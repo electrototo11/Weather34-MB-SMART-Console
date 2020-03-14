@@ -4280,20 +4280,13 @@ button-block-date {
     height: 1.2rem;
     margin-left: 110px;
     margin-top: 43px;
-    z-index: 10;
-    -webkit-border-left: 0;
-    -webkit-border-top-right-radius: 2px;
-    -webkit-border-bottom-right-radius: 2px;
-    border-left: 0;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+    z-index: 10;   
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    box-shadow: -6px -6px 8px rgba(255, 255, 255, .9), 2px 2px 2px rgba(0, 0, 0, .07)
+    align-items: center;   
 }
 
 
@@ -4303,20 +4296,14 @@ button-block-date {
     height: 1rem;
     margin-left: 120px;
     margin-top: 45px;
-    z-index: 10;
-    -webkit-border-left: 0;
-    -webkit-border-top-right-radius: 2px;
-    -webkit-border-bottom-right-radius: 2px;
-    border-left: 0;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+    z-index: 10;   
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    box-shadow: -6px -6px 8px rgba(255, 255, 255, .9), 2px 2px 2px rgba(0, 0, 0, .07)
+   
 }
 .weather-icon-identity-wind {
     position: absolute;
@@ -4324,20 +4311,14 @@ button-block-date {
     height: 1rem;
     margin-left: 100px;
     margin-top: 5px;
-    z-index: 10;
-    -webkit-border-left: 0;
-    -webkit-border-top-right-radius: 2px;
-    -webkit-border-bottom-right-radius: 2px;
-    border-left: 0;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+    z-index: 10;   
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    box-shadow: -6px -6px 8px rgba(255, 255, 255, .9), 2px 2px 2px rgba(0, 0, 0, .07)
+    
 }
 
 .weather-tempicon-identity {
@@ -4346,20 +4327,13 @@ button-block-date {
     height: 1.2rem;
     margin-left: 120px;
     margin-top: 28px;
-    z-index: 10;
-    -webkit-border-left: 0;
-    -webkit-border-top-right-radius: 2px;
-    -webkit-border-bottom-right-radius: 2px;
-    border-left: 0;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+    z-index: 10;    
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    box-shadow: -6px -6px 8px rgba(255, 255, 255, .9), 2px 2px 2px rgba(0, 0, 0, .07)
+    align-items: center;    
 }
 
 .weather-indoor-tempicon-identity {
@@ -4368,42 +4342,30 @@ button-block-date {
     height: 1.2rem;
     left: 260px;
     top: 48px;
-    z-index: 10;
-    -webkit-border-left: 0;
-    -webkit-border-top-right-radius: 2px;
-    -webkit-border-bottom-right-radius: 2px;
-    border-left: 0;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+    z-index: 10;    
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    box-shadow: -6px -6px 8px rgba(255, 255, 255, .9), 2px 2px 2px rgba(0, 0, 0, .07)
+    
 }
 
 .weather-rain-icon-identity {
     position: absolute;
     width: 1.5rem;
     height: 1rem;
-    margin-left: -172px;
-    margin-top: 0;
-    z-index: 10;
-    -webkit-border-left: 0;
-    -webkit-border-top-right-radius: 2px;
-    -webkit-border-bottom-right-radius: 2px;
-    border-left: 0;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+    margin-left: 95px;
+    margin-top: 5px;
+    z-index: 10;   
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    box-shadow: -6px -6px 8px rgba(255, 255, 255, .9), 2px 2px 2px rgba(0, 0, 0, .07)
+   
 }
 
 
@@ -4413,20 +4375,13 @@ button-block-date {
     height: 1.5rem;
     margin-left: 120px;
     margin-top: 58px;
-    z-index: 10;
-    -webkit-border-left: 0;
-    -webkit-border-top-right-radius: 2px;
-    -webkit-border-bottom-right-radius: 2px;
-    border-left: 0;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+    z-index: 10;    
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    box-shadow: -6px -6px 8px rgba(255, 255, 255, .9), 2px 2px 2px rgba(0, 0, 0, .07);
+    align-items: center;    
     padding-bottom: 2px
 }
 
@@ -4436,20 +4391,14 @@ button-block-date {
     height: 1.2rem;
     margin-left: 135px;
     margin-top: 77px;
-    z-index: 10;
-    -webkit-border-left: 0;
-    -webkit-border-top-right-radius: 2px;
-    -webkit-border-bottom-right-radius: 2px;
-    border-left: 0;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+    z-index: 10;    
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    box-shadow: -6px -6px 8px rgba(255, 255, 255, .9), 2px 2px 2px rgba(0, 0, 0, .07)
+    
 }
 
 
@@ -4457,22 +4406,15 @@ button-block-date {
     position: absolute;
     width: 2rem;
     height: 1rem;
-    margin-left: -147px;
-    margin-top: 3px;
-    z-index: 10;
-    -webkit-border-left: 0;
-    -webkit-border-top-right-radius: 2px;
-    -webkit-border-bottom-right-radius: 2px;
-    border-left: 0;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+    margin-left: 120px;
+    margin-top: 5px;
+    z-index: 10;   
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    box-shadow: -6px -6px 8px rgba(255, 255, 255, .9), 2px 2px 2px rgba(0, 0, 0, .07);
+    align-items: center;    
     padding-bottom: 2px
 }
 
@@ -4600,25 +4542,26 @@ button-block-date {
   .circleborder {
     width: 110px;
     height: 110px;
-    border: 0.4rem solid #e6e8ef;
+    border: 0.4rem solid #e5ecf1 ;
     position: absolute;
     left: 98px;
     top: 19px;
     border-radius: 50%;
     border-radius: 100%;
     background: transparent;
-    box-shadow: -6px -6px 8px rgba(255, 255, 255, .9), 5px 5px 8px rgba(0, 0, 0, .07);
+    box-shadow: inset 3px 3px 7px rgba(136, 165, 191, .48), inset -3px -3px 7px #fff
   }
   
   .circleborder2 {
     width: 80px;
     height: 80px;
-    border: 15px solid hsla(208, 9%, 37%,.8);
+    border: 15px solid  #c3ced8 ;
     position: absolute;
     left: 104px;
     top: 24.5px;
     border-radius: 100%;   
     background: transparent;   
+    box-shadow: inset 3px 3px 7px rgba(136, 165, 191, .48), inset -3px -3px 7px #fff
     
   }
   
@@ -4632,7 +4575,7 @@ button-block-date {
 
   .daylightmoduleposition {
     position: absolute;
-    margin-left:-240px;    
+    margin-left:-232px;    
     margin-top: -70px;
   }
 
@@ -4687,7 +4630,7 @@ button-block-date {
 .daylight2 {
     display: flex;    
     color: var(--blue);
-    font-size: 1rem;
+    font-size: .95rem;
     line-height: 1;
     margin-top: -10px;
     position: absolute;
@@ -4698,7 +4641,7 @@ button-block-date {
     height: 1.75rem;
     font-family: weathertext2;   
     background:transparent;    
-    margin-left:-122px;
+    margin-left:-112px;
 }
 
 .till2 {
