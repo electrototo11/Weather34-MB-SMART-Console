@@ -4818,3 +4818,29 @@ smallminutes
     font-size: 7px;
     color: #bfbfbf
 }
+
+.info-1,.info-2 {
+    font-size: 9px;
+    color: var(--body-text-dark);
+    position: absolute;    
+    left: 85px;
+    top: 15px;
+    width: 13rem;
+    line-height: 1;  
+    font-family: weathertext2;   
+    text-transform: none;
+    word-wrap: break-word;
+}
+
+.info-2 {
+top: 40px; 
+}
+.info2a {
+    color:var(--deepblue); 
+    font-size: 9px;
+    margin-left:-1px
+}
+infoicon{
+    color:var(--yellow);  
+    margin-left:2px   
+}
