@@ -1,27 +1,25 @@
-<?php include('livedata.php');?>
+<?php include('livedata.php');include('common.php');?>
 <div class="modulecaption2">UV-Index</div>
-<div class="button button-dial">     
+<div class="button button-dial">       
 <div class="button-dial-top"></div>
 <realfeel>
 <?php 
-if ($weather["uv"]>=10) {echo "<purple>Extreme</purple>";}
-else if ($weather["uv"]>=8) {echo "<red>Very High</red>";}
-else if ($weather["uv"]>=6) {echo "<orange>High</orange>";}
-else if ($weather["uv"]>=3) {echo "<yellow>Moderate</yellow>";}
-else if ($weather["uv"]>=0 ) {echo "<green>No Caution</green>";}
+if ($weather["uv"]>=10) {echo "<purple>".$lang['Extreme Caution']."</purple>";}
+else if ($weather["uv"]>=8) {echo "<red>".$lang['Very High Caution']."</red>";}
+else if ($weather["uv"]>=6) {echo "<orange>".$lang['High Caution']."</orange>";}
+else if ($weather["uv"]>=3) {echo "<yellow>".$lang['Moderate Caution']."</yellow>";}
+else if ($weather["uv"]>=0 ) {echo "<green>".$lang['Low Caution']."</green>";}
 ?>
 </realfeel>
-<div class="button-dial-label">
-          
+<div class="button-dial-label">          
           <?php 
           if ($weather["uv"]>=10){echo "<purple>".$weather["uv"]."</purple>";}
           else if ($weather["uv"]>=8){echo "<red>".$weather["uv"]."</red>";}
           else if ($weather["uv"]>=6){echo "<orange>".$weather["uv"]."</orange>";}
           else if ($weather["uv"]>=3){echo "<yellow>".$weather["uv"]."</yellow>";}
-          else if ($weather["uv"]>=0){echo "<green>".$weather["uv"]."</green>";}?>
-        </div>
-      </div>
-<div>
+          else if ($weather["uv"]>=0){echo "<green>".$weather["uv"]."</green>";}
+          ?>
+</div></div><div>
 
 <?php //uv unit
 echo "<uvicon>";
@@ -36,7 +34,7 @@ echo "</uvicon>";
 
 <div class="heatcircle"><div class="heatcircle-content">
 <?php  //solar
-echo "<valuetextheading1>&nbsp;&nbsp;Solar Radiation </valuetextheading1><br>";
+echo "<valuetextheading1>&nbsp;&nbsp;".$lang['Solarradiation']." </valuetextheading1><br>";
 if ($weather["solar"]>800){
     echo "
 <div class=tempconverter1><div class=tempmodulehome30-35c >".$weather["solar"]."<smalltempunit2> &nbsp;wm/2";
@@ -63,47 +61,61 @@ echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["lux"]
 ?>
 </smalltempunit2></div></div></div>
 
-<div class="heatcircleindoor"><div class="heatcircle-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo date('Y')?> <orange>Max</orange> UVI <deepblue><?php echo $weather["uvymaxtime"]?> </deepblue></valuetextheading1>
-<?php //uv max year
-if ($weather["uvymax"]>=10) {
-    echo "<div class=tempconverter1><div class=tempmodulehome-50-10c>". $weather["uvymax"]."<smalltempunit2> &nbsp;UVI</smalltempunit2>";
-}
-else if ($weather["uvymax"]>=8) {
-    echo "<div class=tempconverter1><div class=tempmodulehome30-35c>". $weather["uvymax"]."<smalltempunit2> &nbsp;UVI</smalltempunit2>";
-}
-else if ($weather["uvymax"]>=5) {
-    echo "<div class=tempconverter1><div class=tempmodulehome20-25c>". $weather["uvymax"]."<smalltempunit2> &nbsp;UVI</smalltempunit2>";
-}
-else if ($weather["uvymax"]>=3) {
-    echo "<div class=tempconverter1><div class=tempmodulehome10-15c>". $weather["uvymax"]."<smalltempunit2> &nbsp;UVI</smalltempunit2>";
-}
-else if ($weather["uvymax"]>=0) {
-    echo "<div class=tempconverter1><div class=tempmodulehome5-10c>". $weather["uvymax"]."<smalltempunit2> &nbsp;UVI</smalltempunit2>";
-}
-?>
-</div></div></div><div>
+<div class="heatcirclerain1" ><div class="heatcircle-content">
+<div class="rainrateextra">
+<valuetextheading1 style="margin-left:-22px;font-size:8.5px">
+<?php // weather34 simple css avg wind speed scale 
+if ($weather['uv']>=10 ){echo "0 1  2  3  4  5  6  7  8  9  <purple>10+</purple> ";}
+else if ($weather['uv']>=9 ){echo "0 1  2  3  4  5  6  7  8   <red>9</red>  10+ ";}
+else if ($weather['uv']>=8 ){echo "0 1  2  3  4  5  6  7  <red>8</red>  9  10+ ";}
+else if ($weather['uv']>=7 ){echo "0 1  2  3  4  5  6  <orange>7</orange>  8  9  10+ ";}
+else if ($weather['uv']>=6 ){echo "0 1  2  3  4  5  <orange>6</orange>  7  8  9  10+ ";}
+else if ($weather['uv']>=5 ){echo "0 1  2  3  4  <yellow>5</yellow>  6  7  8  9  10+ ";}
+else if ($weather['uv']>=4 ){echo "0 1  2  3  <yellow>4</yellow>  5  6  7  8  9  10+ ";}
+else if ($weather['uv']>=3 ){echo "0 1  2  <yellow>3</yellow>  4  5  6  7  8  9  10+ ";}
+else if ($weather['uv']>=2 ){echo "0 1  <green>2</green>  3  4  5  6  7  8  9  10+ ";}
+else if ($weather['uv']>=1 ){echo "0 <green>1</green>  2  3  4  5  6  7  8  9  10+ ";}
+else if ($weather['uv']>=0 ){echo "<green>0</green> 1  2  3  4  5  6  7  8  9  10+ ";}
 
-<div class=thetrendgap>
+echo "<smalltempunit2>UVI</smalltempunit2>";
+?></smalltempunit2>
+</valuetextheading1>
+<div class=rainratebar>
+<div class="weather34ratebar" 
+style="width:
+<?php echo $weather['uv']*8.75;?>px;
+background:
 <?php 
-if ($weather["solar"]>=700) {echo "<div class=theuvred><orange>".$solaricon.'</orange> Strong Sun Radiation';}
-else if ($weather["solar"]>300) {echo "<div class=theuvyellow><yellow>".$solaricon.'</yellow> Moderate Radiation';}
-else if ($weather["solar"]>0) {echo "<div class=theuvyellow><yellow>".$solaricon.'</yellow> Low Radiation';}
-else if ($weather["solar"]==0) {echo "<div class=theuvgreen><grey>".$solaricon.'</grey> Low Radiation';}
-?>
-</div></div></div>
+if ($weather['uv']>=10 ){echo '#7face6';}
+elseif ($weather['uv']>=8 ){echo '#e64b24';}
+elseif ($weather['uv']>=6 ){echo '#d87040';}
+elseif ($weather['uv']>=3 ){echo '#e6a241';}
+elseif ($weather['uv']>0 ){echo '#9bbc2f';}
+?>;">
+</div></div>
 
-<div class="weather-tempicon-identity">
+
+<div class=thetrendgapwind>
+<?php 
+if ($weather["solar"]>=700) {echo "<div class=theuvred style='width:150px'><orange>".$solaricon.'</orange>'.$lang['Good-solar'] .'';}
+else if ($weather["solar"]>300) {echo "<div class=theuvyellow style='width:150px'><orange>".$solaricon.'</orange>'.$lang['Moderate-solar'].'';}
+else if ($weather["solar"]>0) {echo "<div class=theuvyellow style='width:150px'><yellow>".$solaricon.'</yellow>'.$lang['Low-solar'].'';}
+else if ($weather["solar"]==0) {echo "<div class=theuvgreen style='width:150px'><grey>".$solaricon.'</grey>'.$lang['Low-solar'].'';}
+?>
+</div></div>
+
+<div class="weather-icon-identity-wind">
 <?php //uv icon
 if($weather["uv"]>=8){ echo "<red>".$weather34_sun_icon."</red>";}
 else if($weather["uv"]>=6){ echo "<orange>".$weather34_sun_icon."</orange>";}
 else if($weather["uv"]>0){ echo "<yellow>".$weather34_sun_icon."</yellow>";}
 else if($weather["uv"]==0){ echo "<grey>".$weather34_sun_icon."</grey>";}
 ?>
-</div>
-</div></div>
+</div></div></div>
 
 
-<div class="maxwind">
+
+<div class="maxwind2">
 <?php  //Max-Min
 echo "Max ";
 if ($weather["uvdmax"]>=10){echo "<purple>".$weather["uvdmax"]."</purple>";}
@@ -114,3 +126,4 @@ else if ($weather["uvdmax"]>=0){echo "<green>".$weather["uvdmax"]."</green>";}
 echo "<span style='position:relative;top:1px'>".$maxclock."</span>";echo $weather["uvdmaxtime"];
 ?>
 </div>
+

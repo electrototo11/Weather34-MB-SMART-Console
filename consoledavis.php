@@ -121,6 +121,13 @@ include_once('livedata.php');include_once('updater2.php');
 <a href="consolecharts.php" alt="Daily Charts" title="Daily Charts">
 <div class="weather34-sphere-yellow"></div><bottom-bar-text><?php echo $lang['Charts']?></bottom-bar-text></a>
 
+<a href="weather34-almanac.php" alt="Almanac History" title="Almanac History">
+<div class="weather34-sphere-green"></div>
+<bottom-bar-textfore>Almanac</bottom-bar-textfore></a>  
+
+<a href="outlookwu.php" data-lity alt="5 day Forecast" title="5 day Forecast">
+<div class="weather34-sphere-orangefore"></div>
+  <bottom-bar-textfore><?php echo $lang['Forecast']?></bottom-bar-textfore></a>
 
 <a href="outlookwu.php" data-lity alt="5 day Forecast" title="5 day Forecast">
 <div class="weather34-sphere-orangefore"></div>

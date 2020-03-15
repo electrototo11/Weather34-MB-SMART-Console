@@ -62,12 +62,12 @@ $txt = '&nbsp;'.$lang['Darkness Left'].'';}echo "";
 
 <style>
 .weather34sunclock {
--webkit-transform:rotate(<?php echo ((($thehour*15)+($theminute/3))-86);?>deg);
-transform:rotate(<?php echo ((($thehour*15)+($theminute/3))-86);?>deg);
+-webkit-transform:rotate(<?php echo ((($thehour*15)+($theminute/3))-86.5);?>deg);
+transform:rotate(<?php echo ((($thehour*15)+($theminute/3))-86.5);?>deg);
 border:5px solid rgba(255, 255,255,0);
 width:110px; 
 height:110px;
-top:-0px;
+top:0px;
 margin-left:104px;
 z-index:10;
 }
@@ -79,7 +79,7 @@ width:8px;
 border:0;
 -webkit-border-radius:50%;
 border-radius:50%;
-background:<?php if ($elev<=0){echo "hsla(4, 40%, 48%,1)";}else echo "#ec5732"?>;
+background:<?php if ($elev<=0){echo "hsla(4, 40%, 48%,.7)";}else echo "#ec5732"?>;
 }
 </style>
 <div class="modulecaptionsun"><?php echo $lang['Sun'];?></div>
@@ -96,25 +96,25 @@ else {$sunspot = 'rgba(255, 112,50,1)';}
 ?>
 
 <script>
-//weather34 complete rework clean up very confusing code of original by Wim Van de Kuil this code attempts to make it somewhat relative
+//weather34 complete rework clean up very confusing code of the original by Wim Van de Kuil this code attempts to make it somewhat relative
 var c = document.getElementById("weather34sundial");
 var weather34sundial = c.getContext("2d");
 weather34sundial.width=90;
 weather34sundial.imageSmoothingEnabled =false;
 weather34sundial.beginPath();
 weather34sundial.arc(63, 65, 55, 0, 2 * Math.PI);
-weather34sundial.lineWidth = 1;
-weather34sundial.strokeStyle = "#565f67";
+weather34sundial.lineWidth = 0;
+weather34sundial.strokeStyle = "transparent";
 weather34sundial.stroke();
 weather34sundial.beginPath();
 weather34sundial.arc(63, 65, 55, '<?php echo $daybegins?>' * Math.PI, '<?php echo $endofday?>' * Math.PI);
-weather34sundial.lineWidth = 5;
+weather34sundial.lineWidth = 10.5;
 weather34sundial.strokeStyle ="#00adbd";
 weather34sundial.stroke();
 weather34sundial.beginPath();
 weather34sundial.arc(63, 65, 55, '<?php echo $sunimage?>'* Math.PI, '<?php echo $sunimage?>' * Math.PI);
 weather34sundial.lineWidth = 0;
-weather34sundial.strokeStyle = "<?php echo $sunspot?>";
+weather34sundial.strokeStyle = "<?php echo  $sunspot?>";
 weather34sundial.stroke();
 </script> 
 
@@ -128,7 +128,7 @@ weather34sundial.stroke();
 <div class="daylight2">&nbsp;<?php echo $hrs."<smallminutes>hrs</smallminutes>:". $min."<smallminutes> min</smallminutes>" ?>
 <tdiv class=till2><?php echo $txt?></div></div> 
 
-<div class="sunrise-block"> <?php echo $sunuphalf.' '. $lang['Rise'];?> 
+<div class="sunrise-block"><?php echo $sunuphalf.' '. $lang['Rise'];?> 
 <?php echo $nextrisetxt.' (<orange>'.$nextrise.'</orange>)<br>'.$sunuphalf.' '. $lang['Daylight'].' (<deepblue>'.$light.'</deepblue>'.$lang['Hrs'].')';?>
 </div>
 
