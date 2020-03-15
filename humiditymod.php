@@ -125,7 +125,7 @@ if($weather["humidity_max"]<=30){ echo "<icon-26-30>".$weather["humidity_max"]."
           else if($weather["humidity_max"]<=100){ echo "<icon-zero>".$weather["humidity_max"]."</icon-zero>";}
 echo "% | ";
 echo $lang['Min']." "  ;
-if($weather["humidity_min"]<=30){ echo "<icon-26-30>".$weather["humidity_min"]."%</icon-26-30>";}
+if($weather["humidity_min"]<=30){ echo "<icon-26-30>".$weather["humidity_min"]."</icon-26-30>";}
           else if($weather["humidity_min"]<=50){ echo "<icon-6-10>".$weather["humidity_min"]."</icon-6-10>";}
           else if($weather["humidity_min"]<=70){ echo "<icon-11-15>".$weather["humidity_min"]."</icon-11-15>";}
           else if($weather["humidity_min"]<=100){ echo "<icon-zero>".$weather["humidity_min"]."</icon-zero>";}
