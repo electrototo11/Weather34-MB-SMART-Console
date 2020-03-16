@@ -74,13 +74,16 @@ include_once('livedata.php');include_once('updater2.php');
      ';}?></a>
      
 
-<?php 
+     <?php 
   if ($units=='us') {     
      echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
      <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';  
 
     echo '<a href="?units=scandinavia" alt="MS Units" title="MS Units"> 
    <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C ms</bottom-bar-text></a>';  
+
+   echo '<a  href="?units=knots" alt="Wind Knots" title="Wind Knots">
+    <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C kts</bottom-bar-text></a>';  
     
   }
   if ($units=='uk'){
@@ -89,6 +92,9 @@ include_once('livedata.php');include_once('updater2.php');
 
      echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';  
+
+    echo '<a  href="?units=knots" alt="Wind Knots" title="Wind Knots">
+    <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C kts</bottom-bar-text></a>';  
    
   }  
   if ($units=='metric'){
@@ -97,6 +103,9 @@ include_once('livedata.php');include_once('updater2.php');
 
      echo '<a href="?units=uk" alt="UK Units" title="UK Units"> 
      <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C mph</bottom-bar-text></a>';  
+
+     echo '<a  href="?units=knots" alt="Wind Knots" title="Wind Knots">
+    <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C kts</bottom-bar-text></a>';  
     
   }  
 
@@ -105,12 +114,30 @@ include_once('livedata.php');include_once('updater2.php');
     <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>';  
 
      echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
-     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';     
+     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';   
+     
+     echo '<a  href="?units=knots" alt="Wind Knots" title="Wind Knots">
+    <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C kts</bottom-bar-text></a>';  
       
   }  
-  else if ($units==''){   
+  else if ($units=='knots'){   
     echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
     <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>';  
+
+    echo '<a href="?units=uk" alt="UK Units" title="UK Units"> 
+     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C mph</bottom-bar-text></a>';  
+    
+     echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
+     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';  
+   
+   }
+
+   else if ($units==''){   
+    echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
+    <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>';  
+
+    echo '<a href="?units=uk" alt="UK Units" title="UK Units"> 
+     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C mph</bottom-bar-text></a>';  
     
      echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
      <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';  
@@ -119,7 +146,7 @@ include_once('livedata.php');include_once('updater2.php');
 ?>
 
 <a href="consolecharts.php" alt="Daily Charts" title="Daily Charts">
-<div class="weather34-sphere-yellow"></div><bottom-bar-text><?php echo $lang['Charts']?></bottom-bar-text></a>
+<div class="weather34-sphere-yellow"></div><bottom-bar-textfore><?php echo $lang['Charts']?></bottom-bar-textfore></a>
 
 <a href="weather34-almanac.php" alt="Almanac History" title="Almanac History">
 <div class="weather34-sphere-green"></div>

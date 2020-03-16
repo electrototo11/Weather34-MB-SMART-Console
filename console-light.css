@@ -3666,7 +3666,9 @@ bottom-bar-textfore {
     .weather34-desktopicon-link,
     .weather34-refreshicon,
     .weather34-sphere-red,
-    .weather34-sphere-orangefore,.weather34-sphere-green,
+    .weather34-sphere-orangefore,
+    .weather34-sphere-green,
+    .weather34-sphere-yellow,
     bottom-bar-textfore {
         display: none
     }

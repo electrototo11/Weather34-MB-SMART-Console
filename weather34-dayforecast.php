@@ -187,6 +187,13 @@ if ($windunit=='m/s' && $wuapiunit=='h' ){$wuskydayWindGust=(number_format($wusk
 if ($windunit=='m/s' && $wuapiunit=='m' ){$wuskydayWindGust=(number_format($wuskydayWindGust,1)*0.277778);}
 //kmh to mph
 if ($windunit=='mph' && $wuapiunit=='m' ){$wuskydayWindGust=(number_format($wuskydayWindGust,1)*0.621371);}	
+//kmh to kts
+if ($windunit=='kts' && $wuapiunit=='m' ){$wuskydayWindGust=(number_format($wuskydayWindGust,1)*0.539957);}	
+//kmh to kts
+if ($windunit=='kts' && $wuapiunit=='e' ){$wuskydayWindGust=(number_format($wuskydayWindGust,1)*0.539957);}	
+
+
+
 //rain inches to mm
 if ($rainunit=='mm' && $wuapiunit=='e' ){$wuskydayprecipIntensity=$wuskydayprecipIntensity*25.4;}
 //rain mm to inches scandinavia

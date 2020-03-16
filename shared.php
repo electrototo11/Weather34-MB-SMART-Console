@@ -22,7 +22,7 @@ function mphTokmh(&$weather, $field){
 
 function mphTokts(&$weather, $field){
 	if(!isset($weather[$field])) return;
-	$weather[$field] = number_format(0.868976*$weather[$field],1);
+	$weather[$field] = number_format(0.868976*$weather[$field],0);
 }
 
 function mphToms(&$weather, $field){
@@ -32,7 +32,7 @@ function mphToms(&$weather, $field){
 
 function kmhTokts(&$weather, $field){
 	if(!isset($weather[$field])) return;
-	$weather[$field] = number_format(0.5399568*$weather[$field],1);
+	$weather[$field] = number_format(0.5399568*$weather[$field],0);
 }
 
 function kmhTomph(&$weather, $field){
@@ -52,7 +52,7 @@ function msTokmh(&$weather, $field){
 
 function msTokts(&$weather, $field){
 	if(!isset($weather[$field])) return;
-	$weather[$field] = round((float)(1.943844*$weather[$field]), 1);
+	$weather[$field] = round((float)(1.943844*$weather[$field]), 0);
 }
 
 function msTomph(&$weather, $field){

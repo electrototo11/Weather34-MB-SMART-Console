@@ -874,6 +874,10 @@ if ($windunit=='m/s' && $wuapiunit=='m' ){$wuskydayWindGust=(number_format($wusk
 //kmh to mph
 if ($windunit=='mph' && $wuapiunit=='m' ){$wuskydayWindGust=(number_format($wuskydayWindGust,1)*0.621371);}	
 
+if ($windunit=='kts' && $wuapiunit=='m' ){$wuskydayWindGust=(number_format($wuskydayWindGust,1)*0.539957);}	
+if ($windunit=='kts' && $wuapiunit=='h' ){$wuskydayWindGust=(number_format($wuskydayWindGust,1)*0.868976);}
+
+
 // mph to kmh US 1
 if ($windunit=='km/h' && $wuapiunit=='e' ){$wuskydayWindGust1=(number_format($wuskydayWindGust1,1)*1.60934);}
 // mph to kmh UK
@@ -886,6 +890,9 @@ if ($windunit=='m/s' && $wuapiunit=='h' ){$wuskydayWindGust1=(number_format($wus
 if ($windunit=='m/s' && $wuapiunit=='m' ){$wuskydayWindGust1=(number_format($wuskydayWindGust1,1)*0.277778);}
 //kmh to mph
 if ($windunit=='mph' && $wuapiunit=='m' ){$wuskydayWindGust1=(number_format($wuskydayWindGust1,1)*0.621371);}	
+
+if ($windunit=='kts' && $wuapiunit=='m' ){$wuskydayWindGust1=(number_format($wuskydayWindGust2,1)*0.539957);}
+if ($windunit=='kts' && $wuapiunit=='h' ){$wuskydayWindGust1=(number_format($wuskydayWindGust1,1)*0.868976);}
 
 // mph to kmh US 2
 if ($windunit=='km/h' && $wuapiunit=='e' ){$wuskydayWindGust2=(number_format($wuskydayWindGust2,1)*1.60934);}
@@ -900,6 +907,9 @@ if ($windunit=='m/s' && $wuapiunit=='m' ){$wuskydayWindGust2=(number_format($wus
 //kmh to mph
 if ($windunit=='mph' && $wuapiunit=='m' ){$wuskydayWindGust2=(number_format($wuskydayWindGust2,1)*0.621371);}	
 
+if ($windunit=='kts' && $wuapiunit=='m' ){$wuskydayWindGust2=(number_format($wuskydayWindGust2,1)*0.539957);}
+if ($windunit=='kts' && $wuapiunit=='h' ){$wuskydayWindGust2=(number_format($wuskydayWindGust2,1)*0.868976);}	
+
 // mph to kmh US 3
 if ($windunit=='km/h' && $wuapiunit=='e' ){$wuskydayWindGust3=(number_format($wuskydayWindGust3,1)*1.60934);}
 // mph to kmh UK
@@ -912,6 +922,9 @@ if ($windunit=='m/s' && $wuapiunit=='h' ){$wuskydayWindGust3=(number_format($wus
 if ($windunit=='m/s' && $wuapiunit=='m' ){$wuskydayWindGust3=(number_format($wuskydayWindGust3,1)*0.277778);}
 //kmh to mph
 if ($windunit=='mph' && $wuapiunit=='m' ){$wuskydayWindGust3=(number_format($wuskydayWindGust3,1)*0.621371);}	
+
+if ($windunit=='kts' && $wuapiunit=='m' ){$wuskydayWindGust3=(number_format($wuskydayWindGust3,1)*0.539957);}
+if ($windunit=='kts' && $wuapiunit=='h' ){$wuskydayWindGust3(number_format($wuskydayWindGust3,1)*0.868976);}	
 
 // mph to kmh US 4
 if ($windunit=='km/h' && $wuapiunit=='e' ){$wuskydayWindGust4=(number_format($wuskydayWindGust4,1)*1.60934);}
@@ -926,6 +939,9 @@ if ($windunit=='m/s' && $wuapiunit=='m' ){$wuskydayWindGust4=(number_format($wus
 //kmh to mph
 if ($windunit=='mph' && $wuapiunit=='m' ){$wuskydayWindGust4=(number_format($wuskydayWindGust4,1)*0.621371);}	
 
+if ($windunit=='kts' && $wuapiunit=='m' ){$wuskydayWindGust4=(number_format($wuskydayWindGust4,1)*0.539957);}
+if ($windunit=='kts' && $wuapiunit=='h' ){$wuskydayWindGust4=(number_format($wuskydayWindGust4,1)*0.868976);}	
+
 // mph to kmh US 5
 if ($windunit=='km/h' && $wuapiunit=='e' ){$wuskydayWindGust5=(number_format($wuskydayWindGust5,1)*1.60934);}
 // mph to kmh UK
@@ -938,6 +954,9 @@ if ($windunit=='m/s' && $wuapiunit=='h' ){$wuskydayWindGust5=(number_format($wus
 if ($windunit=='m/s' && $wuapiunit=='m' ){$wuskydayWindGust5=(number_format($wuskydayWindGust5,1)*0.277778);}
 //kmh to mph
 if ($windunit=='mph' && $wuapiunit=='m' ){$wuskydayWindGust5=(number_format($wuskydayWindGust5,1)*0.621371);}	
+
+if ($windunit=='kts' && $wuapiunit=='m' ){$wuskydayWindGust5=(number_format($wuskydayWindGust5,1)*0.539957);}	
+if ($windunit=='kts' && $wuapiunit=='h' ){$wuskydayWindGust5=(number_format($wuskydayWindGust5,1)*0.868976);}
 	
 
 // mph to kmh US 6
@@ -952,6 +971,9 @@ if ($windunit=='m/s' && $wuapiunit=='h' ){$wuskydayWindGust6=(number_format($wus
 if ($windunit=='m/s' && $wuapiunit=='m' ){$wuskydayWindGust6=(number_format($wuskydayWindGust6,1)*0.277778);}
 //kmh to mph
 if ($windunit=='mph' && $wuapiunit=='m' ){$wuskydayWindGust6=(number_format($wuskydayWindGust6,1)*0.621371);}	
+
+if ($windunit=='kts' && $wuapiunit=='m' ){$wuskydayWindGust6=(number_format($wuskydayWindGust6,1)*0.539957);}
+if ($windunit=='kts' && $wuapiunit=='h' ){$wuskydayWindGust6=(number_format($wuskydayWindGust6,1)*0.868976);}	
 	
 
 // mph to kmh US 7
@@ -967,6 +989,9 @@ if ($windunit=='m/s' && $wuapiunit=='m' ){$wuskydayWindGust7=(number_format($wus
 //kmh to mph
 if ($windunit=='mph' && $wuapiunit=='m' ){$wuskydayWindGust7=(number_format($wuskydayWindGust7,1)*0.621371);}	
 
+if ($windunit=='kts' && $wuapiunit=='m' ){$wuskydayWindGust7=(number_format($wuskydayWindGust7,1)*0.539957);}	
+if ($windunit=='kts' && $wuapiunit=='h' ){$wuskydayWindGust7=(number_format($wuskydayWindGust7,1)*0.868976);}
+
 
 // mph to kmh US 8
 if ($windunit=='km/h' && $wuapiunit=='e' ){$wuskydayWindGust8=(number_format($wuskydayWindGust8,1)*1.60934);}
@@ -980,6 +1005,9 @@ if ($windunit=='m/s' && $wuapiunit=='h' ){$wuskydayWindGust8=(number_format($wus
 if ($windunit=='m/s' && $wuapiunit=='m' ){$wuskydayWindGust8=(number_format($wuskydayWindGust8,1)*0.277778);}
 //kmh to mph
 if ($windunit=='mph' && $wuapiunit=='m' ){$wuskydayWindGust8=(number_format($wuskydayWindGust8,1)*0.621371);}
+
+if ($windunit=='kts' && $wuapiunit=='m' ){$wuskydayWindGust8=(number_format($wuskydayWindGust8,1)*0.539957);}
+if ($windunit=='kts' && $wuapiunit=='h' ){$wuskydayWindGust8=(number_format($wuskydayWindGust8,1)*0.868976);}	
 
 
 // mph to kmh US 9
@@ -995,6 +1023,8 @@ if ($windunit=='m/s' && $wuapiunit=='m' ){$wuskydayWindGust9=(number_format($wus
 //kmh to mph
 if ($windunit=='mph' && $wuapiunit=='m' ){$wuskydayWindGust9=(number_format($wuskydayWindGust9,1)*0.621371);}	
 
+if ($windunit=='kts' && $wuapiunit=='m' ){$wuskydayWindGust9=(number_format($wuskydayWindGust9,1)*0.539957);}	
+if ($windunit=='kts' && $wuapiunit=='h' ){$wuskydayWindGust9=(number_format($wuskydayWindGust9,1)*0.868976);}
 
 // mph to kmh US 10
 if ($windunit=='km/h' && $wuapiunit=='e' ){$wuskydayWindGust10=(number_format($wuskydayWindGust10,1)*1.60934);}
@@ -1008,7 +1038,9 @@ if ($windunit=='m/s' && $wuapiunit=='h' ){$wuskydayWindGust10=(number_format($wu
 if ($windunit=='m/s' && $wuapiunit=='m' ){$wuskydayWindGust10=(number_format($wuskydayWindGust10,1)*0.277778);}
 //kmh to mph
 if ($windunit=='mph' && $wuapiunit=='m' ){$wuskydayWindGust10=(number_format($wuskydayWindGust10,1)*0.621371);}	
-
+//kts
+if ($windunit=='kts' && $wuapiunit=='m' ){$wuskydayWindGust10=(number_format($wuskydayWindGust10,1)*0.539957);}	
+if ($windunit=='kts' && $wuapiunit=='h' ){$wuskydayWindGust10=(number_format($wuskydayWindGust10,1)*0.868976);}
 
 // mph to kmh US 11
 if ($windunit=='km/h' && $wuapiunit=='e' ){$wuskydayWindGust11=(number_format($wuskydayWindGust11,1)*1.60934);}
@@ -1022,6 +1054,9 @@ if ($windunit=='m/s' && $wuapiunit=='h' ){$wuskydayWindGust11=(number_format($wu
 if ($windunit=='m/s' && $wuapiunit=='m' ){$wuskydayWindGust11=(number_format($wuskydayWindGust11,1)*0.277778);}
 //kmh to mph
 if ($windunit=='mph' && $wuapiunit=='m' ){$wuskydayWindGust11=(number_format($wuskydayWindGust11,1)*0.621371);}	
+//kts
+if ($windunit=='kts' && $wuapiunit=='m' ){$wuskydayWindGust11=(number_format($wuskydayWindGust11,1)*0.539957);}	
+if ($windunit=='kts' && $wuapiunit=='h' ){$wuskydayWindGust11=(number_format($wuskydayWindGust11,1)*0.868976);}
 	
 	
 		
@@ -1745,6 +1780,6 @@ if ($wuskydaynight10=='N'){echo '<img src="wuicons/nt_'.$wuskydayIcon10.'.svg" w
   <?php echo $info?> CSS/SVG/PHP scripts were developed by <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:8px;">weather34.com</a>  for use in the weather34 template &copy; 2015-<?php echo date('Y');?></span> <br>
   <span style="font-size:8px;">
   <?php echo $info?> Data Forecast provided by <a href="https://www.wunderground.com/weather/api/" title="Weather Underground API" target="_blank">Weather Underground</a></span>
-  <div class="mbsmartlogo" style="margin-top:-5px"><img src="Wxsoft34-appsmall.png" alt="weather34 mb-smart" title="weather34 mb-smart" width="25px"></div>
+  <div class="mbsmartlogo" style="margin-top:-25px"><img src="Wxsoft34-appsmall.png" alt="weather34 mb-smart" title="weather34 mb-smart" width="25px"></div>
   </article> 
 </main>
