@@ -91,13 +91,13 @@
           <?php if ($displayalmanac=='yes'){echo '
           <a href="weather34-almanac.php" alt="Almanac" title="Almanac">
        <div class="weather34-sphere-red"></div>
-          <bottom-bar-text>Almanac History</bottom-bar-text></a>';}
+          <bottom-bar-textfore>Almanac History</bottom-bar-textfore></a>';}
           ?>
 
        <?php if ($display2019=='yes'){echo '
         <a href="consolecharts-2019.php">
         <div class="weather34-sphere-yellow"></div>
-          <bottom-bar-text>2019</bottom-bar-text></a>';}
+          <bottom-bar-textfore>2019</bottom-bar-textfore></a>';}
        ?>
        
        <chartpage><?php echo $lang['Updated'] ?> <?php 

@@ -3787,7 +3787,7 @@ bottom-bar-textfore {
     .weather34-refreshicon,
     .weather34-sphere-orangefore,
     .weather34-sphere-orangel,
-    .weather34-sphere-red,
+    .weather34-sphere-red,.weather34-sphere-yellow,
     bottom-bar-textfore,.weather34-desktopicon-link,.desktoplink3,.weather34-tab-icons,
     chartpage {
         display: none
