@@ -128,8 +128,7 @@ include_once('livedata.php');include_once('updater-almanac.php');include('common
 ?>
 
 <a href="consolecharts.php" alt="Daily Charts" title="Daily Charts">
-<div class="weather34-sphere-yellow"></div><bottom-bar-text><?php echo $lang['Charts']?></bottom-bar-text></a>
-
+<div class="weather34-sphere-yellow"></div><bottom-bar-textfore><?php echo $lang['Charts']?></bottom-bar-textfore></a>
 
 <a href="outlookwu.php" data-lity alt="5 day Forecast" title="5 day Forecast">
 <div class="weather34-sphere-orangefore"></div>
