@@ -48,12 +48,12 @@ valuetextba{font-size:1em}valuetextbc{font-size:1.1em}valuetexttr{font-size:8px}
 <div class="weather34barometerarrowmin"></div>
 <div class="weather34barometerarrowmax"></div>
 </div>
-<div class="text2"><?php echo "<blue>".$weather["barometer"],"</blue><smalltempunit2>".$weather["barometer_units"]."</smalltempunit2>";?>
+<div class="text2"><?php echo $weather["barometer"],"<smalltempunit2>".$weather["barometer_units"]."</smalltempunit2>";?>
 
 <thetrend>
 <?php 
 //falling
-if($weather["barometer_trend"]<0){echo $fallingsymbolx.' <blue>'.number_format($weather["barometer_trend"],2).'</blue>';}
+if($weather["barometer_trend"]<0){echo $fallingsymbolx.' <deepblue>'.number_format($weather["barometer_trend"],2).'</deepblue>';}
 //rising
 else if($weather["barometer_trend"]>0){echo $risingsymbolx.' <orange> + '.number_format($weather["barometer_trend"],2).'</orange>';}
 //steady
@@ -62,22 +62,24 @@ else echo "<span style='font-size:11px'>".$lang['Steady'].' '.$steadysymbol.'';?
 </div></div></div>
 
 <div class="heatcircleindoor" style="margin-top:-3px;margin-left:145px">
-<div class="heatcircle-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo date('Y')?> Max <blue><?php echo $weather["thb0seapressyearmaxtime"]?></blue>
+<div class="heatcircle-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo date('Y')?> Max <deepblue><?php echo $weather["thb0seapressyearmaxtime"]?></deepblue>
 <?php //avg today
-echo "<div class=tempconverter1><div class=tempmodulehome20-25c>". $weather["thb0seapressymax"]."<smalltempunit2>&nbsp;".$weather["barometer_units"];?></smalltempunit2></div></div>
+echo "<div class=tempmodulehome20-25c>". $weather["thb0seapressymax"]."<smalltempunit2>&nbsp;".$weather["barometer_units"];?>
+</smalltempunit2></div></div>
 
 
 
-<div class="heatcircle-content" style="margin-top:5px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo date('Y')?> Min <blue><?php echo $weather["thb0seapressyearmintime"]?></blue>
+<div class="heatcircle-content" style="margin-top:5px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo date('Y')?> Min <deepblue><?php echo $weather["thb0seapressyearmintime"]?></deepblue>
 <?php //avg today
-echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["thb0seapressymin"]."<smalltempunit2>&nbsp;".$weather["barometer_units"];?></smalltempunit2></div></div>
+echo "<div class=tempmodulehome0-5c>". $weather["thb0seapressymin"]."<smalltempunit2>&nbsp;".$weather["barometer_units"];?>
+</smalltempunit2></div></div>
 
 
-<div class="heatcircle-content" style="margin-top:5px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $lang['Today']?> <orange>Max</orange>-<blue>Min</blue>
+<div class="heatcircle-content" style="margin-top:5px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $lang['Today']?> <orange>Max</orange>-<deepblue>Min</deepblue>
 <?php //avg today
-echo "<div class=tempconverter1><div class=tempmodulehomemaxmin style='font-size:.6rem'>". $weather["barometer_max"]."<smalltempunit2>".$weather["barometer_units"]."</smalltempunit2>&nbsp;|&nbsp; ";
+echo "<div class=tempmodulehomemaxmin style='font-size:.6rem'>". $weather["barometer_max"]."<smalltempunit2>".$weather["barometer_units"]."</smalltempunit2>&nbsp;|&nbsp; ";
 echo $weather["barometer_min"]."<smalltempunit2>".$weather["barometer_units"] 
-?></smalltempunit2></div></div>
+?></smalltempunit2></div>
 
 <div class="weather-pressureicon-identity">    
 <?php echo "<icon-zero>".$weather34_pressure_icon."</icon-zero>";

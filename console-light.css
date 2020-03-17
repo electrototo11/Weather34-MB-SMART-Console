@@ -1268,7 +1268,8 @@ blue {
 
 rainratevalue {
     margin-left: 36px;
-    font-size: 13px
+    font-size: 11px;
+    line-height:1.5
 }
 
 smallrainrateunit {
@@ -1551,30 +1552,7 @@ smallrainunit4 {
     -o-border-radius: 2px
 }
 
-.intempmodulehome0-5c,
-.intempmodulehome10-15c,
-.intempmodulehome15-20c,
-.intempmodulehome20-25c,
-.intempmodulehome25-30c,
-.intempmodulehome5-10c,
-.rainmodulehome,
-.rainratemodulehome,
-.temphumcircle0-25,
-.temphumcircle25-35,
-.temphumcircle35-60,
-.temphumcircle60-80,
-.temphumcircle80-100,
-.tempmodulehome-10-0c,
-.tempmodulehome-50-10c,
 .tempmodulehome0-5c,
-.tempmodulehome10-15c,
-.tempmodulehome15-20c,
-.tempmodulehome20-25c,
-.tempmodulehome25-30c,
-.tempmodulehome30-35c,
-.tempmodulehome35-40c,
-.tempmodulehome40-50c,
-.tempmodulehome5-10c,
 .tempmodulehomemaxmin {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1584,12 +1562,12 @@ smallrainunit4 {
     color: var(--body-text-light);
     overflow: hidden;
     font-family: weathertext2;
-    line-height: 1;
+    line-height: 1.75;
     -webkit-border-top-right-radius: 2px;
     -webkit-border-bottom-right-radius: 2px;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
-    font-size: 13px;
+    font-size: 12px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -1620,51 +1598,9 @@ valuetextheading2 {
     text-align: left;
     left: 2px
 }
-
-.rainmodulehome,
-.rainratemodulehome {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 4.1rem;
-    height: 1rem;
-    color: var(--body-text-light);
-    overflow: hidden;
-    font-family: weathertext2;
-    line-height: 1;
-    border: 1px solid hsla(206, 12%, 27%, .5);
-    border-width: thin;
-    -webkit-border-left: 0;
-    -webkit-border-top-right-radius: 2px;
-    -webkit-border-bottom-right-radius: 2px;
-    border-left: 0;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-    font-size: .6rem;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-shadow: inset 3px 0 0 0 var(--blue);
-    box-shadow: inset 3px 0 0 0 var(--blue)
-}
-
-.rainratemodulehome {
-    width: 4.2rem;
-    font-size: .55rem
-}
-
-.rainratemodulehome {
-    width: 4.5rem
-}
-
 raiblue {
     color: var(--blue)
 }
-
-
 
 valuewindunit {
     font-size: .55rem
@@ -2931,7 +2867,18 @@ a {
 .logofooter {
     position: absolute;
     margin-left: 70px;
-    margin-top: -18px
+    margin-top: -10px
+}
+
+.weather34-tab-icons{
+    display: inline-block;
+    margin:2px; 
+    position:relative;
+    top:2px     
+}
+.weather34-chart-icons{
+    display: inline-block;
+    margin: 2px;    
 }
 
 .weather34alert {
@@ -3799,11 +3746,17 @@ bottom-bar-textfore {
     .weather34-sphere-red,
     bottom-bar-textfore,
     .weather34-desktopicon-link,
-    .desktoplink3,
+    .desktoplink3,.weather34-tab-icons,
     chartpage {
         display: none
     }
 
+    bottom-bar-text{ font-size:9px;}
+
+    .weather34-chart-icons{       
+        margin-top:-4px;  
+        margin-left:10px  
+    }
     bottom-bar-text {
         font-size: 9px;
     }

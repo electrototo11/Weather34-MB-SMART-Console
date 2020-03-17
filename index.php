@@ -71,40 +71,33 @@ include_once('livedata.php');include_once('updater2.php');
     if ($theme == 'dark') {echo '<div class="weather34-sphere-dark"></div><bottom-bar-text>'.$lang['Light'].'</bottom-bar-text>
      ';} 
     else {echo '<div class="weather34-sphere-dark"></div><bottom-bar-text>'.$lang['Dark'].'</bottom-bar-text>
-     ';}?></a>
-     
+     ';}?></a>     
 
      <?php 
   if ($units=='us') {     
-     echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
-     <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';  
-
-    echo '<a href="?units=scandinavia" alt="MS Units" title="MS Units"> 
-   <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C ms</bottom-bar-text></a>';  
-
+   echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
+    <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';  
+   echo '<a href="?units=scandinavia" alt="MS Units" title="MS Units"> 
+   <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C ms</bottom-bar-text></a>'; 
    echo '<a  href="?units=knots" alt="Wind Knots" title="Wind Knots">
     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C kts</bottom-bar-text></a>';  
     
   }
   if ($units=='uk'){
     echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
-    <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>';  
-
-     echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
-    <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';  
-
+    <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>'; 
+    echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
+    <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';
     echo '<a  href="?units=knots" alt="Wind Knots" title="Wind Knots">
     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C kts</bottom-bar-text></a>';  
    
   }  
   if ($units=='metric'){
     echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
-    <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>';  
-
-     echo '<a href="?units=uk" alt="UK Units" title="UK Units"> 
-     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C mph</bottom-bar-text></a>';  
-
-     echo '<a  href="?units=knots" alt="Wind Knots" title="Wind Knots">
+    <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>'; 
+    echo '<a href="?units=uk" alt="UK Units" title="UK Units"> 
+     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C mph</bottom-bar-text></a>';
+    echo '<a  href="?units=knots" alt="Wind Knots" title="Wind Knots">
     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C kts</bottom-bar-text></a>';  
     
   }  
@@ -112,53 +105,39 @@ include_once('livedata.php');include_once('updater2.php');
   if ($units=='scandinavia'){
     echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
     <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>';  
-
      echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
-     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';   
-     
+     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';     
      echo '<a  href="?units=knots" alt="Wind Knots" title="Wind Knots">
     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C kts</bottom-bar-text></a>';  
       
   }  
   else if ($units=='knots'){   
     echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
-    <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>';  
-
+    <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>'; 
     echo '<a href="?units=uk" alt="UK Units" title="UK Units"> 
-     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C mph</bottom-bar-text></a>';  
-    
-     echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
-     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';  
-   
+    <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C mph</bottom-bar-text></a>';     
+    echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
+    <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';     
    }
 
    else if ($units==''){   
     echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
     <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>';  
-
     echo '<a href="?units=uk" alt="UK Units" title="UK Units"> 
-     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C mph</bottom-bar-text></a>';  
-    
-     echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
-     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';  
-   
+    <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C mph</bottom-bar-text></a>'; 
+    echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
+     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';     
    }
 ?>
 
 <a href="consolecharts.php" alt="Daily Charts" title="Daily Charts">
-<div class="weather34-sphere-yellow"></div><bottom-bar-textfore><?php echo $lang['Charts']?></bottom-bar-textfore></a>
-
-<a href="weather34-almanac.php" alt="Almanac History" title="Almanac History">
-<div class="weather34-sphere-green"></div>
-<bottom-bar-textfore>Almanac</bottom-bar-textfore></a>  
+<div class="weather34-chart-icons"><?php echo $charts?></a></div>
 
 <a href="outlookwu.php" data-lity alt="5 day Forecast" title="5 day Forecast">
-<div class="weather34-sphere-orangefore"></div>
-  <bottom-bar-textfore><?php echo $lang['Forecast']?></bottom-bar-textfore></a>
+<div class="weather34-tab-icons"><?php echo $weatherforecast?></a></div>
 
-  <a href="outlookwutext.php"  data-lity title="Summary Forecast">
-  <div class="weather34-sphere-red"></div>
-  <bottom-bar-textfore><?php echo $lang['Forecastsummary']?></bottom-bar-textfore></a>
+<a href="outlookwutext.php" data-lity alt="Summary" title="Summary Forecast">
+<div class="weather34-tab-icons"><?php echo $weatherforecast2?></a></div>
 
 <?php 
 //weather34 smart tv option

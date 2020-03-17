@@ -1,4 +1,13 @@
-<?php include('livedata.php');include('common.php');?>
+<?php 
+  ####################################################################################################
+	#	HOME WEATHER STATION TEMPLATE by BRIAN UNDERDOWN 2015-2020			                           #
+	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at 													   #
+	#   https://weather34.com/homeweatherstation/index.html 										   # 
+	# 	WEATHER STATION TEMPLATE 2015-2020                 										       #
+	# 	      MB SMART Console Version Revised FEB 2020								                   #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
+include('livedata.php');include('common.php');?>
 <div class="modulecaption2"><?php echo $lang['Indoor']?> &deg;<?php echo $weather["temp_units"]?></div>
 <div class="button button-dial">               
  <div class="button-dial-top"></div>
@@ -108,12 +117,12 @@ if($weather["temp_units"]=='C' && $weather["temp_indoor_feel"]<15) {
   else echo "&nbsp;".$steadysymbol;?>
   <smalltempunit2></div>
 
-<div class=thetrendgap>
+<div class=thetrendgap style="margin-top:7px">
 <?php 
 //falling
 if($weather["temp_indoor_trend"]<0){echo '<div class=thetrendboxblue>'.$lang['Falling'].'';echo '&nbsp;'.$fallingsymbolx.'&nbsp;<blue> '.number_format($weather["temp_indoor_trend"],1).'</blue>&deg;';}
 //rising
-else if($weather["temp_indoor_trend"]>0){echo '<div class=thetrendboxorange>&nbsp;'.$lang['Falling'].'';echo '&nbsp;'.$risingsymbolx.'&nbsp;<orange> + '.number_format($weather["temp_indoor_trend"],1).'</orange>&deg;';}
+else if($weather["temp_indoor_trend"]>0){echo '<div class=thetrendboxorange>&nbsp;'.$lang['Rising'].'';echo '&nbsp;'.$risingsymbolx.'&nbsp;<orange> + '.number_format($weather["temp_indoor_trend"],1).'</orange>&deg;';}
 //steady
 else echo '<div class=thetrendboxblue>'.$lang['Steady'].''.$steadysymbol.'';?>
 </div></div></div>

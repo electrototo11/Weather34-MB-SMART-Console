@@ -219,7 +219,6 @@ if ($weather["wind_direction"]<=11.25) {
     echo $lang['Northdir'];
 }?></div>
 
-
 <averwordwindword><?php echo $lang['Avg-Dir']." "; if ($weather["wind_direction_avg"]<=11.25) {
     echo $lang['North'];
 } elseif ($weather["wind_direction_avg"]<=33.75) {
@@ -258,12 +257,8 @@ if ($weather["wind_direction"]<=11.25) {
 </div></div></div></div></div>
 </div></div>
 
-
-
-
 <div class="heatcircle5" style="margin-left:50px;"><div class="heatcircle-content"><valuetextheading1>10" <?php echo $lang['Avg']?> </valuetextheading1>
-<?php 
-echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>" .number_format($weather['wind_direction_avg'],0)."&deg; &nbsp;";
+<?php echo "<br><div class=tempmodulehome0-5c>" .number_format($weather['wind_direction_avg'],0)."&deg; &nbsp;";
 if( $weather['wind_direction_avg']<=11.25){echo $lang['North'];}
 else if( $weather["wind_direction_avg"]<=33.75){echo $lang['NNE'];}
 else if( $weather["wind_direction_avg"]<=56.25){echo $lang['NE'];}
@@ -281,12 +276,10 @@ else if( $weather["wind_direction_avg"]<=303.75){echo $lang['WNW'];}
 else if( $weather["wind_direction_avg"]<=326.25){echo $lang['NW'];}
 else if( $weather["wind_direction_avg"]<=348.75){echo $lang['NNW'];}
 else if( $weather["wind_direction_avg"]<=360){echo $lang['North'];}
-?><smalltempunit2></div></div></div>
-
+?><smalltempunit2></div></div>
 
 <div class="heatcircle6"><div class="heatcircle-content"><valuetextheading1> <?php echo $lang['Month']?> <?php echo $lang['Avg-Dir']?> </valuetextheading1>
-<?php 
-echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>" .number_format($weather['wind_direction_avgmonth'],0)."&deg; &nbsp;";
+<?php echo "<br><div class=tempmodulehome0-5c>" .number_format($weather['wind_direction_avgmonth'],0)."&deg; &nbsp;";
 if( $weather['wind_direction_avgmonth']<=11.25){echo $lang['North'];}
 else if( $weather['wind_direction_avgmonth']<=33.75){echo $lang['NNE'];}
 else if( $weather['wind_direction_avgmonth']<=56.25){echo $lang['NE'];}
@@ -304,10 +297,7 @@ else if( $weather['wind_direction_avgmonth']<=303.75){echo $lang['WNW'];}
 else if( $weather['wind_direction_avgmonth']<=326.25){echo $lang['NW'];}
 else if( $weather['wind_direction_avgmonth']<=348.75){echo $lang['NNW'];}
 else if( $weather['wind_direction_avgmonth']<=360){echo $lang['North'];}
-?>
-</smalltempunit2></div></div></div>
-<div class="weather-directionicon-identity">    
-<?php echo "<icon-zero>".$weather34compassicon."</icon-zero>";?>
-</div>
+?></smalltempunit2></div></div>
+<div class="weather-directionicon-identity"><?php echo $weather34compassicon;?></div>
 </div></div>
 <div class="modulecaptiondirection"><?php echo $lang['Wind']; echo " ".$lang['Direction'];?></div></div>

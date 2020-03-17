@@ -57,7 +57,7 @@ valuetextba{font-size:1em}valuetextbc{font-size:1.1em}valuetexttr{font-size:8px}
 <div class="weather34barometerarrowmin"></div>
 <div class="weather34barometerarrowmax"></div>
 </div>
-<div class="text2"><?php echo "<blue>".$weather["barometer"],"</blue><smalltempunit2>".$weather["barometer_units"]."</smalltempunit2>";?>
+<div class="text2"><?php echo $weather["barometer"],"<smalltempunit2>".$weather["barometer_units"]."</smalltempunit2>";?>
 
 <thetrend>
 <?php 
@@ -73,7 +73,7 @@ else echo "<span style='font-size:11px'>".$lang['Steady'].' '.$steadysymbol.'';?
 <div class="heatcircleindoor" style="margin-top:-3px;margin-left:156px">
 <div class="heatcircle-content"><?php echo date('Y')?> Max <blue><?php echo $weather["thb0seapressyearmaxtime"]?></blue>
 <?php //avg today
-echo "<div class=tempconverter1><div class=tempmodulehome20-25c>". $weather["thb0seapressymax"]."<smalltempunit2>&nbsp;".$weather["barometer_units"];?></smalltempunit2></div></div>
+echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["thb0seapressymax"]."<smalltempunit2>&nbsp;".$weather["barometer_units"];?></smalltempunit2></div></div>
 
 
 
@@ -84,9 +84,9 @@ echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["thb0s
 
 <div class="heatcircle-content" style="margin-top:5px"><?php echo $lang['Today']?> <orange>Max</orange>-<blue>Min</blue>
 <?php //avg today
-echo "<div class=tempconverter1><div class=tempmodulehomemaxmin style='font-size:.6rem'>". $weather["barometer_max"]."<smalltempunit2>".$weather["barometer_units"]."</smalltempunit2>&nbsp;|&nbsp; ";
+echo "<div class=tempmodulehomemaxmin style='font-size:.55rem'>". $weather["barometer_max"]."<smalltempunit2>".$weather["barometer_units"]."</smalltempunit2>&nbsp;|&nbsp; ";
 echo $weather["barometer_min"]."<smalltempunit2>".$weather["barometer_units"] 
-?></smalltempunit2></div></div>
+?></smalltempunit2></div>
 
 <div class="weather-pressureicon-identity">    
 <?php echo "<icon-zero>".$weather34_pressure_icon."</icon-zero>";
