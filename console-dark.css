@@ -3886,11 +3886,11 @@ bottom-bar-textfore {
     .nav,
     .nav-bottom {
         margin: 0 auto;
-        width: 305px;
-        padding: 3px;
-        height: 20px;
-        bottom: 0;
-        z-index: 99999;
+        width: 310px;
+        padding: 5px;
+        padding-top:15px;
+        height: 30px;
+        bottom: 0;       
         background: #3d464d
     }
 
