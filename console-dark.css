@@ -3650,7 +3650,7 @@ bottom-bar-textfore {
 }
 
 @media screen and (max-width:960px) {
-    chartpage,.weather34-desktopicon-link,.weather34-refreshicon,.weather34-sphere-red,.weather34-sphere-orangefore,.weather34-sphere-green,
+    chartpage,.weather34-desktopicon-link,.weather34-sphere-red,.weather34-sphere-orangefore,.weather34-sphere-green,
     .desktoplink,bottom-bar-textfore {
         display: none
     }
@@ -3776,7 +3776,8 @@ bottom-bar-textfore {
     }
 
     .weather34-refreshicon {
-        margin-top: -25px
+        margin-top: -25px;
+        right:15px
     }
 }
 
@@ -3785,14 +3786,17 @@ bottom-bar-textfore {
     .designedby,
     .desktoplink,
     .desktoplink4,
-    .sunriset-set,
-    .weather34-refreshicon,
+    .sunriset-set,    
     .weather34-sphere-orangefore,
     .weather34-sphere-orangel,
     .weather34-sphere-red,
     bottom-bar-textfore,.weather34-desktopicon-link,.desktoplink3,.weather34-tab-icons,
     chartpage {
         display: none
+    }
+    .weather34-refreshicon {
+        margin-top: -25px;
+        right:15px
     }
 
     bottom-bar-text{ font-size:9px;}
