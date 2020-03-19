@@ -124,14 +124,20 @@ include_once('livedata.php');include_once('updater-almanac.php');include('common
     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C</bottom-bar-text></a>'; 
     echo '<a href="?units=uk" alt="UK Units" title="UK Units">     
     <div class="weather34-sphere-blue"></div><bottom-bar-text>UK</bottom-bar-text></a>';   
-   }   
+   }  
+   
+   else if ($units==''){   // default
+    echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
+    <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F</bottom-bar-text></a>';  
+    echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
+    <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C</bottom-bar-text></a>'; 
+    echo '<a href="?units=uk" alt="UK Units" title="UK Units">     
+    <div class="weather34-sphere-blue"></div><bottom-bar-text>UK</bottom-bar-text></a>';   
+   } 
 ?>
 
 <a href="consolecharts.php" alt="Daily Charts" title="Daily Charts">
 <div class="weather34-chart-icons"><?php echo $charts?></a></div>
-
-<a href="weather34-almanac.php" alt="Almanac" title="Almanac">
-<div class="weather34-chart-icons"><?php echo $almanacicon?></a></div>
 
 <a href="outlookwu.php" data-lity alt="5 day Forecast" title="5 day Forecast">
 <div class="weather34-tab-icons"><?php echo $weatherforecast?></a></div>

@@ -1575,30 +1575,7 @@ smallrainunit4 {
     -o-border-radius: 2px
 }
 
-.intempmodulehome0-5c,
-.intempmodulehome10-15c,
-.intempmodulehome15-20c,
-.intempmodulehome20-25c,
-.intempmodulehome25-30c,
-.intempmodulehome5-10c,
-.rainmodulehome,
-.rainratemodulehome,
-.temphumcircle0-25,
-.temphumcircle25-35,
-.temphumcircle35-60,
-.temphumcircle60-80,
-.temphumcircle80-100,
-.tempmodulehome-10-0c,
-.tempmodulehome-50-10c,
 .tempmodulehome0-5c,
-.tempmodulehome10-15c,
-.tempmodulehome15-20c,
-.tempmodulehome20-25c,
-.tempmodulehome25-30c,
-.tempmodulehome30-35c,
-.tempmodulehome35-40c,
-.tempmodulehome40-50c,
-.tempmodulehome5-10c,
 .tempmodulehomemaxmin {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2554,14 +2531,10 @@ a {
     color: var(--white)
 }
 
-.desktoplink {
-    color: var(--silver);
-    font-size: 10px;
-    font-family: headingtext;
-    text-decoration: none;
+.desktoplink {   
     margin-right: 100px;
     float: right;
-    margin-top: 17px
+    margin-top: 23px
 }
 
 .desktoplink3 {
@@ -3659,8 +3632,18 @@ bottom-bar-textfore {
     top: -5px
 }
 
+.weather-smart-tv-text {
+    font-size: 1.25em;
+    color: rgba(253, 253, 255, 0.02);
+    display: inline-block;
+    margin: 2px;   
+    margin-left:60px ;    
+    line-height:.6
+
+}
+
 @media screen and (max-width:960px) {
-    chartpage,.weather34-desktopicon-link,.weather34-refreshicon,.weather34-sphere-red,.weather34-sphere-orangefore,bottom-bar-textfore {
+    chartpage,.weather34-desktopicon-link,.weather34-refreshicon,.weather34-sphere-red,.weather34-sphere-orangefore,.weather-smart-tv-text,bottom-bar-textfore {
         display: none
     }
 
@@ -3768,126 +3751,8 @@ bottom-bar-textfore {
     .weather34-refreshicon {
         margin-top: -25px
     }
-
-
 }
 
-@media screen and (max-width:640px) {
-    .designedby,
-    .desktoplink,
-    .desktoplink4,
-    .sunriset-set,
-    .weather34-refreshicon,
-    .weather34-sphere-orangefore,
-    .weather34-sphere-orangel,
-    .weather34-sphere-red,
-    bottom-bar-textfore,.weather34-desktopicon-link,.desktoplink3,
-    chartpage {
-        display: none
-    }
-
-    bottom-bar-text{ font-size:9px;}
-
-    li8 {
-        min-width: 320px;
-        max-width: 320px;
-    }
-
-    .desktoplink5 {
-        margin-top: -10px
-    }
-
-
-    .lity-iframe-container iframe {
-        max-height: 600px
-    }
-
-    
-
-    .desktoplink2 {
-        color: var(--white);
-        font-size: 10px;
-        font-family: headingtext;
-        text-decoration: none;
-        margin-right: 45px;
-        float: right;
-        margin-top: -15px
-    }
-
-    .consolesetup,
-    a {
-        font-size: 10px;
-        font-family: headingtext;
-        text-decoration: none;
-        margin-left: 10px;
-        color: var(--white)
-    }
-
-    .consoleunits,
-    a {
-        font-size: 10px;
-        font-family: headingtext;
-        text-decoration: none;
-        margin-left: 1px;
-        color: var(--white)
-    }
-
-    body {
-        width: 320px
-    }
-
-    li,
-    li3 {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        min-width: 320px;
-        max-width: 320px
-    }
-
-    li2 {
-        display: none
-    }
-
-    .nav {
-        margin: 0 auto;
-        width: 308px;
-        -webkit-box-shadow: 0 1px 1px hsla(0, 0%, 0%, .25), 0 2px 2px hsla(0, 0%, 0%, .2), 0 4px 4px hsla(0, 0%, 0%, .15);
-        box-shadow: 0 1px 1px hsla(0, 0%, 0%, .25), 0 2px 2px hsla(0, 0%, 0%, .2), 0 4px 4px hsla(0, 0%, 0%, .15);
-        padding: 6px;
-        height: 20px;
-        bottom: 0;
-        z-index: 99999
-    }
-
-    .nav,
-    .nav-bottom {
-        margin: 0 auto;
-        width: 320px;
-        padding: 3px;
-        height: 20px;
-        bottom: 0;
-        z-index: 99999;
-        background: #3d464d;
-        margin-top: 10px;
-        margin-left: -8px
-    }
-
-    .nav-top {
-        top: 0;
-        padding-top: 10px
-    }
-
-    .weather34-tablet {
-        border: 0
-    }
-
-    vspan,
-    vspan2,
-    vspan3 {
-        font-size: 9px
-    }
-}
 
 deepblue {
     color: var(--deepblue)
@@ -4544,3 +4409,16 @@ smallminutes
     font-size: 7px;
     color: var(--body-text-light);
 } 
+
+.weather34-tab-icons{
+    display: inline-block;
+    margin:2px;  
+    position:relative;
+    top:2px     
+    
+}
+.weather34-chart-icons{
+    display: inline-block;
+    margin: 2px;   
+    margin-left:0 
+}

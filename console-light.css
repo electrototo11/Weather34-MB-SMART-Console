@@ -2867,7 +2867,7 @@ a {
 .logofooter {
     position: absolute;
     margin-left: 70px;
-    margin-top: -10px
+    top: 8px
 }
 
 .weather34-tab-icons{
