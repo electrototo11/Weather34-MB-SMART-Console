@@ -3650,7 +3650,8 @@ bottom-bar-textfore {
 }
 
 @media screen and (max-width:960px) {
-    chartpage,.weather34-desktopicon-link,.weather34-refreshicon,.weather34-sphere-red,.weather34-sphere-orangefore,.weather34-sphere-green,bottom-bar-textfore {
+    chartpage,.weather34-desktopicon-link,.weather34-refreshicon,.weather34-sphere-red,.weather34-sphere-orangefore,.weather34-sphere-green,
+    .desktoplink,bottom-bar-textfore {
         display: none
     }
 

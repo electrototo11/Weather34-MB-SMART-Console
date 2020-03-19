@@ -86,24 +86,24 @@
 
           <a href="consolecharts-year.php" alt="<?php echo date('Y');?> Charts" title="<?php echo date('Y');?> Charts">
        <div class="weather34-sphere-blue"></div>
-          <bottom-bar-text><?php echo date('Y');?></bottom-bar-text></a>
-
-          <?php if ($displayalmanac=='yes'){echo '
-          <a href="weather34-almanac.php" alt="Almanac" title="Almanac">
-       <div class="weather34-sphere-red"></div>
-          <bottom-bar-textfore>Almanac History</bottom-bar-textfore></a>';}
-          ?>
+          <bottom-bar-text><?php echo date('Y');?></bottom-bar-text></a>        
+         
 
        <?php if ($display2019=='yes'){echo '
         <a href="consolecharts-2019.php">
         <div class="weather34-sphere-yellow"></div>
-          <bottom-bar-textfore>2019</bottom-bar-textfore></a>';}
+          <bottom-bar-text>2019</bottom-bar-text></a>';}
        ?>
+
+      <?php if ($displayalmanac=='yes'){
+      echo '<a href="weather34-almanac.php" alt="Almanac" title="Almanac">
+    <div class="weather34-chart-icons">'.$almanacicon.'</a></div>';}
+      ?>       
        
        <chartpage><?php echo $lang['Updated'] ?> <?php 
-       $dayfile=date('Y')."/".date('jMY');$forecastime=filemtime('weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M %p",$forecastime);?>     
+       $dayfile=date('Y')."/".date('jMY');$forecastime=filemtime('../weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M %p",$forecastime);?>     
       </chartpage>
-
+      
       <a class="desktoplink" href="info.html" data-lity alt="weather34 info console " title="info console">      
        <div class="logofooter">
         <img src="Wxsoft34-appsmall.png" width="25px"height="25px" alt="weather34 &copy;2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>"></div></div>

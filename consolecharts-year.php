@@ -43,7 +43,7 @@
 <div class="desktoplink4"><?php echo $chartcalendar; echo date('Y');?> Charts</div></div>
 <div class="desktoplink3"><?php echo $headerlocation; echo $stationName?>
 <div class="online"><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;else echo $wireless?></div>
-</div></div>
+</div></div>  
   <ul class="grid-container">
     <li><div id=temperature></div></li>    
     <li><div id=dewpoint></div></li>
@@ -57,8 +57,8 @@
     <li2><div id=sun></div></li2> 
     <li2><div id=time-date></div></li2>  
   </ul>
-  <div class="nav">
-    <a href="index.php" alt="previous page" title="previous page"><?php echo $backhome?></a>
+    <div class="nav">
+    <a href="consoledavis.php" alt="previous page" title="previous page"><?php echo $backhome?></a>
     <a class="consoleunits" href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
     <a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
       <?php
@@ -77,17 +77,21 @@
 
        <a href="consolecharts-month.php" alt="<?php echo date('M');?> Charts" title="<?php echo date('M');?> Charts">
        <div class="weather34-sphere-blue"></div>
-          <bottom-bar-text><?php echo date('F');?></bottom-bar-text></a>       
+          <bottom-bar-text><?php echo date('F');?></bottom-bar-text></a>   
 
-
-          <?php if ($display2019=='yes'){echo '
+       <?php if ($display2019=='yes'){echo '
         <a href="consolecharts-2019.php">
         <div class="weather34-sphere-yellow"></div>
-          <bottom-bar-textfore>2019</bottom-bar-textfore></a>';}
+          <bottom-bar-text>2019</bottom-bar-text></a>';}
        ?>
 
+<?php if ($displayalmanac=='yes'){
+      echo '<a href="weather34-almanac.php" alt="Almanac" title="Almanac">
+    <div class="weather34-chart-icons">'.$almanacicon.'</a></div>';}
+      ?>    
+
        <chartpage><?php echo $lang['Updated'] ?> <?php 
-       $dayfile=date('Y');$forecastime=filemtime('weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M %p",$forecastime);?>     
+       $dayfile=date('Y');$forecastime=filemtime('../weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M %p",$forecastime);?>     
       </chartpage>
 
       <a class="desktoplink" href="info.html" data-lity alt="weather34 info console " title="info console">      
