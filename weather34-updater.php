@@ -260,7 +260,7 @@ class Zipper {
     <input type="submit" name="dozip" class="submit" value="BACK UP Weather34 Console"/>
     <br>
     *Important do not refresh the browser after updating or backing up it will repeat again.<br>
-     Always access this page from the setup screen <a href="Weather34-setup.php" target="_self" alt="setup screen" title="setup screen">
+     Always access this page from the setup screen <a href="console-setup.php" target="_self" alt="setup screen" title="setup screen">
      <svg id="i-chevron-right" viewBox="0 0 32 32" width="10" height="10" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%"><path d="M12 30 L24 16 12 2" /></svg>     
      <blue1>Here</blue1></a></p>
     </fieldset>
