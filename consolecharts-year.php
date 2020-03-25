@@ -58,17 +58,13 @@
     <li2><div id=time-date></div></li2>  
   </ul>
     <div class="nav">
-    <a href="consoledavis.php" alt="previous page" title="previous page"><?php echo $backhome?></a>
-    <a class="consoleunits" href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
-    <a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
-      <?php
-        if ($theme == 'dark') {
-          echo '<div class="weather34-sphere-dark"></div>
-          <bottom-bar-text>Light</bottom-bar-text>';} 
-        else {
-          echo '<div class="weather34-sphere-dark"></div>
-          <bottom-bar-text>Dark</bottom-bar-text>';}?></a>
+    <a href="index.php" alt="previous page" title="previous page"><?php echo $backhome?></a>
 
+    <a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>
+    <?php if ($theme == 'dark') { echo 'alt="Light Mode" title="Light Mode"';} else {echo 'alt="Dark Mode" title="Dark Mode"';} ?> >
+    <?php //theme
+    if ($theme == 'dark') {echo '<div class="weather34-theme-icon">'.$weather34theme.'</div>';} 
+    else {echo '<div class="weather34-theme-icon">'.$weather34theme.'</div>';}?></a>
 
 
  <a href="consolecharts.php" alt="Today Charts" title="Today Charts">

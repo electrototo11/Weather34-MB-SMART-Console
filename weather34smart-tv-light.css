@@ -2928,7 +2928,7 @@ a {
 .logofooter {
     position: absolute;
     margin-left: 70px;
-    margin-top: -18px
+    margin-top: -10px
 }
 
 .weather34alert {
@@ -4410,15 +4410,40 @@ smallminutes
     color: var(--body-text-light);
 } 
 
-.weather34-tab-icons{
+.weather34-tab-icons {
     display: inline-block;
-    margin:2px;  
-    position:relative;
-    top:2px     
-    
+    margin: 2px;
+    position: relative;
+    top: 6px
 }
-.weather34-chart-icons{
+
+.weather34-tab-earthquake {
     display: inline-block;
-    margin: 2px;   
-    margin-left:0 
+    margin: 2px;
+    position: relative;
+    top: 6px
+}
+
+.weather34-chart-icons {
+    display: inline-block;
+    margin: 2px;
+}
+
+.weather34-theme-icon {
+    position: relative;
+    display: inline-block;
+    margin: 2px;
+    top: 5px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.weather34-unit-icon {
+    position: relative;
+    display: inline-block;
+    margin: 2px;
+    top: 5px;
 }

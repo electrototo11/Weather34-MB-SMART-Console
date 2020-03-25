@@ -69,14 +69,13 @@ style="width:
 <?php echo $weather['uv']*8.75;?>px;
 background:
 <?php 
-if ($weather['uv']>=10 ){echo '#7face6';}
+if ($weather['uv']>=10 ){echo ' #8680bc';}
 elseif ($weather['uv']>=8 ){echo '#e64b24';}
 elseif ($weather['uv']>=6 ){echo '#d87040';}
 elseif ($weather['uv']>=3 ){echo '#e6a241';}
 elseif ($weather['uv']>0 ){echo '#9bbc2f';}
 ?>;">
 </div></div>
-
 
 <div class=thetrendgapwind>
 <?php 
@@ -96,8 +95,6 @@ else if($weather["uv"]==0){ echo "<grey>".$weather34_sun_icon."</grey>";}
 ?>
 </div></div></div>
 
-
-
 <div class="maxwind2">
 <?php  //Max-Min
 echo "Max ";
@@ -107,6 +104,4 @@ else if ($weather["uvdmax"]>=6){echo "<orange>".$weather["uvdmax"]."</orange>";}
 else if ($weather["uvdmax"]>=3){echo "<yellow>".$weather["uvdmax"]."</yellow>";}
 else if ($weather["uvdmax"]>=0){echo "<green>".$weather["uvdmax"]."</green>";}
 echo "<span style='position:relative;top:1px'>".$maxclock."</span>";echo $weather["uvdmaxtime"];
-?>
-</div>
-
+?></div>

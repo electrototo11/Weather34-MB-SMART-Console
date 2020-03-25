@@ -2933,7 +2933,7 @@ a {
 .logofooter {
     position: absolute;
     margin-left: 70px;
-    top: 8px
+    top: 15px
 }
 
 
@@ -3791,13 +3791,11 @@ bottom-bar-textfore {
     .weather34-sphere-orangel,
     .weather34-sphere-red,
     bottom-bar-textfore,.weather34-desktopicon-link,.desktoplink3,.weather34-tab-icons,
+    .weather34-refreshicon,
     chartpage {
         display: none
     }
-    .weather34-refreshicon {
-        margin-top: -25px;
-        right:15px
-    }
+    
 
     bottom-bar-text{ font-size:9px;}
 
@@ -3891,12 +3889,14 @@ bottom-bar-textfore {
     .nav,
     .nav-bottom {
         margin: 0 auto;
-        width: 310px;
-        padding: 5px;
-        padding-top:15px;
-        height: 30px;
+        width: 350px;
+        padding: 3px;
+        padding-top:10px;
+        padding-left:5px;
+        height: 40px;
         bottom: 0;       
-        background: #3d464d
+        background: #3d464d;
+        margin-left:-20px
     }
 
     .nav-top {
@@ -4740,4 +4740,43 @@ top: 40px;
 infoicon{
     color:var(--yellow);  
     margin-left:2px   
+}
+
+.weather34-tab-icons {
+    display: inline-block;
+    margin: 2px;
+    position: relative;
+    top: 6px
+}
+
+.weather34-tab-earthquake {
+    display: inline-block;
+    margin: 2px;
+    position: relative;
+    top: 6px
+}
+
+.weather34-chart-icons {
+    display: inline-block;
+    margin: 2px;
+}
+
+.weather34-theme-icon {
+    position: relative;
+    display: inline-block;
+    margin: 2px;
+    top: 5px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.weather34-unit-icon {
+    position: relative;
+    display: inline-block;
+    margin: 2px;
+    top: 5px;
+
 }
