@@ -54,7 +54,6 @@
     --temp35-40: #88342e;
     --temp40-45: #532a96;
     --temp45-50: #813062;
-
     --font-color: grey;
     --bg-color: #ffffff;
     --button-bg-color: #ffffff;
@@ -524,7 +523,7 @@ li3 {
     font-family: weathertext2;
     font-size: 1.25rem;
     background: #fff;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.07);
+    box-shadow: -1px -1px 8px rgba(255, 255, 255, 0.9), 2px 2px 2px rgba(0, 0, 0, 0.07);
     margin-left:-30px;
 }
 
@@ -589,7 +588,7 @@ li3 {
     position: absolute;
     margin-left: -15px;
     font-family: headingtext;    
-    box-shadow: -6px -6px 8px rgba(255, 255, 255, 0.9), 5px 5px 8px rgba(0, 0, 0, 0.07);    
+    box-shadow: -1px -1px 8px rgba(255, 255, 255, 0.9), 2px 2px 2px rgba(0, 0, 0, 0.07);
     background: #fff;
 }
 
@@ -720,7 +719,7 @@ belowthehorizon {
     font-family: weathertext2;
     font-size: 2.5rem;
     background: #fff;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.07);
+    box-shadow: -1px -1px 8px rgba(255, 255, 255, 0.9), 2px 2px 2px rgba(0, 0, 0, 0.07);
     margin-left: 150px;
     margin-top: -15px
 }
@@ -761,7 +760,7 @@ indoor-temp-trend2 {
     line-height: 1;
     height: 16px;
     background: #fff;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.07);
+    box-shadow: -1px -1px 8px rgba(255, 255, 255, 0.9), 2px 2px 2px rgba(0, 0, 0, 0.07);
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -804,7 +803,7 @@ indoor-temp-trend2 {
     -ms-flex-align: center;
     align-items: center;    
     background: #fff;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.07);
+    box-shadow: -1px -1px 8px rgba(255, 255, 255, 0.9), 2px 2px 2px rgba(0, 0, 0, 0.07);
     text-transform:none;
 }
 
@@ -834,7 +833,7 @@ indoor-temp-trend2 {
     line-height: 1;
     height: 16px;
     background: #fff;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.07);
+    box-shadow: -1px -1px 8px rgba(255, 255, 255, 0.9), 2px 2px 2px rgba(0, 0, 0, 0.07);
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -876,7 +875,7 @@ indoor-temp-trend2 {
     -ms-flex-align: center;
     align-items: center;
     background: #fff;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.07);
+    box-shadow: -1px -1px 8px rgba(255, 255, 255, 0.9), 2px 2px 2px rgba(0, 0, 0, 0.07);
 }
 
 orange {
@@ -1270,8 +1269,8 @@ blue {
     width: 7.25rem;
     height: 1rem;
     overflow: hidden;
-    -webkit-box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.07);
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.07);
+    -webkit-box-shadow: -1px -1px 8px rgba(255, 255, 255, 0.9), 2px 2px 2px rgba(0, 0, 0, 0.07);
+    box-shadow: -1px -1px 8px rgba(255, 255, 255, 0.9), 2px 2px 2px rgba(0, 0, 0, 0.07);
     font-family: weathertext2;
     line-height: 1.2;
     border-radius: 2px;
@@ -1397,7 +1396,7 @@ smallrainrateunit {
     font-family: weathertext2;
     font-size: 1.25rem;
     background: #fff;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.07);
+    box-shadow: -1px -1px 8px rgba(255, 255, 255, 0.9), 2px 2px 2px rgba(0, 0, 0, 0.07);
     margin-left: 150px;
     margin-top: -45px
 }
@@ -1438,7 +1437,7 @@ indoor-temp-trend {
     line-height: 2;
     height: 20px;
     background: #fff;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.07);
+    box-shadow: -1px -1px 8px rgba(255, 255, 255, 0.9), 2px 2px 2px rgba(0, 0, 0, 0.07);
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -1482,7 +1481,7 @@ indoor-temp-trend {
     align-items: center;
     padding-top: 4px;
     background: #fff;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.07);
+    box-shadow: -1px -1px 8px rgba(255, 255, 255, 0.9), 2px 2px 2px rgba(0, 0, 0, 0.07);
 }
 
 bluesmall {
@@ -1599,7 +1598,7 @@ smallrainunit4 {
     align-items: center;
     margin-left: 25px;
     background: #fff;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.07);
+    box-shadow: -1px -1px 8px rgba(255, 255, 255, 0.9), 2px 2px 2px rgba(0, 0, 0, 0.07);
 
 }
 
@@ -3963,7 +3962,7 @@ button:focus {
     font-family: headingtext;
     text-align: left;
     width:80px;
-    box-shadow: -6px -6px 8px rgba(255, 255, 255, 0.9), 5px 5px 8px rgba(0, 0, 0, 0.07);    
+    box-shadow: -1px -1px 8px rgba(255, 255, 255, 0.9), 2px 2px 2px rgba(0, 0, 0, 0.07);
     background: #fff;
 }
 
@@ -3979,7 +3978,7 @@ button:focus {
     font-family: headingtext;
     text-align: left;
     width:120px;
-    box-shadow: -6px -6px 8px rgba(255, 255, 255, 0.9), 5px 5px 8px rgba(0, 0, 0, 0.07);    
+    box-shadow: -1px -1px 8px rgba(255, 255, 255, 0.9), 2px 2px 2px rgba(0, 0, 0, 0.07);
     background: #fff;
 }
 
@@ -4088,7 +4087,7 @@ button-block-date {
    -ms-border-radius:5px;
    -o-border-radius:5px;
     width:270px;height:125px;
-    box-shadow: -6px -6px 8px rgba(255, 255, 255, 0.9), 5px 5px 8px rgba(0, 0, 0, 0.07);    
+    box-shadow: -1px -1px 8px rgba(255, 255, 255, 0.9), 2px 2px 2px rgba(0, 0, 0, 0.07);
     background: #fff;
     }
 
