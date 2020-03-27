@@ -16,7 +16,10 @@ echo "<div class=tempmodulehome0-5c>".$weather["rainydmax"]."<smalltempunit2>".$
 <div class="almanac3"><div class="almanac-content">
 <?php  //last month
 echo "<valuetextheading1>Total Last Month <deepblue>".date("M ",strtotime("-1 month"))."</deepblue> </valuetextheading1><br>";
-echo "<div class=tempmodulehome0-5c>".$weather['rainlastmonth']."<smalltempunit2>".$weather["rain_units"];
+if ($weather['rainlastmonth']=='[rain0total-max@M1]') {
+echo "<div class=tempmodulehome0-5c>N/A";}
+else echo "<div class=tempmodulehome0-5c>".$weather['rainlastmonth']."<smalltempunit2>".$weather["rain_units"];
+
 ?><smalltempunit2></div></div>
 
 <div class="almanac4"><div class="almanac-content">
@@ -29,7 +32,9 @@ echo "<div class=tempmodulehome0-5c>".$weather["rainymax"]."<smalltempunit2>".$w
 <div class="almanac5"><div class="almanac-content">
 <?php  //last year
 echo "<valuetextheading1>Total <deepblue>".date('Y', strtotime('-1 year'))."</deepblue></valuetextheading1><br>";
-echo "<div class=tempmodulehome0-5c>".$weather['rainlastyear']."<smalltempunit2>".$weather["rain_units"];
+if ($weather['rainlastyear']=='[rain0total-max@Y1]') {
+    echo "<div class=tempmodulehome0-5c>N/A";}
+    else echo "<div class=tempmodulehome0-5c>".$weather['rainlastyear']."<smalltempunit2>".$weather["rain_units"];
 ?><smalltempunit2></div></div> 
 
 <div class="almanac6"><div class="almanac-content">
