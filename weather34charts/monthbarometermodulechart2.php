@@ -16,19 +16,22 @@
 	include('preload.php');include('../console-settings.php');
 	$weatherfile = date('F');
 	$conv = 1;
-	if ($pressureunit  == "hPa"){$conv= '1';}
-	else if ($pressureunit == 'inHg') {$conv= '0.02953';}	
-	$int = 1;
-	if ($pressureunit == 'hPa') {$int= 10;}
-	else if ($pressureunit == 'inHg') {$int= 0.25;}
-	else if ($pressureunit == 'mb') {$int= 10;}
-	$ymax = 1;
-	if ($pressureunit == 'hPa') {$ymax= '1045';}
-	else if ($pressureunit == 'inHg') {$ymax= '31.6';}		
-	$limit = '0';
-	if ($pressureunit == 'inHg') {$limit= '20';}
-	else if ($pressureunit  == "hPa") {$limit= '930';}
-	
+	if ($pressureunit == 'inHg') {$conv= '0.02953';}
+	else if ($pressureunit  == "mb") {$conv= '1';}
+	else if ($pressureunit  == "hPa") {$conv= '1';}
+	else if ($weather["barometer_units"]='mmHG') {$conv= '0.75006157584566';}
+	else $conv = 1;		
+	$int = 10;
+	if ($pressureunit == 'inHg') {$int= '0.25';}	
+	else $int = 5;	
+	if ($pressureunit == 'inHg') {$ymax= '31.6';}	
+	$ymax = 1;	
+	$limit = '0';	
+
+	if ($pressureunit == 'inHg') {$unit= 'inHg';}
+	else if ($pressureunit == 'hPa') {$unit= 'hPa';}
+	else if ($pressureunit == 'mb') {$unit= 'mb';}
+	else if ($weather["barometer_units"]='mmHG') {$unit= 'mmHG';}
 	
 	
 	

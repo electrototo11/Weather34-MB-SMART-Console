@@ -35,7 +35,7 @@
     --red: #d35f50;
     --yellow: #e6a241;
     --green: #9bbc2f;
-    --orange: #ec5732;
+    --orange: #d87040;
     --purple: #8680bc;
     --silver: #959ea8;
     --border-dark: #3d464d;
@@ -141,6 +141,7 @@ li {
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+    border-bottom: 5px solid rgba(172, 180, 192, 0.1)
 
 }
 
@@ -172,6 +173,7 @@ li8 {
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+    border-bottom: 5px solid rgba(172, 180, 192, 0.1)
 
 }
 
@@ -183,7 +185,7 @@ li2 {
     min-width: 315px;
     max-width: 315px;
     padding: 5px;
-    height: 75px;
+    height: 80px;
     border: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -202,11 +204,8 @@ li2 {
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+    border-bottom: 5px solid rgba(172, 180, 192, 0.1)
 }
-
-
-
-
 
 li3 {
     display: none;
@@ -2869,18 +2868,6 @@ a {
     margin-left: 70px;
     top: 15px
 }
-
-.weather34-tab-icons{
-    display: inline-block;
-    margin:2px; 
-    position:relative;
-    top:2px     
-}
-.weather34-chart-icons{
-    display: inline-block;
-    margin: 2px;    
-}
-
 .weather34alert {
     display: table;
     position: relative;
@@ -3607,6 +3594,64 @@ bottom-bar-textfore {
     top: -5px
 }
 
+
+.weather34-tab-icons {
+    display: inline-block;    
+    position: relative;
+    top: 7px
+}
+
+.weather34-tv-icons {
+    display: inline-block;    
+    position: absolute;
+    top: 10px;
+    margin-left:430px
+}
+
+.weather34-hardware-icons {
+    display: inline-block;    
+    position: absolute;
+    top: 10px;
+    margin-left:460px
+}
+
+.weather34-copyright-icons {
+    display: inline-block;    
+    position: absolute;
+    top: 10px;
+    margin-left:490px
+}
+
+.weather34-tab-earthquake {
+    display: inline-block;   
+    position: relative;
+    top: 7px
+}
+
+.weather34-chart-icons {
+    position:relative;
+    display: inline-block;    
+    top: 3px
+}
+
+.weather34-theme-icon {
+    position: relative;
+    display: inline-block;
+    top: 7.5px;
+    transform:rotate(90deg)  ;
+    -webkit-transform:rotate(90deg)  ;
+    -moz-transform:rotate(90deg)  ;
+    -ms-transform:rotate(90deg)  ;
+    -o-transform:rotate(90deg)  ;
+}
+
+.weather34-unit-icon {
+    position: relative;
+    display: inline-block;    
+    top: 7px
+}
+
+
 @media screen and (max-width:960px) {
 
     chartpage,
@@ -3634,6 +3679,27 @@ bottom-bar-textfore {
 
     .desktoplink5 {
         margin-top: -30px
+    }
+
+    .weather34-tv-icons {
+        display: inline-block;    
+        position: absolute;
+        top: 10px;
+        margin-left:15%
+    }
+    
+    .weather34-hardware-icons {
+        display: inline-block;    
+        position: absolute;
+        top: 10px;
+        margin-left:24%
+    }
+
+    .weather34-copyright-icons {
+        display: inline-block;    
+        position: absolute;
+        top: 10px;
+        margin-left:19%
     }
 
 
@@ -3664,7 +3730,8 @@ bottom-bar-textfore {
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         -ms-border-radius: 3px;
-        -o-border-radius: 3px
+        -o-border-radius: 3px;
+        border-bottom: 5px solid rgba(172, 180, 192, 0.1)
     }
 
     li8 {
@@ -3745,7 +3812,7 @@ bottom-bar-textfore {
     .weather34-sphere-red,
     bottom-bar-textfore,
     .weather34-desktopicon-link,
-    .desktoplink3,.weather34-tab-icons,
+    .desktoplink3,.weather34-tab-icons,.weather34-tv-icons,.weather34-hardware-icons,.weather34-copyright-icons,
     .weather34-refreshicon,
     chartpage {
         display: none
@@ -4665,41 +4732,3 @@ smallminutes
     color: var(--body-text-light);
 } 
 
-.weather34-tab-icons {
-    display: inline-block;
-    margin: 2px;
-    position: relative;
-    top: 6px
-}
-
-.weather34-tab-earthquake {
-    display: inline-block;
-    margin: 2px;
-    position: relative;
-    top: 6px
-}
-
-.weather34-chart-icons {
-    display: inline-block;
-    margin: 2px;
-}
-
-.weather34-theme-icon {
-    position: relative;
-    display: inline-block;
-    margin: 2px;
-    top: 5px;
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-}
-
-.weather34-unit-icon {
-    position: relative;
-    display: inline-block;
-    margin: 2px;
-    top: 5px;
-
-}

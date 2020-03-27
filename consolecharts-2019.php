@@ -85,7 +85,7 @@
       ?> 
        
        <chartpage><?php echo $lang['Updated'] ?> <?php 
-       $dayfile=date('Y')."/".date('jMY');$forecastime=filemtime('../weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M",$forecastime);?>     
+       $dayfile=date('Y')."/".date('jMY');$forecastime=filemtime('weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M",$forecastime);?>     
       </chartpage>
 
       <a class="desktoplink" href="info.html" data-lity alt="weather34 info console " title="info console">      

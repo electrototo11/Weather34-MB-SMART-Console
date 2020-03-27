@@ -64,7 +64,7 @@ include_once('livedata.php');include_once('updater2.php');
 
   <div class="nav-bottom">
   <a href="console-setup.php" target="_blank" alt="Setup Screen" title="Setup Screen"> <?php echo $settingsicon ?></a>
-
+  
   <a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>
     <?php if ($theme == 'dark') { echo 'alt="Light Mode" title="Light Mode"';} else {echo 'alt="Dark Mode" title="Dark Mode"';} ?> >
     <?php //theme
@@ -125,10 +125,10 @@ include_once('livedata.php');include_once('updater2.php');
 ?>
 
 <a href="outlookwu.php" data-lity alt="5 day Forecast" title="5 day Forecast">
-<div class="weather34-tab-icons"><?php echo $weatherforecast?></a></div>
+<div class="weather34-unit-icon""><?php echo $weatherforecast?></a></div>
 
 <a href="outlookwutext.php" data-lity alt="Summary" title="Summary Forecast">
-<div class="weather34-tab-icons"><?php echo $weatherforecast2?></a></div>
+<div class="weather34-unit-icon""><?php echo $weatherforecast2?></a></div>
 
 <a href="consolecharts.php" alt="Daily Charts" title="Daily Charts">
 <div class="weather34-chart-icons"><?php echo $charts?></a></div>
@@ -140,18 +140,17 @@ include_once('livedata.php');include_once('updater2.php');
 <?php 
 //weather34 smart tv option
 if ($smarttv=='yes'){echo '
-  <div class="weather34-desktopicon-link" style="margin-right:-10px;margin-top:-27px"><a href="weather34-tv.php" alt="smart tv version" title="smart tv version">'.$weather34tvicon.'</a>
-</div>
+  <a href="weather34-tv.php" alt="weather34 smart tv version" title="weather34 tv version">
+<div class="weather34-tv-icons">'. $weather34TV.'</a></div>
 ';}
-?>
-  
+?>  
+
+<a  href="info.html" data-lity alt="weather34 hardware info  " title="weather34 hardware info">
+<div class="weather34-copyright-icons"><?php echo $weather34copyright;?></a></div>
 
   <div class="weather34-refreshicon">
 <a href="index.php" alt="refresh this dashboard " title="weather34 refresh this dashboard ">
 <?php echo $weather34refreshicon?></a></div>
 
-  <a class="desktoplink" href="info.html" data-lity alt="weather34 info console " title="info console">      
-       <div class="logofooter">
-        <img src="Wxsoft34-appsmall.png" width="25px"height="25px" alt="weather34 &copy;2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>"></div></div>
-       </a></div> 
+  
  </body></html>
