@@ -2433,7 +2433,7 @@ a {
 
 .weather34-desktopicon-link {  
     position:absolute;    
-    right: 90px;    
+    right: 120px;    
     margin-top:-23px
 }
 
@@ -3660,14 +3660,14 @@ bottom-bar-textfore {
     display: inline-block;    
     position: absolute;
     top: 10px;
-    margin-left:460px
+    right:10px
 }
 
 .weather34-copyright-icons-chart {
     display: inline-block;    
     position: absolute;
     top: 10px;
-    margin-left:280px
+    right:10px
 }
 
 .weather34-tab-earthquake {

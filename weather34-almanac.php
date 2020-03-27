@@ -153,12 +153,7 @@ if ($smarttv=='yes'){echo '
   <div class="weather34-desktopicon-link" style="margin-right:-10px;margin-top:-27px"><a href="weather34-tv.php" alt="smart tv version" title="smart tv version">'.$weather34tvicon.'</a>
 </div>
 ';}
-?>
-  
+?> 
 
   <a  href="info.html" data-lity alt="weather34 template info  " title="weather34 template info">
-<div class="weather34-copyright-icons"><?php echo $weather34copyright;?></a></div>
-
-  <div class="weather34-refreshicon">
-<a href="index.php" alt="refresh this dashboard " title="weather34 refresh this dashboard ">
-<?php echo $weather34refreshicon?></a></div>
+<div class="weather34-copyright-icons"><?php echo $weather34copyright;?></a></div>  
