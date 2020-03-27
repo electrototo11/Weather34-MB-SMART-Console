@@ -57,7 +57,7 @@
     <li2><div id=sun></div></li2> 
     <li2><div id=time-date></div></li2>  
   </ul>
-    <div class="nav">
+    <div class="nav-bottom">
     <a href="index.php" alt="previous page" title="previous page"><?php echo $backhome?></a>
 
     <a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>
@@ -90,8 +90,6 @@
        $dayfile=date('Y');$forecastime=filemtime('weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M %p",$forecastime);?>     
       </chartpage>
 
-      <a class="desktoplink" href="info.html" data-lity alt="weather34 info console " title="info console">      
-       <div class="logofooter">
-        <img src="Wxsoft34-appsmall.png" width="25px"height="25px" alt="weather34 &copy;2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>"></div></div>
-       </a></div> 
+      <a  href="info.html" data-lity alt="weather34 template info  " title="weather34 template info">
+<div class="weather34-copyright-icons-chart"><?php echo $weather34copyright;?></a></div>
  </body></html>

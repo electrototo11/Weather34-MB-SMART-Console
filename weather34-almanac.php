@@ -156,12 +156,9 @@ if ($smarttv=='yes'){echo '
 ?>
   
 
-  <div class="weather34-refreshicon">
-<a href="weather34-almanac.php" alt="refresh this dashboard " title="weather34 refresh this dashboard ">
-<?php echo $weather34refreshicon?></a></div>
+  <a  href="info.html" data-lity alt="weather34 template info  " title="weather34 template info">
+<div class="weather34-copyright-icons"><?php echo $weather34copyright;?></a></div>
 
-  <a class="desktoplink" href="info.html" data-lity alt="weather34 info console " title="info console">      
-       <div class="logofooter">
-        <img src="Wxsoft34-appsmall.png" width="25px"height="25px" alt="weather34 &copy;2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>"></div></div>
-       </a></div> 
- </body></html>
+  <div class="weather34-refreshicon">
+<a href="index.php" alt="refresh this dashboard " title="weather34 refresh this dashboard ">
+<?php echo $weather34refreshicon?></a></div>

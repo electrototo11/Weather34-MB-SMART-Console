@@ -3642,13 +3642,6 @@ bottom-bar-textfore {
     top: 7px
 }
 
-.weather34-tv-icons {
-    display: inline-block;    
-    position: absolute;
-    top: 10px;
-    margin-left:430px
-}
-
 .weather34-hardware-icons {
     display: inline-block;    
     position: absolute;
@@ -3656,11 +3649,25 @@ bottom-bar-textfore {
     margin-left:460px
 }
 
+.weather34-tv-icons {
+    display: inline-block;    
+    position: absolute;
+    top: 10px;
+    margin-left:430px
+}
+
 .weather34-copyright-icons {
     display: inline-block;    
     position: absolute;
     top: 10px;
-    margin-left:490px
+    margin-left:460px
+}
+
+.weather34-copyright-icons-chart {
+    display: inline-block;    
+    position: absolute;
+    top: 10px;
+    margin-left:280px
 }
 
 .weather34-tab-earthquake {
@@ -3693,8 +3700,7 @@ bottom-bar-textfore {
 }
 
 @media screen and (max-width:960px) {
-    chartpage,.weather34-desktopicon-link,.weather34-sphere-red,.weather34-sphere-orangefore,.weather34-sphere-green,
-    .desktoplink,bottom-bar-textfore {
+    chartpage,.weather34-desktopicon-link,.weather34-sphere-red,.weather34-sphere-orangefore,.weather34-sphere-green,.desktoplink,bottom-bar-textfore {
         display: none
     }
 
@@ -3704,20 +3710,18 @@ bottom-bar-textfore {
         top: 10px;
         margin-left:15%
     }
-    
-    .weather34-hardware-icons {
+   .weather34-copyright-icons-chart{ 
         display: inline-block;    
         position: absolute;
         top: 10px;
-        margin-left:24%
+        margin-left:240px
     }
 
-    .weather34-copyright-icons {
+    .weather34-copyright-icons{ 
         display: inline-block;    
         position: absolute;
         top: 10px;
-        margin-left:19%
-    }
+        margin-left:130px}
 
     .lity-iframe-container iframe {
         max-height: 500px
@@ -3805,26 +3809,7 @@ bottom-bar-textfore {
         max-width: 305px
     }
 
-    .nav {
-        margin: 0 auto;
-        width: 600px;
-        padding: 6px;
-        height: 20px;
-        bottom: 0;
-        margin-left: 20px;
-        z-index: 99999
-    }
-
-    .nav-bottom,
-    .nav {
-        position: absolute;
-        margin: 0 auto;
-        max-width: 1024px;
-        background: 0;
-        padding: 2px;
-        position: relative;
-        bottom: -40px;
-    }
+    
 
     .desktoplink {
         margin-top: 15px
@@ -3850,12 +3835,13 @@ bottom-bar-textfore {
     .designedby,
     .desktoplink,
     .desktoplink4,
-    .sunriset-set,    
+    .sunriset-set,   
     .weather34-sphere-orangefore,
     .weather34-sphere-orangel,
     .weather34-sphere-red,
-    bottom-bar-textfore,.weather34-desktopicon-link,.desktoplink3,.weather34-tab-icons,.weather34-tv-icons,.weather34-hardware-icons,.weather34-copyright-icons,
-    .weather34-refreshicon,
+    bottom-bar-textfore,
+    .weather34-desktopicon-link,
+    .desktoplink3,.weather34-tab-icons,.weather34-tv-icons,.weather34-hardware-icons,.weather34-copyright-icons,.weather34-copyright-icons-chart,.weather34-refreshicon,
     chartpage {
         display: none
     }
