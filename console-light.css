@@ -184,7 +184,7 @@ li2 {
     min-width: 317px;
     max-width: 317px;
     padding: 5px;
-    height: 75px;
+    height: 80px;
     border: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -4272,7 +4272,7 @@ button-block-date {
 
 .modulecaptioncam {
     left: 165px;
-    top: -11px;
+    top: -8px;
     display: flex;
     position: relative;
     align-items: center;
