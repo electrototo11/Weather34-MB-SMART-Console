@@ -18,6 +18,8 @@ else if($weather["humidity"]<=70){ echo "<icon-11-15>".$weather["humidity"]."<sm
 else if($weather["humidity"]<=100){ echo "<icon-zero>".$weather["humidity"]."<smallhumidityunit>%</smallhumidityunit></icon-zero>";}
 ?></div></div><div>
 
+<windunitindicator>RH</windunitindicator>
+
 <?php //humidity man
 echo "<tempman>";
 if($weather["humidity"]<=30){ echo "<icon-26-30>".$tempman."</icon-26-30>";}
