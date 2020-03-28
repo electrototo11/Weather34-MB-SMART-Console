@@ -2740,7 +2740,7 @@ blue1 {
     margin-bottom: 0;
 }
 
-.nav-bottom,
+.nav-bottom,.nav-bottom-charts2,
 .nav {
     position:absolute;
     margin: 0 auto;
@@ -3809,7 +3809,15 @@ bottom-bar-textfore {
         max-width: 305px
     }
 
-    
+    .nav-bottom-charts2 {
+        position: absolute;
+        margin: 0 auto;
+        max-width: 1024px;
+        background: 0;
+        padding: 2px;
+        position: relative;
+        bottom: -40px
+    }
 
     .desktoplink {
         margin-top: 15px
@@ -3937,7 +3945,7 @@ bottom-bar-textfore {
     }
 
     .nav,
-    .nav-bottom {
+    .nav-bottom,.nav-bottom-charts2  {
         margin: 0 auto;
         width: 350px;
         padding: 3px;

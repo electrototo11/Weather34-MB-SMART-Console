@@ -67,12 +67,12 @@ include_once('livedata.php');include_once('updater-almanac.php');include('common
     <li2><div id=position10></div></li2> 
     <li2><div id=position11></div></li2> 
     <li2><div id=position12></div></li2>  
-    <li3><div id=position13></div></li3>  
+    
     </ul>
 
 
 
-<div class="nav-bottom">
+<div class="nav-bottom-charts2">
 <a href="index.php" alt="previous page" title="previous page"><?php echo $backhome?></a>
 
 <a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>
