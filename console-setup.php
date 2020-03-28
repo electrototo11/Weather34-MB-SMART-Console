@@ -714,6 +714,7 @@ padding:10px;}
                                                 <option>windmod.php</option>
                                                 <option>directionmod.php</option>
                                                 <option>gustmod.php</option>
+                                                <option>beaufortmod.php</option>
                                                 <option>rainmod.php</option>
                                                 <option>barometermod.php</option>
                                                 <option>barometermod-mmHG.php</option>
@@ -743,6 +744,7 @@ padding:10px;}
                                                 <option>windmod.php</option>
                                                 <option>directionmod.php</option>
                                                 <option>gustmod.php</option>
+                                                <option>beaufortmod.php</option>
                                                 <option>rainmod.php</option>
                                                 <option>barometermod.php</option>
                                                 <option>barometermod-mmHG.php</option>
@@ -771,6 +773,7 @@ padding:10px;}
                                                 <option>windmod.php</option>
                                                 <option>directionmod.php</option>
                                                 <option>gustmod.php</option>
+                                                <option>beaufortmod.php</option>
                                                 <option>rainmod.php</option>
                                                 <option>barometermod.php</option>
                                                 <option>barometermod-mmHG.php</option>
@@ -800,6 +803,7 @@ padding:10px;}
                                                 <option>windmod.php</option>
                                                 <option>directionmod.php</option>
                                                 <option>gustmod.php</option>
+                                                <option>beaufortmod.php</option>
                                                 <option>rainmod.php</option>
                                                 <option>barometermod.php</option>
                                                 <option>barometermod-mmHG.php</option>
@@ -828,6 +832,7 @@ padding:10px;}
                                                 <option>windmod.php</option>
                                                 <option>directionmod.php</option>
                                                 <option>gustmod.php</option>
+                                                <option>beaufortmod.php</option>
                                                 <option>rainmod.php</option>
                                                 <option>barometermod.php</option>
                                                 <option>barometermod-mmHG.php</option>
@@ -856,6 +861,7 @@ padding:10px;}
                                                 <option>windmod.php</option>
                                                 <option>directionmod.php</option>
                                                 <option>gustmod.php</option>
+                                                <option>beaufortmod.php</option>
                                                 <option>rainmod.php</option>
                                                 <option>barometermod.php</option>
                                                 <option>barometermod-mmHG.php</option>
@@ -884,6 +890,7 @@ padding:10px;}
                                                 <option>windmod.php</option>
                                                 <option>directionmod.php</option>
                                                 <option>gustmod.php</option>
+                                                <option>beaufortmod.php</option>
                                                 <option>rainmod.php</option>
                                                 <option>barometermod.php</option>
                                                 <option>barometermod-mmHG.php</option>
@@ -912,6 +919,7 @@ padding:10px;}
                                                 <option>windmod.php</option>
                                                 <option>directionmod.php</option>
                                                 <option>gustmod.php</option>
+                                                <option>beaufortmod.php</option>
                                                 <option>rainmod.php</option>
                                                 <option>barometermod.php</option>
                                                 <option>barometermod-mmHG.php</option>
@@ -940,6 +948,7 @@ padding:10px;}
                                                 <option>windmod.php</option>
                                                 <option>directionmod.php</option>
                                                 <option>gustmod.php</option>
+                                                <option>beaufortmod.php</option>
                                                 <option>rainmod.php</option>
                                                 <option>barometermod.php</option>
                                                 <option>barometermod-mmHG.php</option>

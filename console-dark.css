@@ -3832,10 +3832,7 @@ bottom-bar-textfore {
         margin-top: -200px
     }
 
-    .weather34-refreshicon {
-        margin-top: -25px;
-        right:15px
-    }
+   
 }
 
 @media screen and (max-width:640px) {
