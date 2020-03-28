@@ -92,8 +92,9 @@ elseif ($weather['wind_speed_bft']>=0){echo '#00adbd';}
 ?>;"></div></div>
 
 <div class=thetrendgapwind>
-<?php //windrun
-echo '<div class=thetrendboxblue>'.$lang['Wind Run'].'';echo '&nbsp;<blue>'.number_format($weather["windrun34"],1).'</blue><smalltempunit2>&nbsp;';if ($weather["wind_units"]=='km/h'){echo 'km';}else echo 'mi';?>
+<?php 
+//windrun
+echo '<div class=thetrendboxblue>'.$lang['Avg'].' '.$lang['Today'].'';echo '&nbsp;<blue>'.number_format($weather["wind_speed_avg30"],1).'</blue><smalltempunit2>&nbsp;'.$windunit.'</smalltempunit2>';?>
 </div></div>
 
 <div class="weather-icon-identity-wind"><?php 
