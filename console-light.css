@@ -2499,16 +2499,16 @@ a {
     margin-top: -13px;
 }
 
-.weather34-refreshicon {
-    position: absolute;
-    right: 50px;
-    margin-top: -23px
+.weather34-refreshicon {  
+    position:absolute;    
+    right: 50px;    
+    margin-top:-23px
 }
 
-.weather34-desktopicon-link {
-    position: absolute;
-    right: 120px;
-    margin-top: -23px
+.weather34-desktopicon-link {  
+    position:absolute;    
+    right: 80px;    
+    margin-top:-23px
 }
 
 .designedby {
@@ -2608,7 +2608,7 @@ valuebeaufort {
     align-items: center;
     justify-content: center;
     left: 183px;
-    top: -26px;
+    top: -20px;
     font-size: .6rem;
     font-family: weathertext2;
     width: 12em;
@@ -2652,8 +2652,8 @@ valuebeaufort {
 
 .modulecaptionrainrate {
     position: absolute;
-    margin-top: -8px;
-    margin-left: -68px;
+    margin-top: 7px;
+    margin-left: -60px;
     font-size: .6rem;
     font-family: weathertext2;
     width: 150px;
@@ -2668,7 +2668,7 @@ valuebeaufort {
     align-items: center;
     justify-content: center;
     left: 105px;
-    top: -8px;
+    top: 0;
     font-size: .6rem;
     font-family: weathertext2;
     width: 12em;
@@ -3592,11 +3592,18 @@ bottom-bar-textfore {
     top: 7px
 }
 
+.weather34-hardware-icons {
+    display: inline-block;    
+    position: absolute;
+    top: 10px;
+    margin-left:460px
+}
+
 .weather34-tv-icons {
     display: inline-block;    
     position: absolute;
     top: 10px;
-    margin-left:430px
+    right:115px
 }
 
 .weather34-copyright-icons {
@@ -3604,12 +3611,6 @@ bottom-bar-textfore {
     position: absolute;
     top: 10px;
     right:10px
-}
-
-.weather34-tab-earthquake {
-    display: inline-block;   
-    position: relative;
-    top: 7px
 }
 
 .weather34-chart-icons {
@@ -3653,7 +3654,7 @@ bottom-bar-textfore {
         display: inline-block;    
         position: absolute;
         top: 10px;
-        margin-left:15%
+       right:80px
     }
    .weather34-copyright-icons-chart{ 
         display: inline-block;    
@@ -4272,7 +4273,7 @@ button-block-date {
 
 .modulecaptioncam {
     left: 165px;
-    top: -8px;
+    top: -6px;
     display: flex;
     position: relative;
     align-items: center;
