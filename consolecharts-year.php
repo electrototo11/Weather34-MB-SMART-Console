@@ -57,7 +57,7 @@
     <li2><div id=sun></div></li2> 
     <li2><div id=time-date></div></li2>  
   </ul>
-    <div class="nav-bottom">
+  <div class="nav-bottom-charts2">
     <a href="index.php" alt="previous page" title="previous page"><?php echo $backhome?></a>
 
     <a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>
@@ -91,5 +91,8 @@
       </chartpage>
 
       <a  href="info.html" data-lity alt="weather34 template info  " title="weather34 template info">
-<div class="weather34-copyright-icons-chart"><?php echo $weather34copyright;?></a></div>
- </body></html>
+<div class="weather34-copyright-icons"><?php echo $weather34copyright;?></a></div> 
+
+<div class="weather34-refreshicon">
+<a href="consolecharts-year.php" alt="refresh this dashboard " title="weather34 refresh this dashboard ">
+<?php echo $weather34refreshicon?></a></div>

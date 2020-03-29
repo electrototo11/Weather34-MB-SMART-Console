@@ -4518,12 +4518,6 @@ button-block-date {
     margin-top: 90px;
 }
 
-.almanac-word-clock {
-    position: absolute;
-    margin-top: -65px;
-    margin-left: -140px
-}
-
 .clock4 {
     display:flex;
     position: absolute;

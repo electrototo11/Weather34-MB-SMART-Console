@@ -142,7 +142,7 @@ if ($smarttv=='yes'){echo '
   <a href="weather34-tv.php" alt="weather34 smart tv version" title="weather34 tv version">
 <div class="weather34-tv-icons">'. $weather34TV.'</a></div>
 ';}
-?> 
+?>  
 
 
 

@@ -102,5 +102,8 @@
       </chartpage>
       
       <a  href="info.html" data-lity alt="weather34 template info  " title="weather34 template info">
-<div class="weather34-copyright-icons-chart"><?php echo $weather34copyright;?></a></div>
- </body></html>
+<div class="weather34-copyright-icons"><?php echo $weather34copyright;?></a></div> 
+
+<div class="weather34-refreshicon">
+<a href="consolecharts.php" alt="refresh this dashboard " title="weather34 refresh this dashboard ">
+<?php echo $weather34refreshicon?></a></div>

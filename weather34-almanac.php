@@ -66,14 +66,17 @@ include_once('livedata.php');include_once('updater-almanac.php');include('common
 
     <li2><div id=position10></div></li2> 
     <li2><div id=position11></div></li2> 
-    <li2><div id=position12></div></li2>  
-    
+    <li2><div id=position12></div></li2>      
     </ul>
 
 
-
+<?php if ($uvsensor=='yes'){;?>   
+<div class="nav-bottom">
+<?php ;}?>
+<?php if ($uvsensor=='no'){;?>   
 <div class="nav-bottom-charts2">
-<a href="index.php" alt="previous page" title="previous page"><?php echo $backhome?></a>
+<?php ;}?>
+<a href="consoledavis.php" alt="previous page" title="previous page"><?php echo $backhome?></a>
 
 <a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>
     <?php if ($theme == 'dark') { echo 'alt="Light Mode" title="Light Mode"';} else {echo 'alt="Dark Mode" title="Dark Mode"';} ?> >
@@ -146,19 +149,9 @@ include_once('livedata.php');include_once('updater-almanac.php');include('common
 <a href="weather34-almanac.php" alt="Almanac" title="Almanac">
 <div class="weather34-chart-icons"><?php echo $almanacicon?></a></div>
 
-
-<?php 
-//weather34 smart tv option
-if ($smarttv=='yes'){echo '
-  <div class="weather34-desktopicon-link" style="margin-right:-10px;margin-top:-27px"><a href="weather34-tv.php" alt="smart tv version" title="smart tv version">'.$weather34tvicon.'</a>
-</div>
-';}
-?> 
-
-  <a  href="info.html" data-lity alt="weather34 template info  " title="weather34 template info">
-<div class="weather34-copyright-icons"><?php echo $weather34copyright;?></a></div>  
-
+<a  href="info.html" data-lity alt="weather34 template info  " title="weather34 template info">
+<div class="weather34-copyright-icons"><?php echo $weather34copyright;?></a></div> 
 
 <div class="weather34-refreshicon">
-<a href="index.php" alt="refresh this dashboard " title="weather34 refresh this dashboard ">
+<a href="weather34-almanac.php" alt="refresh this dashboard " title="weather34 refresh this dashboard ">
 <?php echo $weather34refreshicon?></a></div>
