@@ -16,14 +16,12 @@ else if($weather["wind_speed"]>=12.4 && $weather["wind_units"]=="mph"){echo $lan
 else if($weather["wind_speed"]>=6.2 && $weather["wind_units"]=="mph"){echo $lang['Breezy'];}
 else if($weather["wind_speed"]>=3.1 && $weather["wind_units"]=="mph"){echo $lang['Light Winds'];}
 else if($weather["wind_speed"]>=0 && $weather["wind_units"]=="mph"){echo $lang['Calm'];}
-
 //ms
 if($weather["wind_speed"]>=8.33 && $weather["wind_units"]=="m/s"){echo $lang['Very Windy'];}
 else if($weather["wind_speed"]>=5.5 && $weather["wind_units"]=="m/s"){echo $lang['Windy'];}
 else if($weather["wind_speed"]>=2.7 && $weather["wind_units"]=="m/s"){echo $lang['Breezy'];}
 else if($weather["wind_speed"]>=1.3 && $weather["wind_units"]=="m/s"){echo $lang['Light Winds'];}
 else if($weather["wind_speed"]>=0 && $weather["wind_units"]=="m/s"){echo $lang['Calm'];}
-
 //kts
 if($weather["wind_speed"]>=16 && $weather["wind_units"]=="kts"){echo $lang['Very Windy'];}
 else if($weather["wind_speed"]>=10 && $weather["wind_units"]=="kts"){echo $lang['Windy'];}
@@ -32,9 +30,7 @@ else if($weather["wind_speed"]>=2 && $weather["wind_units"]=="kts"){echo $lang['
 else if($weather["wind_speed"]>=0 && $weather["wind_units"]=="kts"){echo $lang['Calm'];}
 ?>
 </realfeel>
-
-        <div class="button-dial-label">
-          
+        <div class="button-dial-label">          
           <?php 
           //kmh
           if($weather["wind_units"]=="km/h" && $weather["wind_speed"]<10){ echo "<icon-0-5>".$weather["wind_speed"]."</icon-0-5>";}
@@ -68,10 +64,7 @@ else if($weather["wind_speed"]>=0 && $weather["wind_units"]=="kts"){echo $lang['
           else if($weather["wind_units"]=="kts" && $weather["wind_speed"]<32){ echo "<icon-26-30>".$weather["wind_speed"]."</icon-26-30>";}
           else if($weather["wind_units"]=="kts" && $weather["wind_speed"]<37){ echo "<icon-31-35>".$weather["wind_speed"]."</icon-31-35>";}
           else if($weather["wind_units"]=="kts" && $weather["wind_speed"]<300){ echo "<icon-36-40>".$weather["wind_speed"]."</icon-36-40>";}
-          ?>
-        </div>
-      </div>
-<div>
+          ?></div></div><div>
 
 <?php //unit
 echo "<windunitindicator>";echo $weather["wind_units"];echo "</windunitindicator>";?>

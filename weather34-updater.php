@@ -72,7 +72,7 @@ class Unzipper
             if (!empty($this->zipfiles)) {
                 $GLOBALS['status'] = array('info' => 'Weather34-Update.zip or Weather34-Backup.zip files found, ready for updating or restore if required');
             } else {
-                $GLOBALS['status'] = array('info' => 'No .zip or .gz or rar files found. So only zipping functionality available.');
+                $GLOBALS['status'] = array('info' => 'No .zip files found. So only Back UP functionality available.');
             }
         }
     }
@@ -238,7 +238,8 @@ class Zipper {
 <form action="" method="POST">
   <fieldset>
     <h1>Weather<blue>34</blue> Updater For Standalone Version Only !!! </h1>
-    <label for="zipfile">Once you have downloaded the latest update file and upload the zipped update please Select that file from below <blue>example Weather34-UPDATE-XXXXX.zip</blue> for update:</label>
+    <label for="zipfile">Once you have downloaded the latest update file and upload the zipped update please Select that file from below 
+      <blue>example update-standalone-XX-XX-2020.zip </blue> for update:</label>
       <div class="weather34-box">
     <select name="zipfile" size="1" class="select">
       <?php foreach ($unzipper->zipfiles as $zip) {

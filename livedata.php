@@ -701,7 +701,14 @@ $o='Designed by weather34.com';
 $designedby='Designed by weather34.com';
 ?>
 <?php 
-$uptime=$weather["uptime"];function convert_uptime($uptime) {$dt1 = new DateTime("@0");$dt2 = new DateTime("@$uptime");  return $dt1->diff($dt2)->format('%a day(s) %h hrs %i min');}
+$nanosduptime = $meteobridgeapi[81];
+function convert($nanosduptime){$weather34nanotimeago = "";$days1 = intval(intval($nanosduptime) / (3600*24));
+$hours1 = (intval($nanosduptime) / 3600) % 24;$minutes1 = (intval($nanosduptime) / 60) % 60;
+$seconds1 = (intval($nanosduptime)) % 60;if($days1> 1){$weather34nanotimeago .= "$days1 Days ";}
+else {if($days1>0){$weather34nanotimeago .= "$days1 Day ";}if($hours1 > 1){$weather34nanotimeago .= "$hours1 hrs ";}
+else if($hours1 >=0){$weather34nanotimeago .= "$hours1 hr ";}if($minutes1 > 1){$weather34nanotimeago .= "$minutes1 mins ";}
+else if($minutes1 >=0){$weather34nanotimeago .= "$minutes1 min ";}}
+return $weather34nanotimeago;}
 // firerisk based on cumulus forum thread http://sandaysoft.com/forum/viewtopic.php?f=14&t=2789&sid=77ffab8f6f2359e09e6c58d8b13a0c3c&start=30
 $firerisk = number_format((((110 - 1.373 * $weather["humidity"] ) - 0.54 * (10.20 - $weather["temp"] )) * (124 * pow(10,(-0.0142 * $weather["humidity"] ))))/60,0);
 //wetbulb
@@ -727,4 +734,5 @@ if (is_numeric($meteobridgeapi[186]) && $meteobridgeapi[186] != '--') {
 //battery
 	$weather['indoorbattery']=$meteobridgeapi[171];
 	$weather['outdoorbattery']=$meteobridgeapi[172];
+	
 ?>

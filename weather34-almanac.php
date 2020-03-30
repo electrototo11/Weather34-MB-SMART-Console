@@ -64,9 +64,9 @@ include_once('livedata.php');include_once('updater-almanac.php');include('common
       <li><div id=clock></div></li> 
       <?php ;}?>
 
-    <li2><div id=position10></div></li2> 
-    <li2><div id=position11></div></li2> 
-    <li2><div id=position12></div></li2>      
+    <li2><div id=moon></div></li2> 
+    <li2><div id=sun></div></li2> 
+    <li2><div id=time-date></div></li2>  
     </ul>
 
 
@@ -76,7 +76,7 @@ include_once('livedata.php');include_once('updater-almanac.php');include('common
 <?php if ($uvsensor=='no'){;?>   
 <div class="nav-bottom-charts2">
 <?php ;}?>
-<a href="consoledavis.php" alt="previous page" title="previous page"><?php echo $backhome?></a>
+<a href="index.php" alt="previous page" title="previous page"><?php echo $backhome?></a>
 
 <a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>
     <?php if ($theme == 'dark') { echo 'alt="Light Mode" title="Light Mode"';} else {echo 'alt="Dark Mode" title="Dark Mode"';} ?> >

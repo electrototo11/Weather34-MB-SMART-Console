@@ -2448,12 +2448,13 @@ a {
 }
 
 .sunriset-set {
+    position: relative;
+    display: inline-block;
     color: var(--white);
     font-size: 9px;
     font-family: weathertext2;
     text-decoration: none;
-    margin-left: 140px;
-    float: none;
+    left: 140px;   
     margin-top: -15px;
     word-wrap: break-word;
     width: 300px;
