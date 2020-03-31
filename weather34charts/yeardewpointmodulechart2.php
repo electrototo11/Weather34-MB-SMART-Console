@@ -153,6 +153,9 @@
 		labelFontColor:' #888',
 		labelFontFamily: "Arial",
 		labelFontWeight: "bold",
+		labelFormatter: function ( e ) {
+        return e.value .toFixed(0) + "°" ;  
+         },	
 			 
 		crosshair: {
 			enabled: true,
@@ -185,7 +188,7 @@
 			markerType: "none",
 			name:"Hi Dewpoint",
 			dataPoints: dataPoints1,
-			yValueFormatString:"##.## <?php echo $tempunit ;?>",
+			yValueFormatString:"##.##°",
 		},
 		{
 			
@@ -198,7 +201,7 @@
 			markerType: "none",
 			name:"Lo Dewpoint",
 			dataPoints: dataPoints2,
-			yValueFormatString:"##.## <?php echo $tempunit ;?>",
+			yValueFormatString:"##.##°",
 		}
 
 		]

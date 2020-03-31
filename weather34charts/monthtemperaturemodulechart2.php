@@ -149,7 +149,7 @@ if ($tempunit='F'){
 			
 		axisY:{
 		margin: 0,
-		interval: 5,			
+		interval:'auto',			
 		lineThickness: 1,		
 		gridThickness: 1,	
 		gridDashType: "dot",	
@@ -159,6 +159,9 @@ if ($tempunit='F'){
 		labelFontColor:' #888',
 		labelFontFamily: "Arial",
 		labelFontWeight: "bold",
+		labelFormatter: function ( e ) {
+        return e.value .toFixed(0) + "°" ;  
+         },	
 			 
 		crosshair: {
 			enabled: true,
@@ -192,7 +195,7 @@ if ($tempunit='F'){
 			markerType: "none",
 			name:"Hi Temp",
 			dataPoints: dataPoints1,
-			yValueFormatString:"##.## <?php echo $tempunit ;?>",
+			yValueFormatString: "#0.#°",
 		},
 		{
 			// not used
@@ -206,7 +209,7 @@ if ($tempunit='F'){
 			markerType: "none",
 			name:"Lo Temp",
 			dataPoints: dataPoints2,
-			yValueFormatString:"##.## <?php echo $tempunit ;?>",
+			yValueFormatString: "#0.#°",
 		}
 
 		]

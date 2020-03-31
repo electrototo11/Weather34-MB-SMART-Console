@@ -28,9 +28,12 @@
 	
 	
 	$conv = 1;
-	if ($tempunit == 'F') {$conv= '(1.8) +32';}	
-	$interval = 1;
-	if ($tempunit == 'F') {$interval= '0.5';}
+	if ($tempunit  == 'F') {$conv= '(1.8) +32';}	
+	$max = 50;
+	if ($tempunit  == 'F') {$max= '120';}	
+
+	$int= '0';
+	if ($tempunit  == 'F') {$int= '5';}
 
 	//F
     if ($tempunit='F') {
@@ -165,7 +168,7 @@
 			
 		axisY:{
 		margin: 0,
-		interval:1,		
+		interval:<?php echo $int ;?>,		
 		lineThickness: 1,		
 		gridThickness: 1,	
 		gridDashType: "dot",	
@@ -176,7 +179,7 @@
 		labelFontFamily: "Arial",
 		labelFontWeight: "bold",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(0) + "°<?php echo $tempunit ;?>" ;  
+        return e.value .toFixed(0) + "°" ;  
          },	
 		crosshair: {
 			enabled: true,
@@ -211,7 +214,7 @@
 			markerType: "circle",
 			name:" Dewpoint",
 			dataPoints: dataPoints1,
-			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
+			yValueFormatString: "#0.# °",
 			
 		}
 

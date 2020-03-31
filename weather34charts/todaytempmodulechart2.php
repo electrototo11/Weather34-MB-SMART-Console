@@ -34,9 +34,10 @@
 	$conv = 1;
 	if ($tempunit  == 'F') {$conv= '(1.8) +32';}	
 	$max = 50;
-	if ($tempunit  == 'F') {$max= '120';}	
-	$interval = 5;
-	if ($tempunit  == 'F') {$interval= '10';}
+	if ($tempunit  == 'F') {$max= '120';}		
+
+	$int= '0';
+	if ($tempunit  == 'F') {$int= '5';}	
 
 	//F
 	if ($tempunit='F'){
@@ -46,7 +47,7 @@
 		else if ($weather["temp_avgtoday"]<=77){$tempcolor= '#ec5732';}
 		else if ($weather["temp_avgtoday"]<=150){$tempcolor= '#d35f50';}}
 		//C
-		if ($tempunit='F'){
+		if ($tempunit='C'){
 		if ($weather["temp_avgtoday"]<=5){$tempcolor= '#4ba0ad';}
 		else if ($weather["temp_avgtoday"]<=10){$tempcolor= '#9bbc2f';}
 		else if ($weather["temp_avgtoday"]<=15){$tempcolor= '#e6a141';}
@@ -183,8 +184,7 @@
 			
 		axisY:{
 		margin: 0,
-		interval:1,
-		//maximum: <?php echo $max ;?>,		
+		interval:<?php echo $int ;?>,			
 		lineThickness: 1,		
 		gridThickness: 1,	
 		gridDashType: "dot",	
@@ -195,7 +195,7 @@
 		labelFontFamily: "Arial",
 		labelFontWeight: "bold",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(0) + "°<?php echo $tempunit ;?>" ;  
+        return e.value .toFixed(0) + "°" ;  
          },	
 		crosshair: {
 			enabled: true,
@@ -230,7 +230,7 @@
 			markerType: "circle",
 			name:"Temperature",
 			dataPoints: dataPoints1,
-			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
+			yValueFormatString: "#0.# °",
 			
 		}
 		,
@@ -246,7 +246,7 @@
 			markerType: "circle",
 			name:"- - - Real Feel",
 			dataPoints: dataPoints2,
-			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
+			yValueFormatString: "#0.# °",
 			
 		}
 		

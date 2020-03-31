@@ -23,6 +23,9 @@
 	$interval = 1;
 	if ($tempunit == 'F') {$interval= '0.5';}
 	$weatherfile = date('F');	
+
+
+
 	
 
 //F
@@ -143,7 +146,7 @@ if ($tempunit='F'){
 			
 		axisY:{
 		margin: 0,
-		interval: 5,			
+		interval:'auto',			
 		lineThickness: 1,		
 		gridThickness: 1,	
 		gridDashType: "dot",	
@@ -153,6 +156,9 @@ if ($tempunit='F'){
 		labelFontColor:' #888',
 		labelFontFamily: "Arial",
 		labelFontWeight: "bold",
+		labelFormatter: function ( e ) {
+        return e.value .toFixed(0) + "°" ;  
+         },	
 			 
 		crosshair: {
 			enabled: true,
@@ -186,7 +192,7 @@ if ($tempunit='F'){
 			markerType: "none",
 			name:"Hi Dewpoint",
 			dataPoints: dataPoints1,
-			yValueFormatString:"##.## <?php echo $tempunit ;?>",
+			yValueFormatString:"##.##°",
 		},
 		{
 			
@@ -200,7 +206,7 @@ if ($tempunit='F'){
 			markerType: "none",
 			name:"Lo Dewpoint",
 			dataPoints: dataPoints2,
-			yValueFormatString:"##.## <?php echo $tempunit ;?>",
+			yValueFormatString:"##.##°",
 		}
 
 		]
