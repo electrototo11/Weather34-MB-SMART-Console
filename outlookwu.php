@@ -1111,7 +1111,7 @@ blueu,yellowu,orangeu,greenu,redu,purpleu{color:#fff;border-radius:2px;padding:0
 canvas,img,iframe,svg{image-rendering:auto;}
 .mbsmartlogo{position:relative;float:right;top:25px;}
 </style>
-<div class="weather34darkbrowser" url="Weather Underground Forecast For <?php echo $stationlocation ?>"></div>  
+<div class="weather34darkbrowser" url="Weather Underground Forecast For <?php echo $stationName ?>"></div>  
 <main class="grid">
   <article>  
    <actualt><?php echo $wuskydayTime ?></actualt>
