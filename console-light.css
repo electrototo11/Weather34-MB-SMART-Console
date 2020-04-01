@@ -3099,7 +3099,10 @@ top: 35px;
     margin-left:-1px
 }
 infoicon{
-    color:var(--blue);    
+    color:var(--blue);   
+    position:absolute;
+    margin-top:-20px;
+    left:-20px
 }
 
 realfeel {
