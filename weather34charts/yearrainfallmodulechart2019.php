@@ -15,30 +15,11 @@
 	
 	include('preload.php');include('../console-settings.php');
 	$weatherfile = date('F');
-	$file_live=file_get_contents("../mbridge/MBrealtimeupload.txt");
-	$meteobridgeapi=explode(" ",$file_live);
-	$weather["rain_today"] = $meteobridgeapi[9];
-
 	$conv = 1;
-	if ($rainunit == "in") {$conv= 0.0393701;}	
-	else if ($rainunit == "mm"){$conv= 1;}
-	$interval = 1;
-	if ($rainunit == "in") {$interval= 0.5;}	
-	else if ($rainunit == "mm"){$interval= 5;}
-
-//interval Y
-$raininterval= $weather["rain_today"];
-if ($raininterval>=40 ){$raininterval='10';}
-else if ($raininterval>=20 ){$raininterval='5';}
-else if ($raininterval>=10 ){$raininterval='2';}
-else if ($raininterval>=5 ){$raininterval='1';}
-else if ($raininterval>=0.1 ){$raininterval='.5';}
-else if ($raininterval==0 ){$raininterval='1';}
-//Inches
-if ($raininterval>=1 && $rainunit == 'in'){$raininterval='2';}
-else if ($raininterval>=0.5 && $rainunit == 'in'){$raininterval='2.5';}
-else if ($raininterval>=0 && $rainunit == 'in'){$raininterval='1';}
-	
+	if ($weather["temp_units"]=='F') {$conv= 0.0393701;}	
+	else if ($weather["temp_units"]=='C'){$conv= 1;}
+	$int = 5;
+	if ($weather["temp_units"]=='F') {$int= 0.25;}	
 	
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -140,7 +121,7 @@ else if ($raininterval>=0 && $rainunit == 'in'){$raininterval='1';}
 			
 		axisY:{
 		margin: 0,
-		interval: 5,			
+		interval:<?php echo $int?>,			
 		lineThickness: 1,		
 		gridThickness: 1,	
 		gridDashType: "dot",	
@@ -151,7 +132,7 @@ else if ($raininterval>=0 && $rainunit == 'in'){$raininterval='1';}
 		labelFontFamily: "Arial",
 		labelFontWeight: "bold",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(<?php if ($rainunit == 'mm'){echo '0';} else echo '1';?>);  
+        return e.value .toFixed(<?php if ($weather["rain_units"] == 'mm'){echo '0';} else echo '1';?>);  
          },		 
 		crosshair: {
 			enabled: true,
@@ -185,7 +166,7 @@ else if ($raininterval>=0 && $rainunit == 'in'){$raininterval='1';}
 			markerType: "none",
 			name:"Rainfall",
 			dataPoints: dataPoints1,
-			yValueFormatString:"##.## <?php echo $rainunit ;?>",
+			yValueFormatString:"##.## <?php echo $weather["rain_units"] ;?>",
 		}
 
 		]

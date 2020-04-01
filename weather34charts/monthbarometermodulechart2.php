@@ -13,26 +13,18 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 		
-	include('preload.php');include('../console-settings.php');
-	$weatherfile = date('F');
-	$conv = 1;
-	if ($pressureunit == 'inHg') {$conv= '0.02953';}
-	else if ($pressureunit  == "mb") {$conv= '1';}
-	else if ($pressureunit  == "hPa") {$conv= '1';}
-	else if ($weather["barometer_units"]='mmHG') {$conv= '0.75006157584566';}
-	else $conv = 1;		
-	$int = 10;
-	if ($pressureunit == 'inHg') {$int= '0.25';}	
-	else $int = 5;	
-	if ($pressureunit == 'inHg') {$ymax= '31.6';}	
-	$ymax = 1;	
-	$limit = '0';	
-
-	if ($pressureunit == 'inHg') {$unit= 'inHg';}
-	else if ($pressureunit == 'hPa') {$unit= 'hPa';}
-	else if ($pressureunit == 'mb') {$unit= 'mb';}
-	else if ($weather["barometer_units"]='mmHG') {$unit= 'mmHG';}
+	include('preload.php');
+	$weatherfile = date('F');	
+	$conv = 0.02953;	
+	if ($weather["temp_units"]=='C') {$conv= 1 ;}	
+	$int = 5;	
+	if ($weather["temp_units"]=='F') {$int= 0.25;}	
 	
+
+	if ($weather["barometer_units"] == 'inHg') {$unit= 'inHg';}
+	else if ($weather["barometer_units"] == 'hPa') {$unit= 'hPa';}
+	else if ($weather["barometer_units"] == 'mb') {$unit= 'mb';}
+	else if ($weather["barometer_units"]=='mmHG') {$unit= 'mmHG';}
 	
 	
     echo '
@@ -146,7 +138,7 @@
 		labelFontFamily: "Arial",
 		labelFontWeight: "bold",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(<?php if ($pressureunit == 'hPa' || $pressureunit == 'mb' ){echo '0';} else echo '1';?>) ;
+        return e.value .toFixed(<?php if ($weather["temp_units"]=='F'){echo '1';} else echo '0';?>) ;
          },	
 			 
 		crosshair: {
@@ -181,7 +173,7 @@
 			markerType: "none",
 			name:"Hi Barometer",
 			dataPoints: dataPoints1,
-			yValueFormatString:"##.## <?php echo $pressureunit ;?>",
+			yValueFormatString:"##.## <?php echo $weather["barometer_units"] ;?>",
 		},
 		{
 			// not used
@@ -194,7 +186,7 @@
 			markerType: "none",
 			name:"Lo Barometer",
 			dataPoints: dataPoints2,
-			yValueFormatString:"##.## <?php echo $pressureunit ;?>",
+			yValueFormatString:"##.## <?php echo $weather["barometer_units"] ;?>",
 		}
 
 		]

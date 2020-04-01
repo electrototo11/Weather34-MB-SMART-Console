@@ -15,23 +15,16 @@
 	
 	
 	include('preload.php');include('../console-settings.php');
-	$conv = 1;
-	if ($pressureunit == 'inHg') {$conv= '0.02953';}
-	else if ($pressureunit  == "mb") {$conv= '1';}
-	else if ($pressureunit  == "hPa") {$conv= '1';}
-	else if ($weather["barometer_units"]='mmHG') {$conv= '0.75006157584566';}
-	else $conv = 1;		
-	$int = 10;
-	if ($pressureunit == 'inHg') {$int= '0.25';}	
-	else $int = 5;	
-	if ($pressureunit == 'inHg') {$ymax= '31.6';}	
-	$ymax = 1;	
-	$limit = '0';	
+	$conv = 0.02953;	
+	if ($weather["temp_units"]=='C') {$conv= 1 ;}	
+	$int = 1;	
+	if ($weather["temp_units"]=='F') {$int= 0.25;}	
+	
 
-	if ($pressureunit == 'inHg') {$unit= 'inHg';}
-	else if ($pressureunit == 'hPa') {$unit= 'hPa';}
-	else if ($pressureunit == 'mb') {$unit= 'mb';}
-	else if ($weather["barometer_units"]='mmHG') {$unit= 'mmHG';}
+	if ($weather["barometer_units"] == 'inHg') {$unit= 'inHg';}
+	else if ($weather["barometer_units"] == 'hPa') {$unit= 'hPa';}
+	else if ($weather["barometer_units"] == 'mb') {$unit= 'mb';}
+	else if ($weather["barometer_units"]=='mmHG') {$unit= 'mmHG';}
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -141,7 +134,7 @@
 		labelFontFamily: "Arial",
 		labelFontWeight: "bold",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(<?php if ($pressureunit=='inHg'){echo '1';} else echo '0';?>); 
+			return e.value .toFixed(<?php if ($weather["temp_units"]=='F'){echo '1';} else echo '0';?>) ;
          },		 
 		crosshair: {
 			enabled: true,
@@ -178,7 +171,7 @@
 			markerBorderColor: 'red',
 			dataPoints: dataPoints1,
 			
-			yValueFormatString: "##.## <?php echo $pressureunit ;?>",
+			yValueFormatString: "##.## <?php echo $weather["barometer_units"] ;?>",
 		},
 		{
 			//not using in daily barometer

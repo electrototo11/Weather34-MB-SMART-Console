@@ -19,18 +19,18 @@
 	$weather["rain_today"] = $meteobridgeapi[9];
     //CONVERT
 	$conv = 1;
-	if ($rainunit == 'in') {$conv= '0.0393701';}	
-	else if ($rainunit == 'mm'){$conv= '1';}
+	if ($weather["rain_units"] == 'in') {$conv= '0.0393701';}	
+	else if ($weather["rain_units"] == 'mm'){$conv= '1';}
 	//interval Y
 	$raininterval= $weather["rain_today"];
-	if ($raininterval>=30 && $rainunit == 'mm'){$raininterval='10';}
-	else if ($raininterval>=10 && $rainunit == 'mm'){$raininterval='5';}
-	else if ($raininterval>=5 && $rainunit == 'mm'){$raininterval='2';}
-	else if ($raininterval>=0 && $rainunit == 'mm'){$raininterval='1';}
+	if ($raininterval>=30 && $weather["rain_units"] == 'mm'){$raininterval='10';}
+	else if ($raininterval>=10 && $weather["rain_units"] == 'mm'){$raininterval='5';}
+	else if ($raininterval>=5 && $weather["rain_units"] == 'mm'){$raininterval='2';}
+	else if ($raininterval>=0 && $weather["rain_units"] == 'mm'){$raininterval='1';}
 	//Inches
-	if ($raininterval>=1 && $rainunit == 'in'){$raininterval='2';}
-	else if ($raininterval>=0.5 && $rainunit == 'in'){$raininterval='2.5';}
-	else if ($raininterval>=0 && $rainunit == 'in'){$raininterval='1';}
+	if ($raininterval>=1 && $weather["rain_units"] == 'in'){$raininterval='2';}
+	else if ($raininterval>=0.5 && $weather["rain_units"] == 'in'){$raininterval='2.5';}
+	else if ($raininterval>=0 && $weather["rain_units"] == 'in'){$raininterval='1';}
 	
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -147,7 +147,7 @@
 		labelFontFamily: "Arial",
 		labelFontWeight: "bold",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(<?php if ($rainunit == 'mm'){echo '0';} else echo '1';?>) + " <?php echo $rainunit ;?> " ;  
+        return e.value .toFixed(<?php if ($weather["rain_units"] == 'mm'){echo '0';} else echo '1';?>) + " <?php echo $weather["rain_units"] ;?> " ;  
          },		 
 		 crosshair: {
 			enabled: true,
@@ -178,9 +178,9 @@
 			legendMarkerType: "circle",
 			lineThickness: 0,
 			markerType: "circle",
-			name:" Rainfall Accumulation <?php echo $rainunit ;?>",
+			name:" Rainfall Accumulation <?php echo $weather["rain_units"] ;?>",
 			dataPoints: dataPoints1,
-			yValueFormatString: "##.## <?php echo $rainunit ;?>",
+			yValueFormatString: "##.## <?php echo $weather["rain_units"] ;?>",
 			
 		},
 		{

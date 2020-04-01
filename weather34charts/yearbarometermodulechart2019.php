@@ -15,22 +15,16 @@
 	
 	include('preload.php');include('../console-settings.php');
 	$conv = 1;
-	if ($pressureunit == 'inHg') {$conv= '0.02953';}
-	else if ($pressureunit  == "mb") {$conv= '1';}
-	else if ($pressureunit  == "hPa") {$conv= '1';}
-	else if ($weather["barometer_units"]='mmHG') {$conv= '0.75006157584566';}
-	else $conv = 1;		
-	$int = 10;
-	if ($pressureunit == 'inHg') {$int= '0.25';}	
-	else $int = 5;	
-	if ($pressureunit == 'inHg') {$ymax= '31.6';}	
-	$ymax = 1;	
-	$limit = '0';	
+	$conv = 0.02953;	
+	if ($weather["temp_units"]=='C') {$conv= 1 ;}	
+	$int = 10;	
+	if ($weather["temp_units"]=='F') {$int= 0.25;}	
+	
 
-	if ($pressureunit == 'inHg') {$unit= 'inHg';}
-	else if ($pressureunit == 'hPa') {$unit= 'hPa';}
-	else if ($pressureunit == 'mb') {$unit= 'mb';}
-	else if ($weather["barometer_units"]='mmHG') {$unit= 'mmHG';}
+	if ($weather["barometer_units"] == 'inHg') {$unit= 'inHg';}
+	else if ($weather["barometer_units"] == 'hPa') {$unit= 'hPa';}
+	else if ($weather["barometer_units"] == 'mb') {$unit= 'mb';}
+	else if ($weather["barometer_units"]=='mmHG') {$unit= 'mmHG';}
 	
 	
     echo '
@@ -62,7 +56,7 @@
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
-				if ( rowData[9] >-100)		
+				if ( rowData[9] >25)		
 					dataPoints1.push({label:rowData[0],y:parseFloat(rowData[9]*<?php echo $conv ?>)});
 					
 					
@@ -76,7 +70,7 @@
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
-				if ( rowData[10] >-100)
+				if ( rowData[10] >25)
 				dataPoints2.push({label: rowData[0],y:parseFloat(rowData[10]*<?php echo $conv ?>)});
 					
 				
@@ -145,7 +139,7 @@
 		labelFontFamily: "Arial",
 		labelFontWeight: "bold",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(<?php if ($pressureunit=='inHg'){echo '1';} else echo '0';?>); 
+			return e.value .toFixed(<?php if ($weather["temp_units"]=='F'){echo '1';} else echo '0';?>) ;
          },		 
 		crosshair: {
 			enabled: true,
@@ -179,7 +173,7 @@
 			markerType: "none",
 			name:"Hi Barometer",
 			dataPoints: dataPoints1,
-			yValueFormatString:"##.## <?php echo $pressureunit ;?>",
+			yValueFormatString:"##.## <?php echo $weather["barometer_units"] ;?>",
 		},
 		{
 			// not used
@@ -192,7 +186,7 @@
 			markerType: "none",
 			name:"Lo Barometer",
 			dataPoints: dataPoints2,
-			yValueFormatString:"##.## <?php echo $pressureunit ;?>",
+			yValueFormatString:"##.## <?php echo $weather["barometer_units"] ;?>",
 		}
 
 		]

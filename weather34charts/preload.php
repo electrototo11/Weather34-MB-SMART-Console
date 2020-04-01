@@ -1,1 +1,1 @@
-<?php include('../console-settings.php');?><script rel="preload" src='canvasJs.js' as="script"></script>
+<?php include('../livedata.php');?><script rel="preload" src='canvasJs.js' as="script"></script>

@@ -17,9 +17,15 @@
 	include('preload.php');include('../console-settings.php');
 	$weatherfile = 2019;
 	$conv = 1;
-	if ($windunit == 'mph') {$conv= '2.23694';}
-	else if ($windunit == 'm/s') {$conv= '1';}
-	else if ($windunit == 'km/h'){$conv= '3.6';}
+	if ($weather["wind_units"] == 'mph') {$conv= '2.23694';}
+	else if ($weather["wind_units"] == 'm/s') {$conv= '1';}
+	else if ($weather["wind_units"] == 'kts') {$conv= '1.94384';}
+	else if ($weather["wind_units"] == 'km/h'){$conv= '3.6';}
+
+		if ($weather["wind_units"] == 'mph') { $unit= 'mph';}
+		if ($weather["wind_units"] == 'm/s') { $unit= 'm/s';}
+		if ($weather["wind_units"] == 'km/h'){$unit= 'kmh';}
+		if ($weather["wind_units"] == 'kts') {$unit= 'kts';}
 	
 	
 	
@@ -134,7 +140,7 @@
 		labelFontFamily: "Arial",
 		labelFontWeight: "bold",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(<?php if ($pressureunit=='inHg'){echo '1';} else echo '0';?>); 
+        return e.value .toFixed(0); 
          },		 
 		crosshair: {
 			enabled: true,
@@ -144,7 +150,7 @@
 			labelFontSize:8,
 			labelBackgroundColor: "#44a6b5",
 			labelMaxWidth: 60,
-			valueFormatString: "#",
+			valueFormatString: "###",
 		}	 
       },
 	  
@@ -167,7 +173,7 @@
 			markerType: "circle",
 			name:"Avg Wind Speed <?php echo $windunit;?>",
 			dataPoints: dataPoints1,
-			yValueFormatString:"##.#",
+			yValueFormatString:"##",
 		},
 		{
 			// not used

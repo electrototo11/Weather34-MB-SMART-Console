@@ -17,9 +17,15 @@
 	include('preload.php');include('../console-settings.php');
 	$weatherfile = date('F');
 	$conv = 1;
-	if ($windunit == 'mph') {$conv= '2.23694';}
-	else if ($windunit == 'm/s') {$conv= '1';}
-	else if ($windunit == 'km/h'){$conv= '3.6';}
+	if ($weather["wind_units"] == 'mph') {$conv= '2.23694';}
+	else if ($weather["wind_units"] == 'm/s') {$conv= '1';}
+	else if ($weather["wind_units"] == 'kts') {$conv= '1.94384';}
+	else if ($weather["wind_units"] == 'km/h'){$conv= '3.6';}
+
+		if ($weather["wind_units"] == 'mph') { $unit= 'mph';}
+		if ($weather["wind_units"] == 'm/s') { $unit= 'm/s';}
+		if ($weather["wind_units"] == 'km/h'){$unit= 'kmh';}
+		if ($weather["wind_units"] == 'kts') {$unit= 'kts';}
 	
 	
 	
@@ -163,7 +169,7 @@
 			legendMarkerType: "circle",
 			lineThickness: 0,
 			markerType: "circle",
-			name:"Max Wind Speed <?php echo $windunit;?>",
+			name:"Max Wind Speed <?php echo $weather["wind_units"];?>",
 			dataPoints: dataPoints1,
 			yValueFormatString:"##.#",
 		},
