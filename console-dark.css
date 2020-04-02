@@ -3654,7 +3654,7 @@ bottom-bar-textfore {
     display: inline-block;    
     position: absolute;
     top: 10px;
-    margin-left:430px
+    right:120px
 }
 
 .weather34-copyright-icons {
@@ -3700,8 +3700,14 @@ bottom-bar-textfore {
     top: 7px
 }
 
+.weather34-infoicon {
+    position: absolute;
+    right: 80px;
+    top: 3px;
+}
+
 @media screen and (max-width:960px) {
-    chartpage,.weather34-desktopicon-link,.weather34-sphere-red,.weather34-sphere-orangefore,.weather34-sphere-green,.desktoplink,bottom-bar-textfore {
+    chartpage,.weather34-desktopicon-link,.weather34-sphere-red,.weather34-sphere-orangefore,.weather34-sphere-green,.desktoplink,.weather34-infoicon,bottom-bar-textfore {
         display: none
     }
 
@@ -3709,7 +3715,7 @@ bottom-bar-textfore {
         display: inline-block;    
         position: absolute;
         top: 10px;
-        margin-left:15%
+        right:80px
     }
    .weather34-copyright-icons-chart{ 
         display: inline-block;    

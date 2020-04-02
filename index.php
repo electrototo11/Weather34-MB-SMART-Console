@@ -145,6 +145,9 @@ if ($smarttv=='yes'){echo '
 ?>  
 
 
+<div class="weather34-infoicon">
+<a  href="weather34-template-legend.php" data-lity alt="weather34 template legend " title="weather34 template legend">  
+  <div class="weather34-unit-icon"><?php echo $weather34i;?></div></a></div>
 
 <a  href="info.html" data-lity alt="weather34 template info  " title="weather34 template info">
 <div class="weather34-copyright-icons"><?php echo $weather34copyright;?></a></div>

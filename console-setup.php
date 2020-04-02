@@ -62,7 +62,7 @@ $webcamurl   = "' . $_POST["webcamurl"] . '";
 $displayalmanac    = "' . $_POST['displayalmanac'] . '";
 $uvsensor    = "' . $_POST['uvsensor'] . '";
 $mbyear    = "' . $_POST['mbyear'] . '";
-
+$mbplatform   = "' . $_POST["mbplatform"] . '";
 
 $wuapikey = "' . $_POST["wuapikey"] . '";
 $wuapiunit   = "' . $_POST["wuapiunit"] . '";
@@ -1201,7 +1201,30 @@ What year does your records in meteobridge begin </div>
 
 <P>
 
+<div class="weathersectiontitle">
+                                                                <svg id="i-code" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                                    <path d="M10 9 L3 17 10 25 M22 9 L29 17 22 25 M18 7 L14 27" />
+                                                                </svg>
 
+                                                                Which Meteobridge Platform</div>
+                                                            <p>
+                                                                <div class="stationvalue">
+                                                                    Which Meteobridge Platform Do Yo Use</div>
+                                                                <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#F05E40" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                                    <path d="M12 30 L24 16 12 2" />
+                                                                </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                                    <path d="M30 12 L16 24 2 12" />
+                                                                </svg>
+
+                                                                <label name="mbplatform"></label>
+                                                                <select id="mbplatform" name="mbplatform" class="chooseapi">
+                                                                    <option><?php echo $mbplatform; ?></option>
+                                                                    <option>Nano</option>                                                                    
+                                                                    <option>Pro</option>
+                                                                    <option>TPlink</option>
+                                                                </select>
+                                                                <br><br>
+                                                                <div class="seperator"></div>
 
 
 <div class="weathersectiontitle">

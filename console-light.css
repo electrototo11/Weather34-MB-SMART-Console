@@ -3606,7 +3606,13 @@ bottom-bar-textfore {
     display: inline-block;    
     position: absolute;
     top: 10px;
-    right:80px
+    right:120px
+}
+
+.weather34-infoicon {
+    position: absolute;
+    right: 80px;
+    top: 3px;
 }
 
 .weather34-copyright-icons {
@@ -3661,9 +3667,11 @@ bottom-bar-textfore {
 }
 
 
+
+
 @media screen and (max-width:960px) {
 
-    chartpage,.weather34-desktopicon-link,.weather34-sphere-red,.weather34-sphere-orangefore,.weather34-sphere-green,.desktoplink,bottom-bar-textfore {
+    chartpage,.weather34-desktopicon-link,.weather34-sphere-red,.weather34-sphere-orangefore,.weather34-sphere-green,.desktoplink,.weather34-infoicon,bottom-bar-textfore {
         display: none
     }
 
