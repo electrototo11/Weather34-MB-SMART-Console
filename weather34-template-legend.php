@@ -38,7 +38,7 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
   -webkit-border-radius:4px;
   border-radius:4px;
   background:0;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
-  height:280px ;
+  height:320px ;
   overflow:hidden
 }
  a{color:#aaa;text-decoration:none;font-size:1.25em} 
@@ -62,6 +62,7 @@ border:solid 2px #4b545c;border-bottom:solid 15px #4b545c;-webkit-border-radius:
 .batterypower{position:absolute;margin-left:103px;top:74px}
 
 icontext{vertical-align:top;position:relative;top:8px;color:#aaa }
+icontext2{vertical-align:top;position:relative;top:0px;color:#aaa }
 icontextrefresh{position:relative;top:8px;color:#aaa }
 .theme-icon { 
   position: relative;
@@ -117,8 +118,8 @@ if($mbplatform=='TPlink'){echo '<img src="images/TPLINK.svg" width="120px"class=
     <?php echo $almanacicon?> <icontext>Almanac Data </icontext><br><br>
 
     <?php echo $weather34refreshicon?> <icontext>Refresh Page </icontext><br>
-         
-    
+    &nbsp; &nbsp;<?php echo $wireless?> <icontext2>Data Online </icontext2><br>
+    &nbsp; &nbsp;<?php echo $wirelessoffline?> <icontext2>Data Offline (not updated last 15 min)</icontext2><br>
 
 </article> 
 
