@@ -114,7 +114,7 @@ if($mbplatform=='TPlink'){echo '<img src="images/TPLINK.svg" width="120px"class=
     <?php echo $weather34TV?> <icontext>SMART TV Layout</icontext>
     <br><br>
     <?php echo $charts?> <icontext>Day/Month/Year Charts</icontext><br>
-    <?php echo $almanacicon?> <icontext>Alamanac Data </icontext><br><br>
+    <?php echo $almanacicon?> <icontext>Almanac Data </icontext><br><br>
 
     <?php echo $weather34refreshicon?> <icontext>Refresh Page </icontext><br>
          
