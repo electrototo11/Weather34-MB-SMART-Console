@@ -61,7 +61,17 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 border:solid 2px #4b545c;border-bottom:solid 15px #4b545c;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;padding-right:3px;opacity:.8}
 .batterypower{position:absolute;margin-left:103px;top:74px}
 
-icontext{vertical-align:top;position:relative;top:8px }
+icontext{vertical-align:top;position:relative;top:8px;color:#aaa }
+icontextrefresh{position:relative;top:8px;color:#aaa }
+.theme-icon { 
+  position: relative;
+    display: inline-block; 
+    transform:rotate(90deg)  ;
+    -webkit-transform:rotate(90deg)  ;
+    -moz-transform:rotate(90deg)  ;
+    -ms-transform:rotate(90deg)  ;
+    -o-transform:rotate(90deg)  ;
+}
 
 </style>
 <div class="weather34darkbrowser" url="Template | Hardware Info"></div>
@@ -98,12 +108,15 @@ if($mbplatform=='TPlink'){echo '<img src="images/TPLINK.svg" width="120px"class=
 
 <article>  
    <div class=actualt>ICONS Others</div>
+   <?php echo "<div class='theme-icon'>".$weather34theme."</div>"?> <icontext>Theme Dark/Light</icontext><br>
    <?php echo $weatherforecast?> <icontext>Forecast 5 Day</icontext><br>
     <?php echo $weatherforecast2?> <icontext>Forecast 5 Day Text Summary</icontext><br>
     <?php echo $weather34TV?> <icontext>SMART TV Layout</icontext>
     <br><br>
     <?php echo $charts?> <icontext>Day/Month/Year Charts</icontext><br>
-    <?php echo $almanacicon?> <icontext>Alamanac Data </icontext><br>
+    <?php echo $almanacicon?> <icontext>Alamanac Data </icontext><br><br>
+
+    <?php echo $weather34refreshicon?> <icontext>Refresh Page </icontext><br>
          
     
 
