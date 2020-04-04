@@ -44,9 +44,9 @@ $webcamurl   = "https://camo.githubusercontent.com/5715cfae1f9df766ba0fd8528ff13
 $displayalmanac    = "yes";
 $uvsensor    = "no";
 $mbyear    = "2018";
-$mbplatform   = "Pro Red";
-$brand  = "no";
-$model  = "Envoy 8X";
+$mbplatform   = "NanoSD";
+$brand  = "yes";
+$model  = "Vantage Pro2 Plus";
 $installed  = "2015-09-07";
 
 $wuapikey = "123456789xxxxxxx";

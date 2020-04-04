@@ -326,22 +326,36 @@ else {echo '
  <?php ;}?>  
 </main>
 
-
 <main class="grid">
-<article >  
+  <article >  
 <div class="info-1"> 
-CSS/SVG/PHP scripts were developed by <a href="https://weather34.com/homeweatherstation" target="_blank" title="https://weather34.com" alt="https://weather34.com" class="info2a">weather34.com</a> © 2015-<?php echo date('Y');?>
+<?php echo $info?> Meteobridge Firmware Update Check 
+<a href="https://www.meteobridge.com/wiki/index.php/Forum" target="_blank" title="https://www.meteobridge.com/wiki/index.php/Forum" alt="https://www.meteobridge.com/wiki/index.php/Forum" class="info2a">
+Here</a>
 </div>
 
 <div class="info-2"> 
-Data Charts compiled with <a href="https://canvasjs.com/" target="_blank" title="https://canvasjs.com/" alt="https://canvasjs.com/" class="info2a">CanvasJs.com</a> v2.3.1 GA (CC BY-NC 3.0) Non-Commercial-Version. 
+<?php echo $info?> Meteobridge Info Page 
+<a href="https://www.meteobridge.com/wiki/index.php/Home" target="_blank" title="https://www.meteobridge.com/wiki/index.php/Home" alt="https://www.meteobridge.com/wiki/index.php/Home" class="info2a">Here</a> 
 </div>
-<a href="https://weather34.com/homeweatherstation" target="_blank" title="https://weather34.com" alt="https://weather34.com" >
-<img src="images/weather34logo.svg" width="90px" class="weather34logosvg" alt="weather34 svg logo" title="weather34 svg logo"></a>
+</article>
 
-  
-  
-  
-  </article>
+<article >  
+<div class="info-1"> 
+<?php echo $info?> Weather<blue>34</blue> Template Website
+<a href="https://weather34.com/homeweatherstation" target="_blank" title="https://weather34.com" alt="https://weather34.com" class="info2a">
+Here</a> 
+</div>
 
+<div class="info-2"> 
+<?php echo $info?> Weather<blue>34</blue> Template Guide
+<a href="https://weather34.com/homeweatherstation/weather34-standalone.html" target="_blank" title="https://weather34.com/homeweatherstation/weather34-standalone.html" alt="https://weather34.com/homeweatherstation/weather34-standalone.html" class="info2a">Here</a> 
+</div>
+</article>
+<article >  
+<div class="info-1"> 
+CSS/SVG/PHP scripts were developed by <a href="https://weather34.com/homeweatherstation" target="_blank" title="https://weather34.com" alt="https://weather34.com" class="info2a">
+weather34.com</a> © 2015-<?php echo date('Y');?>
+</div>  
+</article>
 </main>
