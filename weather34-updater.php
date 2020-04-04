@@ -27,6 +27,7 @@
 
 
 <?php
+error_reporting(0);
 /**
  * The Unzipper extracts .zip or .rar archives and .gz files on webservers.
  * It's handy if you do not have shell access. E.g. if you want to upload a lot
