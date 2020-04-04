@@ -9,15 +9,33 @@
 	a{text-transform:none;text-decoration:none;color:#262830}
 	h1{font-size:1.2em;font-weight:500}
 	label{display:block;margin-top:10px;-webkit-appearance:none}
-	fieldset{border:0;background-color:#262830;margin:10px 0 10px 0;-webkit-appearance:none;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 1px rgba(0,0,0,.25),0 2px 2px rgba(0,0,0,.2),0 4px 4px rgba(0,0,0,.15);box-shadow:0 1px 1px rgba(0,0,0,.25),0 2px 2px rgba(0,0,0,.2),0 4px 4px rgba(0,0,0,.15);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-	.status{margin:0;margin-top:10px;margin-bottom:10px;padding:10px;font-size:1em;background:#b83603;border:0;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 1px rgba(0,0,0,.25),0 2px 2px rgba(0,0,0,.2),0 4px 4px rgba(0,0,0,.15);box-shadow:0 1px 1px rgba(0,0,0,.25),0 2px 2px rgba(0,0,0,.2),0 4px 4px rgba(0,0,0,.15);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-	.status--ERROR{background-color:#b8362d;color:#fff;font-size:120%}
+  fieldset{border:0;background-color:#262830;margin:10px 0 10px 0;-webkit-appearance:none;-webkit-border-radius:3px;border-radius:3px;
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,.25),0 2px 2px rgba(0,0,0,.2),0 4px 4px rgba(0,0,0,.15);box-shadow:0 1px 1px rgba(0,0,0,.25),0 2px 2px rgba(0,0,0,.2),0 4px 4px rgba(0,0,0,.15);
+    -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+  
+  .select{
+    background-color:#555;
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,.25),0 2px 2px rgba(0,0,0,.2),0 4px 4px rgba(0,0,0,.15);
+    box-shadow:0 1px 1px rgba(0,0,0,.25),0 2px 2px rgba(0,0,0,.2),0 4px 4px rgba(0,0,0,.15);
+    -webkit-appearance:none;
+    width:350px  ;height:2em;
+    font-size:16px;
+    padding:5px;
+    color:#fff;
+    border:0;
+  }
+    .status{margin:0;margin-top:10px;margin-bottom:10px;padding:10px;font-size:1em;
+    border:0;-webkit-border-radius:3px;border-radius:3px;
+    background-color:#E0E5EC;
+  box-shadow: 6px 6px 6px rgb(163,177,198,0.6), -6px -6px 6px    rgba(255,255,255, 0.5);  
+    -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:#444}
+	.status--ERROR{background-color:#d87040;color:#fff;font-size:120%}
 	.status--SUCCESS{background-color:#01a4b5;font-weight:700;color:#fff;font-size:120%}.small{font-size:.7rem;font-weight:400}
 	.form-field{border:0;padding:8px;width:280px;-webkit-appearance:none;-webkit-border-radius:3px;border-radius:3px;}
   .info{margin-top:0;font-size:90%;color:silver}
-  .submit{background-color:#01a4b5;border:0;color:#fff;font-size:15px;padding:10px 24px;margin:20px 0 20px 0;text-decoration:none;-webkit-appearance:none;-webkit-border-radius:3px;border-radius:3px}.submit:hover{background-color:#b83603;cursor:pointer;-webkit-appearance:none}.version{color:#555;font-size:70%}orange{color:#01a4b5}blue{color:#01a4b5}blue1{color:#fff;width:30px;background:#b83603;padding:3px;-webkit-border-radius:2px;border-radius:2px}.weather34-box{display:-webkit-box;display:-ms-flexbox;display:flex;position:absolute;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-top:15px}.weather34-box select{background-color:#b83603;color:#fff;padding:12px;width:450px;border:none;font-size:14px;box-shadow:0 5px 25px rgba(0,0,0,.2);-webkit-appearance:none;appearance:none;outline:0}.weather34-box::before{content:"Select";font-family:Arial,Helvetica,sans-serif;position:absolute;top:0;right:0;width:20%;text-align:center;font-size:14px;line-height:45px;color:#fff;background-color:#01a4b5;pointer-events:none;font-weight:400;outline:0;-webkit-border-radius:2px;border-radius:2px}.weather34-box:hover::before{color:rgba(255,255,255,.6);background-color:0}.weather34-box select option{position:relative;padding:30px;background-color:#b83603;-webkit-border-radius:2px;border-radius:2px;margin-top:40px;height:100px;line-height:45px;color:#fff;text-shadow:1px 1px 3px rgba(61,70,77,.2);border:1px solid #01a4b5;-webkit-appearance:none;appearance:none;outline:0}.login-screen{background-color:#262830;padding:20px;border-radius:5px;margin:0 auto}.app-title{text-align:center;color:#ccc;background-color:none}.login-form{text-align:center;background-color:#262830}.control-group{margin-bottom:10px}input{text-align:center;background-color:#777;border:0;border-radius:3px;font-size:16px;font-weight:200;padding:10px 0;width:250px;transition:border .5s;color:#fff;border:2px solid rgba(86,95,103,1);box-shadow:none;margin:0 auto;margin-top:10px}input:focus{border:0;box-shadow:none}.btn{border:2px solid transparent;background:rgba(86,95,103,1);color:#fff;font-size:16px;line-height:25px;padding:10px 0;text-decoration:none;text-shadow:none;border-radius:3px;box-shadow:none;transition:.25s;display:block;width:150px;margin:10px;text-align:center;-webkit-appearance:none}.btn:hover{background-color:rgba(86,95,103,1)}.login-link{font-size:12px;color:#444;display:block;margin-top:12px}.loginformarea{margin:0 auto;text-align:center;background:#262830}white{color:#fff}.input-button,.modal-button{font-size:18px;padding:10px 40px}.input-block input,.input-button,.modal-button{font-family:Arial,sans-serif;border:0}.icon-button,.input-block input,.input-button,.modal-button{outline:0;cursor:pointer}.modal-button{color:#fff;border-radius:5px;background:#01a4b5;width:220px;text-align:center}.modal-button:hover{border-color:rgba(255,255,255,.2);background:rgba(144,177,42,1);color:#f8f8f8}.input-button{color:#7d695e;border-radius:5px;background:#fff}.input-button:hover{background:rgba(144,177,42,1);color:#fff}
+  .submit{background-color:#01a4b5;border:0;color:#fff;font-size:15px;padding:10px 24px;margin:20px 0 20px 0;text-decoration:none;-webkit-appearance:none;-webkit-border-radius:3px;border-radius:3px}.submit:hover{background-color:#d87040;cursor:pointer;-webkit-appearance:none}.version{color:#555;font-size:70%}orange{color:#01a4b5}blue{color:#01a4b5}blue1{color:#fff;width:30px;background:#d87040;padding:3px;-webkit-border-radius:2px;border-radius:2px}.weather34-box{display:-webkit-box;display:-ms-flexbox;display:flex;position:absolute;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-top:15px}.weather34-box select{background-color:#d87040;color:#fff;padding:12px;width:450px;border:none;font-size:14px;box-shadow:0 5px 25px rgba(0,0,0,.2);-webkit-appearance:none;appearance:none;outline:0}.weather34-box::before{content:"Select";font-family:Arial,Helvetica,sans-serif;position:absolute;top:0;right:0;width:20%;text-align:center;font-size:14px;line-height:45px;color:#fff;background-color:#01a4b5;pointer-events:none;font-weight:400;outline:0;-webkit-border-radius:2px;border-radius:2px}.weather34-box:hover::before{color:rgba(255,255,255,.6);background-color:0}.weather34-box select option{position:relative;padding:30px;background-color:#d87040;-webkit-border-radius:2px;border-radius:2px;margin-top:40px;height:100px;line-height:45px;color:#fff;text-shadow:1px 1px 3px rgba(61,70,77,.2);border:1px solid #01a4b5;-webkit-appearance:none;appearance:none;outline:0}.login-screen{background-color:#262830;padding:20px;border-radius:5px;margin:0 auto}.app-title{text-align:center;color:#ccc;background-color:none}.login-form{text-align:center;background-color:#262830}.control-group{margin-bottom:10px}input{text-align:center;background-color:#777;border:0;border-radius:3px;font-size:16px;font-weight:200;padding:10px 0;width:250px;transition:border .5s;color:#fff;border:2px solid rgba(86,95,103,1);box-shadow:none;margin:0 auto;margin-top:10px}input:focus{border:0;box-shadow:none}.btn{border:2px solid transparent;background:rgba(86,95,103,1);color:#fff;font-size:16px;line-height:25px;padding:10px 0;text-decoration:none;text-shadow:none;border-radius:3px;box-shadow:none;transition:.25s;display:block;width:150px;margin:10px;text-align:center;-webkit-appearance:none}.btn:hover{background-color:rgba(86,95,103,1)}.login-link{font-size:12px;color:#444;display:block;margin-top:12px}.loginformarea{margin:0 auto;text-align:center;background:#262830}white{color:#fff}.input-button,.modal-button{font-size:18px;padding:10px 40px}.input-block input,.input-button,.modal-button{font-family:Arial,sans-serif;border:0}.icon-button,.input-block input,.input-button,.modal-button{outline:0;cursor:pointer}.modal-button{color:#fff;border-radius:5px;background:#01a4b5;width:220px;text-align:center}.modal-button:hover{border-color:rgba(255,255,255,.2);background:rgba(144,177,42,1);color:#f8f8f8}.input-button{color:#7d695e;border-radius:5px;background:#fff}.input-button:hover{background:rgba(144,177,42,1);color:#fff}
 	
-  incorrect-password{font-weight:500;font-size:14px;color:#b83603}
+  incorrect-password{font-weight:500;font-size:14px;color:#d87040}
 
 	.success {position:absolute;background:#01a4b5;width:50%;border-radius:3px;margin: 0 auto;top:10%;font-size:1em;color:#ffffff;padding:10px;}
 	.success a{color:#ffffff;font-weight:600}
@@ -37,9 +55,9 @@ error_reporting(0);
  * @author  Andreas Tasch, at[tec], attec.at
  * @license GNU GPL v3
  * @package attec.toolbox
- * @version 3.34
+ * @version 4.34
  */
-define('VERSION', '3.3.4 Based on original by Andreas Tasch');
+define('VERSION', '4.34 Based on original by Andreas Tasch');
 
 $timestart = microtime(TRUE);
 $GLOBALS['status'] = array();
@@ -84,10 +102,10 @@ class Unzipper {
       closedir($dh);
 
       if (!empty($this->zipfiles)) {
-        $GLOBALS['status'] = array('info' => '.Weather34 Update zip files found, ready for to use for Update');
+        $GLOBALS['status'] = array('info' => 'Weather34 Standalone update files found, ready to use for Update');
       }
       else {
-        $GLOBALS['status'] = array('info' => 'No Weather34 Updated .zip. So only Backup functionality available.');
+        $GLOBALS['status'] = array('info' => 'No Weather34 Standalone Update .zip found. So only Backup functionality available.');
       }
     }
   }
@@ -270,20 +288,20 @@ class Zipper {
 ?>
 
 <p class="status status">
-  Welcome @ <?php echo date('l jS F Y g:i:a'); ?> 
+  You are currently in the Update/Backup Screen  please becareful and ensure you have uploaded the latest update zip file to the template directory <?php echo date('l jS F Y g:i:a'); ?> 
 </p>
 
 <form action="" method="POST">
   <fieldset>
     <h1>Weather34 Stand-Alone Updater</h1>
-    <label for="zipfile">Select update file you want to use for Update:</label>
+    <label for="zipfile">Select update file you want to use for Updating Template.  <br>example: <blue>standalone-update-02-04-2020.zip</blue></label>
     <select name="zipfile" size="1" class="select">
       <?php foreach ($unzipper->zipfiles as $zip) {
         echo "<option>$zip</option>";
       }
       ?>
     </select>
-    <label for="extpath">Extraction path (optional):</label>
+    <label for="extpath">Update path (optional):</label>
     <input type="text" name="extpath" class="form-field" />
     <p class="info">Please leave empty current template directory will be used.</p>
     <input type="submit" name="dounzip" class="submit" value="Update Weather34 Template"/>
@@ -303,6 +321,6 @@ class Zipper {
   <span class="small">Processing Time: <?php echo $time; ?> seconds</span>
 </p>
 
-<p class="version">Version: <?php echo VERSION; ?></p>
+<p class="version">Version: Weather<blue>34</blue> <?php echo VERSION; ?></p>
 </body>
 </html>
