@@ -63,6 +63,9 @@ $displayalmanac    = "' . $_POST['displayalmanac'] . '";
 $uvsensor    = "' . $_POST['uvsensor'] . '";
 $mbyear    = "' . $_POST['mbyear'] . '";
 $mbplatform   = "' . $_POST["mbplatform"] . '";
+$brand  = "' . $_POST["brand"] . '";
+$model  = "' . $_POST["model"] . '";
+$installed  = "' . $_POST["installed"] . '";
 
 $wuapikey = "' . $_POST["wuapikey"] . '";
 $wuapiunit   = "' . $_POST["wuapiunit"] . '";
@@ -1201,30 +1204,7 @@ What year does your records in meteobridge begin </div>
 
 <P>
 
-<div class="weathersectiontitle">
-                                                                <svg id="i-code" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-                                                                    <path d="M10 9 L3 17 10 25 M22 9 L29 17 22 25 M18 7 L14 27" />
-                                                                </svg>
-
-                                                                Which Meteobridge Platform</div>
-                                                            <p>
-                                                                <div class="stationvalue">
-                                                                    Which Meteobridge Platform Do Yo Use</div>
-                                                                <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#F05E40" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-                                                                    <path d="M12 30 L24 16 12 2" />
-                                                                </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-                                                                    <path d="M30 12 L16 24 2 12" />
-                                                                </svg>
-
-                                                                <label name="mbplatform"></label>
-                                                                <select id="mbplatform" name="mbplatform" class="chooseapi">
-                                                                    <option><?php echo $mbplatform; ?></option>
-                                                                    <option>Nano</option>                                                                    
-                                                                    <option>Pro</option>
-                                                                    <option>TPlink</option>
-                                                                </select>
-                                                                <br><br>
-                                                                <div class="seperator"></div>
+                                                               
 
 
 <div class="weathersectiontitle">
@@ -1245,16 +1225,87 @@ Do you have a uv sensor </div>
 <option>no</option>
 </select>
 
-
-
-
-
-
-
 </div>
 
 
 
+<div class="weatheroptions"> 
+
+<div class="weathersectiontitle">
+                                                                <svg id="i-code" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                                    <path d="M10 9 L3 17 10 25 M22 9 L29 17 22 25 M18 7 L14 27" />
+                                                                </svg>
+
+                                                                Which Meteobridge Platform</div>
+                                                            <p>
+                                                                <div class="stationvalue">
+                                                                    Which Meteobridge Platform Do Yo Use</div>
+                                                                <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#F05E40" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                                    <path d="M12 30 L24 16 12 2" />
+                                                                </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                                    <path d="M30 12 L16 24 2 12" />
+                                                                </svg>
+
+                                                                <label name="mbplatform"></label>
+                                                                <select id="mbplatform" name="mbplatform" class="chooseapi">
+                                                                    <option><?php echo $mbplatform; ?></option>
+                                                                    <option>Nano</option>    
+                                                                    <option>NanoSD</option>                                                                  
+                                                                    <option>Pro Red</option>
+                                                                    <option>Pro Black</option>
+                                                                    <option>TPlink</option>
+                                                                </select>
+                                                                <br><br>
+
+
+
+
+<div class="weathersectiontitle">
+<svg id="i-settings" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%"><path d="M13 2 L13 6 11 7 8 4 4 8 7 11 6 13 2 13 2 19 6 19 7 21 4 24 8 28 11 25 13 26 13 30 19 30 19 26 21 25 24 28 28 24 25 21 26 19 30 19 30 13 26 13 25 11 28 8 24 4 21 7 19 6 19 2 Z" />
+<circle cx="16" cy="16" r="4" /> </svg>
+ About your Davis Weather Station (Davis Hardware options only)</div>
+
+ <img src="images/hardwareinfo.png" style="width:35%;float:right;margin-top:50px;margin-right:20px;">
+ 
+ <P>
+
+<div class="stationvalue"> Do You Own a Davis Weather Station ? </div>
+<svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%"> </svg>
+
+<label name="brand"></label>
+ <select id="brand" name="brand" class="chooseapi">
+<option><?php echo $brand;?></option>
+<option>yes</option>                                                                    
+<option>no</option>
+</select>
+<br> <span style="color:#777;">Please select yes or no</span>
+<P>
+
+       
+<div class="stationvalue"> What is the Model Number </div>
+<svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%"> </svg>
+
+<label name="model"></label>
+ <select id="model" name="model" class="chooseapi">
+<option><?php echo $model; ?></option>
+<option>Vantage Pro2 Plus</option>                                                                    
+<option>Vantage Pro2</option>
+<option>Vantage Pro1</option>
+<option>Vantage Vue</option>
+<option>Envoy</option>
+<option>Envoy 8X</option>
+</select>
+<br> <span style="color:#777;">Please select the appropiate Davis model you own</span>
+<P>
+
+         
+<div class="stationvalue"> What Date did you install your Weather Station (Year-Month-Date)</div>
+<svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%"> </svg>
+
+<input name="installed" type="text" id="installed" value="<?php echo $installed; ?>" class="choose">
+<br> <span style="color:#777;">* Important Please enter like this  example must be numerical Year-Month-Date : 2015-07-02 </span>
+
+</P></div>
 
 
 <br>

@@ -1,12 +1,12 @@
 <?php
 $unit = "metric";
 $metric = true;
-$windunit = "km/h";
-$distanceunit = "km";
-$tempunit = "C";
-$rainunit  = "mm";
+$windunit = "mph";
+$distanceunit = "mi";
+$tempunit = "F";
+$rainunit  = "in";
 $rainrate = "/h";
-$pressureunit  = "hPa";
+$pressureunit  = "inHg";
 $livedataFormat = "meteobridge-api";
 $livedata   = "mbridge/MBrealtimeupload.txt";
 $dateFormat   = "d-m-Y";
@@ -44,7 +44,10 @@ $webcamurl   = "https://camo.githubusercontent.com/5715cfae1f9df766ba0fd8528ff13
 $displayalmanac    = "yes";
 $uvsensor    = "no";
 $mbyear    = "2018";
-
+$mbplatform   = "Pro Red";
+$brand  = "no";
+$model  = "Envoy 8X";
+$installed  = "2015-09-07";
 
 $wuapikey = "123456789xxxxxxx";
 $wuapiunit   = "m";
