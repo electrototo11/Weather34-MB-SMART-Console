@@ -246,11 +246,13 @@ margin-top:5px;
 
   
 <main class="grid">
-   <article>  
+   <article> 
+   <?php $datereboot = new DateTime();$dateago=convert($nanosduptime);?> 
    <div class=actualt>Interface Hardware</div> 
     <?php echo $info?> Interface: Meteobridge <blue><?php echo $mbplatform?></blue><br>
-    <?php echo $info?> Meteobridge Uptime: <blue><?php echo convert($nanosduptime)?></blue><br>
-    <?php echo $info?> Meteobridge Firmware:<?php echo "<orange>",$weather["swversion"];echo "-",$weather["build"]?></orange><br>
+    <?php echo $info?> Uptime: <blue><?php echo convert($nanosduptime)?></blue><br>
+    <?php echo $info?> Last Reboot: <blue><?php echo $datereboot->modify('-'.$dateago)->format('jS F Y');?></blue><br>
+    <?php echo $info?> Firmware:<?php echo "<orange>",$weather["swversion"];echo "-",$weather["build"]?></orange><br>
 
 <?php 
 if($mbplatform=='Nano' OR $mbplatform=='NanoSD'){echo '<img src="images/nano.svg" width="50px" class="hardwareimagenano" alt="Meteobridge NANOSD" title="Meteobridge NANOSD">';}
@@ -270,7 +272,14 @@ if($brand=='yes'){?>
 <article>  
 <div class=actualt>Davis Vantage&#8482; Hardware</div> 
 <?php echo $info?> Davis <blue><?php echo $model?></blue><br>
-<?php echo $info?> Installed: <blue><?php echo"<orange>", $davisvp2install->diff($now)->days;echo "</orange> Days Ago ";?></blue><br>  
+<?php echo $info?> Installed: <blue><?php echo"<orange>", $davisvp2install->diff($now)->days;echo "</orange> Days Ago ";?></blue><br> 
+<?php 
+$dateinstall=$installed;
+
+$timestamp = strtotime($installed);
+$new_date_format = date('jS M Y', $timestamp);
+
+echo $info?> Install Date: <blue><?php echo"<orange>", $new_date_format;echo "</orange>";?></blue><br>   
 
 <?php
 if ($model=='Vantage Pro2 Plus' or $model=='Vantage Pro2') {
