@@ -249,9 +249,9 @@ margin-top:5px;
    <article> 
    <?php $datereboot = new DateTime();$dateago=convert($nanosduptime);?> 
    <div class=actualt>Interface Hardware</div> 
-    <?php echo $info?> Interface: Meteobridge <blue><?php echo $mbplatform?></blue><br>
+    <?php echo $info?> Meteobridge: <blue><?php echo $mbplatform?></blue><br>
     <?php echo $info?> Uptime: <blue><?php echo convert($nanosduptime)?></blue><br>
-    <?php echo $info?> Last Reboot: <blue><?php echo $datereboot->modify('-'.$dateago)->format('jS F Y');?></blue><br>
+    <?php echo $info?> Last Reboot: <blue><?php echo $datereboot->modify('-'.$dateago)->format('jS M Y');?></blue><br>
     <?php echo $info?> Firmware:<?php echo "<orange>",$weather["swversion"];echo "-",$weather["build"]?></orange><br>
 
 <?php 
