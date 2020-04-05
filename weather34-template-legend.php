@@ -105,6 +105,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 
 icontext{vertical-align:top;position:relative;top:8px;color:#aaa }
 icontext2{vertical-align:top;position:relative;top:0px;color:#aaa }
+icontext3{vertical-align:top;position:relative;top:4px;color:#aaa }
 icontextrefresh{position:relative;top:8px;color:#aaa }
 .theme-icon { 
   position: relative;
@@ -229,14 +230,15 @@ margin-top:5px;
    <?php echo "<div class='theme-icon'>".$weather34theme."</div>"?> <icontext>Theme Dark/Light</icontext><br>
    <?php echo $weatherforecast?> <icontext>Forecast 5 Day</icontext><br>
     <?php echo $weatherforecast2?> <icontext>Forecast 5 Day Text Summary</icontext><br>
-    <?php echo $weather34TV?> <icontext>SMART TV Layout</icontext>
+    <?php echo $weather34TV?> <icontext>SMART TV Layout</icontext><br>   
     </article> 
     <article>    
-    &nbsp;&nbsp;<?php echo $charts?> <icontext>&nbsp;&nbsp;Day/Month/Year Charts</icontext><br>
-    &nbsp;&nbsp;<?php echo $almanacicon?> <icontext>&nbsp;Almanac Data </icontext><br><br>
+    &nbsp;&nbsp;<?php echo $charts?> <icontext>&nbsp;&nbsp;Day/Month/Year Charts</icontext><br><br>
+    &nbsp;&nbsp;<?php echo $almanacicon?> <icontext>&nbsp;Almanac Data </icontext><br>
     <?php echo $weather34refreshicon?> <icontext>Refresh Page </icontext><br>
     &nbsp; &nbsp;<?php echo $wireless?> <icontext2>&nbsp;Data Online </icontext2><br>
-    &nbsp; &nbsp;<?php echo $wirelessoffline?> <icontext2>&nbsp;Data Offline (not updated last 15 min)</icontext2>
+    &nbsp; &nbsp;<?php echo $wirelessoffline?> <icontext2>&nbsp;Data Offline (not updated last 15 min)</icontext2><br>
+    &nbsp;<?php echo $umbrella?> <icontext3> &nbsp;Currently Raining (last hour) </icontext3><br>
 
 </article> 
 </main>

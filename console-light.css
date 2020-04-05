@@ -2569,8 +2569,8 @@ valuebeaufort {
     display: flex;
     position: relative;
     left: 145px;
-    top: 50px;    
-    background: #fff;
+    top: 54px;    
+    background: #f8f8f8;
     font-family: Headingtext;
     width: 12em;
     height: 10px;
@@ -2580,7 +2580,7 @@ valuebeaufort {
     align-items: center;
     justify-content: center;
     color: var(--body-text-light);
-    box-shadow:var(--button-shadow3);
+    
 }
 
 .modulecaptionwindchart {
@@ -2821,39 +2821,42 @@ a {
 .legendfeels,
 .legendtemp,
 .legendwetbulb {
-    position: absolute;
+    position: relative;
+    display:inline-block;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
-    padding: 2px 3px 1px 3px;
-    display: inline-flex;
-    font-size: 9px;
-    margin-top: 188px;
-    color: var(--white);
+    padding: 0 2px;
+    padding-top: 1px;    
+    font-size: 9px;   
+    color: #fff;
+    top:-60px;
+    align-items: center;
+    justify-content: center;
     font-family: Headingtext
 }
 
 .legendtemp {
     background: #d15f2e;
-    margin-left: -90px
+    left: -60px
 }
 
 .legendfeels {
-    background: #65696c
+    background: #35393b;
+    left: -60px
 }
 
 .legendwetbulb {
     background: #d15f2e;
-    margin-left: -80px
+    left: -60px
 }
 
 .legenddewpoint {
     background: var(--blue);
-    margin-left: -140px
+    left: -80px
 }
-
 .logofooter {
     position: absolute;
     margin-left: 70px;

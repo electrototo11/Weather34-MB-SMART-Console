@@ -2533,7 +2533,7 @@ valuebeaufort {
     display: flex;
     position: relative;
     left: 145px;
-    top: 53px;
+    top: 55px;
     color: var(--silver);
     background-color: hsla(204, 31%, 21%, .429);
     font-family: Headingtext;
@@ -2541,7 +2541,7 @@ valuebeaufort {
     height: 10px;
     font-size: 10px;
     padding: 2px 3px 1px 3px;
-    line-height: 1.2;
+    line-height: 1.1;
     align-items: center;
     justify-content: center;
     border-radius: 3px;
@@ -2791,18 +2791,18 @@ iconcolor2 {
 .legendfeels,
 .legendtemp,
 .legendwetbulb {
-    position: absolute;
+    position: relative;
+    display:inline-block;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
     padding: 0 2px;
-    padding-top: 1px;
-    display: inline-flex;
-    font-size: 9px;
-    margin-top: 188px;
+    padding-top: 1px;    
+    font-size: 9px;   
     color: #fff;
+    top:-60px;
     align-items: center;
     justify-content: center;
     font-family: Headingtext
@@ -2810,22 +2810,22 @@ iconcolor2 {
 
 .legendtemp {
     background: #d15f2e;
-    margin-left: -90px
+    left: -60px
 }
 
 .legendfeels {
     background: #35393b;
-    margin-left: -55px
+    left: -60px
 }
 
 .legendwetbulb {
     background: #d15f2e;
-    margin-left: -80px
+    left: -60px
 }
 
 .legenddewpoint {
     background: var(--blue);
-    margin-left: -140px
+    left: -80px
 }
 
 .consoleforecast {
