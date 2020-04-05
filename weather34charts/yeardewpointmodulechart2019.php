@@ -13,12 +13,12 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 	
-	include('preload.php');include('../console-settings.php');
+	include('preload.php');
 	
 	$conv = 1;
 	if ($tempunit == 'F') {$conv= '(1.8) +32';}	
-	$interval = 1;
-	if ($tempunit == 'F') {$interval= '0.5';}
+	$int = 5;
+	if ($weather["temp_units"]=='F') {$int= 10;}	
 	
 	
 	
@@ -96,7 +96,7 @@
 			   shared: true, 
  },
 		axisX: {
-			gridColor: "#333",
+			gridColor: "rgba(82, 92, 97, 0.39)",
 		    labelFontSize: 7.5,
 			labelFontColor:' #888',
 			lineThickness: 1,
@@ -122,12 +122,12 @@
 			
 		axisY:{
 		margin: 0,
-		interval: 5,			
+		interval:<?php echo $int?>,			
 		lineThickness: 1,		
 		gridThickness: 1,	
 		gridDashType: "dot",	
         includeZero: false,
-		gridColor: "#333",
+		gridColor: "rgba(82, 92, 97, 0.39)",
 		labelFontSize: 8,
 		labelFontColor:' #888',
 		labelFontFamily: "Arial",
@@ -157,12 +157,12 @@
 		
  data: [
 		{
-			type: "splineArea",
+			type: "spline",
 			color:"#d85026",
 			markerSize:0,
 			showInLegend:false,
 			legendMarkerType: "circle",
-			lineThickness: 0,
+			lineThickness: 1,
 			markerType: "none",
 			name:"Hi Dewpoint",
 			dataPoints: dataPoints1,

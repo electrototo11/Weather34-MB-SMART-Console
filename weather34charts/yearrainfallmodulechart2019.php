@@ -13,13 +13,13 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 	
-	include('preload.php');include('../console-settings.php');
+	include('preload.php');
 	$weatherfile = date('F');
 	$conv = 1;
 	if ($weather["temp_units"]=='F') {$conv= 0.0393701;}	
 	else if ($weather["temp_units"]=='C'){$conv= 1;}
-	$int = 5;
-	if ($weather["temp_units"]=='F') {$int= 0.25;}	
+	$int = 10;
+	if ($weather["temp_units"]=='F') {$int= 1;}	
 	
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -95,7 +95,7 @@
 			   shared: true, 
  },
 		axisX: {
-			gridColor: "#333",
+			gridColor: "rgba(82, 92, 97, 0.39)",
 		    labelFontSize: 7.5,
 			labelFontColor:' #888',
 			lineThickness: 1,
@@ -126,7 +126,7 @@
 		gridThickness: 1,	
 		gridDashType: "dot",	
         includeZero: false,
-		gridColor: "#333",
+		gridColor: "rgba(82, 92, 97, 0.39)",
 		labelFontSize: 8,
 		labelFontColor:' #888',
 		labelFontFamily: "Arial",

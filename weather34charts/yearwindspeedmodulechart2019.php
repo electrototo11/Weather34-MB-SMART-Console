@@ -14,7 +14,7 @@
 	####################################################################################################
 	
 	
-	include('preload.php');include('../console-settings.php');
+	include('preload.php');
 	$weatherfile = date('F');
 	$conv = 1;
 	if ($weather["wind_units"] == 'mph') {$conv= '2.23694';}
@@ -104,7 +104,7 @@
 			   shared: true, 
  },
 		axisX: {
-			gridColor: "#333",
+			gridColor: "rgba(82, 92, 97, 0.39)",
 		    labelFontSize: 7.5,
 			labelFontColor:' #888',
 			lineThickness: 1,
@@ -130,12 +130,12 @@
 			
 		axisY:{
 		margin: 0,
-		interval: 5,			
+		interval: 10,			
 		lineThickness: 1,		
 		gridThickness: 1,	
 		gridDashType: "dot",	
         includeZero: false,
-		gridColor: "#333",
+		gridColor: "rgba(82, 92, 97, 0.39)",
 		labelFontSize: 8,
 		labelFontColor:' #888',
 		labelFontFamily: "Arial",

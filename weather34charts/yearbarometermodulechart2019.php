@@ -13,7 +13,7 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 	
-	include('preload.php');include('../console-settings.php');
+	include('preload.php');
 	$conv = 1;
 	$conv = 0.02953;	
 	if ($weather["temp_units"]=='C') {$conv= 1 ;}	
@@ -102,7 +102,7 @@
 			   shared: true, 
  },
 		axisX: {
-			gridColor: "#333",
+			gridColor: "rgba(82, 92, 97, 0.39)",
 		    labelFontSize: 7.5,
 			labelFontColor:' #888',
 			lineThickness: 1,
@@ -133,7 +133,7 @@
 		gridThickness: 1,	
 		gridDashType: "dot",	
         includeZero: false,
-		gridColor: "#333",
+		gridColor: "rgba(82, 92, 97, 0.39)",
 		labelFontSize: 8,
 		labelFontColor:' #888',
 		labelFontFamily: "Arial",
