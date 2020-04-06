@@ -15,7 +15,7 @@
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position10").show()}});var c=a("#position10");c.load("<?php echo $position10 ?>");var b=setInterval(function(){c.load("<?php echo $position10 ?>")},80000)})})(jQuery);
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position11").show()}});var c=a("#position11");c.load("<?php echo $position11 ?>");var b=setInterval(function(){c.load("<?php echo $position11 ?>")},72000)})})(jQuery);
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position12").show()}});var c=a("#position12");c.load("<?php echo $position12 ?>");var b=setInterval(function(){c.load("<?php echo $position12 ?>")},130000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position12").show()}});var c=a("#position12");c.load("<?php echo $position12 ?>");var b=setInterval(function(){c.load("<?php echo $position12 ?>")},69000)})})(jQuery);
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#position13").show()}});var c=a("#position13");c.load("<?php echo $position13 ?>");var b=setInterval(function(){c.load("<?php echo $position13 ?>")},13000)})})(jQuery);
 </script>
 

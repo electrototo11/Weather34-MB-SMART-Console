@@ -982,6 +982,7 @@ padding:10px;}
                                                 <option>weather34-dayforecast.php</option>
                                                 <option>weather34-airquality.php</option>
                                                 <option>weather34-indoormod.php</option>
+                                                <option>weather34-lightning.php</option>
                                                 
                                             </select>
 
@@ -1003,6 +1004,7 @@ padding:10px;}
                                                 <option>weather34-dayforecast.php</option>
                                                 <option>weather34-airquality.php</option>
                                                 <option>weather34-indoormod.php</option>
+                                                <option>weather34-lightning.php</option>
                                             </select>
 
 <br>
@@ -1023,6 +1025,7 @@ padding:10px;}
                                                 <option>weather34-dayforecast.php</option>
                                                 <option>weather34-airquality.php</option>
                                                 <option>weather34-indoormod.php</option>
+                                                <option>weather34-lightning.php</option>
                                             </select>
 
 <br>
