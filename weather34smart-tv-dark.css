@@ -3979,7 +3979,7 @@ button:focus {
     display: flex;
     height: 86px;
     margin: 0px;
-    left: 15px;
+    left: 5px;
     align-items: center;
     justify-content: center;
     width: 86px;
@@ -4048,20 +4048,30 @@ indoortempman {
 }
 
 laststrike {
-    display:flex;
+    display: flex;
     background: 0 0;
     color: var(--silver);
     font-size: 9px;
     line-height: 1;
     top: 25px;
     position: absolute;
-    margin-left: 85px;
+    margin-left: 90px;
     font-family: headingtext;
     text-align: left;
-    width:60px;
-    word-wrap: break-word;    
+    width: 60px;
+    word-wrap: break-word;
 }
 
+strikeicon {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    left: 35px;
+    top: 53px;
+    z-index: 100;
+    font-size: 8px;
+    opacity: 0.7
+}
 
 .button-block span {
     font-size: .75rem;
