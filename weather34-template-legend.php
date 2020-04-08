@@ -233,17 +233,17 @@ margin-top:5px;
   <?php echo $backtohome ?> <icontext>Back to Dashboard</icontext><br>   
    <?php echo $weather34fore ?> <icontext>Forecast 5 Day</icontext><br>
     <?php echo $weather34foretxt ?> <icontext>Forecast 5 Day Text Summary</icontext><br>   
-    <?php echo $weather34chart2?> <icontext>&nbsp;&nbsp;Day/Month/Year Charts</icontext><br>
-    <?php echo $weather34alm?> <icontext>&nbsp;Almanac Data </icontext><br>    
+    <?php echo $weather34chart2?> <icontext>Day/Month/Year Charts</icontext><br>
+    <?php echo $weather34alm?> <icontext>Almanac Data </icontext><br>    
     </article> 
     <article>    
     <?php echo $weather34smtv ?> <icontext>SMART TV Layout</icontext><br>
     <?php echo $weather34desktop ?> <icontext>Dashboard Layout</icontext><br>
     <?php echo $weather34hinfo ?> <icontext>Hardware Info</icontext><br>    
     <?php echo $weather34refr?> <icontext>Refresh Page </icontext><br>
-    <?php echo $wireless?> <icontext2>&nbsp;Data Online </icontext2><br>
-    <?php echo $wirelessoffline?> <icontext2>&nbsp;Data Offline (not updated last 15 min)</icontext2><br>
-    <?php echo $umbrella?> <icontext3> &nbsp;Currently Raining (last hour) </icontext3><br>
+    <?php echo $wireless?> <icontext>Data Online </icontext><br>
+    <?php echo $wirelessoffline?> <icontext>Data Offline (not updated last 15 min)</icontext><br>
+    <?php echo $umbrella?> <icontext3>Currently Raining (last hour) </icontext3><br>
 
 </article> 
 </main>
