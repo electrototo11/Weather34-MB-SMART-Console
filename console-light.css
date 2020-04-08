@@ -2738,7 +2738,7 @@ blue1 {
     padding: 2px;
     position: relative;
     bottom: 0;
-    bottom: -40px
+    bottom: -45px
 }
 
 vspan {
@@ -2861,6 +2861,13 @@ a {
     position: absolute;
     margin-left: 70px;
     top: 15px
+}
+
+.weather34-rightfootericons {
+    display: inline-block;    
+    position: absolute;
+    top: 3px;
+    right:5%
 }
 
 .weather34alert {
@@ -3803,7 +3810,7 @@ bottom-bar-textfore {
         background: 0;
         padding: 2px;
         position: relative;
-        bottom: -5px
+        bottom: -10px
     }
 
     .nav-bottom-charts {
@@ -3864,7 +3871,7 @@ bottom-bar-textfore {
     .weather34-hardware-icons,
     .weather34-copyright-icons,
     .weather34-copyright-icons-chart,
-    .weather34-refreshicon,
+    .weather34-refreshicon,.weather34-rightfootericons,
     chartpage {
         display: none
     }

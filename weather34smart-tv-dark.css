@@ -3685,6 +3685,13 @@ bottom-bar-textfore {
 
 }
 
+.weather34-rightfootericons {
+    display: inline-block;    
+    position: absolute;
+    top: 3px;
+    right:5%
+}
+
 @media screen and (max-width:960px) {
     chartpage,.weather34-desktopicon-link,.weather34-refreshicon,.weather34-sphere-red,.weather34-sphere-orangefore,.weather-smart-tv-text,bottom-bar-textfore {
         display: none

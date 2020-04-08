@@ -91,10 +91,20 @@ $time = strtotime("-1 year", time());
 $lastyear = date("Y", $time);
 $dayfile=$lastyear;$forecastime=filemtime('weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M",$forecastime);
 ?></chartpage>
+  <div class="weather34-rightfootericons">
+  <?php 
+//weather34 smart tv option
+if ($smarttv=='yes'){echo '
+  <a href="weather34-tv.php" alt="weather34 smart tv version" title="weather34 tv version">'. $weather34smtv.'</a>
+';}
+?>  
+<a  href="weather34-template-legend.php" data-lity alt="weather34 template legend " title="weather34 template legend">  
+  <?php echo $weather34hinfo;?></a>
 
-      <a  href="info.html" data-lity alt="weather34 template info  " title="weather34 template info">
-<div class="weather34-copyright-icons"><?php echo $weather34copyright;?></a></div> 
+<a  href="info.html" data-lity alt="weather34 template info  " title="weather34 template info">
+<?php echo $weather34copyr;?></a>
 
-<div class="weather34-refreshicon">
 <a href="consolecharts-2019.php" alt="refresh this dashboard " title="weather34 refresh this dashboard ">
-<?php echo $weather34refreshicon?></a></div>
+<?php echo $weather34refr?></a></div>
+  
+ </body></html>

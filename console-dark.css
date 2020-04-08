@@ -2942,6 +2942,12 @@ a {
     margin-left: 70px;
     top: 15px
 }
+.weather34-rightfootericons {
+    display: inline-block;    
+    position: absolute;
+    top: 3px;
+    right:5%
+}
 
 
 .weather34alert {
@@ -3876,7 +3882,7 @@ bottom-bar-textfore {
     .weather34-hardware-icons,
     .weather34-copyright-icons,
     .weather34-copyright-icons-chart,
-    .weather34-refreshicon,
+    .weather34-refreshicon,.weather34-rightfootericons,
     chartpage {
         display: none
     }

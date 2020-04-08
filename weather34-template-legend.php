@@ -20,8 +20,9 @@ $davisvp2install= new \DateTime($installed);$now = new \DateTime;
   <title>Weather Station Hardware Information</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-@font-face{font-family:weathertext2;src:url(fonts/verbatim-regular.woff) format("woff"),url(fonts/verbatim-regular.woff2) format("woff2"),url(fonts/verbatim-regular.ttf) format("truetype")}
-html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-serif;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;}
+html,body{font-size:13px;
+  font-family: Helvetica,Arial, sans-serif;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;}
+  icont{font-weight:600}
 .grid { 
   display: grid; 
 grid-template-columns: repeat(3, 1fr); 
@@ -218,27 +219,29 @@ margin-top:5px;
 <main class="grid2">
 <article>  
    <div class=actualt>UI ICONS </div> 
-    <?php echo $weather34F?> <icontext>Fahrenheit with Wind MPH</icontext><br>
-    <?php echo $weather34C?> <icontext>Celsius with Wind KM/H</icontext><br>
-    <?php echo $weather34UK?> <icontext>Celsius with Wind MPH</icontext><br>
-    <?php echo $weather34MS?> <icontext>Celsius with Wind M/S</icontext><br>
-    <?php echo $weather34KTS?> <icontext>Celsius with Wind KTS</icontext>
+    <?php echo $adjust?> <icontext>Set-Up Screen</icontext><br>
+    <icont><?php echo $weather34F?></icont> <icontext>Fahrenheit with Wind MPH</icontext><br>
+    <icont><?php echo $weather34C?></icont> <icontext>Celsius with Wind KM/H</icontext><br>
+    <icont><?php echo $weather34UK?></icont> <icontext>Celsius with Wind MPH</icontext><br>
+    <icont><?php echo $weather34MS?></icont> <icontext>Celsius with Wind M/S</icontext><br>
+    <icont><?php echo $weather34KTS?></icont> <icontext>Celsius with Wind KTS</icontext>
      
 </article> 
 <article>  
-   
-   <?php echo "<div class='theme-icon'>".$weather34theme."</div>"?> <icontext>Theme Dark/Light</icontext><br>
-   <?php echo $weatherforecast?> <icontext>Forecast 5 Day</icontext><br>
-    <?php echo $weatherforecast2?> <icontext>Forecast 5 Day Text Summary</icontext><br>
-    <?php echo $weather34TV?> <icontext>SMART TV Layout</icontext><br>   
+  <?php echo $themeshadedark ?> <icontext>Theme Dark/Light</icontext><br><?php echo $backtohome ?> <icontext>Back to Dashboard</icontext><br>
+   <?php echo $themeshadedark ?> <icontext>Theme Dark/Light</icontext><br><?php echo $weather34fore ?> <icontext>Forecast 5 Day</icontext><br>
+    <?php echo $weather34foretxt ?> <icontext>Forecast 5 Day Text Summary</icontext><br>   
+    <?php echo $weather34chart2?> <icontext>&nbsp;&nbsp;Day/Month/Year Charts</icontext><br>
+    <?php echo $weather34alm?> <icontext>&nbsp;Almanac Data </icontext><br>    
     </article> 
     <article>    
-    &nbsp;&nbsp;<?php echo $charts?> <icontext>&nbsp;&nbsp;Day/Month/Year Charts</icontext><br><br>
-    &nbsp;&nbsp;<?php echo $almanacicon?> <icontext>&nbsp;Almanac Data </icontext><br>
-    <?php echo $weather34refreshicon?> <icontext>Refresh Page </icontext><br>
-    &nbsp; &nbsp;<?php echo $wireless?> <icontext2>&nbsp;Data Online </icontext2><br>
-    &nbsp; &nbsp;<?php echo $wirelessoffline?> <icontext2>&nbsp;Data Offline (not updated last 15 min)</icontext2><br>
-    &nbsp;<?php echo $umbrella?> <icontext3> &nbsp;Currently Raining (last hour) </icontext3><br>
+    <?php echo $weather34smtv ?> <icontext>SMART TV Layout</icontext><br>
+    <?php echo $weather34desktop ?> <icontext>Dashboard Layout</icontext><br>
+    <?php echo $weather34hinfo ?> <icontext>Hardware Info</icontext><br>    
+    <?php echo $weather34refr?> <icontext>Refresh Page </icontext><br>
+    <?php echo $wireless?> <icontext2>&nbsp;Data Online </icontext2><br>
+    <?php echo $wirelessoffline?> <icontext2>&nbsp;Data Offline (not updated last 15 min)</icontext2><br>
+    <?php echo $umbrella?> <icontext3> &nbsp;Currently Raining (last hour) </icontext3><br>
 
 </article> 
 </main>
