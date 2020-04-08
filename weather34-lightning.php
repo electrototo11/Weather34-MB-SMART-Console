@@ -1,4 +1,4 @@
-<?php include('console-settings.php');
+<?php include('console-settings.php');error_reporting(0);
 $strike='<svg width="10pt" height="10pt"  fill="#d87040" viewBox="0 0 1024 1024" version="weather34 strike icon">
 <path d="M718.933333 106.666667L469.333333 362.666667l320 106.666666-334.933333 313.6 108.8 59.733334L256 917.333333l57.6-315.733333 61.866667 
 108.8L576 512l-320-106.666667L533.333333 106.666667h185.6z" fill="#d87040" />
@@ -76,7 +76,7 @@ if ($weather["lightningmi"]=='--') {
 
 //lightning
 if($distanceunit=='km' && $weather["lightningtimeago"]>1 && $weather["lightningtimeago"]<=580){echo '
-    <div class="weather34alert" id="weather34message">
+    <div class="weather34alert" id="weather34message2">
       <div class="weather34alert-icon">
         '.$lightningalert.'
       </div>
@@ -87,7 +87,7 @@ if($distanceunit=='km' && $weather["lightningtimeago"]>1 && $weather["lightningt
     </div>';}  
     
 if($distanceunit=='mi' && $weather["lightningtimeago"]>1 && $weather["lightningtimeago"]<=580){echo '
-        <div class="weather34alert" id="weather34message">
+        <div class="weather34alert" id="weather34message2">
           <div class="weather34alert-icon">
             '.$lightningalert.'
           </div>
@@ -96,6 +96,10 @@ if($distanceunit=='mi' && $weather["lightningtimeago"]>1 && $weather["lightningt
             <valuealertorange>'.gmdate("i",$weather["lightningtimeago"]).'<alertunit> min ago</valuealertorange></alertunit>
           </div>
         </div>';} 
-
-
     ?> 
+
+<script> //fire the weather34 notification
+function closeweather34alert(el) { el.addClass('weather34alert-hide');}
+$('.js-messageClose').on('click', function(e) { closeweather34alert($(this).closest('.weather34alert2'));});
+$(document).ready(function() {  setTimeout(function() { closeweather34alert($('#weather34message2')); }, 10000);});
+</script>
