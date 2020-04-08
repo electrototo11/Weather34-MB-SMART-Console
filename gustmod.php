@@ -263,6 +263,6 @@ if($weather["wind_gust_speed_max"]>=26.90 && $weather["wind_units"]=="kts"){echo
 else if($weather["wind_gust_speed_max"]>=16.19 && $weather["wind_units"]=="kts"){echo "<orange>" .number_format($weather["wind_gust_speed_max"],1)."</orange>&nbsp;<smalltempunit2>".$windunit;}
 else if($weather["wind_gust_speed_max"]>=2.77 && $weather["wind_units"]=="kts"){echo "<yellow>" .number_format($weather["wind_gust_speed_max"],1)."</yellow>&nbsp;<smalltempunit2>".$windunit;}
 else if($weather["wind_gust_speed_max"]>=0 && $weather["wind_units"]=="kts"){echo "<blue>" .number_format($weather["wind_gust_speed_max"],1)."</blue>&nbsp;<smalltempunit2>".$windunit;}
-echo "</smalltempunit2>";echo "<span style='position:relative;top:1px'>".$maxclock."</span>"; echo $weather["winddmaxtime"];
+echo "</smalltempunit2>";echo "<span style='position:relative;top:1px'> ".$maxclock." </span>"; echo $weather["winddmaxtime"];
 ?> 
 </div>

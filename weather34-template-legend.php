@@ -228,8 +228,10 @@ margin-top:5px;
      
 </article> 
 <article>  
-  <?php echo $themeshadedark ?> <icontext>Theme Dark/Light</icontext><br><?php echo $backtohome ?> <icontext>Back to Dashboard</icontext><br>
-   <?php echo $themeshadedark ?> <icontext>Theme Dark/Light</icontext><br><?php echo $weather34fore ?> <icontext>Forecast 5 Day</icontext><br>
+  <?php echo $themeshadedark ?> <icontext>Theme Dark</icontext><br>
+  <?php echo $themeshadelight ?> <icontext>Theme Light</icontext><br>
+  <?php echo $backtohome ?> <icontext>Back to Dashboard</icontext><br>   
+   <?php echo $weather34fore ?> <icontext>Forecast 5 Day</icontext><br>
     <?php echo $weather34foretxt ?> <icontext>Forecast 5 Day Text Summary</icontext><br>   
     <?php echo $weather34chart2?> <icontext>&nbsp;&nbsp;Day/Month/Year Charts</icontext><br>
     <?php echo $weather34alm?> <icontext>&nbsp;Almanac Data </icontext><br>    
