@@ -270,6 +270,7 @@ margin-top:5px;
     <?php echo $weather34DK ?> <icontext>Danish Language</icontext><br>    
     <?php echo $weather34ES?> <icontext>Spanish Language</icontext><br>
     <?php echo $weather34FR?> <icontext>French Language</icontext><br>
+    <?php echo $weather34IT?> <icontext>Italian Language</icontext><br>
     <?php echo $weather34NL?> <icontext>Dutch Language</icontext><br>
     <?php echo $weather34SV?> <icontext>Swedish Language</icontext><br>
 
