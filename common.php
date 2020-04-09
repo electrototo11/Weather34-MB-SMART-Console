@@ -39,15 +39,6 @@ switch ($lang) {
   setlocale(LC_TIME, "en_EN");
   break;
   
-  
-  //english	 canada
-  case 'can':
-  $lang_file = 'lang.en.php';
-  $lang_flag = 'can';
-  $lang_option = 'en';
-  setlocale(LC_TIME, "en_EN");
-  break;
-  
   //english	us
   case 'us':
   $lang_file = 'lang.en.php';
@@ -62,8 +53,7 @@ switch ($lang) {
   $lang_flag = 'dk';
   $lang_option = 'en'; 
   setlocale(LC_TIME, 'danish', 'DK', 'da_DK.ISO8859-1', 'da_DK.utf-8');
-  break;
-  
+  break; 
   
   //dutch
   case 'nl':
@@ -71,42 +61,15 @@ switch ($lang) {
   $lang_flag = 'nl';
   $lang_option = 'en';
   setlocale(LC_TIME, "nl_NL.UTF-8");
-  break;
+  break;  
   
-  
-  //brazilian/south america
-  case 'br':
-  $lang_file = 'lang.br.php';
-  $lang_flag = 'br';
-  $lang_option = 'en';
-  setlocale(LC_TIME, "pt_BR.UTF-8");
-  break;
-  
-  //argentine
-  case 'ar':
-  $lang_file = 'lang.ar.php';
-  $lang_flag = 'ar';
-  $lang_option = 'en';
-  setlocale(LC_TIME, "es_ES.UTF-8");
-  break;
-  
-    
-  //polish
-  case 'pl':
-  $lang_file = 'lang.pl.php';
-  $lang_flag = 'pl';
-  $lang_option = 'en';
-  setlocale(LC_TIME, 'pl_PL', 'pl_PL.ISO8859-2', 'polish_pol');
-  break;
-  
-  
-//german
-  case 'dl':
-  $lang_file = 'lang.dl.php';
-  $lang_flag = 'dl';
-  $lang_option = 'en';
-  setlocale(LC_TIME, "de_DE.UTF-8");
-  break;
+  //german
+  case 'de':
+    $lang_file = 'lang.de.php';
+    $lang_flag = 'de';
+    $lang_option = 'en';
+    setlocale(LC_TIME, "de_DE.UTF-8");
+    break;
   
   //italian
   case 'it':
@@ -117,29 +80,20 @@ switch ($lang) {
   break;
   
 //spanish
-  case 'sp':
-  $lang_file = 'lang.sp.php';
-  $lang_flag = 'sp';
+  case 'es':
+  $lang_file = 'lang.es.php';
+  $lang_flag = 'es';
   $lang_option = 'en';
   setlocale(LC_TIME, "es_ES.UTF-8");
-  break;
-  
-  
- //swedish
-  case 'sw':
-  $lang_file = 'lang.sw.php';
-  $lang_flag = 'sw';
-  $lang_option = 'sw';
-  setlocale(LC_TIME, "sv_SE.UTF-8");
   break;  
   
-  //catalan 
-  case 'cat':
-  $lang_file = 'lang.cat.php';
-  $lang_flag = 'cat';
-  $lang_option = 'en';
-  setlocale(LC_TIME, "ca_ES");
-  break; 
+ //swedish
+  case 'sv':
+  $lang_file = 'lang.sv.php';
+  $lang_flag = 'sv';
+  $lang_option = 'sv';
+  setlocale(LC_TIME, "sv_SE.UTF-8");
+  break;   
   
 //french  
    case 'fr':
@@ -147,40 +101,14 @@ switch ($lang) {
   $lang_flag = 'fr';
   $lang_option = 'en';
   setlocale(LC_TIME, "fr_FR.UTF-8");
-  break;
-  
-//greek  
-  case 'gr':
-  $lang_file = 'lang.gr.php';
-  $lang_flag = 'gr';
-  $lang_option = 'en';
-  setlocale(LC_TIME, "el_GR.UTF-8");
-  break;
-
+  break;  
 //turkish  
   case 'tr':
   $lang_file = 'lang.tr.php';
   $lang_flag = 'tr';
   $lang_option = 'en';
   setlocale(LC_TIME, "tr_TR.UTF-8");
-  break;
-  
-  
-  //hungarian 
-  case 'hu':
-  $lang_file = 'lang.hu.php';
-  $lang_flag = 'hu';
-  $lang_option = 'en';
-  setlocale(LC_TIME, "tr_HU.UTF-8");
-  break;
-
-  //Norwegian
-  case 'no':
-  $lang_file = 'lang.no.php';
-  $lang_flag = 'no';
-  $lang_option = 'en';
-  setlocale(LC_TIME, "no_NO.UTF-8");
-  break;
+  break;  
   
 //default
   default:

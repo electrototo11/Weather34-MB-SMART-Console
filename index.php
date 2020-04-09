@@ -63,7 +63,8 @@ include_once('livedata.php');include_once('updater2.php');
   </ul>
 
   <div class="nav-bottom">
-  <a href="console-setup.php" target="_blank" alt="Setup Screen" title="Setup Screen"> <?php echo $adjust ?></a>
+  <a href="console-setup.php" target="_blank" alt="Setup Screen" title="Setup Screen"> <?php echo $adjust ?></a> 
+
   
   <a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>
     <?php if ($theme == 'dark') { echo 'alt="Light Mode" title="Light Mode"';} else {echo 'alt="Dark Mode" title="Dark Mode"';} ?> >
@@ -136,7 +137,19 @@ include_once('livedata.php');include_once('updater2.php');
 <a href="weather34-almanac.php" alt="Almanac" title="Almanac">
 <?php echo $weather34alm?></a>
 
+
+<?php if ($languages == "yes") {?>
+<a  href="index.php?lang=<?php echo $defaultlanguage?>" alt="<?php echo $defaultlanguage?>" title="<?php echo $defaultlanguage?>">
+  <span style="text-transform:uppercase">
+<?php echo $weather34language1?></span></a>
+<a  href="index.php?lang=<?php echo $defaultlanguage2?>" alt="<?php echo $defaultlanguage2?>" title="<?php echo $defaultlanguage2?>">
+<span style="text-transform:uppercase"><?php echo $weather34language2?></span></a>
+<?php };?>
+
+
+
 <div class="weather34-rightfootericons">
+
   <?php 
 //weather34 smart tv option
 if ($smarttv=='yes'){echo '

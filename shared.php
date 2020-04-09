@@ -117,9 +117,6 @@ $beaufort9='<svg id="weather34 bft9" width="22pt" height="22pt" viewBox="0 0 96 
 $beaufort10='<svg id="weather34 bft10"  width="22pt" height="22pt" viewBox="0 0 96 96" ><path fill="#d65b4a" stroke="currentcolor" stroke-width="0.09375" opacity="1.00" d=" M 0.00 29.97 C 5.30 36.33 10.66 42.65 15.99 48.98 C 16.01 42.66 15.99 36.34 16.00 30.02 C 21.62 36.67 27.19 43.35 32.81 50.00 C 34.20 50.00 35.60 49.99 36.99 50.00 C 33.74 45.99 30.46 42.01 27.21 38.00 C 28.66 36.67 30.12 35.34 31.58 34.01 C 36.02 39.32 40.38 44.69 44.81 50.00 C 53.27 49.99 61.72 50.02 70.18 49.99 C 71.39 46.85 73.14 43.69 76.15 41.96 C 80.11 39.71 85.11 39.63 89.20 41.59 C 92.87 43.50 95.27 47.34 96.00 51.35 L 96.00 54.56 C 95.18 60.08 90.75 65.14 85.02 65.65 C 78.40 66.97 71.95 62.35 70.18 56.01 C 46.79 55.98 23.39 56.01 0.00 56.00 L 0.00 29.97 Z" /></svg>';
 $beaufort11='<svg id="weather34 bft11" width="22pt" height="22pt" viewBox="0 0 96 96" ><path fill="#d65b4a" stroke="currentcolor" stroke-width="0.09375" opacity="1.00" d=" M 0.00 29.97 C 5.57 36.68 11.20 43.33 16.81 50.00 C 34.60 49.99 52.38 50.02 70.16 49.99 C 71.98 43.63 78.44 39.00 85.10 40.36 C 90.77 40.90 95.07 45.87 96.00 51.29 L 96.00 54.67 C 95.15 59.33 91.95 63.89 87.21 65.17 C 82.45 66.67 76.62 65.56 73.32 61.64 C 71.87 60.01 71.03 57.98 70.16 56.01 C 46.77 55.99 23.39 56.01 0.00 56.00 L 0.00 29.97 Z" /></svg>';
 $beaufort12='<svg id="weather34 bft12" width="22pt" height="22pt" viewBox="0 0 96 96" ><path fill="#d65b4a" stroke="currentcolor" stroke-width="0.09375" opacity="1.00" d=" M 0.00 29.96 C 5.55 36.68 11.21 43.31 16.80 50.00 C 18.26 49.99 19.73 49.99 21.19 49.99 C 18.93 47.26 16.67 44.53 14.40 41.79 C 15.94 40.54 17.47 39.27 19.00 38.00 C 22.34 42.00 25.66 46.01 29.01 50.00 C 42.72 49.98 56.43 50.03 70.14 49.98 C 71.17 47.82 72.07 45.50 73.83 43.81 C 77.91 39.62 84.85 39.15 89.85 41.94 C 93.15 43.97 95.29 47.56 96.00 51.33 L 96.00 54.56 C 95.35 58.38 93.17 62.01 89.84 64.06 C 85.44 66.52 79.67 66.42 75.46 63.60 C 72.81 61.81 71.37 58.87 70.15 56.02 C 46.76 55.98 23.38 56.01 0.00 56.00 L 0.00 29.96 Z" /></svg>';
-
-
-
 $preciprain='<svg x="0px" y="0px" width="10px" viewBox="0 0 345.13 345.13" ><g> <path style="fill:#01A4B5;" opacity=".8"  d="M264.25,301.7c-2.45,3.01-5.08,5.91-7.88,8.71c-23.14,23.14-53.47,34.72-83.8,34.72 
 s-60.66-11.58-83.81-34.72c-22.86-22.86-34.71-53.2-34.71-83.84c0-21.31,5.74-42.77,17.5-61.94l21.16-34.48L172.57,0l31.67,51.62 l24.28,39.56l45.06,73.45C300.18,207.99,295.971,263.03,264.25,301.7z"/><path style="fill:#01A4B5;" d="M264.25,301.7L92.71,130.15L172.57,0l31.67,51.62l24.28,39.56l45.06,73.45 C300.18,207.99,295.971,263.03,264.25,301.7z"/></g>';
 $heatindexalert8='<svg id="weather34 heatindex alert" width="7pt" height="7pt" fill="#ff552e" viewBox="0 0 20 20"><path d="M19.64 16.36L11.53 2.3A1.85 1.85 0 0 0 10 1.21 1.85 1.85 0 0 0 8.48 2.3L.36 16.36C-.48 17.81.21 19 1.88 19h16.24c1.67 0 2.36-1.19 1.52-2.64zM11 16H9v-2h2zm0-4H9V6h2z"/></svg>';
@@ -437,73 +434,70 @@ $weather34_sun_icon='<svg width="14pt" height="14pt" viewBox="0 0 1024 1024" ver
 ';
 $weather34_rain_icon='<svg id="weather34 rain icon" viewBox="0 0 64 64" width="11pt" height="11pt" fill="#01a4b5";"><path d="M50,38.36a18.5,18.5,0,0,1-37,0C13,22.17,28,7.14,31.5,7.14S50,22.17,50,38.36Z"/></svg>
 ';
-$maxclock='<svg width="7pt" height="7pt" viewBox="0 0 1100 1100" version="weather34 max clock" fill="currentColor">
-<path d="M512 512m-426.666667 0a426.666667 426.666667 0 1 0 853.333334 0 426.666667 426.666667 0 1 0-853.333334 0Z" fill="#00ACC1" />
-<path d="M512 512m-341.333333 0a341.333333 341.333333 0 1 0 682.666666 0 341.333333 341.333333 0 1 0-682.666666 0Z" fill="none" />
-<path d="M490.666667 234.666667h42.666666v277.333333h-42.666666z" fill="" /><path d="M667.413333 632.618667L632.746667 667.306667l-138.752-138.752 34.688-34.709334z" fill="none" />
-<path d="M512 512m-42.666667 0a42.666667 42.666667 0 1 0 85.333334 0 42.666667 42.666667 0 1 0-85.333334 0Z" fill="none" />
-<path d="M512 512m-21.333333 0a21.333333 21.333333 0 1 0 42.666666 0 21.333333 21.333333 0 1 0-42.666666 0Z" fill="#00ACC1" /></svg>
-';
-$adjust='<svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#ccc" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$adjust='<svg version="weather34 setup screen" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#ccc" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="#555" d="M0 0h24v24H0z"/> <circle cx="5" cy="5" r="1"stroke="#777"  /> <circle cx="12" cy="5" r="1" stroke="#777"/><circle cx="19" cy="5" r="1" stroke="#777"/> <circle cx="5" cy="12" r="1" stroke="#777" /> <circle cx="12" cy="12" r="1" stroke="#777"/>
   <circle cx="19" cy="12" r="1" stroke="#777"/> <circle cx="5" cy="19" r="1" stroke="#777" /> <circle cx="12" cy="19" r="1" stroke="#777"/><circle cx="19" cy="19" r="1" stroke="#00a4b4"/></svg>';
-$themeshadelight='<svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#aaa" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$themeshadelight='<svg version="weather34 light toggle" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#aaa" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="#555" d="M0 0h24v24H0z"/> <circle cx="16" cy="12" r="2" /><rect x="2" y="6" width="20" height="12" rx="6" stroke="#d87040"/></svg>';
-$themeshadedark='  <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#d87040" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$themeshadedark='<svg version="weather34 dark toggle" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#d87040" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="#555" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2" stroke="#ccc"/> <rect x="2" y="6" width="20" height="12" rx="6" /></svg>';
-$weather34F='<svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$weather34F='<svg version="weather34 Fahrenheit" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
  <g><path stroke-width="2"  stroke="#555" d="M0 0h24v24H0z"/></g><text x="4" y="17" font-size="14px" stroke-width="0" fill="#ccc">&deg;F</text></svg>';
-$weather34C='<svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$weather34C='<svg version="weather34 Celsius units" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
  <g><path stroke="#555" d="M0 0h24v24H0z"/></g><text x="4" y="17" font-size="14px" stroke-width="0" fill="#ccc">&deg;C</text></svg>';
- $weather34KTS='<svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+ $weather34KTS='<svg version="weather34 KTS units" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
  <g><path stroke="#555" d="M0 0h24v24H0z"/></g><text x="1" y="17" font-size="11px" stroke-width="0" fill="#ccc">KTS</text></svg>';
- $weather34MS='<svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+ $weather34MS='<svg version="weather34 MS units" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
  <g><path stroke="#555" d="M0 0h24v24H0z"/></g><text x="1.5" y="17" font-size="11px" stroke-width="0" fill="#ccc">M/S</text></svg>';
- $weather34UK='<svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+ $weather34UK='<svg version="weather34 UK units" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
  <g><path stroke="#555" d="M0 0h24v24H0z"/></g><text x="2" y="17" font-size="14px" stroke-width="0" fill="#ccc">UK</text></svg>';
-$weather34eq='<svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-width="2" stroke="#d87040" fill="none" stroke-linecap="round" stroke-linejoin="round">
+ $weather34language1='<svg version="weather34 language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+ <g><path stroke="#555" d="M0 0h24v24H0z"/></g><text x="2.5" y="17" font-size="12px" stroke-width="0" fill="#ccc" >'.$defaultlanguage.'</text></svg>';
+ $weather34language2='<svg version="weather34 language2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+ <g><path stroke="#555" d="M0 0h24v24H0z"/></g><text x="2.5" y="17" font-size="12px" stroke-width="0" fill="#ccc" >'.$defaultlanguage2.'</text></svg>';
+$weather34eq='<svg version="weather34 earthquakes" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-width="2" stroke="#d87040" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <path stroke="#555" d="M0 0h24v24H0z"/><polyline points="21 12 17 12 14 20 10 4 7 12 3 12" /></svg>';
-$weather34fore='<svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#00a4b4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$weather34fore='<svg version="weather34 forecast" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#00a4b4" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <path stroke="#555" d="M0 0h24v24H0z"/><path d="M7 18a4.6 4.4 0 0 1 0 -9h0a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-12" /></svg>';
-$weather34foretxt='<svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$weather34foretxt='<svg version="weather34 summary forecast" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
  <g><path stroke="#555" d="M0 0h24v24H0z"/></g><text x="1" y="16" font-size="9px" stroke-width="0" fill="#ccc">FTXT</text></svg>';
-$weather34chart2='<svg  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$weather34chart2='<svg  version="weather34 charts" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <path stroke="#555" d="M0 0h24v24H0z"/><rect x="3" y="12" width="6" height="8" rx="1" fill="#00a4b4" stroke-width="0"/> <rect x="9" y="8" width="6" height="12" rx="1" fill="#e6a241" stroke-width="0"/>
 <rect x="15" y="4" width="6" height="16" rx="1" fill="#d87040" stroke-width="0"/></svg>';
-$weather34alm='<svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#e6a241" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$weather34alm='<svg version="weather34 almanac" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#e6a241" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <path stroke="#555" d="M0 0h24v24H0z"/><rect x="4" y="5" width="16" height="16" rx="2" stroke="#00a4b4"/><line x1="16" y1="3" x2="16" y2="7" stroke="#d87040" />
   <line x1="8" y1="3" x2="8" y2="7" stroke="#d87040" /><line x1="4" y1="11" x2="20" y2="11" stroke="#777" stroke-width="1" /> <rect x="8" y="15" width="2" height="2" #00a4b4/></svg>';
-$weather34smtv='<svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$weather34smtv='<svg version="weather34 smart tv" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <g><path stroke="#555" d="M0 0h24v24H0z"/></g><text x="2" y="19" font-size="16px" stroke-width="0" fill="#00a4b4">TV</text></svg>';
-$weather34hinfo='<svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#777" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$weather34hinfo='<svg version="weather34hardware info" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#777" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <path stroke="#555" d="M0 0h24v24H0z" /><circle cx="12" cy="12" r="9" stroke="#aaa"/><line x1="12" y1="8" x2="12.01" y2="8" stroke="#00a4b4"/>
 <polyline points="11 12 12 12 12 16 13 16" stroke="#00a4b4"/></svg>';
-$weather34copyr=' <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#aaa" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$weather34copyr=' <svg version="weather34 copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#aaa" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <path stroke="#555" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9" fill="none" /><path d="M14.5 9a3.5 4 0 1 0 0 6" stroke="#00a4b4"/></svg>';
-$weather34refr='<svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#00a4b4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$weather34refr='<svg version="weather34 refresh page" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#00a4b4" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <path stroke="#555" d="M0 0h24v24H0z"/><path d="M12 4a8 8 0 0 1 3 15.45m0 -4.45v5h5" stroke="#e64b24"/><path d="M11 19.95a8 8 0 0 1 -2 -15.35" stroke-dasharray=".001 4" />
 </svg>';
-$weather34desktop='<svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#00a4b4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$weather34desktop='<svg version="weather34 desktop" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#00a4b4" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="#555" d="M0 0h24v24H0z"/><line x1="3" y1="19" x2="21" y2="19" /><rect x="5" y="6" width="14" height="10" rx="1" /></svg>';
-$backtohome='<svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#00a4b4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$backtohome='<svg version="weather34 go home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#00a4b4" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <path stroke="#555" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="16" rx="3" /><circle cx="9" cy="10" r="2" stroke="#ccc"/><line x1="15" y1="8" x2="17" y2="8" stroke="#777"/><line x1="15" y1="12" x2="17" y2="12" stroke="#777"/>
 <line x1="7" y1="16" x2="17" y2="16" stroke="#777"/></svg>';
 $backhome=$backtohome; 
-$wireless='<svg width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#009bab" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$wireless='<svg version="weather34 wireless online" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#009bab" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <path stroke="none" d="M0 0h24v24H0z"/><g transform="rotate(-45 12 18)"><line x1="12" y1="18" x2="12.01" y2="18" /><path d="M12 14a4 4 0 0 1 4 4" />
 <path d="M12 10a8 8 0 0 1 8 8" /><path d="M12 6a12 12 0 0 1 12 12" /></g> </svg>';
-$wirelessoffline='<svg width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#d87040" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$wirelessoffline='<svg version="weather34 wireless offline" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#d87040" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <path stroke="none" d="M0 0h24v24H0z"/> <g transform="rotate(-45 12 18)"><line x1="12" y1="18" x2="12.01" y2="18" /> <path d="M12 14a4 4 0 0 1 4 4" /><path d="M12 10a8 8 0 0 1 8 8" /><path d="M12 6a12 12 0 0 1 12 12" />
 </g> </svg>';
 $strike='<svg width="10pt" height="10pt"  viewBox="0 0 1024 1024" version="weather34 strike icon">
 <path d="M718.933333 106.666667L469.333333 362.666667l320 106.666666-334.933333 313.6 108.8 59.733334L256 917.333333l57.6-315.733333 61.866667 
 108.8L576 512l-320-106.666667L533.333333 106.666667h185.6z" fill="currentColor" />
 </svg>';
-$compiled='
-<svg width="32pt" height="32pt" viewBox="0 0 1024 1024" version="weather34 compiled info" >
+$compiled='<svg width="32pt" height="32pt" viewBox="0 0 1024 1024" version="weather34 compiled info" >
 <path d="M512 512m-448 0a448 448 0 1 0 896 0 448 448 0 1 0-896 0Z" fill="currentColor" />
 <path d="M469.333333 469.333333h85.333334v234.666667h-85.333334z" fill="#FFFFFF" />
 <path d="M512 352m-53.333333 0a53.333333 53.333333 0 1 0 106.666666 0 53.333333 53.333333 0 1 0-106.666666 0Z" fill="#FFFFFF" />
 </svg>';
+$maxclock='<svg width="10" height="10" viewBox="0 0 24 24" stroke-width="2" stroke="#009bab" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9" /><polyline points="12 7 12 12 9 15" /></svg>'
 ?>
 

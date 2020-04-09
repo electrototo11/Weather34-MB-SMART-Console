@@ -8,7 +8,8 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 
-include('livedata.php');include('common.php');date_default_timezone_set($TZ);$raintimeago=$originalDate124;$seconds_ago = (time() - strtotime($raintimeago));?>
+include('livedata.php');include('common.php');date_default_timezone_set($TZ);
+$raintimeago=$originalDate124;$seconds_ago = (time() - strtotime($raintimeago));?>
 <div class=modulecaptionrainrate>
 <?php
 // *rainfall hours or minutes ago if within last 24 hours
