@@ -63,86 +63,86 @@ include_once('livedata.php');include_once('updater2.php');
   </ul>
 
   <div class="nav-bottom">
-  <a href="console-setup.php" target="_blank" alt="Setup Screen" title="Setup Screen"> <?php echo $adjust ?></a> 
+  <a href="console-setup.php" target="_blank" data-title="Setup Screen"> <?php echo $adjust ?></a> 
 
   
   <a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>
-    <?php if ($theme == 'dark') { echo 'alt="Light Mode" title="Light Mode"';} else {echo 'alt="Dark Mode" title="Dark Mode"';} ?> >
+    <?php if ($theme == 'dark') { echo 'data-title="Light Mode"';} else {echo 'data-title="Dark Mode"';} ?> >
     <?php //theme
     if ($theme == 'dark') {echo $themeshadelight;} 
     else {echo $themeshadedark;}?></a>
 
      <?php 
   if ($units=='us') {  // NON METRIC OPTIONS C-MS-KTS   
-    echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
+    echo '<a  href="?units=metric" data-title="Metric Units">
     '.$weather34C.'</a>'; 
-    echo '<a href="?units=scandinavia" alt="MS Units" title="MS Units"> 
+    echo '<a href="?units=scandinavia" data-title="MS Units"> 
     '.$weather34MS.'</a>'; 
-    echo '<a  href="?units=knots" alt="Wind Knots" title="Wind Knots">
+    echo '<a  href="?units=knots" data-title="Wind Knots">
     '.$weather34KTS.'</a>';     
   }
   else if ($units=='uk'){ // UK OPTIONS F-C-KNOTS
-    echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
+    echo '<a  href="?units=us" data-title="Imperial Units">
     '.$weather34F.'</a>';
-     echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
+     echo '<a  href="?units=metric" data-title="Metric Units">
      '.$weather34C.'</a>';
-    echo '<a  href="?units=knots" alt="Wind Knots" title="Wind Knots">
+    echo '<a  href="?units=knots" data-title="Wind Knots">
     '.$weather34KTS.'</a>';     
   }  
   else if ($units=='metric'){ // METRIC OPTIONS F-UK-KTS
-    echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
+    echo '<a  href="?units=us" data-title="Imperial Units">
     '.$weather34F.'</a>';  
-     echo '<a href="?units=uk" alt="UK Units" title="UK Units"> 
+     echo '<a href="?units=uk" data-title="UK Units"> 
      '.$weather34UK.'</a>';  
-     echo '<a  href="?units=knots" alt="Wind Knots" title="Wind Knots">
+     echo '<a  href="?units=knots" data-title="Wind Knots">
      '.$weather34KTS.'</a>';      
   }  
 
   else if ($units=='scandinavia'){ // MS OPTIONS F-C-KTS
-    echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
+    echo '<a  href="?units=us" data-title="Imperial Units">
     '.$weather34F.'</a>'; 
-    echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
+    echo '<a  href="?units=metric" data-title="Metric Units">
     '.$weather34C.'</a>';       
-    echo '<a  href="?units=knots" alt="Wind Knots" title="Wind Knots">
+    echo '<a  href="?units=knots" data-title="Wind Knots">
     '.$weather34KTS.'</a>';       
   }  
   else if ($units=='knots'){   // KNOTS OPTIONS F-C-UK
     echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
     '.$weather34F.'</a>';  
-    echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
+    echo '<a  href="?units=metric" data-title="Metric Units">
     '.$weather34C.'</a>'; 
-    echo '<a href="?units=uk" alt="UK Units" title="UK Units">     
+    echo '<a href="?units=uk" data-title="UK Units">     
     '.$weather34UK.'</a>';   
    } 
    
    else if ($units==''){   // default
-    echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
+    echo '<a  href="?units=us" data-title="Imperial Units">
     '.$weather34F.'</a>';  
-    echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
+    echo '<a  href="?units=metric" data-title="Metric Units">
     '.$weather34C.'</a>'; 
-    echo '<a href="?units=uk" alt="UK Units" title="UK Units">     
+    echo '<a href="?units=uk" data-title="UK Units">     
     '.$weather34UK.'</a>';   
    } 
 ?>
 
-<a href="outlookwu.php" data-lity alt="5 day Forecast" title="5 day Forecast">
+<a href="outlookwu.php" data-lity data-title="5 day Forecast">
 <?php echo $weather34fore?></a>
 
-<a href="outlookwutext.php" data-lity alt="Summary" title="Summary Forecast">
+<a href="outlookwutext.php" data-lity  data-title="Summary Forecast">
 <?php echo $weather34foretxt?></a>
 
-<a href="consolecharts.php" alt="Daily Charts" title="Daily Charts">
+<a href="consolecharts.php" data-title="Daily Charts">
 <?php echo $weather34chart2?></a>
 
-<a href="weather34-almanac.php" alt="Almanac" title="Almanac">
+<a href="weather34-almanac.php" data-title="Almanac">
 <?php echo $weather34alm?></a>
 
 
 <?php if ($languages == "yes") {?>
-<a  href="index.php?lang=<?php echo $defaultlanguage?>" alt="<?php echo $defaultlanguage?>" title="<?php echo $defaultlanguage?>">
+<a  href="index.php?lang=<?php echo $defaultlanguage ;?>" data-title="<?php echo $defaultlanguage?>">
   <span style="text-transform:uppercase">
 <?php echo $weather34language1?></span></a>
-<a  href="index.php?lang=<?php echo $defaultlanguage2?>" alt="<?php echo $defaultlanguage2?>" title="<?php echo $defaultlanguage2?>">
+<a  href="index.php?lang=<?php echo $defaultlanguage2;?>" data-title="<?php echo $defaultlanguage2?>">
 <span style="text-transform:uppercase"><?php echo $weather34language2?></span></a>
 <?php };?>
 
@@ -153,16 +153,16 @@ include_once('livedata.php');include_once('updater2.php');
   <?php 
 //weather34 smart tv option
 if ($smarttv=='yes'){echo '
-  <a href="weather34-tv.php" alt="weather34 smart tv version" title="weather34 tv version">'. $weather34smtv.'</a>
+  <a href="weather34-tv.php" data-title="Smart TV">'. $weather34smtv.'</a>
 ';}
 ?>  
-<a  href="weather34-template-legend.php" data-lity alt="weather34 template legend " title="weather34 template legend">  
+<a  href="weather34-template-legend.php" data-lity data-title="Hardware Info">  
   <?php echo $weather34hinfo;?></a>
 
-<a  href="info.html" data-lity alt="weather34 template info  " title="weather34 template info">
+<a  href="info.html" data-lity data-title="Template info">
 <?php echo $weather34copyr;?></a>
 
-<a href="index.php" alt="refresh this dashboard " title="weather34 refresh this dashboard ">
+<a href="index.php" data-title="Refresh">
 <?php echo $weather34refr?></a></div>
   
  </body></html>

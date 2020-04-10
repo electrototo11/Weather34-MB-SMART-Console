@@ -58,29 +58,82 @@
     <li2><div id=time-date></div></li2>  
   </ul>
   <div class="nav-bottom-charts2">
-    <a href="index.php" alt="previous page" title="previous page"><?php echo $backhome?></a>
+  <a href="index.php" data-title="Dashboard"><?php echo $backtohome?></a>
 
-    <a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>
-    <?php if ($theme == 'dark') { echo 'alt="Light Mode" title="Light Mode"';} else {echo 'alt="Dark Mode" title="Dark Mode"';} ?> >
-    <?php //theme
-    if ($theme == 'dark') {echo '<div class="weather34-theme-icon">'.$weather34theme.'</div>';} 
-    else {echo '<div class="weather34-theme-icon">'.$weather34theme.'</div>';}?></a>
+<a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>
+  <?php if ($theme == 'dark') { echo 'data-title="Light Mode"';} else {echo 'data-title="Dark Mode"';} ?> >
+  <?php //theme
+  if ($theme == 'dark') {echo $themeshadelight;} 
+  else {echo $themeshadedark;}?></a>
+
+   <?php 
+if ($units=='us') {  // NON METRIC OPTIONS C-MS-KTS   
+  echo '<a  href="?units=metric" data-title="Metric Units">
+  '.$weather34C.'</a>'; 
+  echo '<a href="?units=scandinavia" data-title="MS Units"> 
+  '.$weather34MS.'</a>'; 
+  echo '<a  href="?units=knots" data-title="Wind Knots">
+  '.$weather34KTS.'</a>';     
+}
+else if ($units=='uk'){ // UK OPTIONS F-C-KNOTS
+  echo '<a  href="?units=us" data-title="Imperial Units">
+  '.$weather34F.'</a>';
+   echo '<a  href="?units=metric" data-title="Metric Units">
+   '.$weather34C.'</a>';
+  echo '<a  href="?units=knots" data-title="Wind Knots">
+  '.$weather34KTS.'</a>';     
+}  
+else if ($units=='metric'){ // METRIC OPTIONS F-UK-KTS
+  echo '<a  href="?units=us" data-title="Imperial Units">
+  '.$weather34F.'</a>';  
+   echo '<a href="?units=uk" data-title="UK Units"> 
+   '.$weather34UK.'</a>';  
+   echo '<a  href="?units=knots" data-title="Wind Knots">
+   '.$weather34KTS.'</a>';      
+}  
+
+else if ($units=='scandinavia'){ // MS OPTIONS F-C-KTS
+  echo '<a  href="?units=us" data-title="Imperial Units">
+  '.$weather34F.'</a>'; 
+  echo '<a  href="?units=metric" data-title="Metric Units">
+  '.$weather34C.'</a>';       
+  echo '<a  href="?units=knots" data-title="Wind Knots">
+  '.$weather34KTS.'</a>';       
+}  
+else if ($units=='knots'){   // KNOTS OPTIONS F-C-UK
+  echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
+  '.$weather34F.'</a>';  
+  echo '<a  href="?units=metric" data-title="Metric Units">
+  '.$weather34C.'</a>'; 
+  echo '<a href="?units=uk" data-title="UK Units">     
+  '.$weather34UK.'</a>';   
+ } 
+ 
+ else if ($units==''){   // default
+  echo '<a  href="?units=us" data-title="Imperial Units">
+  '.$weather34F.'</a>';  
+  echo '<a  href="?units=metric" data-title="Metric Units">
+  '.$weather34C.'</a>'; 
+  echo '<a href="?units=uk" data-title="UK Units">     
+  '.$weather34UK.'</a>';   
+ } 
+?>
 
 
-<a href="consolecharts.php" alt="Today Charts" title="Today Charts">
+<a href="consolecharts.php" data-title="Today Charts">
       <div class="weather34-sphere-orange"></div>
           <bottom-bar-text>Today</bottom-bar-text></a>
 
-<a href="consolecharts-month.php" alt="<?php echo date('M');?> Charts" title="<?php echo date('M');?> Charts">
+<a href="consolecharts-month.php" data-title="<?php echo date('M');?> Charts">
        <div class="weather34-sphere-yellow"></div>
           <bottom-bar-text><?php echo date('F');?></bottom-bar-text></a>
 
-          <a href="consolecharts-year.php" alt="<?php echo date('Y');?> Charts" title="<?php echo date('Y');?> Charts">
+          <a href="consolecharts-year.php" data-title="<?php echo date('Y');?> Charts">
        <div class="weather34-sphere-blue"></div>
           <bottom-bar-text><?php echo date('Y');?></bottom-bar-text></a>
 
           <?php if ($displayalmanac=='yes'){
-      echo '<a href="weather34-almanac.php" alt="Almanac" title="Almanac">
+      echo '<a href="weather34-almanac.php" data-title="Almanac">
     <div class="weather34-chart-icons">'.$almanacicon.'</a></div>';}
       ?> 
        
@@ -92,19 +145,16 @@ $lastyear = date("Y", $time);
 $dayfile=$lastyear;$forecastime=filemtime('weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M",$forecastime);
 ?></chartpage>
   <div class="weather34-rightfootericons">
-  <?php 
+<?php 
 //weather34 smart tv option
 if ($smarttv=='yes'){echo '
-  <a href="weather34-tv.php" alt="weather34 smart tv version" title="weather34 tv version">'. $weather34smtv.'</a>
+<a href="weather34-tv.php" data-title="Smart TV">'. $weather34smtv.'</a>
 ';}
 ?>  
-<a  href="weather34-template-legend.php" data-lity alt="weather34 template legend " title="weather34 template legend">  
-  <?php echo $weather34hinfo;?></a>
-
-<a  href="info.html" data-lity alt="weather34 template info  " title="weather34 template info">
+<a  href="weather34-template-legend.php" data-lity data-title="Hardware Info">  
+<?php echo $weather34hinfo;?></a>
+<a  href="info.html" data-lity data-title="Template info">
 <?php echo $weather34copyr;?></a>
-
-<a href="consolecharts-2019.php" alt="refresh this dashboard " title="weather34 refresh this dashboard ">
+<a href="consolecharts-2019.php" data-title="Refresh">
 <?php echo $weather34refr?></a></div>
-  
- </body></html>
+</body></html>

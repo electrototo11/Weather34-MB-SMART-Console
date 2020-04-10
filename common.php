@@ -1,6 +1,6 @@
 <?php include('settings.php');error_reporting(0); 
 
-//translations for HOMEWEATHERSTATION TEMPLATE UPDATED 2nd November added set locale
+//translations for Standalone TEMPLATE UPDATED 2nd November added set locale
 mb_internal_encoding('UTF-8');
 mb_http_output('UTF-8');
 mb_http_input('UTF-8');
@@ -37,15 +37,7 @@ switch ($lang) {
   $lang_flag = 'en';
   $lang_option = 'en';
   setlocale(LC_TIME, "en_EN");
-  break;
-  
-  //english	us
-  case 'us':
-  $lang_file = 'lang.en.php';
-  $lang_flag = 'us';
-  $lang_option = 'en';
-  setlocale(LC_TIME, "en_US");
-  break;
+  break;   
   
 //danish
   case 'dk':
@@ -102,6 +94,7 @@ switch ($lang) {
   $lang_option = 'en';
   setlocale(LC_TIME, "fr_FR.UTF-8");
   break;  
+
 //turkish  
   case 'tr':
   $lang_file = 'lang.tr.php';

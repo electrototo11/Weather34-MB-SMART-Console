@@ -4822,3 +4822,30 @@ infoicon {
     margin-top: -20px;
     left: -20px
 }
+[data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+}
+[data-title]:after {
+    content: attr(data-title);
+    background-color: var(--blue);
+    color:#ffffff;
+    font-size:1.2em;
+    position: absolute;
+    padding: 5px 5px 5px 5px;
+    bottom: 2.6em;
+    left: 0;
+    white-space: nowrap;   
+    opacity: 0;    
+    z-index: 99999;
+    visibility: hidden;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+}
+[data-title] {
+    position: relative;
+}
