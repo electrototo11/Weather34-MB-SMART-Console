@@ -1,4 +1,4 @@
-<?php include('livedata.php');include('common.php');?>
+<?php include('livedata.php');?>
 <div class="modulecaption2">UV-Index</div>
 <div class="button button-dial">       
 <div class="button-dial-top"></div>

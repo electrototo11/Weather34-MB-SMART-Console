@@ -1,4 +1,4 @@
-<?php include('livedata.php');include('common.php');?>
+<?php include('livedata.php');?>
 <div class="almanac-word"><?php echo $lang['Humidity'];?></div>
 <br><br>
 <div class="almanac"><div class="almanac-content">

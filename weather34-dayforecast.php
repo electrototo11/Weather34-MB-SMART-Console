@@ -8,7 +8,7 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
-include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');error_reporting(0); date_default_timezone_set($TZ);	?>
+include('livedata.php');header('Content-type: text/html; charset=utf-8');error_reporting(0); date_default_timezone_set($TZ);	?>
 <?php 
 //start the wu output
 $json='jsondata/wuforecast.txt';

@@ -472,6 +472,15 @@ $compiled='<svg width="32pt" height="32pt" viewBox="0 0 1024 1024" version="weat
 <path d="M469.333333 469.333333h85.333334v234.666667h-85.333334z" fill="#FFFFFF" />
 <path d="M512 352m-53.333333 0a53.333333 53.333333 0 1 0 106.666666 0 53.333333 53.333333 0 1 0-106.666666 0Z" fill="#FFFFFF" />
 </svg>';
-$maxclock='<svg width="10" height="10" viewBox="0 0 24 24" stroke-width="2" stroke="#009bab" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9" /><polyline points="12 7 12 12 9 15" /></svg>'
+$maxclock='<svg width="10" height="10" viewBox="0 0 24 24" stroke-width="2" stroke="#009bab" fill="none" stroke-linecap="round" 
+stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9" /><polyline points="12 7 12 12 9 15" /></svg>';
+
+
+$weather34language1='<svg version="weather34 language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<g><path stroke="#555" d="M0 0h24v24H0z"/></g><text x="2.5" y="17" font-size="12px" stroke-width="0" fill="#ccc" >'.$defaultlanguage.'</text></svg>';
+$weather34language2='<svg version="weather34 language2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<g><path stroke="#555" d="M0 0h24v24H0z"/></g><text x="2.5" y="17" font-size="12px" stroke-width="0" fill="#ccc" >'.$defaultlanguage2.'</text></svg>';
+
+
 ?>
 

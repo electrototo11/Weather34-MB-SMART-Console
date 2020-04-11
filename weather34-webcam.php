@@ -1,4 +1,4 @@
-<?php include('livedata.php');include('common.php')?>
+<?php include('livedata.php');?>
 
 <div class="modulecaptioncam">Web Cam</div>
 

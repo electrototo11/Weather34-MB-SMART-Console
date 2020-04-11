@@ -8,7 +8,7 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
-include('livedata.php');include('console-settings.php');include('common.php');header('Content-type: text/html; charset=utf-8');
+include('livedata.php');include('console-settings.php');header('Content-type: text/html; charset=utf-8');
 if ($clockformat=='24'){
     $timeformat='H:i';
 }

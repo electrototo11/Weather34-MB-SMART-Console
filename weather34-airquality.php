@@ -1,4 +1,4 @@
-<?php  include('shared.php');include('common.php');
+<?php  include('shared.php');
 date_default_timezone_set($TZ);
     ####################################################################################################
     #	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #

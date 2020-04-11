@@ -1,6 +1,6 @@
   
  <?php include('livedata.php');?>
- <div class="modulecaptionchart">Dewpoint &nbsp;<blue1>&deg;<?php echo $weather["temp_units"]; ?></blue1></div> 
+ <div class="modulecaptionchart"><?php echo $lang['Dewpoint']?>&nbsp;<blue1>&deg;<?php echo $weather["temp_units"]; ?></blue1></div> 
  <iframe  class="charttempmodule" src="weather34charts/monthdewpointmodulechart2.php" frameborder="0" scrolling="no" width="320px" height="250px"></iframe>  
  
 <div class="legenddewpoint">Min <?php echo $weather["dewmmin"]?>&deg;<?php echo $weather["temp_units"]; ?></div>

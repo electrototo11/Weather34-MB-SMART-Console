@@ -60,9 +60,9 @@
   <div class="nav-bottom">
   <a href="index.php" data-title="Dashboard"><?php echo $backtohome?></a>
 
-  <a href="consolecharts.php" data-title="<?php echo $lang['Today'];?> Charts">
+  <a href="consolecharts.php" data-title="<?php echo strftime("%A" );?> Charts">
   <?php echo $weather34chart2?> 
-  <span style="position:relative;top:-8px"><?php echo $lang['Today'];?></span></a>
+  <span style="position:relative;top:-8px"><?php echo strftime("%A" );?></span></a>
 
         <a href="consolecharts-month.php" data-title="<?php echo strftime("%B");?> Charts">
         <?php echo $weather34chart2?> 
@@ -77,7 +77,7 @@
         <span style="position:relative;top:-8px"><?php echo $newtime;?></span></a>
         <?php };?>
 
-       <chartpage><?php echo $lang['Updated'] ?> <?php 
+       <chartpage><?php echo $maxclock ?> <?php 
        $dayfile=date('Y');$forecastime=filemtime('weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M %p",$forecastime);?>     
       </chartpage>
 

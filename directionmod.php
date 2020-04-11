@@ -8,7 +8,7 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 
-require_once('livedata.php');require_once('common.php');?>
+require_once('livedata.php');?>
 <meta http-equiv="Content-Type: text/html; charset=UTF-8" />
 <head>
 <style>

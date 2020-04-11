@@ -60,9 +60,9 @@
   <div class="nav-bottom-charts2">
   <a href="index.php" data-title="Dashboard"><?php echo $backtohome?></a>
 
-  <a href="consolecharts.php" data-title="<?php echo $lang['Today'];?> Charts">
+  <a href="consolecharts.php" data-title="<?php echo strftime("%A" );?> Charts">
   <?php echo $weather34chart2?> 
-  <span style="position:relative;top:-8px"><?php echo $lang['Today'];?></span></a>
+  <span style="position:relative;top:-8px"><?php echo strftime("%A" );?></span></a>
 
         <a href="consolecharts-month.php" data-title="<?php echo strftime("%B");?> Charts">
         <?php echo $weather34chart2?> 
@@ -73,7 +73,7 @@
         <span style="position:relative;top:-8px"><?php echo strftime("%Y");?></span></a>    
 
         <chartpage>
-<?php echo $lang['Updated']." " ;
+<?php echo $maxclock." " ;
 //last year
 $time = strtotime("-1 year", time());
 $lastyear = date("Y", $time);

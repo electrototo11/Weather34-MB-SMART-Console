@@ -1,4 +1,4 @@
-<?php include_once('livedata.php');include('common.php');
+<?php include_once('livedata.php');
 // pressure mmHG quick fix over rides mb or hPa 
 if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa" ){$weather["barometer"]=number_format($weather["barometer"]*0.75006157584566,1);}
 if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa" ){$weather["barometer_max"]=number_format($weather["barometer_max"]*0.75006157584566,1);}

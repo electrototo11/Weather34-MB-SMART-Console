@@ -138,6 +138,11 @@ include_once('livedata.php');include_once('updater2.php');
 <a href="weather34-almanac.php" alt="Almanac" title="Almanac">
 <?php echo $weather34alm?></a>
 
+<?php if ($languages == "yes") {?>
+<a href="weather34-tv.php?lang=<?php echo $defaultlanguage;?>"><span style="text-transform:uppercase"><?php echo $weather34language1;?></span></a>
+<a href="weather34-tv.php?lang=<?php echo $defaultlanguage2;?>"><span style="text-transform:uppercase"><?php echo $weather34language2;?></span></a>
+<?php };?>
+
 <div class="weather34-rightfootericons">
 <a href="index.php" alt="weather34 desktop version" title="weather34 desktop version">
 <?php echo $weather34desktop;?></a>
@@ -148,7 +153,7 @@ include_once('livedata.php');include_once('updater2.php');
 <a  href="info.html" data-lity alt="weather34 template info  " title="weather34 template info">
 <?php echo $weather34copyr;?></a>
 
-<a href="index.php" alt="refresh this dashboard " title="weather34 refresh this dashboard ">
+<a href="weather34-tv.php" alt="refresh this dashboard " title="weather34 refresh this dashboard ">
 <?php echo $weather34refr?></a></div>
   
  </body></html>

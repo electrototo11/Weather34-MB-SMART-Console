@@ -1,4 +1,4 @@
-<?php require_once('livedata.php');require_once('common.php');?>
+<?php require_once('livedata.php');?>
 <div class="modulecaption2"><?php echo $lang['Solarradiation']?></div>
 <div class="button button-dial">    
 <div class="button-dial-top"></div>

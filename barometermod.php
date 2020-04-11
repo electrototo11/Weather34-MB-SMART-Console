@@ -1,4 +1,4 @@
-<?php include_once('livedata.php');include('common.php');?>
+<?php include_once('livedata.php');?>
 <meta http-equiv="Content-Type: text/html; charset=UTF-8" />
 <style>
 .weather34barometerarrowactual{-webkit-transform:rotate(<?php

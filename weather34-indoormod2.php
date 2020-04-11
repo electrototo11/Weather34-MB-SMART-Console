@@ -7,7 +7,7 @@
 	# 	      MB SMART Console Version Revised FEB 2020								                   #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
-include('livedata.php');include('common.php');?>
+include('livedata.php');?>
 <div class="modulecaption2"><?php echo $lang['Indoor']?> &deg;<?php echo $weather["temp_units"]?></div>
 <div class="button button-dial">               
  <div class="button-dial-top"></div>

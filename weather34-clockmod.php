@@ -1,4 +1,4 @@
-<?php include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');	?>
+<?php include('livedata.php');header('Content-type: text/html; charset=utf-8');	?>
 <div class="online">
 <?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;else echo $wireless?></div>
 <div id="weather34clock4"></div>

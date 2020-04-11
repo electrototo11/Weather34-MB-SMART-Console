@@ -1,4 +1,4 @@
-<?php include_once('livedata.php');include_once('common.php');
+<?php include_once('livedata.php');
  date_default_timezone_set($TZ);
 
 	####################################################################################################

@@ -8,7 +8,7 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
-include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');	?>
+include('livedata.php');header('Content-type: text/html; charset=utf-8');	?>
 <div class="almanac-word-clock">Local Time</div><br><br>
 <div id="weather34clock2"></div>
 <script type="text/javascript">

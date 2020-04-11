@@ -1,4 +1,4 @@
- <?php
+<?php
 include('console-settings.php');
 $weather34tvicon='<svg width="18pt" height="18pt" viewBox="0 0 512 512" version="weather34 smart tv icon">
 <g id="#00a4b4"><path fill="#00a4b4" opacity="1.00" d=" M 34.18 52.19 C 38.04 49.11 43.05 47.89 47.93 48.00 C 186.98 48.02 326.04 47.97 465.09 48.02 C 476.40 47.50 486.34 57.77 485.97 68.99 C 486.04 165.65 485.99 262.32 485.99 358.99 C 486.20 366.47 482.38 374.01 475.83 377.78 C 471.70 380.37 466.69 380.76 461.94 380.65 C 433.86 380.50 405.76 380.87 377.68 380.46 C 378.40 391.28 377.80 402.16 378.00 413.00 C 400.00 413.00 422.00 413.00 444.00 413.00 C 444.00 416.33 444.00 419.66 444.00 423.00 C 318.67 423.00 193.33 423.00 68.00 423.00 C 68.00 419.66 68.00 416.33 68.00 413.00 C 90.67 413.00 113.33 413.00 136.00 413.00 C 136.20 402.16 135.59 391.28 136.32 380.46 C 107.22 380.87 78.10 380.50 49.00 380.65 C 43.65 380.83 38.03 379.70 33.84 376.18 C 28.67 372.13 25.88 365.54 26.01 359.03 C 25.99 262.65 26.00 166.28 26.01 69.90 C 25.80 63.15 28.71 56.27 34.18 52.19 M 53.06 75.72 C 53.06 149.64 53.06 223.56 53.06 297.47 C 188.35 297.47 323.65 297.48 458.94 297.47 C 458.94 223.55 458.94 149.64 458.94 75.72 C 323.65 75.72 188.35 75.72 53.06 75.72 M 64.27 324.27 C 57.22 325.89 51.68 332.68 51.91 339.97 C 51.57 348.56 59.36 356.39 67.95 356.09 C 76.93 356.48 84.95 347.97 84.07 339.02 C 83.88 329.35 73.60 321.79 64.27 324.27 M 110.36 324.46 C 102.96 326.05 97.42 333.47 98.09 341.03 C 98.39 349.57 106.57 356.74 115.08 355.91 C 123.99 355.58 131.25 346.68 129.81 337.89 C 128.88 328.83 119.17 322.13 110.36 324.46 M 151.69 380.46 C 152.40 391.28 151.81 402.16 152.00 413.00 C 222.00 413.00 292.00 413.00 362.00 413.00 C 362.20 402.16 361.59 391.28 362.32 380.46 C 348.57 380.86 334.81 380.52 321.06 380.63 C 305.05 380.37 289.06 381.24 273.04 381.00 C 251.70 380.83 230.33 381.38 209.00 380.62 C 189.90 380.53 170.79 380.85 151.69 380.46 Z" />
@@ -50,6 +50,8 @@ $position13    = "' . $_POST['position13'] . '";
 $chartoption    = "' . $_POST['chartoption'] . '";
 $chartoption2    = "' . $_POST['chartoption2'] . '";
 $defaultlanguage   = "' . $_POST["defaultlanguage"] . '";
+$defaultlanguage2   = "' . $_POST["defaultlanguage2"] . '";
+$languages   = "' . $_POST["languages"] . '";
 $stationName   = "' . $_POST["stationName"] . '";
 $theme   = "' . $_POST["theme"] . '";
 $TZ = "' . $_POST["TZ"] . '";
@@ -476,9 +478,42 @@ Language Default Display </div>
                                         <option>es</option>
                                         <option>sv</option>                                        
                                     </select>
-                                    <br><br>   
+                                    <br><br>
 
-                                    en=English , dk=Danish  ,de=German ,fr= French ,it=Italian ,nl=Dutch , es=Spanish ,sv=Sweden                                
+                                    <div class="stationvalue">
+                                        2 Language Icon Display</div>
+                                    <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#F05E40" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                        <path d="M12 30 L24 16 12 2" />
+                                    </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                        <path d="M30 12 L16 24 2 12" />
+                                    </svg>
+
+                                            <label name="defaultlanguage2"></label>
+                                    <select id="defaultlanguage2" name="defaultlanguage2" class="choose">
+                                        <option><?php echo $defaultlanguage2; ?></option>
+                                        <option>en</option>                                        
+                                        <option>dk</option>
+                                        <option>de</option>
+                                        <option>fr</option>
+                                        <option>it</option>
+                                        <option>nl</option>
+                                        <option>es</option>
+                                        <option>sv</option>                                        
+                                    </select>
+                                    <br><br>
+
+<div class="stationvalue">Display Language Icons in Footer</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+<path d="M12 30 L24 16 12 2" /></svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+<path d="M30 12 L16 24 2 12" />
+</svg>
+
+<label name="languages"></label>
+<select id="languages" name="languages" class="choose1">
+<option><?php echo $languages; ?></option>
+<option>yes</option>
+<option>no</option>
+</select>
+ <br><br>
             </div>
 
             <div class="weatheroptions">

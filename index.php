@@ -137,6 +137,11 @@ include_once('livedata.php');include_once('updater2.php');
 <a href="weather34-almanac.php" data-title="Almanac">
 <?php echo $weather34alm?></a>
 
+<?php if ($languages == "yes") {?>
+<a href="index.php?lang=<?php echo $defaultlanguage;?>"><span style="text-transform:uppercase"><?php echo $weather34language1;?></span></a>
+<a href="index.php?lang=<?php echo $defaultlanguage2;?>"><span style="text-transform:uppercase"><?php echo $weather34language2;?></span></a>
+<?php };?>
+
 <div class="weather34-rightfootericons">
   <?php 
 //weather34 smart tv option
@@ -151,6 +156,5 @@ if ($smarttv=='yes'){echo '
 <?php echo $weather34copyr;?></a>
 
 <a href="index.php" data-title="Refresh">
-<?php echo $weather34refr?></a></div>
-  
+<?php echo $weather34refr?></a></div>  
  </body></html>

@@ -8,7 +8,7 @@
 	#   https://www.weather34.com 	                      #                                            
 	#######################################################
 
-include_once('livedata.php');include_once('updater-almanac.php');include('common.php');?>
+include_once('livedata.php');include_once('updater-almanac.php');?>
 <!DOCTYPE html>
 <html><head>
   <title>Weather34 Almanac History for Sinanoba Istanbul </title>

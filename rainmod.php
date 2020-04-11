@@ -8,7 +8,7 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 
-include('livedata.php');include('common.php');date_default_timezone_set($TZ);
+include('livedata.php');date_default_timezone_set($TZ);
 $raintimeago=$originalDate124;$seconds_ago = (time() - strtotime($raintimeago));?>
 <div class=modulecaptionrainrate>
 <?php

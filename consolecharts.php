@@ -1,4 +1,4 @@
-<?php include_once('livedata.php');include_once('updater3.php');?>
+<?php include_once('livedata.php');include_once('updater3.php');include('settings.php');?>
 <!DOCTYPE html><html><head>
 <title> <?php echo $stationName;?> Console Charts</title>
 <meta name="title" content="<?php echo $stationName;?> Console Charts">
@@ -88,7 +88,7 @@
         <?php };?>
        
        
-       <chartpage><?php echo $lang['Updated'] ?> <?php 
+       <chartpage><?php echo $maxclock ?> <?php 
        $dayfile=date('Y')."/".date('jMY');$forecastime=filemtime('weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M %p",$forecastime);?>     
       </chartpage>
       
