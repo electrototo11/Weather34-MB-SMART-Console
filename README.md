@@ -1,4 +1,4 @@
-# Weather34 MB-SMART Console
+# Weather34 MB-SMART Console 5.34
 # A stand alone version of the alternative console layout for OEM screens/Tablets/Devices/Smart TV/Desktop
 # Requires Meteobridge NANOSD or Meteobridge Pro/TP-Link(type)
  
