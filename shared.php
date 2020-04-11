@@ -448,13 +448,13 @@ $weather34hinfo='<svg version="weather34hardware info" width="24" height="24" vi
 <polyline points="11 12 12 12 12 16 13 16" stroke="#00a4b4"/></svg>';
 $weather34copyr=' <svg version="weather34 copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#aaa" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <path stroke="#555" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9" fill="none" /><path d="M14.5 9a3.5 4 0 1 0 0 6" stroke="#00a4b4"/></svg>';
-$weather34refr='<svg version="weather34 refresh page" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#00a4b4" fill="none" stroke-linecap="round" stroke-linejoin="round">
-<path stroke="#555" d="M0 0h24v24H0z"/><path d="M12 4a8 8 0 0 1 3 15.45m0 -4.45v5h5" stroke="#e64b24"/><path d="M11 19.95a8 8 0 0 1 -2 -15.35" stroke-dasharray=".001 4" />
+$weather34refr='<svg version="weather34 refresh" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#00a4b4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path stroke="#555" d="M0 0h24v24H0z"/><path d="M12 4a8 8 0 0 1 3 15.45m0 -4.45v5h5" stroke="#90b22a"/><path d="M11 19.95a8 8 0 0 1 -2 -15.35" stroke-dasharray=".1 4" />
 </svg>';
 $weather34desktop='<svg version="weather34 desktop" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#00a4b4" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="#555" d="M0 0h24v24H0z"/><line x1="3" y1="19" x2="21" y2="19" /><rect x="5" y="6" width="14" height="10" rx="1" /></svg>';
 $backtohome='<svg version="weather34 go home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#00a4b4" fill="none" stroke-linecap="round" stroke-linejoin="round">
-<path stroke="#555" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="16" rx="3" /><circle cx="9" cy="10" r="2" stroke="#ccc"/><line x1="15" y1="8" x2="17" y2="8" stroke="#777"/><line x1="15" y1="12" x2="17" y2="12" stroke="#777"/>
+<path stroke="0" d="M0 0h24v24H0z" stroke-width="0"/><rect x="3" y="4" width="18" height="16" rx="3" /><circle cx="9" cy="10" r="2" stroke="#ccc"/><line x1="15" y1="8" x2="17" y2="8" stroke="#777"/><line x1="15" y1="12" x2="17" y2="12" stroke="#777"/>
 <line x1="7" y1="16" x2="17" y2="16" stroke="#777"/></svg>';
 $backhome=$backtohome; 
 $wireless='<svg version="weather34 wireless online" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#009bab" fill="none" stroke-linecap="round" stroke-linejoin="round">

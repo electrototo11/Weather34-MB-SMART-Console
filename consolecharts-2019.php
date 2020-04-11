@@ -60,84 +60,19 @@
   <div class="nav-bottom-charts2">
   <a href="index.php" data-title="Dashboard"><?php echo $backtohome?></a>
 
-<a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>
-  <?php if ($theme == 'dark') { echo 'data-title="Light Mode"';} else {echo 'data-title="Dark Mode"';} ?> >
-  <?php //theme
-  if ($theme == 'dark') {echo $themeshadelight;} 
-  else {echo $themeshadedark;}?></a>
+  <a href="consolecharts.php" data-title="<?php echo $lang['Today'];?> Charts">
+  <?php echo $weather34chart2?> 
+  <span style="position:relative;top:-8px"><?php echo $lang['Today'];?></span></a>
 
-   <?php 
-if ($units=='us') {  // NON METRIC OPTIONS C-MS-KTS   
-  echo '<a  href="?units=metric" data-title="Metric Units">
-  '.$weather34C.'</a>'; 
-  echo '<a href="?units=scandinavia" data-title="MS Units"> 
-  '.$weather34MS.'</a>'; 
-  echo '<a  href="?units=knots" data-title="Wind Knots">
-  '.$weather34KTS.'</a>';     
-}
-else if ($units=='uk'){ // UK OPTIONS F-C-KNOTS
-  echo '<a  href="?units=us" data-title="Imperial Units">
-  '.$weather34F.'</a>';
-   echo '<a  href="?units=metric" data-title="Metric Units">
-   '.$weather34C.'</a>';
-  echo '<a  href="?units=knots" data-title="Wind Knots">
-  '.$weather34KTS.'</a>';     
-}  
-else if ($units=='metric'){ // METRIC OPTIONS F-UK-KTS
-  echo '<a  href="?units=us" data-title="Imperial Units">
-  '.$weather34F.'</a>';  
-   echo '<a href="?units=uk" data-title="UK Units"> 
-   '.$weather34UK.'</a>';  
-   echo '<a  href="?units=knots" data-title="Wind Knots">
-   '.$weather34KTS.'</a>';      
-}  
+        <a href="consolecharts-month.php" data-title="<?php echo strftime("%B");?> Charts">
+        <?php echo $weather34chart2?> 
+        <span style="position:relative;top:-8px"><?php echo strftime("%B");?></span></a>    
 
-else if ($units=='scandinavia'){ // MS OPTIONS F-C-KTS
-  echo '<a  href="?units=us" data-title="Imperial Units">
-  '.$weather34F.'</a>'; 
-  echo '<a  href="?units=metric" data-title="Metric Units">
-  '.$weather34C.'</a>';       
-  echo '<a  href="?units=knots" data-title="Wind Knots">
-  '.$weather34KTS.'</a>';       
-}  
-else if ($units=='knots'){   // KNOTS OPTIONS F-C-UK
-  echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
-  '.$weather34F.'</a>';  
-  echo '<a  href="?units=metric" data-title="Metric Units">
-  '.$weather34C.'</a>'; 
-  echo '<a href="?units=uk" data-title="UK Units">     
-  '.$weather34UK.'</a>';   
- } 
- 
- else if ($units==''){   // default
-  echo '<a  href="?units=us" data-title="Imperial Units">
-  '.$weather34F.'</a>';  
-  echo '<a  href="?units=metric" data-title="Metric Units">
-  '.$weather34C.'</a>'; 
-  echo '<a href="?units=uk" data-title="UK Units">     
-  '.$weather34UK.'</a>';   
- } 
-?>
+        <a href="consolecharts-year.php" data-title="<?php echo strftime("%Y");?> Charts">
+        <?php echo $weather34chart2?> 
+        <span style="position:relative;top:-8px"><?php echo strftime("%Y");?></span></a>    
 
-
-<a href="consolecharts.php" data-title="Today Charts">
-      <div class="weather34-sphere-orange"></div>
-          <bottom-bar-text>Today</bottom-bar-text></a>
-
-<a href="consolecharts-month.php" data-title="<?php echo date('M');?> Charts">
-       <div class="weather34-sphere-yellow"></div>
-          <bottom-bar-text><?php echo date('F');?></bottom-bar-text></a>
-
-          <a href="consolecharts-year.php" data-title="<?php echo date('Y');?> Charts">
-       <div class="weather34-sphere-blue"></div>
-          <bottom-bar-text><?php echo date('Y');?></bottom-bar-text></a>
-
-          <?php if ($displayalmanac=='yes'){
-      echo '<a href="weather34-almanac.php" data-title="Almanac">
-    <div class="weather34-chart-icons">'.$almanacicon.'</a></div>';}
-      ?> 
-       
-       <chartpage>
+        <chartpage>
 <?php echo $lang['Updated']." " ;
 //last year
 $time = strtotime("-1 year", time());
