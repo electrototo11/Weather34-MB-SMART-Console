@@ -2,10 +2,10 @@
 /*
 -----------------
 Language Translation File for Weather34 MB SMART 
-Language: English
+Language: Danish(Denmark)
 Developed By: Brian Underdown/Erik M Madsen
-October/November 2016
-Revised: August 2019
+Revised: April 2020
+Translation Updated By:Bjarne Riis 
 
 -----------------
 */
@@ -62,14 +62,14 @@ $lang['December']                = 'Dec';
 //temperature
 $lang['Temperature']             = 'Temperatur';
 $lang['Feelslike']               = 'Føles';
-$lang['Humidity']                = 'Fughtighed';
+$lang['Humidity']                = 'Fugtighed';
 $lang['Dewpoint']                = 'Dugpunkt';
 $lang['Trend']                   = 'trend ';
 $lang['Heatindex']               = 'Hedeindeks';
 $lang['Windchill']               = 'Kuldeindeks ';
 $lang['Tempfactors']             = 'Temp Faktorer';
 $lang['Nocautions']              = 'Ingen varsler';
-$lang['Wetbulb']                 = 'Vådtemperatur';
+$lang['Wetbulb']                 = 'Vådtemp';
 $lang['dry']                     = '& tørt';
 $lang['verydry']                 = '& meget tørt';
 //new feature temperature feels
@@ -436,16 +436,16 @@ $lang['Extreme Caution']='Ekstrem risiko';
 
 $lang['Chart Data']='Kortdata';
 
-$lang['Cooler']='Cooler';
-$lang['Feels Warm']='Feels Warm';
-$lang['Discomfort']='Discomfort';
-$lang['Comfortable']='Comfortable';
-$lang['Feels Colder']='Feels Colder';
+$lang['Cooler']='Køligere';
+$lang['Feels Warm']='Føles varmere';
+$lang['Discomfort']='Ubehageligt';
+$lang['Comfortable']='Behageligt';
+$lang['Feels Colder']='Føles koldere';
 
-$lang['Very Windy']='Very Windy';
-$lang['Windy']='Windy';
-$lang['Breezy']='Breezy';
-$lang['Light Winds']='Light Winds';
+$lang['Very Windy']='Meget blæsende';
+$lang['Windy']='Blæsende';
+$lang['Breezy']='Frisk vind';
+$lang['Light Winds']='Let vind';
 
 $lang['Saturation']='Mætning';
 $lang['High']='Høj';

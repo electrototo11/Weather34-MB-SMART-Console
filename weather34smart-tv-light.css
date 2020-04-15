@@ -4126,13 +4126,15 @@ button-block-date {
     }
 
     #weather34popup .window {
-    position:absolute;   
-    width:440px;
-    height:120px;
-    display:none;
-    z-index:9999;
-    padding:5px;
-    top: 35%;
+     position: absolute;
+    margin: 0 auto;
+    width: 440px;
+    height: 120px;
+    display: none;
+    z-index: 9999;
+    padding: 5px;
+    top: -25%;
+    margin-top: -25%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -4141,11 +4143,10 @@ button-block-date {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    background: #3d464d;
-    margin:0 auto;
-    text-align:center;
-    color:white;
-    font-family: weathertext2;
+    background: #3d464d;    
+    text-align: center;
+    color: #fff;
+    font-family: weathertext2
   }
 
   #weather34popup .window a{

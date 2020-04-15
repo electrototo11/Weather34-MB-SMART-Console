@@ -551,6 +551,18 @@ Language Default Display </div>
 
 
                                         <input name="TZ" type="text" id="TZ" value="<?php echo $TZ; ?>" class="choose">
+
+                                        <br><br>
+                                        <svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                <path d="M16 14 L16 23 M16 8 L16 10" />
+                                                <circle cx="16" cy="16" r="14" /></svg> 
+                                        
+                                        use the php timezone document page to help find the correct syntax
+                                        <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                            <path d="M12 30 L24 16 12 2" />
+                                        </svg> <a href="https://www.php.net/manual/en/timezones.php" target="_blank">
+                                        <orange>https://www.php.net/manual/en/timezones.php</orange>
+                                    </a>
                                         <br><br>
                                         <div class="stationvalue">Latitude</div>
                                             <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">

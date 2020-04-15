@@ -3539,70 +3539,6 @@ smallrainunit2b {
 .lity-hide {
     display: none
 }
-
-.weather34-sphere-blue,
-.weather34-sphere-green,
-.weather34-sphere-orange,
-.weather34-sphere-orangefore,
-.weather34-sphere-orangel,
-.weather34-sphere-red,
-.weather34-sphere-yellow {
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    font-size: 100%;
-    position: relative;
-    display: inline-block;
-    margin: 2px
-}
-
-.weather34-sphere-orange,
-.weather34-sphere-orangefore,
-.weather34-sphere-orangel {
-    background: var(--orange)
-}
-
-.weather34-sphere-blue {
-    background: var(--blue)
-}
-
-.weather34-sphere-red {
-    background: var(--red)
-}
-
-.weather34-sphere-yellow {
-    background: var(--yellow)
-}
-
-.weather34-sphere-green {
-    background: var(--green)
-}
-
-.weather34-sphere-dark {
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    font-size: 100%;
-    position: relative;
-    background: #60696d;
-    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
-    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
-    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
-    display: inline-block;
-    margin: 2px
-}
-
-bottom-bar-text,
-bottom-bar-textfore {
-    position: relative;
-    font-size: 11px;
-    vertical-align: middle;
-    margin-left: 1px;
-    color: var(--white);
-    top: -5px
-}
-
-
 .weather34-tab-icons {
     display: inline-block;
     position: relative;
@@ -3682,39 +3618,30 @@ bottom-bar-textfore {
 
 
 
+* {
+    scrollbar-width: 12px;
+    scrollbar-color: var(--blue) var(--border-dark);
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--border-dark);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+
+}
 
 @media screen and (max-width:960px) {
 
     chartpage,
-    .weather34-desktopicon-link,
-    .weather34-sphere-red,
-    .weather34-sphere-orangefore,
-    .weather34-sphere-green,
-    .desktoplink,
-    .weather34-infoicon,
-    bottom-bar-textfore {
+    .weather34-desktopicon-link
+    {
         display: none
-    }
-
-    .weather34-tv-icons {
-        display: inline-block;
-        position: absolute;
-        top: 10px;
-        right: 80px
-    }
-
-    .weather34-copyright-icons-chart {
-        display: inline-block;
-        position: absolute;
-        top: 10px;
-        margin-left: 240px
-    }
-
-    .weather34-copyright-icons {
-        display: inline-block;
-        position: absolute;
-        top: 10px;
-        margin-left: 130px
     }
 
     .indoorfeels-mod2,
@@ -3856,14 +3783,9 @@ bottom-bar-textfore {
 
 @media screen and (max-width:640px) {
 
-    .designedby,
     .desktoplink,
     .desktoplink4,
-    .sunriset-set,
-    .weather34-sphere-orangefore,
-    .weather34-sphere-orangel,
-    .weather34-sphere-red,
-    bottom-bar-textfore,
+    .sunriset-set,   
     .weather34-desktopicon-link,
     .desktoplink3,
     .weather34-tab-icons,
@@ -3875,19 +3797,12 @@ bottom-bar-textfore {
     chartpage {
         display: none
     }
-
-    bottom-bar-text {
-        font-size: 9px;
-    }
+   
 
     .weather34-chart-icons {
         margin-top: -4px;
         margin-left: 10px
-    }
-
-    bottom-bar-text {
-        font-size: 9px;
-    }
+    }  
 
     li8 {
         min-width: 320px;
@@ -4024,21 +3939,6 @@ grey {
 }
 
 
-.weather-toggle-theme {
-    width: 52px;
-    height: 18px;
-    border-radius: 100px;
-    position: relative;
-    display: inline-block;
-    top: -6px;
-    margin-right: 5px;
-    color: #fff;
-    font-size: 10px;
-    background: #35393b;
-    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
-    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
-    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b
-}
 
 labelspan {
     margin-left: 18px;
@@ -4048,19 +3948,7 @@ labelspan {
     font-family: Headingtext
 }
 
-ƒ .weather-toggle-theme:after {
-    z-index: 999;
-    content: '';
-    position: absolute;
-    font-size: 10px;
-    top: 4px;
-    left: 3px;
-    width: 10px;
-    height: 10px;
-    background: #60666d;
-    border-radius: 90px
-}
-
+ƒ 
 
 button {
     border: 0;
@@ -4815,3 +4703,4 @@ smallminutes {
 [data-title] {
     position: relative;
 }
+
