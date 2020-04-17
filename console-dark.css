@@ -464,7 +464,7 @@ li4 {
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
-    top: 30px;    
+    top: 30px;
     font-family: weathertext2;
     left: 5px
 }
@@ -1625,6 +1625,10 @@ tempman {
     font-size: 11px
 }
 
+.charttempmodule {
+    margin-top: 5px;
+}
+
 unitindicator,
 windunitindicator {
     position: absolute;
@@ -2533,11 +2537,11 @@ valuebeaufort {
     -o-border-radius: 3px
 }
 
-.modulecaptionchart {
+.modulecaptionchart,.modulecaptionchartbaro {
     display: flex;
     position: relative;
     left: 145px;
-    top: 55px;
+    top: 58px;
     color: var(--silver);
     background-color: hsla(204, 31%, 21%, .429);
     font-family: Headingtext;
@@ -2553,6 +2557,10 @@ valuebeaufort {
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px
+}
+
+.modulecaptionchartbaro {   
+    top: 62px;   
 }
 
 .modulecaptionwindchart {
@@ -2942,11 +2950,12 @@ a {
     margin-left: 70px;
     top: 15px
 }
+
 .weather34-rightfootericons {
-    display: inline-block;    
+    display: inline-block;
     position: absolute;
     top: 3px;
-    right:5%
+    right: 5%
 }
 
 
@@ -3882,7 +3891,8 @@ bottom-bar-textfore {
     .weather34-hardware-icons,
     .weather34-copyright-icons,
     .weather34-copyright-icons-chart,
-    .weather34-refreshicon,.weather34-rightfootericons,
+    .weather34-refreshicon,
+    .weather34-rightfootericons,
     chartpage {
         display: none
     }
@@ -4822,30 +4832,33 @@ infoicon {
     margin-top: -20px;
     left: -20px
 }
+
 [data-title]:hover:after {
     opacity: 1;
     transition: all 0.1s ease 0.5s;
     visibility: visible;
 }
+
 [data-title]:after {
     content: attr(data-title);
     background-color: var(--blue);
-    color:#ffffff;
-    font-size:1.2em;
+    color: #ffffff;
+    font-size: 1.2em;
     position: absolute;
     padding: 5px 5px 5px 5px;
     bottom: 2.6em;
     left: 0;
-    white-space: nowrap;   
-    opacity: 0;    
+    white-space: nowrap;
+    opacity: 0;
     z-index: 99999;
     visibility: hidden;
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
+
 [data-title] {
     position: relative;
 }

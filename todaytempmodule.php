@@ -1,7 +1,11 @@
   
  <?php include('livedata.php');?>
  <div class="modulecaptionchart"><?php echo $lang['Temperature']?><blue1> &nbsp;&deg;<?php echo $weather["temp_units"]?></blue1></div>  
+
+
  <iframe  class="charttempmodule" src="weather34charts/todaytempmodulechart2.php" frameborder="0" scrolling="no" width="320px" height="250px"></iframe>  
+
+ 
  <div class="legenddewpoint">Min <?php echo $weather["tempdmin"]?>&deg;<?php echo $weather["temp_units"]; ?></div>
  <div class="legendwetbulb" style="background-color:<?php 
  if ($weather["tempdmax"]<=5 ){echo '#4ba0ad';}

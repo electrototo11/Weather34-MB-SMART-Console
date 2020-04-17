@@ -57,6 +57,8 @@ $darkhours = 23 - $lighthours; $darkminutes = 60 - $lightmins;if ($darkminutes<1
 else $darkminutes=$darkminutes;$thehour=date('H');$theminute=date('i');?>
 
 <div class="sunblock"></div>
+
+
 <div class="sunrise1"> <?php echo $sunuphalf.' '. $lang['Sunrise'];?> 
 <?php echo $nextrisetxt.' (<orange>'.$nextrise.'</orange>)<br>'.$sunuphalf.' '. $lang['Daylight'].' (<blue>'.$light.'</blue>'.$lang['Hrs'].')';?>
 
@@ -65,6 +67,8 @@ else $darkminutes=$darkminutes;$thehour=date('H');$theminute=date('i');?>
 <div class="sunset1"><?php echo $sundownhalf.' '.$lang['Sunset'];?> 
 <?php echo $nextsettxt.' (<blue>'.$nextset.'</blue>)<br>'.$sundownhalf.' '. $lang['Darkness'].' (<blue>'.$darkhours,":".$darkminutes.'</blue>'.$lang['Hrs'].')';?>
 </div>
+
+
 <div class="daylight1">&nbsp;<?php echo $hrs."<smalltempunit2>hrs</smalltempunit2>:". $min."<smalltempunit2>min</smalltempunit2>" ?>
 <tdiv class=till><?php echo $txt?></div></div> 
 

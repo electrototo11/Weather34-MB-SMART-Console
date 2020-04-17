@@ -1,7 +1,12 @@
   
  <?php include('livedata.php');?>
- <div class="modulecaptionchart"><?php echo $lang['Barometer']?> &nbsp;<blue1><?php echo $weather["barometer_units"]; ?></blue1></div> 
+
+ <div class="modulecaptionchartbaro"><?php echo $lang['Barometer']?> &nbsp;<blue1><?php echo $weather["barometer_units"]; ?></blue1></div> 
+
+
  <iframe  class="charttempmodule" src="weather34charts/todaybarometermodulechart2.php" frameborder="0" scrolling="no" width="320px" height="250px"></iframe>  
+
+ 
   <div class="legenddewpoint">Min <?php echo $weather["barometer_min"]?><?php echo $weather["barometer_units"]; ?></div>
  <div class="legendwetbulb" style="background-color:<?php 
  if ($weather["barometer_max"]<=5 ){echo '#4ba0ad';}
