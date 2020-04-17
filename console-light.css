@@ -2567,8 +2567,8 @@ valuebeaufort {
     display: flex;
     position: relative;
     left: 145px;
-    top: 54px;
-    background: #f8f8f8;
+    top: 57px;
+    background:0;
     font-family: Headingtext;
     width: 12em;
     height: 10px;
@@ -2691,6 +2691,9 @@ valuebeaufort {
     top: -12px;
     color: var(--body-text-light);
     box-shadow: var(--button-shadow);
+}
+.charttempmodule{  
+    margin-top:5px;
 }
 
 .online,
