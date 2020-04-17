@@ -10,6 +10,7 @@
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#dewpoint").show()}});var c=a("#dewpoint");c.load("todaydewpointmodule.php");var b=setInterval(function(){c.load("todaydewpointmodule.php")},130000)})})(jQuery);
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#uvindex").show()}});var c=a("#uvindex");c.load("<?php echo $chartoption?>");var b=setInterval(function(){c.load("<?php echo $chartoption?>")},130000)})})(jQuery);
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#indoor").show()}});var c=a("#indoor");c.load("<?php echo $chartoption2?>");var b=setInterval(function(){c.load("<?php echo $chartoption2?>")},130000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#airquality").show()}});var c=a("#airquality");c.load("todayairquality.php");var b=setInterval(function(){c.load("todayairquality.php")},130000)})})(jQuery);
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#barometer").show()}});var c=a("#barometer");c.load("todaybarometermodule.php");var b=setInterval(function(){c.load("todaybarometermodule.php")},1300000 )})})(jQuery);
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#humidity").show()}});var c=a("#humidity");c.load("todayhumiditymodule.php");var b=setInterval(function(){c.load("todayhumiditymodule.php")},130000)})})(jQuery);

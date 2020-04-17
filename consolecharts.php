@@ -49,7 +49,11 @@
     <li><div id=humidity></div></li>
     <li><div id=dewpoint></div></li>
 
-    <li><div id=wind></div></li>
+    <li><div id=
+    <?php 
+    if ($purpleairhardware=='yes'){echo "airquality";}
+    ?>
+    wind></div></li>
     <li><div id=direction></div></li>
     <li><div id=gust></div></li>
 
