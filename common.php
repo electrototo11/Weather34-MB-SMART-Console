@@ -21,7 +21,10 @@ switch ($lang) {
  //swedish
   case 'sv': $lang_file = 'lang.sv.php';  setlocale(LC_TIME, "sv_SE.UTF-8"); break;  
  //french  
-   case 'fr': $lang_file = 'lang.fr.php'; setlocale(LC_TIME, "fr_FR.UTF-8"); break;   
+  case 'fr': $lang_file = 'lang.fr.php'; setlocale(LC_TIME, "fr_FR.UTF-8"); break;   
+ //catalan 
+  case 'ca': $lang_file = 'lang.ca.php'; setlocale(LC_TIME, "es_ES.UTF-8"); break; 
+ 
  //default 
   default: $lang_file = 'lang.'.$defaultlanguage.'.php'; setlocale(LC_TIME, ""); }
   include_once 'languages/'.$lang_file;

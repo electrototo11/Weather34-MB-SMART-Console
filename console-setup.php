@@ -480,14 +480,15 @@ Language Default Display </div>
                                             <label name="defaultlanguage"></label>
                                     <select id="defaultlanguage" name="defaultlanguage" class="choose">
                                         <option><?php echo $defaultlanguage; ?></option>
-                                        <option>en</option>                                        
-                                        <option>dk</option>
-                                        <option>de</option>
+                                        <option>en</option> 
+                                        <option>ca</option>
+                                        <option>de</option>                                       
+                                        <option>dk</option> 
+                                        <option>es</option>                                       
                                         <option>fr</option>
                                         <option>it</option>
-                                        <option>nl</option>
-                                        <option>es</option>
-                                        <option>sv</option>                                        
+                                        <option>nl</option>                                        
+                                        <option>sv</option>                                       
                                     </select>
                                     <br><br>
 
@@ -502,15 +503,18 @@ Language Default Display </div>
                                             <label name="defaultlanguage2"></label>
                                     <select id="defaultlanguage2" name="defaultlanguage2" class="choose">
                                         <option><?php echo $defaultlanguage2; ?></option>
-                                        <option>en</option>                                        
-                                        <option>dk</option>
-                                        <option>de</option>
+                                        <option>en</option> 
+                                        <option>ca</option>
+                                        <option>de</option>                                       
+                                        <option>dk</option> 
+                                        <option>es</option>                                       
                                         <option>fr</option>
                                         <option>it</option>
-                                        <option>nl</option>
-                                        <option>es</option>
+                                        <option>nl</option>                                        
                                         <option>sv</option>                                        
                                     </select>
+                                    <br><br>
+en=English , ca=Catalan , de=German , dk=Danish , es=Spanish , fr=French , it=Italian , nl=Dutch , sv=Swedish
                                     <br><br>
 
 <div class="stationvalue">Display Language Icons in Footer</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
