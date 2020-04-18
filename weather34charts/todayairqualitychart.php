@@ -1,14 +1,14 @@
 <?php
 	
 	####################################################################################################
-	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	#	CREATED FOR STANDALONE CONSOLE VERSION TEMPLATE 											   #
 	# https://weather34.com/homeweatherstation/index.html 											   # 
 	# 	                                                                                               #
 	# 	built on CanvasJs  	                                                                           #
 	#   canvasJs.js is protected by CREATIVE COMMONS LICENCE BY-NC 3.0  	                           #
 	# 	free for non commercial use and credit must be left in tact . 	                               #
 	# 	                                                                                               #
-	# 	Release: July 2019						  	                                                   #
+	# 	Release: April 2020  Air Quality   	  	 	                                                   #
 	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
@@ -21,7 +21,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-		<title>OUTDOOR Barometer CHART</title>	
+		<title>OUTDOOR AQI CHART</title>	
 		<script src=../js/jquery.js></script>
 		
 	';
@@ -128,7 +128,7 @@
 		labelFontWeight: "bold",		
 		interval: "auto",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(1);  
+        return e.value .toFixed(0);  
          },		 
 		 crosshair: {
 			enabled: true,
