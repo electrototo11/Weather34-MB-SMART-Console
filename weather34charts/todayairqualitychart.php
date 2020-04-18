@@ -158,9 +158,9 @@
 			legendMarkerType: "circle",
 			lineThickness: 1,
 			markerType: "none",
-			name:"UV INDEX",
+			name:"AQI",
 			dataPoints: dataPoints1,
-			yValueFormatString: "##.## PM 2.5",
+			yValueFormatString: "##.## ",
 			
 		},
 		{
