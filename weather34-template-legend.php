@@ -114,7 +114,9 @@ grid-row-gap: 5px;
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:140px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .hardwareimage{position:relative;display:flex;margin:0 auto;margin-top:-80px;margin-left:100px}
-.hardwareimagenano{position:relative;display:flex;margin:0 auto;margin-top:-60px;margin-left:180px}
+.hardwareimagenano{position:relative;display:flex;margin:0 auto;margin-top:-40px;margin-left:180px}
+.hardwareimagemb{position:relative;display:flex;margin:0 auto;margin-top:-40px;margin-left:160px}
+.hardwareimagetp{position:relative;display:flex;margin:0 auto;margin-top:-50px;margin-left:160px}
 .stationhardware{position:absolute;display:flex;margin-left:140px;margin-top:-40px;}
 .stationhardware2{position:absolute;display:flex;margin-left:140px;margin-top:-45px;}
 .davislogo{position:absolute;display:flex;margin-left:20px;margin-top:5px;}
@@ -280,19 +282,19 @@ margin-top:5px;
 
   
 <main class="grid">
-   <article> 
-   <?php $datereboot = new DateTime();$dateago=convert($nanosduptime);?> 
+   <article>    
    <div class=actualt>Interface Hardware</div> 
-    <?php echo $info?> Meteobridge: <blue><?php echo $mbplatform?></blue><br>
-    <?php echo $info?> Uptime: <blue><?php echo convert($nanosduptime)?></blue><br>
-    <?php echo $info?> Last Reboot: <blue><?php echo $datereboot->modify('-'.$dateago)->format('jS M Y');?></blue><br>
-    <?php echo $info?> Firmware:<?php echo "<orange>",$weather["swversion"];echo "-",$weather["build"]?></orange><br>
+  <?php echo $info?> Meteobridge: <blue><?php echo $mbplatform?></blue><br>
+  <?php echo $info?> Uptime: <blue><?php echo convert($nanosduptime)?></blue><br>    
+   <?php echo $info?> Firmware:<?php echo "<orange>",$weather["swversion"];echo "-",$weather["build"]?></orange><br>
 
-<?php 
-if($mbplatform=='Nano' OR $mbplatform=='NanoSD'){echo '<img src="images/nano.svg" width="50px" class="hardwareimagenano" alt="Meteobridge NANOSD" title="Meteobridge NANOSD">';}
-else if($mbplatform=='Pro Red' OR $mbplatform=='Pro Black'){echo '<img src="images/MeteobridgePRO.svg" width="50px" class="hardwareimagenano" alt="Meteobridge Pro" title="Meteobridge Pro">';}
-else if($mbplatform=='TPlink'){echo '<img src="images/TPLINK.svg" width="70px" class="hardwareimagenano" alt="Meteobridge TP-Link" title="Meteobridge TP-Link">';}
-    ?>      
+   <?php 
+if($mbplatform=='NanoSD'){echo '<img src="images/nano.svg" width="50px" class="hardwareimagenano" alt="Meteobridge NANOSD" title="Meteobridge NANOSD">';}
+else if($mbplatform=='Nano'){echo '<img src="images/nano.svg" width="50px" class="hardwareimagenano" alt="Meteobridge NANOSD" title="Meteobridge NANOSD">';}
+else if($mbplatform=='Pro Red'){echo '<img src="images/MeteobridgePRO.svg" width="70px" class="hardwareimagemb" alt="Meteobridge Pro" title="Meteobridge Pro">';}
+else if($mbplatform=='Pro Black'){echo '<img src="images/MeteobridgePRO.svg" width="70px" class="hardwareimagemb" alt="Meteobridge Pro" title="Meteobridge Pro">';}
+else if($mbplatform=='TPlink'){echo '<img src="images/TPLINK.svg" width="70px" class="hardwareimagetp" alt="Meteobridge TP-Link" title="Meteobridge TP-Link">';}
+    ?>  
     
  </span></div>  
  <br><br>
