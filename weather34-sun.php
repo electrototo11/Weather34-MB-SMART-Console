@@ -81,6 +81,9 @@ border:0;
 border-radius:50%;
 background:<?php if ($elev<=0){echo "hsla(4, 40%, 48%,.7)";}else echo "#ec5732"?>;
 }
+.weather34sunclock :before{
+content:"<?php echo date('g:i')?>";	
+	;}
 </style>
 <div class="modulecaptionsun"><?php echo $lang['Sun'];?></div>
 <?php 
@@ -93,6 +96,7 @@ $endofday   = fullcircle ($result['sunset']);
 $sunspotpostion    = fullcircle ($now);
 if ($now > $result['sunset'] || $now < $result['sunrise'] ){$sunspot = 'rgba(86,95,103,0)';}
 else {$sunspot = 'rgba(255, 112,50,1)';}
+
 ?>
 
 <script>
@@ -134,6 +138,14 @@ weather34sundial.stroke();
 
 <div class="sunset-block"><?php echo $sundownhalf.' '.$lang['Set'];?> 
 <?php echo $nextsettxt.' (<red>'.$nextset.'</red>)<br>'.$sundownhalf.' '. $lang['Darkness'].' ('.$darkhours,":".$darkminutes.''.$lang['Hrs'].')';?>
+</div>
+
+<div class="sunposition-block">
+<?php echo $weather34elevaz.' Azimuth';?> 
+<orange><?php echo $azimuth ?>&deg;</orange>
+<br>
+<?php echo $weather34elevaz.' Elevation';?>  
+<orange><?php echo $elev ?>&deg;</orange>
 </div>
 
 <div class="weather-tempicon-identity" style="margin-top:58px;height:1.15em;margin-left:110px">   

@@ -15,10 +15,10 @@
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#barometer").show()}});var c=a("#barometer");c.load("barometer-almanac.php");var b=setInterval(function(){c.load("barometer-almanac.php")},1160000)})})(jQuery);
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#uvindex").show()}});var c=a("#uvindex");c.load("uv-almanac.php");var b=setInterval(function(){c.load("uv-almanac.php")},1160000)})})(jQuery);
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#solar").show()}});var c=a("#solar");c.load("solar-almanac.php");var b=setInterval(function(){c.load("solar-almanac.php")},1160000)})})(jQuery);
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#clock").show()}});var c=a("#clock");c.load("weather34-clockphone3.php");var b=setInterval(function(){c.load("weather34-clockphone3.php")},1160000)})})(jQuery);
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#indoor").show()}});var c=a("#indoor");c.load("weather34-indoormod2.php");var b=setInterval(function(){c.load("weather34-indoormod2.php")},1160000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#clock").show()}});var c=a("#clock");c.load("weather34-sun.php");var b=setInterval(function(){c.load("weather34-sun.php")},1160000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#indoor").show()}});var c=a("#indoor");c.load("weather34-clockphone3.php");var b=setInterval(function(){c.load("weather34-clockphone3.php")},60000)})})(jQuery);
 
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#moon").show()}});var c=a("#moon");c.load("weather34-sunmod.php");var b=setInterval(function(){c.load("weather34-sunmod.php")},11300000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#moon").show()}});var c=a("#moon");c.load("weather34-dayforecast.php");var b=setInterval(function(){c.load("weather34-dayforecast.php")},11300000)})})(jQuery);
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#sun").show()}});var c=a("#sun");c.load("weather34-moonphasemod.php");var b=setInterval(function(){c.load("weather34-moonphasemod.php")},111300000)})})(jQuery);
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#time-date").show()}});var c=a("#time-date");c.load("weather34-info.php");var b=setInterval(function(){c.load("weather34-info.php")},111300000)})})(jQuery);</script>
 

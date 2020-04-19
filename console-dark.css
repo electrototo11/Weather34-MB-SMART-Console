@@ -395,6 +395,31 @@ li4 {
     font-family: headingtext
 }
 
+.sunposition-block {
+    display: block;
+    background: 0 0;    
+    font-size: .7rem;
+    line-height: 1;
+    margin-top: 30px;
+    position: absolute;
+    margin-left: -17px;
+    font-family: headingtext;
+    text-align: left
+}
+.weather34sunclock :before{
+    position:absolute;
+    font-family: weathertext2;
+    color:var(--deepblue);
+    font-size:.5em;
+    -webkit-transform:rotate(-95deg);
+    transform:rotate(-95deg);
+    padding-left:3px;
+    margin-left:-22px;
+    -moz-transform:rotate(-95deg);
+    -ms-transform:rotate(-95deg);
+    -o-transform:rotate(-95deg);
+}
+
 .sunset2 {
     display: block;
     background: 0 0;
@@ -4754,9 +4779,9 @@ strikeicon {
     color: var(--body-text-dark);
     font-size: .7rem;
     line-height: 1;
-    margin-top: -30px;
+    margin-top: -40px;
     position: absolute;
-    margin-left: -10px;
+    margin-left: -15px;
     font-family: headingtext;
     text-align: left
 }
@@ -4767,9 +4792,9 @@ strikeicon {
     color: var(--body-text-dark);
     font-size: .7rem;
     line-height: 1;
-    margin-top: 0px;
+    margin-top: -5px;
     position: absolute;
-    margin-left: -10px;
+    margin-left: -15px;
     font-family: headingtext;
     text-align: left
 }

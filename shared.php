@@ -492,6 +492,10 @@ $redalert='<svg id="weather34 warm alert2" width="28pt" height="28pt" fill="#d35
 $bluealert='<svg id="weather34 warm alert2" width="28pt" height="28pt" fill="#01a4b5" viewBox="0 0 20 20">
 <path d="M19.64 16.36L11.53 2.3A1.85 1.85 0 0 0 10 1.21 1.85 1.85 0 0 0 8.48 2.3L.36 16.36C-.48 17.81.21 19 1.88 19h16.24c1.67 0 2.36-1.19 1.52-2.64zM11 
 16H9v-2h2zm0-4H9V6h2z"/></svg>';   
-
+$weather34elevaz='<svg width="10pt" height="10pt" data-name="Layer 1" id="sun elev/az" version="weather34 solar circle" viewBox="0 0 64 64">
+   <defs><style>.weather34solarcircle {fill:#ec5732;}.solarword{fill:#ec5732;}</style></defs><circle class="weather34solarcircle" cx="32" cy="32" r="17"/>
+   <path class="solarword" d="M24.79,27.75V33.7c0,1.78.67,2.68,1.87,2.68s1.9-.86,1.9-2.68V27.75h2.33v5.79c0,3.19-1.61,4.7-4.3,4.7s-4.14-1.44-4.14-4.73V27.75Z"/>
+   <path class="solarword" d="M35.35,38.08,32,27.75H34.6l1.26,4.37c.35,1.23.67,2.41.92,3.69h0c.26-1.24.58-2.47.93-3.65l1.32-4.41h2.48L38.07,38.08Z"/></svg>    
+   ';
 ?>
 
