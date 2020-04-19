@@ -12,21 +12,23 @@
 //original weather34 script original css/svg/php by weather34 2015-2020 clearly marked as original by weather34//
 include('livedata.php'); 
 $davisvp2install= new \DateTime($installed);$now = new \DateTime;
-$weather34EN='<svg version="weather34 language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$weather34EN='<svg version="weather34 english language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <g><path stroke="#555" d="M0 0h24v24H0z"/></g><text x="2.5" y="17" font-size="12px" stroke-width="0" fill="#ccc" >EN</text></svg>';
-$weather34DE='<svg version="weather34 language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$weather34CA='<svg version="weather34 catalan language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<g><path stroke="#555" d="M0 0h24v24H0z"/></g><text x="2.5" y="17" font-size="12px" stroke-width="0" fill="#ccc" >CA</text></svg>';
+$weather34DE='<svg version="weather34 german language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <g><path stroke="#555" d="M0 0h24v24H0z"/></g><text x="2.5" y="17" font-size="12px" stroke-width="0" fill="#ccc" >DE</text></svg>';
-$weather34DK='<svg version="weather34 language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$weather34DK='<svg version="weather34 danish language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <g><path stroke="#555" d="M0 0h24v24H0z"/></g><text x="2.5" y="17" font-size="12px" stroke-width="0" fill="#ccc" >DK</text></svg>';
-$weather34ES='<svg version="weather34 language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$weather34ES='<svg version="weather34 spanish language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <g><path stroke="#555" d="M0 0h24v24H0z"/></g><text x="2.5" y="17" font-size="12px" stroke-width="0" fill="#ccc" >ES</text></svg>';
-$weather34FR='<svg version="weather34 language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$weather34FR='<svg version="weather34 french language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <g><path stroke="#555" d="M0 0h24v24H0z"/></g><text x="2.5" y="17" font-size="12px" stroke-width="0" fill="#ccc" >FR</text></svg>';
-$weather34IT='<svg version="weather34 language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$weather34IT='<svg version="weather34 italian language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <g><path stroke="#555" d="M0 0h24v24H0z"/></g><text x="2.5" y="17" font-size="12px" stroke-width="0" fill="#ccc" >IT</text></svg>';
-$weather34NL='<svg version="weather34 language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$weather34NL='<svg version="weather34 dutch language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <g><path stroke="#555" d="M0 0h24v24H0z"/></g><text x="2.5" y="17" font-size="12px" stroke-width="0" fill="#ccc" >NL</text></svg>';
-$weather34SV='<svg version="weather34 language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+$weather34SV='<svg version="weather34 swedish language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <g><path stroke="#555" d="M0 0h24v24H0z"/></g><text x="2.5" y="17" font-size="12px" stroke-width="0" fill="#ccc" >SV</text></svg>';
  ?>
 <!DOCTYPE html>
@@ -267,14 +269,11 @@ margin-top:5px;
 
 
     <article>    
-    <?php echo $weather34EN ?> <icontext>English Language</icontext><br>
-    <?php echo $weather34DE?> <icontext>German Language</icontext><br>
-    <?php echo $weather34DK ?> <icontext>Danish Language</icontext><br>    
-    <?php echo $weather34ES?> <icontext>Spanish Language</icontext><br>
-    <?php echo $weather34FR?> <icontext>French Language</icontext><br>
-    <?php echo $weather34IT?> <icontext>Italian Language</icontext><br>
-    <?php echo $weather34NL?> <icontext>Dutch Language</icontext><br>
-    <?php echo $weather34SV?> <icontext>Swedish Language</icontext><br>
+    <?php echo $weather34EN ?> <icontext>English</icontext>&nbsp;&nbsp;&nbsp;<?php echo $weather34CA?> <icontext>Catalan</icontext><br>
+    <?php echo $weather34DE?> <icontext>German</icontext>&nbsp;&nbsp;<?php echo $weather34DK ?> <icontext>Danish</icontext><br>    
+    <?php echo $weather34ES?> <icontext>Spanish</icontext>&nbsp;&nbsp;<?php echo $weather34FR?> <icontext>French</icontext><br>
+    <?php echo $weather34IT?> <icontext>Italian</icontext>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $weather34NL?> <icontext>Dutch</icontext><br>
+    <?php echo $weather34SV?> <icontext>Swedish</icontext>
 
 </article> 
 </main>
