@@ -451,7 +451,6 @@ $lang['Light Winds'] = 'Vent lleuger';
 $lang['Saturation'] = 'Saturació';
 $lang['High'] = 'Alt';
 $lang['Low'] = 'Baix';
-
 $lang['Dark'] = 'Oscuro';
 $lang['Light'] = 'La llum';
 $lang['Charts'] = 'Gràfic';
@@ -460,4 +459,8 @@ $lang['Poor-solar'] = 'Radiació <color> a Baixa </ color>';
 $lang['Low-solar'] = 'Radiació a <color> Baixa </ color>';
 $lang['Moderate-solar'] = 'Radiació a <color> Moderada </ color>';
 $lang['Good-solar'] = 'Radiació a <color> Forta </ color>';
+
+//sun
+$lang['Azimuth']='Azimut';
+$lang['Elevation']='Elevación';
 ?>

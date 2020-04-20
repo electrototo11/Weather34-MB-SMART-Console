@@ -462,5 +462,9 @@ $lang['Low-solar']                    = 'Radiations<color><br>Modérées<color>'
 $lang['Moderate-solar']               = 'Radiations<color><br>Fortes <br></color>';
 $lang['Good-solar']                   = 'Radiations<color><br>Extrème <br></color>';
 
+//sun
+$lang['Azimuth']='Azimut';
+$lang['Elevation']='Élévation';
+
 
 ?>

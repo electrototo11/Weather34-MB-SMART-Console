@@ -397,27 +397,28 @@ li4 {
 
 .sunposition-block {
     display: block;
-    background: 0 0;    
+    background: 0 0;
     font-size: .7rem;
     line-height: 1;
     margin-top: 30px;
     position: absolute;
-    margin-left: -17px;
+    margin-left: -15px;
     font-family: headingtext;
     text-align: left
 }
-.weather34sunclock :before{
-    position:absolute;
+
+.weather34sunclock :before {
+    position: absolute;
     font-family: weathertext2;
-    color:var(--deepblue);
-    font-size:.5em;
-    -webkit-transform:rotate(-95deg);
-    transform:rotate(-95deg);
-    padding-left:3px;
-    margin-left:-22px;
-    -moz-transform:rotate(-95deg);
-    -ms-transform:rotate(-95deg);
-    -o-transform:rotate(-95deg);
+    color: var(--deepblue);
+    font-size: .5em;
+    -webkit-transform: rotate(-95deg);
+    transform: rotate(-95deg);
+    padding-left: 3px;
+    margin-left: -22px;
+    -moz-transform: rotate(-95deg);
+    -ms-transform: rotate(-95deg);
+    -o-transform: rotate(-95deg);
 }
 
 .sunset2 {
@@ -2562,7 +2563,8 @@ valuebeaufort {
     -o-border-radius: 3px
 }
 
-.modulecaptionchart,.modulecaptionchartbaro {
+.modulecaptionchart,
+.modulecaptionchartbaro {
     display: flex;
     position: relative;
     left: 145px;
@@ -2584,8 +2586,8 @@ valuebeaufort {
     -o-border-radius: 3px
 }
 
-.modulecaptionchartbaro {   
-    top: 62px;   
+.modulecaptionchartbaro {
+    top: 62px;
 }
 
 .modulecaptionwindchart {

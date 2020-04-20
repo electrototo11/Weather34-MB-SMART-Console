@@ -506,7 +506,7 @@ li3 {
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
-    top: 30px;   
+    top: 30px;
     color: var(--body-text-light);
     font-family: weathertext2;
     left: 5px
@@ -2563,12 +2563,13 @@ valuebeaufort {
     background: #fff;
 }
 
-.modulecaptionchart,.modulecaptionchartbaro  {
+.modulecaptionchart,
+.modulecaptionchartbaro {
     display: flex;
     position: relative;
     left: 145px;
     top: 54px;
-    background:0;
+    background: 0;
     font-family: Headingtext;
     width: 12em;
     height: 10px;
@@ -2580,8 +2581,9 @@ valuebeaufort {
     color: var(--body-text-light);
 
 }
-.modulecaptionchartbaro {   
-    top: 55px;   
+
+.modulecaptionchartbaro {
+    top: 55px;
 }
 
 .modulecaptionwindchart {
@@ -2867,10 +2869,10 @@ a {
 }
 
 .weather34-rightfootericons {
-    display: inline-block;    
+    display: inline-block;
     position: absolute;
     top: 3px;
-    right:5%
+    right: 5%
 }
 
 .weather34alert {
@@ -3874,7 +3876,8 @@ bottom-bar-textfore {
     .weather34-hardware-icons,
     .weather34-copyright-icons,
     .weather34-copyright-icons-chart,
-    .weather34-refreshicon,.weather34-rightfootericons,
+    .weather34-refreshicon,
+    .weather34-rightfootericons,
     chartpage {
         display: none
     }
@@ -4771,23 +4774,23 @@ button-block-date {
     line-height: 1;
     margin-top: 30px;
     position: absolute;
-    margin-left: -1px;
+    margin-left: 0;
     font-family: headingtext;
     text-align: left
 }
 
-.weather34sunclock :before{
-    position:absolute;
+.weather34sunclock :before {
+    position: absolute;
     font-family: weathertext2;
-    color:var(--deepblue);
-    font-size:.5em;
-    -webkit-transform:rotate(-95deg);
-    transform:rotate(-95deg);
-    padding-left:3px;
-    margin-left:-23px;
-    -moz-transform:rotate(-95deg);
-    -ms-transform:rotate(-95deg);
-    -o-transform:rotate(-95deg);
+    color: var(--deepblue);
+    font-size: .5em;
+    -webkit-transform: rotate(-95deg);
+    transform: rotate(-95deg);
+    padding-left: 3px;
+    margin-left: -23px;
+    -moz-transform: rotate(-95deg);
+    -ms-transform: rotate(-95deg);
+    -o-transform: rotate(-95deg);
 }
 
 .modulecaptionsun {
@@ -4823,25 +4826,27 @@ smallminutes {
     transition: all 0.1s ease 0.5s;
     visibility: visible;
 }
+
 [data-title]:after {
     content: attr(data-title);
     background-color: var(--blue);
-    color:#ffffff;
-    font-size:1.1em;
+    color: #ffffff;
+    font-size: 1.1em;
     position: absolute;
     padding: 5px 5px 5px 5px;
     bottom: 2.6em;
     left: 0;
-    white-space: nowrap;   
-    opacity: 0;    
+    white-space: nowrap;
+    opacity: 0;
     z-index: 99999;
     visibility: hidden;
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
+
 [data-title] {
     position: relative;
 }

@@ -82,7 +82,7 @@ border-radius:50%;
 background:<?php if ($elev<=0){echo "hsla(4, 40%, 48%,.7)";}else echo "#ec5732"?>;
 }
 .weather34sunclock :before{
-content:"<?php echo date('g:i')?>";	
+content:"<?php echo date('G:i')?>";	
 	;}
 </style>
 <div class="modulecaptionsun"><?php echo $lang['Sun'];?></div>
@@ -141,10 +141,11 @@ weather34sundial.stroke();
 </div>
 
 <div class="sunposition-block">
-<?php echo $weather34elevaz.' Azimuth';?> 
+<?php if ($elev<=0){echo $sundownhalf;}else if ($elev>0){echo $sunuphalf;};echo " ".$lang['Azimuth'];?> 
 <orange><?php echo $azimuth ?>&deg;</orange>
 <br>
-<?php echo $weather34elevaz.' Elevation';?>  
+<?php 
+if ($elev<=0){echo $sundownhalf;}else if ($elev>0){echo $sunuphalf;};echo " ".$lang['Elevation'];?>  
 <orange><?php echo $elev ?>&deg;</orange>
 </div>
 

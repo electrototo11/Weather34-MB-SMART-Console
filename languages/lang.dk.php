@@ -454,4 +454,8 @@ $lang['Low']='Lav';
 $lang['Dark']='Mørk';
 $lang['Light']='Lys';
 $lang['Charts']='Diagram';
+
+//sun
+$lang['Azimuth']='Azimuth';
+$lang['Elevation']='Elevation';
 ?>
