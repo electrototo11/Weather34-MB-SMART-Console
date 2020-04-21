@@ -462,10 +462,10 @@ $lang['Dark']='Dunkel';
 $lang['Light']='Hell';
 $lang['Charts']='Diagramme';
 
-$lang['Poor-solar']                   = 'Schwache Sonnen<color> <br>Strahlung</color>';
-$lang['Low-solar']                    = 'Geringe Sonnen<br><color>Strahlung</color>';
-$lang['Moderate-solar']               = 'Mäßige Sonnen <br><color>Strahlung</color>';
-$lang['Good-solar']                   = 'Starke Sonnen <br><color>Strahlung</color>';
+$lang['Poor-solar']                   = 'Schwache Sonnen';
+$lang['Low-solar']                    = 'Geringe Sonnen';
+$lang['Moderate-solar']               = 'Mäßige Sonnen ';
+$lang['Good-solar']                   = 'Starke Sonnen ';
 
 //sun
 $lang['Azimuth']='Azimut';

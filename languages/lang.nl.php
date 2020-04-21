@@ -452,10 +452,10 @@ $lang['Dark']='Donker';
 $lang['Light']='Licht';
 $lang['Charts']='Weerkaart';
 
-$lang['Poor-solar']                   = 'Zonnestraling<br><color2> Pover</color>';
-$lang['Low-solar']                    = 'Zonnestraling<br><color2> Laag</color>';
-$lang['Moderate-solar']               = 'Zonnestraling<br><color1> Matig</color>';
-$lang['Good-solar']                   = 'Zonnestraling<br><color> Sterk</color>';
+$lang['Poor-solar']                   = 'Zonnestraling Pover';
+$lang['Low-solar']                    = 'Zonnestraling Laag';
+$lang['Moderate-solar']               = 'Zonnestraling Matig';
+$lang['Good-solar']                   = 'Zonnestraling Sterk';
 
 //sun
 $lang['Azimuth']='Azimuth';

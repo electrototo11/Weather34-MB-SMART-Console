@@ -456,10 +456,10 @@ $lang['Dark']='Buio';
 $lang['Light']='Lampada';
 $lang['Charts']='Grafico';
 
-$lang['Poor-solar']                   = 'Scarsa<color> <br>Radiazione</color>';
-$lang['Low-solar']                    = 'Bassa<br><color>Radiazione</color>';
-$lang['Moderate-solar']               = 'Moderata <br><color>Radiazione</color>';
-$lang['Good-solar']                   = 'Forte <br><color>Radiazione</color>';
+$lang['Poor-solar']                   = 'Scarsa Radiazione';
+$lang['Low-solar']                    = 'Bassa Radiazione';
+$lang['Moderate-solar']               = 'Moderata Radiazione';
+$lang['Good-solar']                   = 'Forte Radiazione';
 
 //sun
 $lang['Azimuth']='Azimut';

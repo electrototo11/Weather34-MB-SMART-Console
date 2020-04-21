@@ -459,9 +459,13 @@ $lang['Dark']='Mörk';
 $lang['Light']='Ljus';
 $lang['Charts']='Diagram';
 
-$lang['Poor-solar']                    = 'Svag<color> <br>Strålning</color>';
-$lang['Low-solar']                     = 'Låg <br><color>Strålning</color>';
-$lang['Moderate-solar']                = 'Medel <br><color>Strålning</color>';
-$lang['Good-solar']                    = 'Hög <br><color>Strålning</color>';
+$lang['Poor-solar']                    = 'Svag Strålning';
+$lang['Low-solar']                     = 'Låg Strålning';
+$lang['Moderate-solar']                = 'Medel Strålning';
+$lang['Good-solar']                    = 'Hög Strålning';
+
+//sun
+$lang['Azimuth']='Azimut';
+$lang['Elevation']='Verhoging';
 
 ?>

@@ -398,7 +398,7 @@ li4 {
 .sunposition-block {
     display: block;
     background: 0 0;
-    font-size: .7rem;
+    font-size: .65rem;
     line-height: 1;
     margin-top: 30px;
     position: absolute;
@@ -410,15 +410,16 @@ li4 {
 .weather34sunclock :before {
     position: absolute;
     font-family: weathertext2;
-    color: var(--deepblue);
-    font-size: .5em;
-    -webkit-transform: rotate(-95deg);
-    transform: rotate(-95deg);
-    padding-left: 3px;
-    margin-left: -22px;
+    color: var(--silver);
+    font-size: .55em;
+    padding-left: 2px;    
+    transform: rotate(-95deg); 
+    -webkit-transform: rotate(-95deg);     
     -moz-transform: rotate(-95deg);
     -ms-transform: rotate(-95deg);
     -o-transform: rotate(-95deg);
+    transform-origin:5% 155%;
+   
 }
 
 .sunset2 {
@@ -1053,7 +1054,7 @@ steady {
     z-index: auto;
     position: relative;
     margin-top: 5px;
-    background: var(--blocks-background);
+    background:0;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -4710,7 +4711,7 @@ strikeicon {
 
 .daylightmoduleposition {
     position: absolute;
-    margin-left: -240px;
+    margin-left: -245px;
     margin-top: -75px;
 }
 
@@ -4761,7 +4762,7 @@ strikeicon {
     height: 1.75rem;
     font-family: weathertext2;
     background: transparent;
-    margin-left: -120px;
+    margin-left: -125px;
 }
 
 .till2 {
@@ -4779,7 +4780,7 @@ strikeicon {
     display: block;
     background: 0 0;
     color: var(--body-text-dark);
-    font-size: .7rem;
+    font-size: .65rem;
     line-height: 1;
     margin-top: -40px;
     position: absolute;
@@ -4792,7 +4793,7 @@ strikeicon {
     display: block;
     background: 0 0;
     color: var(--body-text-dark);
-    font-size: .7rem;
+    font-size: .65rem;
     line-height: 1;
     margin-top: -5px;
     position: absolute;

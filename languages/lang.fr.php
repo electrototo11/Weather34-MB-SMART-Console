@@ -457,10 +457,10 @@ $lang['Light']='Lumière';
 $lang['Charts']='Graphique';
 
 //solar
-$lang['Poor-solar']                   = 'Radiations<color><br>Faibles</color>';
-$lang['Low-solar']                    = 'Radiations<color><br>Modérées<color>';
-$lang['Moderate-solar']               = 'Radiations<color><br>Fortes <br></color>';
-$lang['Good-solar']                   = 'Radiations<color><br>Extrème <br></color>';
+$lang['Poor-solar']                   = 'Radiations Faibles';
+$lang['Low-solar']                    = 'Radiations Modérées';
+$lang['Moderate-solar']               = 'Radiations Fortes ';
+$lang['Good-solar']                   = 'Radiations Extrème ';
 
 //sun
 $lang['Azimuth']='Azimut';
