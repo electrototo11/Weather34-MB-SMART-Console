@@ -402,7 +402,7 @@ li4 {
     line-height: 1;
     margin-top: 30px;
     position: absolute;
-    margin-left: -15px;
+    margin-left: -10px;
     font-family: headingtext;
     text-align: left
 }
@@ -410,15 +410,17 @@ li4 {
 .weather34sunclock :before {
     position: absolute;
     font-family: weathertext2;
-    color: var(--silver);
-    font-size: .55em;
-    padding-left: 2px;    
+    color: var(--body-text-dark);
+    font-size: .55em;    
     transform: rotate(-95deg); 
     -webkit-transform: rotate(-95deg);     
     -moz-transform: rotate(-95deg);
     -ms-transform: rotate(-95deg);
-    -o-transform: rotate(-95deg);
-    transform-origin:5% 155%;
+    -o-transform: rotate(-95deg);     
+    transform-origin: 0% 100%;
+    -webkit-transform-origin: 0% 100%;
+    top:2px;
+    left:0
    
 }
 
@@ -4711,7 +4713,7 @@ strikeicon {
 
 .daylightmoduleposition {
     position: absolute;
-    margin-left: -245px;
+    margin-left: -240px;
     margin-top: -75px;
 }
 
@@ -4762,7 +4764,7 @@ strikeicon {
     height: 1.75rem;
     font-family: weathertext2;
     background: transparent;
-    margin-left: -125px;
+    margin-left: -120px;
 }
 
 .till2 {
@@ -4784,7 +4786,7 @@ strikeicon {
     line-height: 1;
     margin-top: -40px;
     position: absolute;
-    margin-left: -15px;
+    margin-left: -10px;
     font-family: headingtext;
     text-align: left
 }
@@ -4797,7 +4799,7 @@ strikeicon {
     line-height: 1;
     margin-top: -5px;
     position: absolute;
-    margin-left: -15px;
+    margin-left: -10px;
     font-family: headingtext;
     text-align: left
 }
