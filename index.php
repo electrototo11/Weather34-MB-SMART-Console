@@ -137,12 +137,17 @@ include_once('livedata.php');include_once('updater2.php');
 <a href="weather34-almanac.php" data-title="Almanac">
 <?php echo $weather34alm?></a>
 
+<?php if ($webcamdevice == "yes") {?>
+  <a href="weather34-large-cam.php" data-lity data-title="Webcam"><?php echo $webcamicon2?></a>
+<?php };?>
+
 <?php if ($languages == "yes") {?>
-<a href="index.php?lang=<?php echo $defaultlanguage;?>"><span style="text-transform:uppercase"><?php echo $weather34language1;?></span></a>
-<a href="index.php?lang=<?php echo $defaultlanguage2;?>"><span style="text-transform:uppercase"><?php echo $weather34language2;?></span></a>
+<span style="text-transform:uppercase"><a href="index.php?lang=<?php echo $defaultlanguage;?>" data-title="<?php echo $defaultlanguage;?>"><?php echo $weather34language1;?></span></a>
+<span style="text-transform:uppercase"><a href="index.php?lang=<?php echo $defaultlanguage2;?>" data-title="<?php echo $defaultlanguage2;?>"><?php echo $weather34language2;?></span></a>
 <?php };?>
 
 <div class="weather34-rightfootericons">
+
   <?php 
 //weather34 smart tv option
 if ($smarttv=='yes'){echo '

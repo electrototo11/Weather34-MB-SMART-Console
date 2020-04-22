@@ -30,6 +30,17 @@ $weather34NL='<svg version="weather34 dutch language" width="24" height="24" vie
 <g><path stroke="#555" d="M0 0h24v24H0z"/></g><text x="2.5" y="17" font-size="12px" stroke-width="0" fill="#ccc" >NL</text></svg>';
 $weather34SV='<svg version="weather34 swedish language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <g><path stroke="#555" d="M0 0h24v24H0z"/></g><text x="2.5" y="17" font-size="12px" stroke-width="0" fill="#ccc" >SV</text></svg>';
+$webcamicon2='
+<svg width="18pt" height="18pt"  viewBox="0 0 1024 1024" version="weather34 webcam icon">
+<path d="M778.666667 938.666667h-533.333334c-23.466667 0-38.4-25.6-27.733333-46.933334L277.333333 789.333333h469.333334l57.6 102.4c12.8 21.333333-2.133333 46.933333-25.6 
+46.933334z" fill="#455A64" />
+<path d="M512 490.666667m-384 0a384 384 0 1 0 768 0 384 384 0 1 0-768 0Z" fill="#78909C" />
+<path d="M512 746.666667c-140.8 0-256-115.2-256-256s115.2-256 256-256 256 115.2 256 256-115.2 256-256 256z" fill="#455A64" />
+<path d="M512 490.666667m-192 0a192 192 0 1 0 384 0 192 192 0 1 0-384 0Z" fill="#ec5732" />
+<path d="M614.4 426.666667c-25.6-29.866667-64-46.933333-102.4-46.933334s-76.8 17.066667-102.4 46.933334c-10.666667 10.666667-8.533333 27.733333 2.133333 38.4s27.733333 
+8.533333 38.4-2.133334c32-36.266667 91.733333-36.266667 123.733334 0 6.4 6.4 12.8 8.533333 21.333333 8.533334 6.4 0 12.8-2.133333 19.2-6.4 8.533333-8.533333 10.666667-27.733333 
+0-38.4z" fill="#90CAF9" />
+</svg>';
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -254,7 +265,8 @@ margin-top:5px;
    <?php echo $weather34fore ?> <icontext>Forecast 5 Day</icontext><br>
     <?php echo $weather34foretxt ?> <icontext>Forecast 5 Day Text Summary</icontext><br>   
     <?php echo $weather34chart2?> <icontext>Day/Month/Year Charts</icontext><br>
-    <?php echo $weather34alm?> <icontext>Almanac Data </icontext><br>    
+    <?php echo $weather34alm?> <icontext>Almanac Data </icontext><br>   
+   
     </article> 
     <article>    
     <?php echo $weather34smtv ?> <icontext>SMART TV Layout</icontext><br>
@@ -264,6 +276,8 @@ margin-top:5px;
     <?php echo $wireless?> <icontext>Data Online </icontext><br>
     <?php echo $wirelessoffline?> <icontext>Data Offline (last 15 min)</icontext><br>
     <?php echo $umbrella?> <icontext3>Currently Raining (last hour) </icontext3><br>
+    <?php echo $webcamicon2?> <icontext3>Webcam </icontext3><br> 
+
 
 </article> 
 

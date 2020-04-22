@@ -32,6 +32,7 @@ $password    = "' . $_POST['password'] . '";
 $display2019    = "' . $_POST['display2019'] . '";
 $smarttv    = "' . $_POST['smarttv'] . '";
 $notifications    = "' . $_POST['notifications'] . '";
+$webcamdevice    = "' . $_POST['webcamdevice'] . '";
 
 $position1    = "' . $_POST['position1'] . '";
 $position2    = "' . $_POST['position2'] . '";
@@ -450,7 +451,18 @@ blue{color:#00adbd }
 
                                         <br>
 
+                                        <div class="stationvalue">Do You have A Webcam ?</div>
+                                                                            <svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                                                <path d="M30 12 L16 24 2 12" /></svg><br>
 
+                                                                                <select id="webcamdevice" name="webcamdevice" class="choose">
+                                        <option><?php echo $webcamdevice; ?></option>
+                                        <option>yes</option> 
+                                        <option>no</option>
+                                                                           
+                                    </select>
+
+                                                                            <br><br>
                                         
 
 <div class="stationvalue">Webcam Add Your Path/Url to your webcam (i.e https://something.com/webcam.jpg)</div>
