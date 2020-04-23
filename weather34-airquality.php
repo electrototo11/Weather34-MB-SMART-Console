@@ -1,10 +1,10 @@
-<?php  include('shared.php');
+<?php  include('livedata.php');
 date_default_timezone_set($TZ);
     ####################################################################################################
     #	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
     # https://weather34.com/homeweatherstation/index.html 											   #
     # 	                                                                                               #
-    # 	Release: February 2020					  	                                                   #
+    # 	Revised: April 2020					  	                                                   #
     # 	                                                                                               #
     #   https://www.weather34.com 	                                                                   #
     ####################################################################################################
@@ -60,7 +60,7 @@ $a=""; if ($aqiweather["aqi"]==$a) {
 
 <?php 
 echo '<div class="sunblock">';
-echo '<div class="wudesc">Purple Air Quality</div>
+echo '<div class="wudesc">'.$lang[ 'Air Quality'].'</div>
 <div class="aqicon">';
 //aq icon
 if ($aqiweather["aqi"]>=300){echo "<purple><img src='aqi/hazair.svg?ver=1.4' width='110px' height='100px'>";}
@@ -74,13 +74,15 @@ else if ($aqiweather["aqi"]>=0){echo "<purple><img src='aqi/goodair.svg?ver=1.4'
 echo '</div>
 <div class="wuicondesc">';
 //aq value
-if ($aqiweather["aqi"]>=300){echo "Hazardous Conditions Caution".$aqalert;}
-else if ($aqiweather["aqi"]>=250){echo "Very Unhealthy Conditions Caution".$aqalert;}
-else if ($aqiweather["aqi"]>=200){echo "Very Unhealthy Conditions Caution".$aqalert;}
-else if ($aqiweather["aqi"]>=150){echo "Unhealthy Conditions Caution".$aqalert;}
-else if ($aqiweather["aqi"]>=100){echo "Unhealthy For Sensitive Groups";}
-else if ($aqiweather["aqi"]>=50){echo "Moderate Conditions Caution";}
-else if ($aqiweather["aqi"]>=0){echo "Good Conditions No Caution</green>";}
+
+
+if ($aqiweather["aqi"]>=300){echo $lang[ 'Hazordous']." ".$aqalert;}
+else if ($aqiweather["aqi"]>=250){echo $lang[ 'VeryUnhealthy']." ".$aqalert;}
+else if ($aqiweather["aqi"]>=200){echo $lang[ 'VeryUnhealthy']." ".$aqalert;}
+else if ($aqiweather["aqi"]>=150){echo $lang[ 'Unhealthy']." ".$aqalert;}
+else if ($aqiweather["aqi"]>=100){echo $lang[ 'UnhealthyFS'];}
+else if ($aqiweather["aqi"]>=50){echo $lang[ 'Moderate'];}
+else if ($aqiweather["aqi"]>=0){echo $lang[ 'Good'];}
 echo'</div><br>
 
 <div class="wutemp">';
