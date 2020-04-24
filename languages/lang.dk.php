@@ -61,7 +61,7 @@ $lang['November']                = 'Nov';
 $lang['December']                = 'Dec';
 //temperature
 $lang['Temperature']             = 'Temperatur';
-$lang['Feelslike']               = 'Føles';
+$lang['Feelslike']               = 'Føles som';
 $lang['Humidity']                = 'Fugtighed';
 $lang['Dewpoint']                = 'Dugpunkt';
 $lang['Trend']                   = 'trend ';
@@ -361,7 +361,7 @@ $lang['Strikes']           		 = "&nbsp;Lyn";
 $lang['Strikes Recorded']        = "Lyn registreret";
 $lang['Total']        			 = "Total";
 $lang['Last Strike Detected']   = "Sidste lyn registreret ";
-$lang['Lightning Today']        = "&nbsp;&nbsp;I dag";//today
+$lang['Lightning Today']        = "&nbsp;&nbsp;i dag";//today
 $lang['Quiet']        			= "Stille";
 $lang['Active']        			= "Aktiv";
 $lang['Ago']        			= "Siden";
@@ -456,6 +456,6 @@ $lang['Light']='Lys';
 $lang['Charts']='Diagram';
 
 //sun
-$lang['Azimuth']='Azimuth';
-$lang['Elevation']='Elevation';
+$lang['Azimuth']='Azimut';
+$lang['Elevation']='Højde';
 ?>
