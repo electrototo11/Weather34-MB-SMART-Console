@@ -461,7 +461,7 @@ $weather34alm='<svg version="weather34 almanac" width="24" height="24" viewBox="
 <path path stroke="none" d="M0 0h24v24H0z"/><rect x="4" y="5" width="16" height="16" rx="2" stroke="#00a4b4"/><line x1="16" y1="3" x2="16" y2="7" stroke="#d87040" />
   <line x1="8" y1="3" x2="8" y2="7" stroke="#d87040" /><line x1="4" y1="11" x2="20" y2="11" stroke="#777" stroke-width="1" /> <rect x="8" y="15" width="2" height="2" #00a4b4/></svg>';
 $weather34smtv='<svg version="weather34 smart tv" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-<g><path path stroke="none" d="M0 0h24v24H0z"/></g><text x="2" y="19" font-size="14px" stroke-width="0" fill="#00a4b4">TV</text></svg>';
+<g><path path stroke="none" d="M0 0h24v24H0z"/></g><text x="2" y="19" font-size="18px" stroke-width="0" fill="#00a4b4">TV</text></svg>';
 $weather34hinfo='<svg version="weather34hardware info" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#777" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <path path stroke="none" d="M0 0h24v24H0z" /><circle cx="12" cy="12" r="9" stroke="#aaa"/><line x1="12" y1="8" x2="12.01" y2="8" stroke="#00a4b4"/>
 <polyline points="11 12 12 12 12 16 13 16" stroke="#00a4b4"/></svg>';

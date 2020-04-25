@@ -140,9 +140,8 @@ include_once('livedata.php');include_once('updater2.php');
 
 <div class="weather34-rightfootericons">
 <?php if ($languages == "yes") {?>  
-<span style="left:33px;top:5px;position:absolute"><?php echo $langglobe;?></span>
+
 <span style="text-transform:uppercase"><a href="index.php?lang=<?php echo $defaultlanguage;?>" data-title="<?php echo $defaultlanguage;?>"><?php echo $weather34language1;?></span></a>
-<span style="left:70px;top:5px;position:absolute"><?php echo $langglobe;?></span>
 <span style="text-transform:uppercase"><a href="index.php?lang=<?php echo $defaultlanguage2;?>" data-title="<?php echo $defaultlanguage2;?>"><?php echo $weather34language2;?></span></a>
 <?php };?>
 

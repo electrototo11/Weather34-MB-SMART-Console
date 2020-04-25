@@ -143,28 +143,22 @@ include_once('livedata.php');include_once('updater2.php');
   <a href="weather34-large-cam.php" data-lity data-title="Webcam"><?php echo $webcamicon2?></a>
 <?php };?>
 
-
+<?php 
+//weather34 smart tv option
+if ($smarttv=='yes'){echo '  
+  <a href="weather34-tv.php" data-title="Smart TV" >'. $weather34smtv.'</a>
+';}
+?>  
 <div class="weather34-rightfootericons">
-
 <?php if ($languages == "yes") {?>  
-<span style="left:32px;top:5px;position:absolute"><?php echo $langglobe;?></span>
 <span style="text-transform:uppercase"><a href="index.php?lang=<?php echo $defaultlanguage;?>" data-title="<?php echo $defaultlanguage;?>"><?php echo $weather34language1;?></span></a>
-<span style="left:70px;top:5px;position:absolute"><?php echo $langglobe;?></span>
 <span style="text-transform:uppercase"><a href="index.php?lang=<?php echo $defaultlanguage2;?>" data-title="<?php echo $defaultlanguage2;?>"><?php echo $weather34language2;?></span></a>
 <?php };?>
 
-
-<?php 
-//weather34 smart tv option
-if ($smarttv=='yes'){echo '
-  <span style="left:108px;top:5px;position:absolute">'.$smalltv.'</span>
-  <a href="weather34-tv.php" data-title="Smart TV">'. $weather34smtv.'</a>
-';}
-?>  
 <a  href="weather34-template-legend.php" data-lity data-title="Hardware Info">  
   <?php echo $weather34hinfo;?></a>
 
-<a  href="info.html" data-lity data-title="Template info">
+<a  href="info.html" data-lity data-title="Template info" >
 <?php echo $weather34copyr;?></a>
 
 <a href="index.php" data-title="Refresh">
