@@ -10,7 +10,7 @@
 *This work means CSS/SVG/PHP .*removing id identifiers from SVG icons created by weather34 is not ethical!! you know who you are just be ethical its the unethical practice that produces those annoying emails .
 
 
-<img src="https://res.cloudinary.com/brian-underdown/image/upload/v1587802680/console-version_wxswjh.png width="550px">
+<img src="https://res.cloudinary.com/brian-underdown/image/upload/v1587802680/console-version_wxswjh.png" width="550px">
 
 <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1582531101/weather34-smart-tv_ruan0j.png" width="550px">
 
