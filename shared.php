@@ -439,9 +439,9 @@ $weather34C='<svg version="weather34 Celsius units" width="24" height="24" viewB
  $weather34UK='<svg version="weather34 UK units" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
  <g><path path stroke="#555" d="M0 0h24v24H0z"/></g><text x="2" y="17" font-size="14px" stroke-width="0" fill="#ccc">UK</text></svg>';
  $weather34language1='<svg version="weather34 language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-<g><path path stroke="none" d="M0 0h24v24H0z"/></g><text x="2" y="19" font-size="14px" stroke-width="0" fill="#aaa" >'.$defaultlanguage.'</text></svg>';
+<g><path path stroke="none" d="M0 0h24v24H0z"/></g><text x="2" y="16" font-size="14px" stroke-width="0" fill="#aaa" >'.$defaultlanguage.'</text></svg>';
  $weather34language2='<svg version="weather34 language2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-<g><path path stroke="none" d="M0 0h24v24H0z"/></g><text x="2" y="19" font-size="14px" stroke-width="0" fill="#aaa" >'.$defaultlanguage2.'</text></svg>';
+<g><path path stroke="none" d="M0 0h24v24H0z"/></g><text x="2" y="16" font-size="14px" stroke-width="0" fill="#aaa" >'.$defaultlanguage2.'</text></svg>';
 $langglobe='<svg id="icon-world" width="11" height="11" viewBox="0 0 24 24" stroke-width="2" stroke="#aaa" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9" /><line x1="3.6" y1="9" x2="20.4" y2="9" /><line x1="3.6" y1="15" x2="20.4" y2="15" />  
   <path d="M11.5 3a17 17 0 0 0 0 18" />    <path d="M12.5 3a17 17 0 0 1 0 18" /></svg>';
@@ -460,17 +460,15 @@ $weather34chart2='<svg  version="weather34 charts" width="24" height="24" viewBo
 $weather34alm='<svg version="weather34 almanac" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#e6a241" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <path path stroke="none" d="M0 0h24v24H0z"/><rect x="4" y="5" width="16" height="16" rx="2" stroke="#00a4b4"/><line x1="16" y1="3" x2="16" y2="7" stroke="#d87040" />
   <line x1="8" y1="3" x2="8" y2="7" stroke="#d87040" /><line x1="4" y1="11" x2="20" y2="11" stroke="#777" stroke-width="1" /> <rect x="8" y="15" width="2" height="2" #00a4b4/></svg>';
-$weather34smtv='<svg x="0px" y="10px" width="26" height="26" viewBox="0 0 58 54" style="enable-background:new 0 0 58 58;" id="weather34 smart tv icon">
-<rect y="5.5" style="fill:#333;" width="58" height="38" stroke-width="2" stroke="#555"/><path style="fill:#61B872;" d="M13.962,21.5h-2.924C10.465,21.5,10,21.035,10,20.462v-2.924c0-0.573,0.465-1.038,1.038-1.038h2.924
-c0.573,0,1.038,0.465,1.038,1.038v2.924C15,21.035,14.535,21.5,13.962,21.5z"/><path style="fill:#48A0DC;" d="M24.962,21.5h-2.924C21.465,21.5,21,21.035,21,20.462v-2.924c0-0.573,0.465-1.038,1.038-1.038h2.924
-c0.573,0,1.038,0.465,1.038,1.038v2.924C26,21.035,25.535,21.5,24.962,21.5z"/><path style="fill:#EBBA16;" d="M35.962,21.5h-2.924C32.465,21.5,32,21.035,32,20.462v-2.924c0-0.573,0.465-1.038,1.038-1.038h2.924
-c0.573,0,1.038,0.465,1.038,1.038v2.924C37,21.035,36.535,21.5,35.962,21.5z"/><path style="fill:#BF4D90;" d="M46.962,21.5h-2.924C43.465,21.5,43,21.035,43,20.462v-2.924c0-0.573,0.465-1.038,1.038-1.038h2.924
-c0.573,0,1.038,0.465,1.038,1.038v2.924C48,21.035,47.535,21.5,46.962,21.5z"/><path style="fill:#DD352E;" d="M13.962,32.5h-2.924C10.465,32.5,10,32.035,10,31.462v-2.924c0-0.573,0.465-1.038,1.038-1.038h2.924
-c0.573,0,1.038,0.465,1.038,1.038v2.924C15,32.035,14.535,32.5,13.962,32.5z"/><path style="fill:#A4E869;" d="M24.962,32.5h-2.924C21.465,32.5,21,32.035,21,31.462v-2.924c0-0.573,0.465-1.038,1.038-1.038h2.924
-c0.573,0,1.038,0.465,1.038,1.038v2.924C26,32.035,25.535,32.5,24.962,32.5z"/><path style="fill:#50508A;" d="M35.962,32.5h-2.924C32.465,32.5,32,32.035,32,31.462v-2.924c0-0.573,0.465-1.038,1.038-1.038h2.924
-c0.573,0,1.038,0.465,1.038,1.038v2.924C37,32.035,36.535,32.5,35.962,32.5z"/><path style="fill:#BE7C6D;" d="M46.962,32.5h-2.924C43.465,32.5,43,32.035,43,31.462v-2.924c0-0.573,0.465-1.038,1.038-1.038h2.924
-c0.573,0,1.038,0.465,1.038,1.038v2.924C48,32.035,47.535,32.5,46.962,32.5z"/><polygon style="fill:#AFB6BB;" points="30,49.5 30,43.5 28,43.5 28,49.5 15,49.5 15,52.5 43,52.5 43,49.5 "/><g></g>
-</svg>';
+ $weather34smtv='<svg fill="#aaa" x="0px" y="0px" viewBox="0 0 1000 850" enable-background="new 0 0 1000 1000" width="26" height="26" id="smart tv layout icon">
+  <g><g><g><path  d="M990,137.1H10v622.7h980V137.1z M939.8,709.6H60.2V187.3h879.5V709.6z"/>
+  <path  fill="#00a4b4" d="M810.6,837.8c0-13.9-11.3-25.1-25.1-25.1h-574c-13.9,0-25.1,11.3-25.1,25.1c0,13.9,11.2,25.1,25.1,25.1h574C799.4,
+  862.9,810.6,851.7,810.6,837.8z"/><path d="M181.6,336.7h70.5c9.2,0,16.7,7.5,16.7,16.7v251.3c0,9.3,7.5,16.8,16.8,16.8h39.3c9.2,0,16.7-7.5,16.7-16.8V353.4c0-9.2,7.5-16.7,16.8-16.7h70.1c9.2,0,16.8-7.5,
+  16.8-16.8v-27.8c0-9.2-7.5-16.7-16.8-16.7H181.6c-9.2,0-16.7,7.5-16.7,16.7v27.8C164.8,329.2,172.3,336.7,181.6,336.7z"/>
+  <path  d="M640.5,605.6c3,8.8,12.9,15.9,22.1,15.9h34.8c9.3,0,19.2-7.1,22.2-15.9l107.2-314.4c3-8.8-2.1-15.8-11.3-15.8h-41.6c-9.3,0-18.8,7.2-21.4,16.1L685.8,522c-2.5,8.9-6.7,8.9-9.2,
+  0l-65.9-230.6c-2.6-8.9-12.1-16.1-21.3-16.1h-43.8c-9.3,0-14.4,7.1-11.4,15.9L640.5,605.6z"/>
+  </g></g></g>
+  </svg>';
 $weather34hinfo='<svg version="weather34hardware info" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#777" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <path path stroke="none" d="M0 0h24v24H0z" /><circle cx="12" cy="12" r="9" stroke="#aaa"/><line x1="12" y1="8" x2="12.01" y2="8" stroke="#00a4b4"/>
 <polyline points="11 12 12 12 12 16 13 16" stroke="#00a4b4"/></svg>';
