@@ -12,5 +12,5 @@
 
 <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1587802680/console-version_wxswjh.png" width="550px">
 
-<img src="https://camo.githubusercontent.com/236ce2e77de847e34d7fd66514bb5221cf321b3a/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f627269616e2d756e646572646f776e2f696d6167652f75706c6f61642f76313538323533313130312f7765617468657233342d736d6172742d74765f7275616e306a2e706e67" width="550px">
+<img src="https://res.cloudinary.com/brian-underdown/image/upload/v1587802883/weather34-smart-tv_nj2vht.png" width="550px">
 
