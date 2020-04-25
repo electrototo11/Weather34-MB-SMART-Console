@@ -3,7 +3,7 @@
 # Requires Meteobridge NANOSD or Meteobridge Pro/TP-Link(type)
  
  
- <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1582531310/Weather34-smart-console.png" width="800px">
+ <img src="https://camo.githubusercontent.com/1aa7f3160206dcbd54e17382fc86253121f8704b/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f627269616e2d756e646572646f776e2f696d6167652f75706c6f61642f76313538323533313331302f5765617468657233342d736d6172742d636f6e736f6c652e706e67" width="800px">
  
  
 # This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. http://creativecommons.org/licenses/by-nc-nd/4.0/
