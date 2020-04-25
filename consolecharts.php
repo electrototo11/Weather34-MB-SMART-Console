@@ -89,8 +89,7 @@
         <a href="consolecharts-2019.php" data-title="<?php echo $newtime;?> Charts">
         <?php echo $weather34chart2?> 
         <span style="position:relative;top:-8px"><?php echo $newtime;?></span></a>
-        <?php };?>
-       
+        <?php };?>      
        
        <chartpage><?php echo $maxclock ?> <?php 
        $dayfile=date('Y')."/".date('jMY');$forecastime=filemtime('weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M %p",$forecastime);?>     
@@ -99,14 +98,9 @@
      
 
 <div class="weather34-rightfootericons">
-
 <?php 
 //weather34 smart tv option
-if ($smarttv=='yes'){echo '
-  <span style="left:32px;top:5px;position:absolute">'.$smalltv.'</span>
-  <a href="weather34-tv.php" data-title="Smart TV">'. $weather34smtv.'</a>
-';}
-?>   
+if ($smarttv=='yes'){echo '<a href="weather34-tv.php" data-title="Smart TV" >'. $weather34smtv.'</a>';} ?>   
 <a  href="weather34-template-legend.php" data-lity data-title="Hardware Info">  
 <?php echo $weather34hinfo;?></a>
 

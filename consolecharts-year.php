@@ -88,7 +88,6 @@
 <?php 
 //weather34 smart tv option
 if ($smarttv=='yes'){echo '
-  <span style="left:32px;top:5px;position:absolute">'.$smalltv.'</span>
   <a href="weather34-tv.php" data-title="Smart TV">'. $weather34smtv.'</a>
 ';}
 ?> 
